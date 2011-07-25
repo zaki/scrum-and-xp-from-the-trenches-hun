@@ -653,333 +653,306 @@ céges szívveréssé válik, amibe mindenki beleszokik. Nincsenek viták a kiad
 mivel mindenki tudja, hogy a kiadás három hetente történik. És kész.
 
 
-Defining the sprint goal
-------------------------
-It happens almost every time. At some point during the sprint planning
-meeting I ask “so what is the goal of this sprint?” and everybody just stares blankly back at me
-and the product owner furrows his brow and itches his chin.
+A sprint céljának megválasztása
+-------------------------------
+Szinte mindig ugyanaz történik: a sprint planning meeting során felteszem a kérdést, hogy "tehát mi
+is a sprint célja?" és mindenki csak bambán néz rá, miközben a Product Owner ráncolja a homlokát.
 
-For some reason it is hard to come up with a sprint goal. But yet I have found that it really
-pays to squeeze one out. Better a half-crappy goal than none at all. The goal could be “make
-more money” or “complete the three top-priority stories” or “impress the CEO” or “make the
-system good enough to deploy to a live beta group” or “add basic back office support” or
-whatever. The important thing is that it should be in business terms, not technical terms. This
-means in terms that people outside the team can understand.
+Valami megmagyarázhatatlan okból kifolyólag túl nehéz eldönteni a sprint célját, de arra kellett
+rájönnöm, hogy megéri. Egy mondvacsinált cél is jobb, mint egy cél nélküli sprint. Az is megfelelő
+cél, hogy "több pénzt csinálni" vagy "a legfontosabb három sztorit végigcsinálni" vagy "lenyűgözni a
+főnököt" vagy "a bétatesztereknek kiadható állapotba hozni a rendszert" vagy "adminisztráció felület
+létrehozása" vagy bármi. A lényeg, hogy üzleti és ne technológiai cél legyen, hogy a csapaton kívüli
+emberek is megértsék.
 
-The sprint goal should answer the fundamental question “Why are we doing this sprint? Why don’t
-we all just go on vacation instead?”. In fact,
-HOW WE DO SPRINT PLANNING | 21
-one way to wheedle a sprint goal out of the product owner is to literally ask that question.
+A sprint célja arra az alapvető kérdésre ad választ, hogy "miért dolgozunk ezen a sprinten, miért
+nem megyünk szabadságra helyette?". Ami azt illeti, az egyik módja, hogy a Product Ownerből
+kiszedjük a sprint célját, hogy konkrétan feltesszük neki ezt a kérdést.
 
-The goal should be something that has not already been achieved.
-“Impress the CEO” might be a
-fine goal, but not if he is already impressed by the system as it stands now. In that case
-everybody could go home and the sprint goal will still be achieved.
+A cél persze egy olyan dolog kell, legyen, amit még nem értünk el. A "lenyűgözni a főnököt" megfelel
+célnak, de értelmetlen, ha a főnök a jelenlegi rendszerrel is teljesen elégedett, ugyanis akkor
+mindenki nyugodtan hazamehet és a cél úgy is teljesítve lesz.
 
-The sprint goal may seem rather silly and contrived during the sprint planning, but it often
-comes to use in mid-sprint, when people are starting to get confused about what they should be
-doing. If you have several Scrum teams (like we do) working on different products it is very
-useful to be able to list the sprint goals of all teams on a single wiki page (or whatever) and
-put them up on a prominent space so that everybody in the company (not only top-level
-management) knows what the company is doing – and why!
+Lehet, hogy a sprint célja bugyután hangzik a meetingen, de gyakran a sprint közepén jön elő a
+haszna, amikor az tagok nem tudják, mit is csináljanak. Ha, ahogy mi is, egyszerre több Scrum
+csapattal több terméken is dolgozik, hasznos összefoglalni a sprint célokat egy wiki oldalon vagy
+hasonló helyen ahol az egész vállalat (nem csak a felsővezetés) hozzáférhet és megtekintheti, hogy
+pontosan mit is csinál a cég - és miért.
 
-Deciding which stories to include in the sprint
------------------------------------------------
-One of the main activities of the sprint
-planning meeting is to decide which stories to include in the sprint. More specifically, which
-stories from the product backlog to copy to the sprint backlog.
+A sprint alatt elvégzendő sztorik kiválogatása
+----------------------------------------------
+A sprint planning meeting egyik fő tevékenysége eldönteni, hogy mely sztorik kerülnek be a sprintbe.
+Egész pontosan hogy a Product Backlog mely sztorijait másoljuk át a sprint backlogba.
 
 <figure>
 
-Look at the picture above. Each rectangle represents a story, sorted by importance. The most
-important story is at the top of the list. The size of each rectangle represents the size of
-that story (i.e. time estimate in story points). The height of the blue brace represents the
-team’s estimated velocity, i.e. how many story points the team believes they can complete during next sprint.
+A fenti ábra minden téglalapja egy-egy sztorit jelez fontosság szerint rendezve. A legfontosabb
+sztori a lista tetején található. A téglalap nagysága a sztori nagyságát jelképezi (azaz az
+időmennyiség becslését sztori pontokban). A kék zárójel nagysága jelzi a csapat becsült sebességét,
+azaz hogy az adott sprintben hány sztoripontnyi feladatot tudnak befejezni.
 
-The sprint backlog to the right is a snapshot of stories from the product backlog. It represents
-the list of stories that the team will commit to for this sprint.
+A jobb oldalon található sprint backlog a product backlogban található sztorik egy
+pillanatfelvétele. Ez tartalmazza azokat a sztorikat, amelyeket a csapat be kíván fejezni az adott
+sprintben.
 
-The team decides how many stories to include in the sprint. Not the product owner or anybody
-else.
-This raises two questions:
-1. How does the team decide which stories to include in the sprint?
-2. How can the product owner affect their decision?
+A csapat dönti el, hogy hány sztorit vesznek be a sprintbe és nem a Product Owner vagy valaki más.
+Ez két kérdést vet fel:
+1. Hogyan dönti el a csapat, hogy melyik sztorikat vegye be a sprintbe?
+2. Hogyan befolyásolhatja a Product Owner a döntésüket?
 
-I’ll start with the second question.
+Először a második kérdésre válaszolnék.
 
-How can product owner affect which stories make it to the sprint?
+Hogyan befolyásolhatja a Product Owner, hogy mely sztorik kerülnek be a sprintbe?
 -----------------------------------------------------------------
-Let’s say we have the
-following situation during a sprint planning meeting.
+Tegyük fel, hogy a következő szituáció áll elő a sprint planning meeting során:
 
 <figure>
 
-The product owner is disappointed that story D won’t be included in the sprint. What are his
-options during the sprint planning meeting?
+A Product Owner elégedtlen, hogy a D sztori nem került be a sprintbe. Milyen lehetőségei vannak?
 
-One option is to reprioritize. If he gives item D the highest importance level the team will be
-obliged to add that to the sprint first (in this case bumping out story C).
-
-<figure>
-
-The second option is to change the scope – reduce the scope of story A until the team believes
-that story D will fit into the sprint.
+Az első opció, hogy újraértékeli a fontosságokat. Ha D-nek adja a legnagyobb prioritást, akkor a
+csapatnak kötelessége ezt bevenni a sprintbe (ebben az esetben a C sztorit kivéve a sprintből).
 
 <figure>
 
-The third option is to split a story. The product owner might decide that there are some aspects
-of story A that really aren’t that important, so he splits A into two stories A1 and A2 with
-different importance levels.
+
+A második lehetőség, hogy megváltoztatja a kiterjedést - az A sztorit addig egyszerűsíti, amíg a
+csapat be nem tudja venni a D sztorit a sprintbe.
 
 <figure>
 
-As you see, although the product owner normally can’t control the estimated velocity, there are
-many ways in which he can influence which stories make it into the sprint.
-
-How does the team decide which stories to include in the sprint?
-----------------------------------------------------------------
-We use two techniques for
-this:
-1. Gut feel
-2. Velocity calculations
-
-Estimating using gut feel
-* Scrum master: “Hey guys, can we finish story A in this sprint?” (points to the most important item in the product backlog)
-* Lisa: “Duh. Of course we can. We have 3 weeks, and that’s a pretty trivial feature.”
-* Scrum master: “OK, what if we add story B as well?” (points to the second most important item)
-* Tom & Lisa in unison: “Still a no-brainer.”
-* Scrum master: “OK, what about story A and B and C then?”
-* Sam (to product owner): “does story C include advanced error handling?”
-* Product owner: “no, you can skip that for now, just implement basic error handling.”
-* Sam: “then C should be fine as well.”
-* Scrum master: “OK, what if we add story D?”
-* Lisa: “Hmm....”
-* Tom: “I think we could do it.”
-* Scrum master: “0% confident? 50%?”
-* Lisa & Tom: “Pretty much 0%”.
-* Scrum master: “OK, D is in then. What if we add story E?”
-* Sam: “Maybe.”
-* Scrum master: “0%? 50%?”
-* Sam: “I’d say closer to 50%”.
-* Lisa: “I’m doubtful.”
-* Scrum master: “OK, then we leave it out. We’ll commit to A, B, C, and D. We will of course finish E if
-we can, but nobody should count on it so we’ll leave it out of the sprint plan. How about that?”
-* Everybody: “OK!”
-
-Gut feel works pretty well for small teams and short sprints.
-
-Estimating using velocity calculations
---------------------------------------
-This technique involves two steps:
-1. Decide estimated velocity
-2. Calculate how many stories you can add without exceeding estimated velocity
-
-Velocity is a measurement of “amount of work done”, where each item is weighted in terms of
-its initial estimate.
-
-The picture below shows an example of estimated velocity at the beginning of a sprint and
-actual velocity at the end of that sprint. Each rectangle is a story, and the number inside is
-the initial estimate of that story.
+A harmadik opció a sztorik kettévágása. A Product Owner dönthet úgy, hogy az A sztori néhány része
+nem olyan fontos, tehát szétválaszthatja az A-t A1 és A2-re különböző fontossággal.
 
 <figure>
 
-Note that the actual velocity is based on the initial estimates of each story.
-Any updates to the story time estimates done during the sprint are ignored.
+Amint láthatja, bár a Product Owner nem szabályozhatja a becsült sebességet, azért több mód is
+rendelkezésére áll, hogy befolyásolja a sprintbe kerülő sztorik listáját.
 
-I can hear your objection already: “How is this useful? A high or low velocity may depend on a
-whole bunch of factors! Dimwitted programmers, incorrect initial estimates, scope creep,
-unplanned disturbances during sprint, etc!”
+Hogyan dönti el a csapat, hogy mely sztorik kerüljenek a sprintbe?
+------------------------------------------------------------------
+Két taktikát szoktunk alkalmazni:
+1. megérzés alapján
+2. sebességszámítási alapján
 
-I agree, it is a crude number. But it is still a useful number, especially when compared to
-nothing at all. It gives you some hard facts.
-“Regardless of the reasons, here is the
-approximate difference between how much we thought we would get done and how much we actually
-got done”.
+Megérzés alapú becslés
+* Scrum master: "Mit gondoltok, be tudjuk fejezni A-t ebben a sprintben?" (a product backlog
+  legfontosabb elemére mutat)
+* Lisa: "Simán! Három hetünk van rá és ez elég triviális feladat."
+* Scrum master: "Oké, mi van, ha a B-t is bevesszük?" (a második legfontosabb elemre mutat)
+* Tom és Lisa: "Naná!"
+* Scrum master: "Oké, A, B és C együtt?"
+* Sam (a Product Owner-hez): "C-ben benne van a teljes hibakezelés?"
+* Product Owner: "Nincs, azt egyelőre kihagyhatjuk és csak az alap hibakezelést adjuk hozzá."
+* Sam: "Akkor a C is belefér."
+* Scrum master: "Oké, mi van, ha a D-t is hozzáadjuk?"
+* Lisa: "Hmm..."
+* Tom: "Szerintem belefér."
+* Scrum master: "Mennyire biztos? 0%? 50%?"
+* Lisa és Tom: "Közel 100%"
+* Scrum master: "Oké, akkor a D-t bevesszük. Mi van az E-vel?"
+* Sam: "Elképzelhető hogy belefér."
+* Scrum master: "0%? 50%?"
+* Sam: "Mondjuk 50% körül."
+* Lisa: "Hát én nem tudom..."
+* Scrum master: "Oké, E-t kihagyjuk. A, B, C és D mellett kötelezzük el magunk. Ha belefér, akkor
+  persze E-t is befejezzük, de nem ígérünk semmit, hanem kihagyjuk a sprintből. Mit gondoltok?"
+* Mindeki: "Rendben!"
 
-What about a story that got almost completed during a sprint? Why don’t we get partial points
-for that in our actual velocity? Well this is to stress the fact the Scrum (and in fact agile
-software development and lean manufacturing in general) is all about getting stuff
-completely, shippably, done! The value of stuff half-done is zero (may in fact be negative).
-Pick up Donald Reinertsen’s “Managing the Design Factory” or one of Poppendieck’s books for
-more on that.
+Kis csapatokban és rövid sprintek esetén szokott jól működni a megérzés alapú tervezés.
 
-So through what arcane magic do we estimate velocity?
+Sebességszámítás alapú becslés
+------------------------------
+Ez a taktika két lépést igényel:
+1. Megállapodni egy becsült sebességben
+2. Kiszámítani, hogy hány sztori fér bele ebbe a sebességkeretbe
 
-One very simple way to estimate velocity is to look at the team’s history.
-What was their
-velocity during the past few sprints? Then assume that the velocity will be roughly the same
-next sprint.
+A sebesség az "elvégzett munka" mértékegysége, ahol minden elemet a kezdeti becslésével súlyozunk.
 
-This technique is known as yesterday’s weather. It is only feasible for teams that have done a
-few sprints already (so statistics are available) and will do the next sprint in pretty much
-the same way, with the same team size and same working conditions etc. This is of course not
-always the case.
-
-A more sophisticated variant is to do a simple resource calculation. Let’s say we are planning
-a 3 week sprint (15 work days) with a 4-person team.
-Lisa will be on vacation 2 days. Dave is
-only 50% available and will be on vacation 1 day. Putting all this together...
-
-<figure>
-
-…gives us 50 available man-days for this sprint.
-
-Is that our estimated velocity? No! Because our unit of estimation is story points which, in
-our case, corresponds roughly to “ideal man-days”. An ideal man-day is a perfectly effective,
-undisturbed day, which is rare.
-Furthermore, we have to take into account things such as
-unplanned work being added to the sprint, people being sick, etc.
-
-So our estimated velocity will certainly be less than 50. But how much less? We use the term
-“focus factor” for this.
+A lenti ábra egy példa a sprint kezdetén becsült sebességre és a sprint végén számított valós
+sebességre. A téglalapok egy-egy sztorit jelölnek, a bennük található szám pedig a kezdeti becslés.
 
 <figure>
 
-Focus factor is an estimate of how focused the team is. A low focus factor may mean that the
-team expects to have many disturbances or expects their own time estimates to be optimistic.
+Vegyük észre, hogy a valós sebesség a kezdeti becslésen alapul, azaz a sprint közben történt
+változásokat figyelmen kívül hagyjuk.
 
-The best way to determine a reasonable focus factor is to look at the last sprint (or even
-better, average the last few sprints).
+Már hallom is, ahogy tiltakozik: "Dehát ez miért jó? A sebesség mértéke így egy csomó olyan tényezőn
+múlik, mint hülye programozók, rossz kezdeti becslések, folytonosan növekvő feladatok, nem
+betervezett akadályok ésatöbbi..."
+
+Egyetértek abban, hogy ez egy körülbelüli érték, de attól még hasznos tud lenni és mindenképpen
+több, mint a semmi. Remek kiindulópontot biztosít. "Minden tényezőtől függetlenül, íme a különbség
+az előre megbecsült és a tényleges időtartam között."
+
+Mi történik, ha egy sztorit nem sikerült teljesen befejezni a sprint alatt? Miért ne adnánk fél
+pontokat a tényleges sebesség mérésekor? Ez jól tükrözi a Scrum (és minden agilis fejlesztési
+módszertan) szellemiségét, vagyis hogy a legfőbb dolog befejezett, kiadható dolgokat készíteni. A
+félkész termék értéke nulla (a valóságban akár negatív értéke is lehet). Ha többre kíváncsi ezzel
+kapcsolatban, olvassa el Donald Reinertsen "A dizájn-gyár irányítása" című könyvét.
+
+És hogy milyen feketemágiát használunk a sebesség becslésére?
+
+Az egyik legegyszerűbb mód a sebesség becslésre a múltbeli értékek használata. Megnézzük, hogy
+mennyi volt az elmúlt pár sprintben vett sebesség és feltételezzük, hogy nagyjából most is
+ugyanannyi lesz.
+
+Ezt a módszert "tegnapi időjárás"-nak is nevezik és csak olyan csapatok esetén működik, akik már
+maguk mögött tudnak néhány sprintet és a következő sprintet is hasonló körülmények között csinálják,
+ami persze nem minden esetben igaz.
+
+Ennek egy fokkal bonyolultabb változatában az erőforrások alapján számítunk. Tegyük fel, hogy egy 3
+hetes sprintet tervezünk (ami 15 munkanap) egy négyfős csapatban. Lisa kivett két nap szabadságot,
+Dave csak az ideje felében tud segíteni és ráadásul az egyik napot szabadságon tölti.
+Végeredményben:
 
 <figure>
 
-Actual velocity is the sum of the initial estimates of all stories that were completed last
-sprint.
+...vagyis ez 50 ember-napot jelent erre a sprintre.
 
-Let’s say last sprint completed 18 story points using a 3-person team consisting of Tom, Lisa,
-and Sam working 3 weeks for a total of 45 man- days. And now we are trying to figure out our
-estimated velocity for the upcoming sprint. To complicate things, a new guy Dave is joining
-the team for that sprint. Taking vacations and stuff into account we have 50 man-days next
-sprint.
+Akkor a becsült sebességünk 50? Nem, mivel a becslésünk mértékegysége a sztori pont, ami esetünkben
+nagyjából egy "ideális ember-nap"-nak felel meg. Egy ideális ember-nap egy tökéletesen hatékony és
+zavartalan munkanap, ami a gyakorlatban nagyon ritkán fordul elő. Ráadásul számolnunk kell előre nem
+tervezett feladatokkal, vagy esetleg lebetegedő emberekkel is.
 
-<figure>
-
-So our estimated velocity for the upcoming sprint is 20 story points. That means the team
-should add stories to the sprint until it adds up to approximately 20.
+Éppen ezért a becsült sebességünk biztosan kisebb lesz 50-nél. Node mennyivel kisebb? Erre
+használjuk a "koncentrációs tényezőt".
 
 <figure>
 
-In this case the team may choose the top 4 stories for a total of 1 story points, or the top
-5 stories for a total of 24 story points. Let’s say they choose 4 stories, since that came closest
-to 20 story points. When in doubt, choose fewer stories.
+A koncentrációs tényező azt közelíti, hogy a csapat mennyire összpontosít. Ha ez a tényező alacsony,
+az azt jelenti, hogy a csapat sok akadállyal számol vagy például nem bízik a saját becsléseiben.
 
-Since these 4 stories add up to 1 story points, their final estimated velocity for this
-sprint is 1.
+A koncentrációs tényező számításakor legreálisabb az előző sprintet (vagy ami még jobb, az elmúlt
+néhány sprint átlagát) alapul venni.
 
-Yesterday’s weather is a handy technique but use it with a dose of common sense. If last
-sprint was an unusually bad sprint because most of the team was sick for a week, then it may
-be safe to assume that you won’t be that unlucky again and you could estimate a higher focus
-factor next sprint. If the team has recently installed a new lightning-fast continuous build
-system you could probably increase focus factor due to that as well. If a new person is
-joining this sprint you need to decrease focus factor to take his training into account. Etc.
+<figure>
 
-Whenever possible, look back several sprints and average out the numbers to get more reliable
-estimates.
+A valós sebesség az előző sprintben befejezett sztorik kezdeti becslésének összege.
 
-What if the team is completely new so you don’t have any statistics? Look at the focus factor
-of other teams under similar circumstances.
-What if you have no other teams to look at? Guess a focus factor. The good news is that your
-guess will only apply to the first sprint. After that you will have statistics and can
-continuously measure and improve your focus factor and estimated velocity.
+Tegyük fel, hogy egy három fős csapat (Tom, Lisa és Sam) az előző három hetes (45 ember-napos)
+sprintben 18 sztori pontot fejezett be és próbáljuk megbecsülni a következő sprint sebességét.
+Legyen a helyzet még bonyolultabb és csatlakozzon a csapathoz egy új ember, Dave. Mindent
+egybevetve számoljuk egy 50 ember-napos sprinttel.
 
-The “default” focus factor I use for new teams is usually 70%, since that is where most of our
-other teams have ended up over time.
+<figure>
 
-Which estimating technique do we use?
+Tehát az előzetes becslésünk 20 sztori pont, azaz hogy a csapat maximum 20 pont erejéig adhat
+sztorikat a sprinthez.
+
+<figure>
+
+Ebben a helyzetben a csapat választhatja a legfelső 4 sztorit 1 sztori pont értékben vagy a felső 5
+sztorit 24 értékben. Tételezzük fel, hogy ebben az esetben 4 sztorit választanak, mivel ez van
+közelebb a 20 ponthoz. Kétség esetén inkább válasszon kevesebb sztorit.
+
+Mivel a 4 sztori összesen 1 sztori pontot jelent, a végső sebesség erre a sprintre 1-nek adódik.
+
+A tegnapi időjárás hasznos tud lenni, de csak ha nem gondolkodás nélkül használja. Ha az előző
+sprint kivételesen rossz volt, mert a csapat felét egy hétre leverte a láz, akkor nyugodtan
+feltételezheti, hogy ezúttal nem lesz ilyen pechje és használhat magasabb koncentrációs tényezőt. Ha
+a csapat nemrég állított üzembe egy villámgyors continuous build rendszert akkor nyugodt szívvel
+növelheti a koncentrációs tényezőt. Ha egy új tag érkezett a csapathoz, akkor nyugodtan csökkentse a
+koncentrációs tényezőt, mivel valószínűleg időt fog igénybe venni a betanítása.
+
+A minél pontosabb becslés érdekébe amikor csak lehet, használja a legutóbbi pár sprint átlagát.
+
+De mi van, ha a csapat teljesen új és még nincs semmilyen múltbéli adata? Ez esetben használhatja
+más csapatok hasonló helyzetben kapott koncentrációs tényezőjét. Ha nem ismer egyetlen más
+hasonló csapatot sem, akkor nyugodtan csapjon a hasára, hiszen ez a tényező csak az első
+sprintre vonatkozik, és utána már valós adatokra fog tudni hivatkozni.
+
+Számomra az "alapértelmezett" koncentrációs tényező új csapatok esetében általában 70%, mivel a
+legtöbb csapatom valahol e körül mozgott.
+
+Melyik becslési technikát használjuk?
 -------------------------------------
-I mentioned several techniques above - gut feeling,
-velocity calculation based on yesterday’s weather, and velocity calculation based on available
-man-days and estimated focus factor.
+A fentiekben ismertettem néhány technikát, a megérzésen alapuló becsléstől kezdve a tegnapi
+időjáráson át a rendelkezésre álló munkanapokon és a koncentrációs tényezőn alapuló számításig.
 
-So which technique do we use?
+Hogy mi melyik technikát használjuk?
 
-We usually combine all these techniques to a certain degree. Doesn’t really take long.
+Általában a fentiek valamilyen elegyét használjuk, ami nem igazán vesz sok időt igénybe.
 
-We look at focus factor and actual velocity from last sprint. We look at our total resource
-availability this sprint and estimate a focus factor. We discuss any differences between these
-two focus factors and make adjustments as necessary.
+Kezdetnek megnézzük az előző sprint tényleges sebességét és koncetrációs tényezőjét, majd
+összevetjük ezt a következő sprintre számított rendelkezésre állással és megbecsüljük a
+koncentrációs tényezőt. Ha a kettő között jelentős eltérések adódnak, akkor azt megbeszéljük és a
+végén megegyezünk egy értékben.
 
-Once we have a preliminary list of stories to be included in the sprint I do a “gut feeling”
-check. I ask the team to ignore the numbers for a moment and just think about if this feels
-like a realistic chunk to bite off for a sprint. If it feels like too much, we remove a story
-or two. And vice versa.
+Ha már van egy előzetes sztori listánk erre a sprintre, akkor megnézem, hogy mennyire érzem
+reálisnak, illetve a csapatot is megkérem, hogy egy pillanatra felejtsék el a pontokat és mondják
+el, hogy mennyire érzik reálisnak ez a lista a sprintre. Ha túl soknak tűnik, akkor kihagyunk egy
+sztorit, ha túl soknak, hozzáadunk egyet.
 
-At the end of the day, the goal is simply to decide which stories to include in the sprint.
-Focus factor, resource availability, and estimated velocity are just a means to achieve that
-end.
+Végső soron a cél mindössze annyi, hogy kiválasszuk a sprintbe kerülő sztorikat. A koncentrációs
+tényezők, erőforrás rendelkezésre-állások és becsült sebességek mindössze eszközök arra, hogy ezt a
+célt elérjük.
 
-Why we use index cards
-----------------------
-Most of sprint planning meeting is spent dealing with stories in the
-product backlog. Estimating them, reprioritizing them, clarifying them, breaking them down,
-etc.
+Miért használunk cetliket
+-------------------------
+A sprint planning meeting nagy részében a product backlog sztorijait becsüljük, rendezzük őket
+fontosság alapján, tisztázzuk vagy épp kisebb feladatokra osztjuk őket.
 
-How do we do this in practice?
+Ez a gyakorlatban hogy is néz ki?
 
-Well, by default, the teams used to fire up the projector, show the Excel- based backlog, and
-one guy (typically the product owner or Scrum master) would take the keyboard, mumble through
-each story and invite discussion. As the team and product owner discussed priorities and
-details the guy at the keyboard would update the story directly in Excel.
+Régebben kivetítettük a product backlogot tartalmazó Excel-t és valaki (tipikusan vagy a Product
+Owner vagy a Scrum Master) a billentyűzet mellől végigment az egyes sztorikon elindítva a
+beszélgetést. Amikor például a fontosság vagy bármi egyéb részlet változott, ez a valaki frissítette
+a sztorit közvetlenül az Excel táblában.
 
-Sounds good? Well it isn’t. It usually sucks. And what’s worse, the team normally doesn’t
-notice that it sucks until they reach the end of the meeting and realize that they still
-haven’t managed to go through the list of stories!
+Remekül hangzik? Hát nem az, hanem szívás. És ami a legrosszabb, hogy a csapat általában észre sem
+veszi, hogy mekkora szívás amíg a meeting a vége felé nem közeledik és még mindig nem sikerült
+végigmenni a sztorik listáján.
 
-A solution that works much better is to create index cards and put them up on the wall (or a
-large table).
+Sokkal hatékonyabb megoldásnak találtuk a falra (vagy egy nagyobb asztalra) ragasztott cetliket.
 
 <figure>
 
-This is a superior user interface compared to computer & projector, because:
-* People stand up and walk around => they stay awake and alert longer.
-* Everybody feels more personally involved (rather than just the guy with the keyboard).
-* Multiple stories can be edited simultaneously.
-* Reprioritizing is trivial – just move the index cards around.
-* After the meeting, the index cards can be carried right off to the team room and be used as a
-wall-based taskboard (see pg 45 “How we do sprint backlogs”).
+Ez a következő szempontok alapján messze jobb a kivetítőnél:
+* Az emberek állnak és körbesétálhatnak => tovább maradnak éberek
+* Sokkal személyesebb élményt nyújt (mintha csak egyvalakinél lenne a billentyűzet)
+* Egyszerre több sztorin lehet dolgozni
+* Triviális dolog átrendezni a fontosság alapján
+* A meeting után a cetlik könnyen átvihetőek a csapat szobájába és közvetlenül használhatóak a fali
+  feladat-térképen. (Lásd: "Hogyan használjuk a Sprint Backlogot")
 
-You can either write them by hand or (like we usually do) use a simple script to generate
-printable index cards directly from the product backlog.
+Írhatja kézzel is (mi kézzel írjuk) de használhat például egy szkriptet, ami ezeket a cetliket
+közvetlenül a Product Backlog-ból generálja.
 
 <figure>
 
-PS – the script is available on my blog at http://blog.crisp.se/henrikkniberg.
+Ui: a blogomról letölthető a szkript, amit mi használunk: http://blog.crisp.se/henrikkniberg
 
-Important: After the sprint planning meeting, our Scrum master manually updates the Excel-based
-product backlog with respect to any changes that were made to the physical story index cards. Yes,
-this is a slight administrative hassle but we find this perfectly acceptable considering how
-much more efficient the sprint planning meeting is with physical index cards.
+Fontos! A Sprint Planning Meeting után a Scrum Master feladata kézzel frissíteni a product backlogot
+tartalmazó Excel táblát a cetlik alapján. Igen, ez némi többletmunkát jelent, de ez eltörpül a
+Sprint Planning Meetingben nyert hatékonyság mellett.
 
-One note about the “Importance” field. This is the importance as specified in the Excel-based
-product backlog at the time of printing. Having it on the card makes it easy to sort the cards
-physically by importance (normally we place more important items to the left, and less important
-items to the right). However, once the cards are up on the wall you can ignore the importance
-rating and instead use the physical ordering on the wall to indicate relative importance ratings. If
-the product owner swaps two items don’t waste time updating the importance rating on the paper.
+Egy gyors megjegyzés a "Fontosság" mezőről. A cetli készítésekor ez az Excel táblában található
+fontosságot tartalmazza, ami abban segít, hogy egyszerűen rendezhessük a cetliket fontosság alapján
+(nálunk átalában balról jobbra csökken a fontosság). Ha a cetlik már felkerültek a falra, akkor már
+nincs szükség ezekre a számértékekre, helyette egyszerűen a fizikai elhelyezkedés jelzi a
+fontosságot. Ha a Product Owner felcserél két cetlit, ne vesztegessen időt a fontosság mező
+frissítésével, elég ha a meeting után frissíti az Excel táblát.
 
-Just make sure you update the importance ratings in the Excel-based product backlog after the
-meeting.
+Az időbecslések általában egyszerűsödnek (és pontosabbá válnak) ha a sztorit kisebb feladatokra
+bontjuk. Mi általában az "aktivitás" szót használjuk, mert svéd nyelven a "feladat" szónak teljesen
+más a jelentése. Ez a felbontás is egyszerű a cetlik használatával, sőt több sztorit is könnyen szét
+lehet bontani párhuzamosan.
 
-Time estimates are usually easier to do (and more accurate) if a story is broken down into tasks.
-Actually we use the term “activity” because the word “task” means something completely different in
-Swedish :o) This is also nice and easy to do with our index cards. You can have the team divide into
-pairs and break down one story each, in parallel.
-
-Physically, we do this by adding little post-it notes under each story, each post-it reflecting one
-task within that story.
+Ezt úgy szoktuk csinálni, hogy a sztori alá újabb cetliket ragasztunk, ahol minden cetli egy-egy
+feladat a sztorin belül.
 
 <figure>
 
 <figure>
 
-We don’t update the Excel-based product backlog with respect to our task breakdowns, for two
-reasons:
-* The task breakdown is usually quite volatile, i.e. they are frequently changed and refined
-during the sprint, so it is too much of a hassle to keep the product backlog Excel synchronized.
-* The product owner doesn’t need to be involved at this level of detail anyway.
+Nem szoktuk felvezetni az Excel-alapú product backlogba a feladatokat már csak két okból sem:
+* A feladatok elég gyakran változnak a sprint során és túl sok munka lenne állandóan szinkronizálni
+  a backlogot.
+* A Product Owner amúgy sem kell, hogy részt vegyen ezen a szinten
 
-Just as with the story index cards, the task breakdown post-its can be directly reused in the sprint
-backlog (see pg 45 “How we do sprint backlogs”).
+Ahogy a sztori cetliket, úgy a feladat cetliket is közvetlenül fel lehet használni a sprint
+backlogban (Lásd "Hogyan használjuk a Sprint Backlogot")
 
 Definition of “done”
 --------------------
