@@ -456,206 +456,202 @@ További módszerek, amiket kipróbáltunk vagy fontolóba vettünk:
 * Agilis fejlesztőeszközök, mint például VersionOne, ScrumWorks, XPlanner, stb... Még nem jutottunk
   el oda, hogy ezeket messzemenően teszteljük, de előbb-utóbb ki fogjuk őket próbálni.
 
-4 How we do sprint planning
+4 Hogyan tervezzük a Sprinteket
 ===========================
-Sprint planning is a critical meeting,
-probably the most important event in Scrum (in my subjective opinion of course). A badly
-executed sprint planning meeting can mess up a whole sprint.
+A Sprint Planning egy nagyon fontos meeting, talán a legfontosabb dolog a Scrum-ban (legalábbis 
+véleményem szerint) Egy rosszul végrehajtott Sprint Planning Meeting hatással lehet a teljes
+Sprint-re.
 
-The purpose of the sprint planning meeting is to give the team enough information to be able
-to work in undisturbed peace for a few weeks, and to give the product owner enough confidence
-to let them do so.
+A Sprint Planning Meeting célja, hogy a csapat számára elég információval szolgáljon ahhoz, hogy
+zavartalanul dolgozhassanak egy pár hétig illetve hogy elég biztonságot adjon a Product Owner-nek,
+hogy ezt engedje is.
 
-OK, that was fuzzy. The concrete output of the sprint planning meeting is:
-* A sprint goal.
-* A list of team members (and their commitment levels, if not 100%).
-* A sprint backlog (= a list of stories included in the sprint).
-* A defined sprint demo date.
-* A defined time and place for the daily scrum.
+Na jó, ez elég általános volt. Konkrétan a következő dolgokról születik döntés:
+* A Sprint célja
+* A csapat tagjainak listája (és a rendelkezésreállásuk szintje, ha nem 100%)
+* Egy Sprint Backlog ( = a Sprint alatt elvégzendő sztorik listája)
+* A Sprint demonstráció dátuma
+* A Napi Scrum Meeting helye és időpontja
 
-Why the product owner has to attend
------------------------------------
-Sometimes product owners are reluctant to spend hours with
-the team doing sprint planning. “Guys, I’ve already listed what I want. I don’t have time to
-be at your planning meeting”. That is a pretty serious problem.
+Miért kell a Product Ownernek jelen lennie
+------------------------------------------
+Néhány esetben a Product Owner nem szeretne hosszú órákat vesztegetni a csapattal a Sprint Planning
+Meetingen. "Srácok, én már leírtam, mit akarok. Nincs időm részt venni a meetingen". Ez egy elég
+súlyos probléma.
 
-The reason why the whole team and the product owner have to be at the sprint planning meeting
-is because each story contains three variables that are highly dependent on each other.
+Az egész csapat és a Product Owner azért kell, hogy jelen legyen a meetingen, mert minden sztoriban
+három egymástól erősen függő változó rejtőzik.
 
 <figure>
 
-Scope and importance are set by the product owner. Estimate is set by the team. During a
-sprint planning meeting, these three variables are fine- tuned continuously through
-face-to-face dialog between the team and the product owner.
+A kiterjedést és a fontosságot a Product Owner határozza meg. A becslést a csapat. A Sprint Planning
+során a szemtől-szembeni megbeszéléssel folyamatosan ezeket a változókat finomhangoljuk.
 
-Normally the product owner starts the meeting by summarizing his goal for the sprint and the
-most important stories. Next, the team goes through and time-estimates each story, starting
-with the most important one. As they do this, they will come up with important scope questions
-– “does this ‘delete user’ story include going through each pending transaction for that user
-and canceling it?’” In some cases the answers will be surprising to the team, prompting them
-to change their estimates.
+Normális esetben a Product Owner a sprint céljának összefoglalásával és a legfontosabb sztorik
+listájával nyitja a meetinget. Ezután a csapat a legfontosabbal kezdve végigmegy sztorik listáján és
+megbecsüli a szükséges időket. A becslések közben azonban lényeges kérdések merülnek fel a sztori
+kiterjedését illetően - "ez a 'felhasználó törlése' magában foglalja azt, hogy megszakítjuk a
+felhasználó összes várakozó tranzakcióját?" Néhány esetben a válaszok meg is lephetik a csapatot és
+jelentősen befolyásolhatja a becsléseket.
 
-In some cases the time estimate for a story won’t be what the product owner expected. This may
-prompt him to change the importance of the story. Or change the scope of the story, which in
-turn will cause the team to re-estimate, etc, etc.
+Egyes esetekben a sztorira adott becslés eltérhet a Product Owner elképzeléseitől. Ennek hatására
+megváltoztathatja a sztori fontosságát, vagy esetleg a sztori kiterjedését, ami aztán újabb becslést
+igényel a csapattól.
 
-This type of direct collaboration is fundamental to Scrum and, in fact, all agile software
-development.
+Ez a közvetlen együttműködés alapvető fontosságú a Scrum-ban és minden agilis fejlesztési
+módszertanban.
 
-What if the product owner still insists that he doesn’t have time to join sprint planning
-meetings? I usually try one of the following strategies, in the given order:
-* Try to help the product owner understand why his direct participation is crucial and hope that
-he changes his mind.
-* Try to get someone in the team to volunteer as product owner proxy
-during the meeting. Tell the product owner “Since you can’t join our meeting, we will let Jeff
-here represent you as a proxy. He will be fully empowered to change priorities and scope of
-stories on your behalf during the meeting. I suggest you synchronize with him as much as
-possible before the meeting. If you don’t like Jeff to be proxy please suggest someone else,
-as long as that person can join us for the full length of the meeting.”
-* Try to convince the
-management team to assign a new product owner.
-* Postpone the sprint launch until the product
-owner finds time to join the meeting. In the meantime, refuse to commit to any deliveries. Let
-the team spend each day doing whatever they feel is most important that day.
+Mi történjen, ha a Product Owner továbbra sem szeretné az idejét a Sprint Planning Meetingen
+tölteni? Általában a következő taktikák egyikét szoktam alkalmazni ebben a sorrendben:
+* Elmagyarázom a Product Owner-nek, hogy miért elengedhetetlen a jelenléte annak reményében, hogy
+  megváltoztatja a véleményét.
+* Megkérem a csapatot, hogy egy önkéntest jelöljön ki a Product Owner közvetítőjeként. A Product
+  Owner-nek a következőt mondom: "Mivel nem tudsz jelen lenni a meetingen, Jeff fog téged
+  képviselni és fel lesz hatalmazva hogy megváltoztassa a prioritásokat és a sztorik kiterjedését.
+  Amennyire csak lehet próbálj megegyezni vele még a meeting előtt. Ha nem értesz egyet azzal, hogy
+  Jeff képviseljen téged, akkor jelölj ki valaki mást, aki a meeting teljes ideje alatt jelen tud
+  lenni."
+* Megpróbálom meggyőzni a vezetést, hogy rendeljenek ki egy új Product Owner-t.
+* Elhalasztom a sprintet amíg a Product Owner nem talál elég időt hogy jelen legyen és ezalatt nem
+  kötelezem el magam semmilyen kiadás mellett. A csapatot hagyom azokon a feladatokon dolgozni, amit
+  épp a legfontosabbnak gondolnak.
 
-Why quality is not negotiable
------------------------------
-In the triangle above I intentionally avoided a fourth variable
-quality.
+Miért nem engedünk a minőségből
+-------------------------------
+A fenti háromszögben szándékosan nem említettem egy negyedik változót: a minőséget.
 
-I try to distinguish between internal quality and external quality.
-* External quality is what is perceived by the users of the system. A slow and non-intuitive
-user interface is an example of poor external quality.
-* Internal quality refers to issues
-that usually aren’t visible to the user, but which have a profound effect on the
-maintainability of the system. Things like system design consistency, test coverage, code
-readability, refactoring, etc.
+Kétféle minőséget szoktam megkülönböztetni: belső- és külső minőséget.
+* Külső minőségnek hívom a felhasználók által látható minőséget. A lassú vagy nem intuitív
+  felhasználói interfész jó példája a rossz külső minőségnek.
+* Belső minőségnek tekintem az olyan tényezőket, amelyek ugyan nem láthatóak a felhasználó számára,
+  de jelentősen befolyásolják a rendszer karbantarthatóságát. Ide tartoznak az olyan dolgok, mint az
+  architektúra konzisztenciája, teszt lefedettség, a kód olvashatósága vagy a refaktorálás.
 
-Generally speaking, a system with high internal quality can still have a low external quality.
-But a system with low internal quality will rarely have a high external quality. It is hard to
-build something nice on top of a rotten fundament.
+Általánosságban egy kiemelkedő belső minőséggel rendelkező rendszer önmagában nem jelent jó külső
+minőséget. Azonban egy rossz belső minőséggel rendelkező rendszer nagyon ritkán rendelkezik jó külső
+minőséggel, mivel rendkívül nehéz jó dolgot építeni ha az alapozás düledezik.
 
-I treat external quality as part of scope. In some cases it might make perfect business sense
-to release a version of the system that has a clumsy and slow user interface, and then release
-a cleaned up version later. I leave that tradeoff to the product owner, since he is
-responsible for determining scope.
+A külső minőség a kiterjedés (scope) része. Esetenként üzleti szempontból teljesen elfogadható ha a
+felhasználói felület lassú vagy nehéz használni, ha például egy későbbi kiadásban ezeket javítjuk.
+Annak eldöntése, hogy ez tényleg megéri-e, a Product Owner dolga.
 
-Internal quality, however, is not up for discussion. It is
-the team’s responsibility to maintain the system’s quality under all circumstances and this is
-simply not negotiable. Ever.
+A belső minőség azonban nem vita tárgya. A csapat feladata minden körülmények között megőrízni a
+rendszer jó minőségét és ebből nem engedünk soha, semmi szín alatt.
 
-(Well, OK, almost never)
+(Na jó, majdnem soha)
 
-So how do we tell the difference between internal quality issues and external quality issues?
+De hogyan is különböztetjük meg a belső és külső minőséget érintő kérdéseket?
 
-Let’s say the product owner says “OK guys, I respect your time estimate of 6 story points, but I’m
-sure you can do some kind of quick-fix for this in half the time if you just put your mind to it.”
+Tegyük fel, hogy a Product Owner azt mondja: "Rendben, értem én, hogy 6 sztori pontra becsültétek,
+de biztos vagyok benne, hogy fele idő alatt össze tudtok hozni egy gyors fixet, ha akarjátok."
 
-Aha! He is trying to use internal quality as a variable. How do I know?  Because he wants us to
-reduce the estimate of the story without “paying the price” of reducing the scope. The word
-“quick-fix” should trigger an alarm in your head...
+Aha! A belső minőséget változónak próbálja tekinteni. Hogy miből tudom? Mert le akarja csökkenteni a
+becslést anélkül, hogy azért fizetne a csökkentett kiterjedéssel. A "gyors fix" szó láttán
+gondolatban meg kell szólalnia egy vészcsengőnek...
 
-And why don’t we allow this?
+És hogy miért is nem hagyjuk ezt?
 
-My experience is that sacrificing internal quality is almost always a terrible, terrible idea. The
-time saved is far outweighed by the cost in both short and long term. Once a code base is permitted
-to start deteriorating it is very hard to put the quality back in later.
+Az a tapasztalatom, hogy a belső minőség feláldozása szinte mindig nagyon nagyon rossz ötlet. Ami
+időt nyerünk rajta, azt kamatostól elveszítjük mind rövid, mind pedig hosszú távon. Ha egy kódbázis
+minősége elkezd romlani, akkor nagyon nehéz azt utólag helyrehozni.
 
-Instead I try to steer the discussion towards scope instead. “Since it is important for you to get
-this feature out early, can we reduce the scope so that it will be quicker to implement? Perhaps we
-can simplify the error handling and make 'Advanced error handling' a separate story that we save for
-the future? Or can we reduce the priority of other stories so that we can focus on this one?”
+Ehelyett megpróbálom a vitát a kiterjedés irányába terelni. "Mivel fontos hogy ezt a sztorit minél
+előbb kiadhassuk, lecsökkenthetjük-e a méretét, hogy gyorsabban implementálhassuk? Például a
+hibakezelést leegyszerűsítjük és később egy másik sztoriban dolgozunk a bonyolultabb hibakezelésen?
+Vagy módosíthatjuk a többi feladat fontosságát, hogy inkább erre koncentrálhassunk?"
 
-Once the product owner has learned that internal quality isn’t negotiable he usually gets quite good
-at manipulating the other variables instead.
+Ha a Product Owner megszokja, hogy a belső minőség nem egyezkedés tárgya, elég hamar ráérez, hogy
+helyett hogyan befolyásolja a többi paramétert.
 
-Sprint planning meetings that drag on and on…
----------------------------------------------
-The most difficult thing about sprint planning
-meetings is that:
-1) People don’t think they will take so long time
-2) ... but they do!
+Véget nem érő Sprint Planning Meeting-ek...
+-------------------------------------------
+A legnehezebb dolog a Spring Planning Meetingekben, hogy:
+1) Mindenki azt hiszi, hogy nem vesznek sok időt igénybe
+2) ... de igen.
 
-Everything in Scrum is time-boxed. I love that one, simple, consistent rule. We try to stick to it.
+A Scrum-ban minden időkorlátozott. Szeretem ezt az egyszerű, konzisztens szabályt ls próbáljuk is
+betartani.
 
-So what do we do when the time-boxed sprint planning meeting is nearing the end and there is no sign
-of a sprint goal or sprint backlog? Do we just cut it short??? Or do we extend it for an hour? Or do
-we end the meeting and continue the next day?
+Mit tegyünk, ha egy ilyen időkorlátozott Sprint Planning Meeting az időkorlát vége felé közeledik és
+még nincs eldöntött Sprint cél vagy Sprint Backlog? Egyszerűen hagyjuk félbe? Vagy toljuk ki egy
+órával? Vagy esetleg hagyjuk félbe, de folytassuk másnap?
 
-This happens over and over, especially for new teams. So what do you do? I don’t know. But what do
-we do? Oh, um, well, usually I brutally cut the meeting short. End it. Let the sprint suffer. More
-specifically, I tell the team and product owner “so, this meeting ends in 10 minutes. We don’t have
-much of a sprint plan really. Should we make do with what we have, or should we schedule another
-4-hour sprint planning meeting tomorrow from 8 am?”. You can guess what they will answer... :o)
+Ez egy örökös probléma, főleg új csapatok esetében. Mit tegyünk hát? Fogalmam sincs. De mi általában
+brutálisan félbeszakítjuk még ha ez a sprint rovására megy is. Egész pontosan azt mondom a csapatnak
+és a Product Owner-ner, hogy "a meetingre kijelölt idő 10 perc múlva lejár és még nincs egy kézzel
+fogható sprint tervünk. Próbáljunk meg ezzel gazdálkodni, vagy hívjunk össze egy új 4-órás meetinget
+holnap reggel 8-ra?". Nem nehéz kitalálni, hogy általában mi a válasz... :)
 
-I’ve tried letting the meeting drag on. That usually doesn’t accomplish anything, because
-people are tired. If they haven’t produced a decent sprint plan in 2 – 8 hours (or however long
-your time-box is), they probably won’t manage it given another hour. The next option is
-actually quite OK, to schedule a new meeting next day. Except that people usually are impatient
-and want to get going with the sprint, and not spend another bunch of hours planning.
+Próbáltam kitolni a meetinget, de ez szinte soha sem vezetett semmire, mert az emberek már fáradtak.
+Ha nem voltak képesek összehozni egy normális sprint tervet 2-8 óra alatt (vagy amilyen hosszúra
+szabta az időkeretet) akkor valószínűleg egy további óra sem fog sokat számítani. A következő -
+amúgy teljesen oké - opció, hogy összehívunk egy új meetinget a következő napra. Csakhogy általában
+az emberek türelmetlenek és inkább nekikezdenének már a sprintnek ahelyett, hogy még egy napot
+töltsenek sprint tervezéssel.
 
-So I cut it short. And yes, the sprint suffers. The upside, however, is that the team has
-learned a very valuable lesson, and the next sprint planning meeting will be much more
-efficient. In addition, people will be less resistant when you propose a meeting length that
-they previously would have thought was too long.
+Úgyhogy félbevágom és igen, a sprint issza meg a levét. A jó oldala a dolognak viszont az, hogy a
+csapat megtanult egy fontos leckét és a következő sprint planning meeting sokkal gördülékenyebben
+fog menni. Ráadásul az emberek kevésbé fognak ellenkezni, ha egy olyan időkeretet szab, amit
+egyébként túl hosszúnak tartanának.
 
-Learn to keep to your time-boxes, learn to set realistic time-box lengths.  That applies both
-to meeting lengths and sprint lengths.
+Fontos, hogy megtanulja betartani az időkereteket és hogy realisztikus időkereteket szabjon meg. Ez
+vonatkozik mind a meetingekre, mind pedig a sprint hosszára.
 
-Sprint planning meeting agenda
-------------------------------
-Having some kind of preliminary schedule for the sprint planning
-meeting will reduce the risk of breaking the timebox.
+Sprint Planning Meeting napirend
+--------------------------------
+Egy előzetes menetterv készítése jelentősen lecsökkenti annak az esélyét, hogy a meeting kifut a
+megszabott időkeretből.
 
-Here’s an example of a typical schedule for us.
-Sprint planning meeting: 13:00 – 17:00 (10 minute break each hour)
+Íme a tipikus menetrendünk.
+Sprint Planning Meeting: 13:00- 17:00 (10 perc szünet minden órában)
 
-* 13:00 – 13:30. Product owner goes through sprint goal and summarizes product backlog. Demo place,
-date and time is set.
-* 13:30 – 15:00. Team time-estimates, and breaks down items as necessary.
-Product owner updates importance ratings as necessary. Items are clarified. “How to demo” is
-filled in for all high-importance items.
-* 15:00 – 16:00. Team selects stories to be included in
-sprint. Do velocity calculations as a reality check.
-* 16:00 – 17:00. Select time and place for
-daily scrum (if different from last sprint). Further breakdown of stories into tasks.
+* 13:00 - 13:30. A Product Owner ismerteti a sprint célját és összefoglalja a Termék Backlogot.
+  Kijelölésre kerül a Demo helye és ideje.
+* 13:30 - 15:00. A csapat elkészíti a becsléseket és lebontja a nagyobb feladatokat. A Product Owner
+  frissíti a sztorik fontosságát. A feladatok pontosításra kerülnek. Minden fontos sztorihoz
+  kitöltésre kerül a "Demo módja" mező.
+* 15:00 - 16:00. A csapat kiválasztja a következő sprintbe kerülő elemeket. Ellenőrzik hogy a
+  sztorik valóban beleférnek-e a sprintbe.
+* 16:00 - 17:00. Kijelölésre kerül a Napi Scrum helye és ideje (ha eltér az előző sprinttől). A
+  sztorik lebontása feladatokra.
 
-The schedule is by no means strictly enforced. The Scrum master may lengthen or shorten the
-sub-time-boxes as necessary as the meeting progresses.
+Ezt a menetrendet nem tartatjuk be vasszigorral. A Scrum Master a körülményeknek megfelelően
+hosszabbíthatja vagy rövidítheti az egyes lépéseket.
 
-Defining the sprint length
---------------------------
-One of the outputs of the sprint planning meeting is a defined sprint
-demo date. That means you have to decide on a sprint length.
+A Sprint hosszának megválasztása
+--------------------------------
+A Sprint Planning Meeting egyik eleme a sprint demo idejének megválasztása. Ez valójában a sprint
+időtartamának megválasztását is jelenti.
 
-So what is a good sprint length?
+Mit tekinthetünk jó Sprint hossznak?
 
-Well, short sprints are good. They allow the company to be “agile”, i.e.
-change direction often.
-Short sprints = short feedback cycle = more frequent deliveries = more frequent customer feedback =
-less time spent running in the wrong direction = learn and improve faster, etc.
+Jó, ha a sprint rövid, mivel ez segíti a vállalat "agilitását", azaz, hogy gyakran képes irányt
+váltani.
+Rövid sprint = gyors visszajelzés = több kiadás = gyorsabb felhasználói visszajelzés = kevesebb idő
+pazarlása vakvágányokon = gyorsabb adaptáció, stb...
 
-But then, long sprints are good too. The team gets more time to build up momentum, they get more
-room to recover from problems and still make the sprint goal, you get less overhead in terms of
-sprint planning meetings, demos, etc.
+De ugyanakkor a hosszabb sprintek is jók, mivel időt adnak a csapatnak hogy felgyorsuljanak és több
+teret ad nekik a problémák megoldására, hogy végül a sprint célját teljesítsék; továbbá kevesebb
+időt veszítenek a Sprint Planning Meetingeken vagy demókon.
 
-Generally speaking product owners like short sprints and developers like long sprints. So sprint
-length is a compromise. We experimented a lot with this and came up with our favorite length: 3
-weeks. Most of our teams (but not all) do 3 week sprints. Short enough to give us adequate
-corporate agility, long enough for the team to achieve flow and recover from problems that pop
-up in the sprint.
+A Product Owner-ek általában a rövid-, míg a fejlesztők hosszabb sprinteket szeretnek. A Sprint
+hossza valójában kompromisszum kérdése. Elég sokat kísérleteztünk ezzel és végül a három hetes
+sprint működött a legjobban nekünk. A legtöbb (de nem az összes) csapat 3 hetes sprinteket használ.
+Elég rövid, hogy biztosítsa a vállalat flexibilitását, de elég hosszú, hogy a csapat megfelelően
+koncentrálhasson és megoldhassa a sprint során esetlegesen felmerülő problémákat.
 
-One thing we have concluded is: do experiment with sprint lengths initially. Don’t waste too
-much time analyzing, just select a decent length and give it a shot for a sprint or two, then
-change length.
+Az egyik tanulság, amit levontunk, hogy kezdetben érdemes kísérletezni különböző sprint hosszakkal.
+Nincs szükség mélyreható vizsgálatra, csak válasszon egy jónak tűnő hosszot és próbálja ki egy pár
+sprint erejéig.
 
-However, once you have decided what length you like best, stick to it for an extended period of
-time. After a few months of experimentation we found that 3 weeks was good. So we do 3 week
-sprints, period.
-Sometimes it will feel slightly too long, sometimes slightly too short. But by
-keeping the same length this becomes like a corporate heartbeat which everyone comfortably
-settles into. There is no argument about release dates and such because everyone knows that
-every 3 weeks there is a release, period.
+Ha viszont megtalálta a legjobban fekvő sprint hosszat, akkor már ne nagyon változtasson rajta. Mi
+egy pár hónap kísérletezgetés után arra jutottunk, hogy a három hét jó nekünk, szóval három hetes
+sprinteket használunk és kész.
+
+Néha ez túl hosszúnak fog tűnni és néha túl rövidnek. De az azonos hosszhoz ragaszkodás egyfajta
+céges szívveréssé válik, amibe mindenki beleszokik. Nincsenek viták a kiadások időpontját illetően,
+mivel mindenki tudja, hogy a kiadás három hetente történik. És kész.
+
 
 Defining the sprint goal
 ------------------------
