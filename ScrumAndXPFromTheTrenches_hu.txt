@@ -954,353 +954,325 @@ Nem szoktuk felvezetni az Excel-alapú product backlogba a feladatokat már csak
 Ahogy a sztori cetliket, úgy a feladat cetliket is közvetlenül fel lehet használni a sprint
 backlogban (Lásd "Hogyan használjuk a Sprint Backlogot")
 
-Definition of “done”
+A "kész" definíciója
 --------------------
-It is important that the product owner and the team agree on a clear definition
-of “done”. Is a story complete when all code is checked in? Or is it complete only when it has been
-deployed to a test environment and verified by an integration test team? Whenever possible we use
-the done definition “ready to deploy to production” but sometimes we have to make do with the done
-definition “deployed on test server and ready for acceptance test”.
+Nagyon fontos, hogy a Product Owner és a csapat megegyezzen a "kész" pontos definíciójában. Készen
+van-e a sztori, amikor a kódot becsekkoljuk a verziókövető rendszerbe? Vagy esetleg csak akkor,
+amikor telepítettük a teszt rendszerre és az integrációs teszter csapat leellenőrizte? Mi a legtöbb
+esetben úgy definiáljuk a "készt", mint "éles telepítésre készen", de néha csak annyit tudunk
+mondani, hogy "telepítve a teszt rendszerre és tesztre készen áll".
 
-In the beginning we used to have detailed checklists for this. Now we often just say “a story is
-done when the tester in the Scrum team says so”.
-It is then up to the tester to make sure that
-product owner’s intent is understood by the team, and that the item is “done” enough to pass the
-accepted definition of done.
+Kezdetben részletes listát készítettünk ehhez, de újabban azt tartjuk, hogy "egy sztori akkor van
+kész, amikor a csapat azt mondja, hogy kész van". Ezután már a teszterek dolga biztosítani, hogy a
+csapat tényleg megértette a Product Owner szándékát és hogy a sztori megfelel az előre megegyezett
+követelményeknek.
 
-We’ve come to realize that all stories cannot be treated the same. A story named “Query users form”
-will be treated very differently from a story named “Operations manual”. In the latter case, the
-definition of “done” might simply mean “accepted by the operations team”. That is why common sense
-is often better than formal checklists.
+Arra jöttünk rá, hogy nem lehet minden sztorit ugyanúgy kezelni. A "Felhasználó-keresés" teljesen
+más, mint például a "Üzemeltetői kézikönyv", mivel az utóbbi esetében a "kész" definíciója lehet,
+hogy egyszerűen csak az, hogy "az üzemeltető csoport elfogadta". A legtöbb esetben a józan ész
+használatával jobb eredményt lehet elérni, mint egy részletes listával.
 
-If you often run into confusion about the definition of done (which we did in the beginning) you
-should probably have a “definition of done” field on each individual story.
+Ha gyakran merül fel probléma a "kész" definíciója kapcsán, érdemes lehet a sztorikhoz külön
+hozzáadni egy "kész definíciója" mezőt"
 
-Time estimating using planning poker
+Időbecslés Planning Poker-rel
 ------------------------------------
-Estimating is a team activity - every team member is usually
-involved in estimating every story. Why?
-* At the time of planning, we normally don’t know exactly who will be implementing which parts of
-which stories.
-* Stories normally involve several people and different types of expertise (user
-interface design, coding, testing, etc).
-* In order to provide an estimate, a team member needs
-some kind of understanding of what the story is about. By asking everybody to estimate each item, we
-make sure that each team member understands what each item is about. This increases the likelihood
-that team members will help each other out during the
-sprint. This also increases the likelihood that important questions about the story come up early.
-* When asking everybody to estimate a story we often discover discrepancies where two different team
-members have wildly different estimates for the same story. That kind of stuff is better to discover
-and discuss earlier than later.
+A becslés csapattevékenység, azaz a csapat minden tagja részt vesz minden sztori becslésében.
+Hogy miért?
+* A sprint tervezés folyamán általában még nem tudjuk, hogy az egyes részeket ki fogja majd
+  implementálni.
+* A sztorik általában több különböző szakértelmet igényelnek (felhasználói felület dizájn,
+  programozás, tesztelés, stb...)
+* A becsléshez elengedhetetlen, hogy tudjuk, hogy a sztori miről szól. Azzal, hogy mindenkit
+  megkérdezünk, voltaképp azt biztosítjuk, hogy mindenkinek lesz valamennyi fogalma az adott
+  sztoriról, ami cserében megnöveli annak a valószínűségét, hogy a csapattagok a sprint során
+  segítenek majd egymásnak. Abban is segít továbbá, hogy a fontos kérdések már az elején
+  előjöjjenek.
+* Azzal, hogy mindenkit megkérdezünk, gyakran előfordul, hogy két csapattag drasztikusan különböző
+  becslést ad ugyanarra a sztorira. Az így felmerülő kérdéseket jobb a lehető leghamarabb tisztázni.
 
-If you ask the team to provide an estimate, normally the person who understands the story best will
-be the first one to blurt one out.
-Unfortunately, this will strongly affect everybody else’s
-estimates.
+Amikor egy csapatot arra kér, hogy becsüljön meg egy feladatot, általában a feladatot legjobban
+ismerő tag fog először előállni egy becsléssel, ám ezzel befolyásolja a többiek döntését.
 
-There is an excellent technique to avoid this – it is called planning poker (coined by Mike Cohn I
-think).
+Van egy remek stratégia ennek elkerülésére - úgy hívják, hogy Planning Poker (ha jól emlékszem Mike
+Cohn találmánya)
 
 <figure>
 
-Each team member gets a deck of 13 cards as shown above. Whenever a story is to be estimated, each
-team member selects a card that represents his time estimate (in story points) and places it
-face-down on the table.
-When all team members are done the cards on the table are revealed
-simultaneously. That way each team member is forced to think for himself rather than lean on
-somebody else’s estimate.
+Minden tag kap egy a fentiekhez hasonló 13 kártyából álló paklit. Amikor egy sztorit becslünk, az
+egyes tagok kiválasztják és lefordítva az asztalra teszik azt a lapot, amely szerintük a becsült
+időtartamot (sztori pontban) a lejobban képviseli. Amikor mindenki készen áll, a kártyákat egyszerre
+megfordítják. Így mindenki saját maga kell, hogy döntsön és nem hagyatkozhat senki valaki más
+becslésére.
 
-If there is a large discrepancy between two estimates, the team discusses the differences and tries
-to build a common picture of what work is involved in the story. They might do some kind of task
-breakdown.
-Afterwards, the team estimates again. This loop is repeated until the time estimates
-converge, i.e. all estimates are approximately the same for that story.
+Ha drasztikus eltérés van két érték között, akkor a csapat megbeszéli a különbségeket és megpróbál
+egy lapra kerülni a sztorit illetően. Ha kell, a feladatok részekre is bonthatják és újra
+becsülhetnek. Ezt a folyamatot addig ismétlik, amíg konszenzusra nem jutnak (azaz a becslések
+nagyjából azonosak).
 
-It is important to remind team members that they are to estimate the total amount of work involved
-in the story. Not just “their” part of the work.
-The tester should not just estimate the amount of
-testing work.
+Fontos emlékeztetni a csapatot, hogy a teljes munkát kell megbecsülniük és nem csak a "saját"
+részüket, vagyis egy teszter nem csak a tesztekre szükséges időt méri fel.
 
-Note that the number sequence is non-linear. For example there is nothing between 40 and 100. Why?
+Vegyük észre, hogy a számsorozat nem lineáris, azaz például nincs semmi 40 és 100 között. Miért van
+ez?
 
-This is to avoid a false sense of accuracy for large time estimates. If a story is estimated at
-approximately 20 story points, it is not relevant to discuss whether it should be 20 or 18 or 21.
-All we know is that it is a large story and that it is hard to estimate. So 20 is our ballpark
-guess.
+Ezzel próbáljuk meg eloszlatni annak illúzióját, hogy pontosan tudjuk becsülni a nagy időtartamokat.
+Ha egy sztorit 20 pontra becsültük, akkor nem igazán fontos azon vitázni, hogy ez pontosan 20 vagy
+18 vagy 21. Elég annyit tudnunk, hogy ez egy nagy feladat, amit nehéz előre felbecsülni, mi
+nagyjából 20 pontra gondoljuk.
 
-Want more detailed estimates? Split the story into smaller stories and estimate the smaller stories
-instead!
+Ha ennél pontosabb becslést szeretne, válassza szét a sztorit több kisebbre és becsülje azokat
+inkább.
 
-And no, you can’t cheat by combining a 5 and a 2 to make a 7. You have to choose either 5 or 8,
-there is no 7.
+És nem ér csalni úgy, hogy egy 5-t és egy 2-t összerakva 7-t becsül. Vagy az 5-t vagy a 8-t kell
+választani, nincs olyan becslés, hogy 7.
 
-Some special cards to note:
-* 0 = “this story is already done” or “this story is pretty much nothing, just a few minutes of work”.
-* ? = “I have absolutely no idea at all. None.”
-* Coffee cup = “I’m too tired to think. Let’s take a short break.”
+Néhány különleges lap:
+* 0 = "ezt a sztorit már befejeztük korábban" vagy "ez teljesen triviális, legfeljebb pár percnyi
+  munka".
+* ? = "halvány lila gőzöm sincs, de tényleg."
+* kávé = "túl fáradt vagyok gondolkodni, tartsunk pár perc szünetet."
 
-Clarifying stories
-------------------
-The worst is when a team proudly demonstrates a new feature at the sprint demo,
-and the product owner frowns and says “well, that’s pretty, but that’s not what I asked
-for!”
+Sztorik pontosítása
+-------------------
+A lehető legrosszabb dolog amikor a csapat nagy büszkén bemutatja a működő új dolgot a sprint
+demóban, de a Product Owner szomorúan közli, hogy "igen, ez szép és jó, csak épp nem ezt kértem".
 
-How do you ensure that the product owner’s understanding of a story matches the team’s
-understanding? Or that each team member has the same understanding of each story? Well, you can’t.
-But there are some simple techniques for identifying the most blatant misunderstandings. The
-simplest technique is simply to make sure that all the fields are filled in for each story (or more
-specifically, for each story that has high enough importance to be considered for this sprint).
+Hogyan lehetünk biztosak, hogy a csapat és a Product Owner elképzelés a sztoriról ugyanaz, vagy
+például hogy a csapattagok elképzelése ugyanaz? A rossz hír, hogy sosem lehet teljesen biztos,
+viszont van néhány stratégia a nyilvánvaló félreértések felderítésére. Legegyszerűbben azzal
+segíthet, hogy a sztorihoz tartozó összes mezőt kitölti (egész pontosan az összes fontos és ezáltal
+a sprintbe valószínűleg bekerülő sztorihoz tartozó összes mezőt).
 
-Example 1:
-The team and product owner are happy about the sprint plan and ready to end the meeting.
-The Scrum master says “wait a sec, this story named ‘add user’, there is no estimate for that. Let’s
-estimate!” After a couple of rounds of planning poker the team agrees on 20 story points whereby the
-product owner stands up in rage “whaaaat?!”. After a few minutes of heated discussion, it turns out
-that the team misunderstood the scope ‘add user’, they thought this meant ‘a nice web GUI to add,
-remove, delete, search users”, while the product owner just meant ‘add users by manually doing SQL
-towards DB’. They estimate again and land at 5 story points.
+1. Példa:
+Mind a csapat, mind a Product Owner elégedett a sprint tervével és már a meeting befejezésén
+gondolkodnak, amikor a Scrum Master megszólal: "várjunk csak, itt ez a 'felhasználó hozzáadása'
+sztori, amihez még nincs becslés." Néhány oda-vissza múlva a csapat megegyezik 20 pontban, amire a
+Product Owner dühösen felpattan: "Micsoda???" Pár percnyi heves vita után kiderül, hogy a csapat
+félreértette a feladatot és arra gondolt, hogy a 'felhasználó hozzáadása' egy 'szép webes felület,
+felhasználó hozzáadására, törlésére, keresésére', miközben a Product Owner mindössze arra gondolt,
+hogy 'felhasználók hozzáadása manuálisan, valami egyszerű SQL használatával". Újabb becslés után
+végül 5 pontban állapodnak meg.
 
-Example 2:
-The team and product owner are happy about the sprint plan and ready to end the
-meeting. The Scrum master says “wait a sec, this story named ‘add user’, how should that be
-demonstrated?” Some mumbling ensues and after a minute somebody stands up and says “well, first we
-log in to the web site, and then...” and the product owner interrupts “log in to the web site?!
-No, no, no, this functionality should not be part of the web site at all, it should be a silly
-little SQL script only for tech admins”.
+2. Példa:
+Mind a csapat, mind a Product Owner elégedett a sprint tervével és már a meeting befejezésén
+gondokkoznak, amikor a Scrum Master megszólal: "várjunk csak, itt ez a 'felhasználó hozzáadása'
+sztori, ezt hogyan fogjuk demonstrálni?". Pár perc tanácstalanság után valaki feláll és azt mondja
+"no igen, először is belépünk a weboldalra és...", amire a Product Owner közbevág: "Mi az, hogy
+belépünk a weboldalra? Nem, nem nem és nem, ez a sztori egyáltalán nem része a weboldalnak, csak egy
+egyszerű SQL szkript az adminoknak".
 
-The “how to demo” description of a story can (and should) be very brief!
-Otherwise you won’t
-finish the sprint planning meeting on time. It is basically a high level plain-English description
-of how to execute the most typical test scenario manually. “Do this, then that, then verify this”.
+A "hogyan demonstráljuk" mező legyen minél tömörebb, egyébként sosem fog végezni a Sprint Planning
+Meetinggel. Mindössze egy áttekintő és könnyen érthető teszt előírás a legtipikusabb esetekhez: "ezt
+és ezt csináld, majd ez történik és így ellenőrizhető a dolog". Pályafutásom során többször segített
+ez az egyszerű leírás felfedni kisebb-nagyobb félreértéseket. És minél előbb sikerül őket
+felfedezni, annál jobb!
 
-I have found that this simple description often uncovers important misunderstandings about the
-scope of a story. Good to discover them early, right?
 
-Breaking down stories into smaller stories
+Sztorik felbontása kisebb sztorikra
 ------------------------------------------
-Stories shouldn’t be too small or too big (in terms of
-estimates). If you have a bunch of 0.5-point stories you are probably going to be a victim of
-micromanagement. On the other hand, a 40-point story stands a high risk of ending up partially
-complete, which produces no value to your company and just increases administration. Furthermore,
-if your estimated velocity is 70 and your two top-priority stories are weighted 40 story points
-each, the planning gets kind of difficult. You have to choose between under-committing (i.e.
-taking just one item) and over-committing (i.e. taking both items).
+A sztorik ne legyenek se túl kicsik, se túl nagyok (a becsült érték alapján). Ha egy csomó fél
+pontos sztorija van, akkor valószínűleg a mikromenedzsment áldozata. Ugyanakkor egy 40 pontos sztori
+nagy valószínűséggel csak félig fog elkészülni, ami nem túl hasznos a vállalatnak. Ráadásul ha a
+becsült sebesség 70 és a két legfontosabb sztori 40 40 pontos, akkor elég nehéz sprintet tervezni.
+Vagy kevesebbet vesz fel a listára (esetünkben csak egy sztorit) vagy túl sokat (a két legfontosabb
+sztorit).
 
-I find that it is almost always possible to break a large story into smaller stories. Just make
-sure that the smaller stories still represent deliverables with business value.
+Az a tapasztalatom, hogy egy nagy sztorit szinte mindig fel lehet bontani kisebb sztorikra és csak
+arra kell ügyelni, hogy a kisebb sztorik is kézzelfogható üzleti értéket képviseljenek.
 
-We normally strive for stories weighted 2 - 8 man-days. Our velocity is usually around 40-60 for a
-typical team, so that gives us somewhere around 10 stories per sprint. Sometimes as few as 5 and
-sometimes as many as 15. That’s a manageable number of index cards to deal with.
+Általában arra törekszünk, hogy a sztorijaink 2-8 ember-nap körül legyenek. Mivel a sebességünk
+valahol 40 és 60 között mozog, ez nagyjából 10 sztorit jelent egy sprintben. Néha ez az érték csak 5
+és néha akár 15 is, de ezek mindegyike teljesen kezelhető a cetlis módszerrel.
 
-Breaking down stories into tasks
---------------------------------
-Wait a sec, what’s the difference between “tasks” and “stories”?  A very valid question.
+Sztorik felbontása feladatokra
+------------------------------
+Itt álljunk meg egy pillanatra és tisztázzuk, hogy mi a különbség a sztorik és a feladatok között.
 
-The distinction is quite simple. Stories are deliverable stuff that the product owner cares about.
-Tasks are non-deliverable stuff, or stuff that the product owner doesn’t care about.
+Igazából a különbség viszonylag egyszerű: a sztorik olyan dolgok, amik fontosak a Product Owner
+számára, míg a feladatok vagy nem önmagukban kiadhatóak, vagy olyan dolgok, amik nem számítanak a
+Product Ownernek.
 
-Example of breaking down a story into smaller stories:
-
-<figure>
-
-Example of breaking down a story into tasks:
+Példa egy sztori kisebb sztorikra darabolására:
 
 <figure>
 
-Here are some interesting observations:
-* New Scrum teams are reluctant to spending time breaking
-down a bunch of stories into tasks up-front like this. Some feel this is a waterfall-ish approach.
-* For clearly understood stories, it is just as easy to do this breakdown up-front as it is to do
-later.
-* This type of breakdown often reveals additional work that causes the time estimate to go
-up, and thereby gives a more realistic sprint plan.
-* This type of breakdown up-front makes
-daily scrum meetings noticeably more efficient (see pg 61 “How we do daily scrums”).
-* Even if the breakdown is inaccurate and will change once work starts, the above advantages still
-apply.
+Példa egy sztori feladatokra osztására:
 
-So, we try to make the sprint planning time-box long enough to fit this in, but if time runs out
-we let it drop out (see “Where to draw the line” below).
+<figure>
 
-Note – we practice TDD (test driven development) which in effect means that the first task for
-almost each story is “write a failing test” and the last task is “refactor” (= improve code
-readability and remove duplication).
+Néhány figyelemre méltó észrevétel:
+* Új Scrum csapatok általában húzódzkodnak a sztorik feladatokra bontásától, mivel úgy érzik, hogy
+  ez túlságosan is hasonlít a vízesés-modellre.
+* Olyan sztorik esetében, amit mindenki tökéletesen ért, utólag is ugyanolyan egyszerű a feladatokra
+  bontás.
+* A feladatokra bontás eredményeként gyakran kerülnek elő új részletek és az időtartamra adott
+  becslések gyakran növekednek, cserében viszont a sprint terve sokkal életszerűbbé válik.
+* A felbontásnak köszönhetően a Napi Scrum sokkal hatékonyabbá válik (lásd "Hogyan használjuk a Napi
+  Scrum-ot")
+* Még ha a felbotás pontatlan és később módosításokra szorul is, a fenti előnyök akkor is jelen
+  vannak.
 
-Defining time and place for the daily scrum
--------------------------------------------
-One frequently-forgotten output of the sprint planning
-meeting is “a defined time and place for the daily scrum”. Without this your sprint will be off to
-a bad start. The first daily scrum is essentially the kickoff where everybody decides where to
-start working.
+Éppen ezért úgy próbáljuk ütemezni a sprint tervezést, hogy a feladatokra bontás is beleférjen,
+azonban nem nagy tragédia, ha mégis kifutunk az időből (Lásd: "Hol húzzuk meg a határt")
 
-I prefer morning meetings. But, I must admit, we haven’t actually tried doing daily scrums in the
-afternoon or mid-day.
+Megyjegyzés: Mivel TDD-t (Teszt Alapú Fejlesztés) használunk, a gyakorlatban az első feladat mindig
+a "meghiúsuló teszt írása" és az utolsó mindig "refaktorálás" (= a kód olvashatóságának javítása és
+duplikált kód eltávolítása).
 
-Disadvantage of afternoon scrums: when you come to work in the morning, you have to try to
-remember what you told people yesterday about what you will be doing today.
 
-Disadvantage of morning scrums: when you come to work in the morning, you have to try to remember
-what you did yesterday so that you can report this.
+A Napi Scrum helyének és idejének kijelölése
+--------------------------------------------
+A sprint planning meeting egy gyakran elfelejtett része a "Napi Scrum helyének és idejének
+kijelölése". Enélkül viszont a sprint elég rosszul kezdődik, mivel az első napi scrum gyakorlatilag
+az a hely, ahol a tagok eldöntik, hogy min is dolgozzanak.
 
-My opinion is the first disadvantage is worse, since the most important thing is what you are
-going to do, not what you did.
+Én a reggeli meetingek híve vagyok, de be kell valljam, hogy tulajdonképpen sosem próbáltuk délre
+vagy délutánra ütemezni a napi scrumot.
 
-Our default procedure is to select the earliest time at which nobody in the team groans. Usually
-:00, 9:30, or 10:00. The most important thing is that it is a time which everybody in the team
-can wholeheartedly accept.
+A délután tartott scrum meeting hátránya, hogy reggel emlékezni kell arra, hogy mit is mondott
+tegnap, min fog ma dolgozni.
 
-Where to draw the line
-----------------------
-OK, so time is running out. Of all the stuff we want to do during the
-sprint planning, what do we cut out if we run out of time?
+A reggeli scrum meeting hátránya, hogy reggel emlékezni kell, hogy mit is csinált tegnap.
 
-Well, I use the following priority list:
+Véleményem szerint az előbbi hátránya jelentősebb, mivel a legfontosabb nem az, hogy mit csinált
+eddig, hanem hogy mit fog csinálni.
 
-Priority 1: A sprint goal and demo date. This is the very least you need to start a sprint. The
-team has a goal, an end date, and they can work right off the product backlog. It sucks, yes, and
-you should seriously consider scheduling a new sprint planning meeting tomorrow, but if you really
-need to get the sprint started then this will probably do. To be honest, though, I have never
-actually started a sprint with this little info.
-Priority 2: List of which stories the team has accepted for this sprint.
-Priority 3: Estimate filled in for each story in sprint.
-Priority 4: “How to demo” filled in for each story in sprint.
-Priority 5: Velocity & resource calculations, as a reality check for your sprint plan. Includes
-list of team members and their commitments (otherwise you can’t calculate velocity).
-Priority 6: Specified time and place for daily scrum. It only takes a moment to decide, but if you
-run out of time the Scrum master can simply decide this after the meeting and email everyone.
-Priority 7: Stories broken down into tasks. This breakdown can instead be done on a daily basis in
-conjunction with daily scrums, but will slightly disrupt the flow of the sprint.
+Mindig azt a legkorábbi időpontot próbáljuk választani, amire már senki sem morog. Ez általában
+9:00, 9:30 vagy 10:00, de a legfőbb, hogy olyan időpontot válasszon, amibe a csapat minden tagja
+beleegyezik.
 
-Tech stories
-------------
-Here’s a complex issue: Tech stories. Or non-functional items or whatever you want to
-call them.
+Hol húzzuk meg a határt
+-----------------------
+Rendben, az idő nagyon fogytán van, mit hagyhatunk ki a sprint planning meetingből?
 
-I’m referring to stuff that needs to be done but that is not deliverable, not directly related to
-any specific stories, and not of direct value to the product owner.
+Én általában az alábbi fontossági sorrendet használom:
 
-We call them “tech stories”.
+1: A Sprint célja és a demó időpontja. Ez az abszolút minimum a sprint elkezdéséhez. Ha
+a cél világos és meg lett választva a sprint vége, a csapat elkezdhet dolgozni közvetlenül a Product
+Backlogból, ami persze szívás és komolyan érdemes elgondolkodni egy új meeting összehívásán, de ha
+tényleg muszáj elkezdeni a sprintet, akkor ez is megteszi. Ugyanakkor őszintén szólva én ennyi
+információval még sosem kezdtem sprintet.
+2: A sprintbe felvett sztorik listája
+3: Az összes sztori időtartama becsülve
+4: "Demó módja" kitöltve az összes sprintbe foglalt sztorihoz
+5: Sebességkalkuláció. A csapattagok listája és rendelkezésre állásuk mértéke (ami nélkül nem lehet
+a sebességet számítani)
+6: A napi scrum helyének és idejének kijelölése. Ez legfeljebb egy pár percet vesz igénybe, de ha
+kifut az időből, a Scrum Master utólag is dönthet és emailben értesítheti a csapattagokat.
+7: A sztorik felbontása feladatokra. Ezt lehet naponta is csinálni a Napi Scrum keretein belül, de
+az valamennyire megtöri a sprint lendületét.
 
-For example:
-* Install continuous build server
-  o Why it needs to be done: because it saves immense
-amounts of time for the developers and reduces the risk of big-bang integration problems at the
-end of an iteration.
-* Write a system design overview
-  o Why it needs to be done: Because developers keep forgetting the
-overall design, and thereby write inconsistent code. Need a “the big picture” document to keep
-everyone on the same page designwise.
-* Refactor the DAO layer
-  o Why it needs to be done: Because
-the DAO layer has gotten really messy and is costing everyone time due to confusion and
-unnecessary bugs. Cleaning the code up will save time for everyone and improve the robustness of
-the system.
-* Upgrade Jira (bug tracker)
-  o Why it needs to be done: The current version is too
-buggy and slow, upgrading will save everyone time.
+Technikai sztorik
+-----------------
+A technikai jellegű sztorik (vagy nem-funkcionális elemek) meglehetősen összetett problémát
+jelentenek.
 
-Are these stories in the normal sense? Or are they tasks that are not connected to any specific
-story? Who prioritizes these? Should the product owner be involved in this stuff?
+Olyan dolgok ezek, amiket meg kell csinálni, de nem közvetlenül kiadhatóak és nem igazán tartoznak
+egyik másik sztorihoz sem, ráadásul nem képviselnek közvetlenül értéket a Product Owner számára.
 
-We’ve experimented a lot with different ways of handling tech stories.
-We tried treating them as
-first-class stories, just like any others. That was no good, when the product owner prioritized the
-product backlog it was like comparing apples with oranges. In fact, for obvious reasons, the tech
-stories were often given low priority with the motivation like “yeah guys, I’m sure a continuous
-build server is important and all, but let’s build some revenue driving features first shall we?
-Then you can add your tech candy later OK?”
+Például:
+* Continuous build rendszer telepítése
+  o azért kell, mert rengeteg időt megspórol a fejlesztők számára és csökkenti annak esélyét, hogy
+  az iteráció végén integrációs problémák lépnek fel.
+* Áttekintő rendszerterv készítése
+  o azért szükséges, mert a fejlesztők nem tudják állandóan fejben tartani a rendszer felépítését és
+  ez inkonzisztens kódot eredményez. Szükséges egy áttenkintő dokumentum, amire a tagok rendszeresen
+  hivatkozhatnak.
+* Adatbázis-elérési réteg refaktorálása
+  o azért szükséges, mert az adatbázis-elérési réteg eléggé rossz álltapotban van már, ami lassítja
+  a fejlesztést a sok hiba és félreértés miatt. A kód megtisztításával rengeteg időt lehet
+  megtakarítani és azzal egyidőben a rendszer stabilitása is nő.
+* JIRA (hibakövető) frissítése
+  o azért kell, mert a jelenlegi verzió túl lassú és bugos, a frissítés sok időt takarít meg.
 
-In some cases the product owner is right, but often not. We’ve concluded that the product
-owner is not always qualified to be making that tradeoff.
-So here’s what we do:
-1) Try to avoid tech stories. Look hard for a way to transform a tech story into a normal
-story with measurable business value. That way the product owner has a better chance to make
-correct tradeoffs.
-2) If we can’t transform a tech story into a normal story, see if the
-work could be done as a task within another story. For example “refactor the DAO layer”
-could be a task within the story “edit user”, since that involves the DAO layer.
-3) If both
-of the above fail, define it as a tech story, and keep a separate list of such stories. Let
-the product owner see it but not edit it. Use the “focus factor” and “estimated velocity”
-parameters to negotiate with the product owner and bend out some time in the sprint to
-implement tech stories.
-Example (a dialogue very similar to this occurred during one of our sprint planning
-meetings).
-* Team: “We have some internal tech stuff that needs to be done.
-We would
-like to budget 10% of our time for that, i.e. reduce focus factor from 75% to 65%. Is that
-OK?”
-* Product owner: “Hell no! We don’t have time!”
-* Team: “Well, look at the last sprint (all
-heads turn to the velocity scrawls on the whiteboard). Our estimated velocity was 80,
-and our actual velocity was 30, right?”
-* PO: “Exactly! So we don’t have time to do internal
-tech stuff!
-Need new features!”
-* Team: “Well, the reason why our velocity turned out to be
-so bad was because we spent so much time trying to put together consistent releases for
-testing”.
-* PO: “Yes, and?”
-* Team: “Well, our velocity will probably continue being that bad
-if we don’t do something about it.”
-* PO: “Yes, and?”
-* Team: “So we propose that we take
-approximately 10% off of this sprint to set up a continuous build server and other stuff
-that will take the pain off of integration. This will probably increase our sprint velocity
-by at least 20% for each subsequent sprint, forever!”
-* PO: “Oh really? Why didn’t we do this
-last sprint then?!”
-* Team: “Er... because you didn’t want us to...”
-* PO: “Oh, um, well fine, sounds like a good idea to do it now then!”
+Ezek vajon normális sztorik, vagy esetleg olyan feladatok, amik nem tartoznak egy konkrét sztorihoz
+sem? Ki határozza meg a fontosságukat? Egyáltalán a Product Owner szükséges az ilyen dolgokhoz?
 
-Of course, the other option is to just keep the product owner out of the loop or give him a
-non-negotiable focus factor. But there’s no excuse not to try to reach consensus first.
+Mi több különböző módszert is kipróbáltunk. Használtunk sztorikat rájuk, ami nem igazán működött,
+mert a Product Ownernek nem volt viszonyítási alapja amikor a Product Backlogot rendezte fontossági
+sorrendbe. Ami azt illeti, a technikai jellegű sztorik gyakran kaptak alacsony prioritást olyan
+dolgokra hivatkozva, mint "értem én, hogy a continuous build rendszer fontos, de azért próbáljuk a
+valós bevételt jelentő sztorikat megcsinálni először, aztán majd gondolkodhatunk ezeken a technikai
+izéken, értem?"
 
-If the product owner is a competent and reasonable fellow (and we’ve been lucky there) I
-suggest keeping him as informed as possible and letting him make the overall priorities.
-Transparency is one of the core values of Scrum, right?
+Az esetek egy részében persze igaza van, ám nagyon gyakran nincs. Arra jutottunk, hogy a Product
+Owner nem mindig a megfelelő személy a fontosság eldöntésére.
 
-Bug tracking system vs. product backlog
----------------------------------------
-Here’s a tricky issue. Excel is a great format for
-the product backlog. But you still need a bug tracking system, and Excel will probably not
-do. We use Jira.
+Ehelyett az alábbiakat tesszük:
+1) Amennyire csak lehet kerüljük a technikai jellegű sztorikat és megpróbáljuk őket valamiféle
+mérhető üzleti értéket biztosító sztorivá változtatni, hogy a Product Owner könnyebben mérlegelhesse
+a fontosságát.
+2) Ha ez nem lehetséges, akkor megpróbáljuk egy másik sztori keretein belül elvégezni a munkát.
+Például az "adatbázis-elérési réteg refaktorálása" elvégezhető a "felhasználó adatainak
+szerkesztése" sztori keretein belül, mivel az érinti az adatbázis-elérési réteget.
+3) Ha ez sem kivitelezhető, akkor technikai jellegű sztoriként vesszük fel, ám egy különálló
+listára, amit a Product Owner megtekinthet, ám nem szerkeszthet. A "koncentrációs tényező" és
+"becsült sebesség" értékeket használva megpróbálunk megegyezni a Product Ownerrel, hogy a sprint egy
+részét a technikai sztorikra fordíthassuk.
 
-So how do we bring Jira issues into the sprint planning meeting? I mean it wouldn’t do to
-just ignore them and only focus on stories.
+Példa (az alábbihoz kísértetiesen hasonló párbeszéd zajlott le az egyik sprint planning
+meetingünkön)
+* Csapat: "Van pár belső technikai jellegű feladat, amit jó lenne megcsinálni. Szeretnénk erre
+  használni az időnk 10%-t, vagyis csökkentsük a koncentrációs tényezőt 75%-ról 65%-ra. Ez
+  elfogadható?"
+* Product Owner: "A frászt fogadható el, nincs most erre időnk!"
+* Csapat: "Nézd, az előző sprintben a becsült sebességünk 80 volt, de a végére a valós sebességünk
+  csak 30-ra jött ki."
+* PO: "Pontosan, ezért nincs időnk ilyen technikai dolgokra, muszáj végezni az új feladatokkal."
+* Csapat: "Igazából azért teljesítettünk ilyen rosszul, mert túl sok időt töltöttünk azzal, hogy a
+  release tesztre kész állapotba kerüljön."
+* PO: "Igen, és?"
+* Csapat: "Szóval valószínűleg a sebességünk ezután is ilyen rossz marad, hacsak nem teszünk
+  valamit."
+* PO: "Igen, és?"
+* Csapat: "Szóval azt javasoljuk, hogy a következő sprintből szánjunk 10%-ot egy continuous build
+  szerver és hasonló eszközök telepítésére, amivel egyszerűbbé válik az integráció. Ez legalább
+  20%-os sebességnövekedést fog jelenteni az összes utána következő sprintben."
+* PO: "Tényleg? Miért nem csináltuk ezt meg az előző sprintben?"
+* Csapat: "Ööö, mert te nem akartál hallani se róla."
+* PO: "Ööö, oké, így elmondva jó ötletnek tűnik."
 
-We’ve tried several strategies:
-1) Product owner prints out the most high priority Jira
-items, brings them to the sprint planning meeting, and puts them up on the wall together
-with the other stories (thereby implicitly specifying the priority of these items compared
-to the other stories).
-2) Product owner creates stories that refer to Jira items. For
-example “Fix the most critical back office reporting bugs, Jira-124, Jira- 126, and
-Jira-180”.
-3) Bug-fixing is considered to be outside of the sprint, i.e. the team keeps
-a low enough focus factor (for example 50%) to ensure that they have time to fix bugs.
-It is then simply assumed that the team will spend a certain amount of time each sprint
-fixing Jira- reported bugs 4) Put the product backlog in Jira (i.e. ditch Excel). Treat
-bugs just like any other story.
+Persze egy másik megoldás, a Product Owner-t teljesen kihagyni az egészből és nem engedni a
+javasolt koncentrációs tényezőből, de célszerű legalább megpróbálni konszenzusra jutni vele.
 
-We haven’t really concluded which strategy is best for us; in fact it varies from team to
-team and from sprint to sprint. I tend to lean towards the first strategy though. It is nice
-and simple.
+Amennyiben a Product Owner hozzáértő és értelmes ember (és ebben mi nagyon szerencsések voltunk), én
+azt javaslom, hogy amennyire csak lehet beszéljen vele és hagyja, hogy ő hozza meg a fontosságot
+illető döntéseket. Végül is az áttekinthetőség a Scrum egyik alapértéke.
 
-Sprint planning meeting is finally over!
+Hibakövető rendszer és a Product Backlog
 ----------------------------------------
-Wow, I never would have thought this chapter on
-sprint planning meetings would be so long! I guess that reflects my opinion that the sprint
-planning meeting is the most important thing you do in Scrum. Spend a lot of effort getting
-that right, and the rest will be so much easier.
+Az Excel egy remek formátum a Product Backloghoz, de mindenképp szükség van hibakövető rendszerre
+is, amire viszont az Excel nem a legjobb választás. Mi például JIRA-t használunk.
 
-The sprint planning meeting is successful if everyone (all team members and the product
-owner) exit the meeting with a smile, and wake up the next morning with a smile, and do
-their first daily scrum with a smile.
+De hogyan hozzuk a JIRÁ-ban található feladatokat a sprint planning meetingre? Az azért mégsem
+járható út, hogy egyszerűen elfelejtjük őket és csak a sztorikra koncentrálunk.
 
-Then, of course, all kinds of things can go horribly wrong down the line, but at least you
-can’t blame the sprint plan :o)
+Itt is többféle stratégiával próbálkoztunk:
+1) A Product Owner kinyomtatja a legfontosabb JIRA bejegyzéseket és ezeket tesszük a többi sztori
+mellé a falra (amivel egyben a többi sztorihoz viszonyított fontosságuk is meghatározásra kerül)
+2) A Product Owner olyan sztorikat készít, amelyek hivatkoznak a JIRA bejegyzésekre, például "A
+legfőbb hibák kijavítása: Jira-124, Jira-126 és Jira-180".
+3) A hibajavítás nem tekintjük a sprint részének, azaz a csapat elég alacsonyan tartja a
+koncentrációs tényezőt (például 50%), hogy maradjon idő a hibák kijavítására. Ezzel gyakorlatilag
+implicite feltételezzük, hogy a csapat az ideje egy részét minden sprintben hibák javításával tölti.
+4) A Product Backlogot is JIRÁ-ban tároljuk (azaz kidobjuk az Excelt). A hibákat is normális
+sztoriként jegyezzük.
+
+Nem igazán sikerült még eldönteni, hogy melyik stratégia a legjobb, mivel ez csapatról csapatra és
+sprintről sprintre változik. Én az első stratégia felé hajlok, mivel az elég egyszerű.
+
+A Sprint Planning Meeting vége
+------------------------------
+Váó, nem gondoltam volna, hogy ilyen hosszúra nyúlik majd ez a fejezet. Ez valahol biztos azt
+tükrözi, hogy talán a Scrum legfontosabb részének tartom a Sprint Planning Meetinget. Ha elég időt
+szán ennek tökéletesítésére, a maradék sokkal egyszerűbb lesz.
+
+A Sprint Planning Meeting akkor tekinthető sikeresnek, ha mindenki (az összes csapattag és a Product
+Owner) is mosolyogva távozik és másnap is mosollyal ébred és kezdi meg az első Napi Scrum-ot.
+
+De persze van egy csomó dolog, ami még összeomolhat a sprint során, de legalább a sprint terve
+tökéletes volt. :)
 
 5 How we communicate sprints
 ============================
