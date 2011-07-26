@@ -1305,110 +1305,103 @@ Amikor a sprint a végéhez közeledik, a Scrum Master kötelessége emlékeztet
 
 Mindezek mellett igazán senki sem találhat kifogást, hogy miért nem tudta, hogy mi történik.
 
-6 How we do sprint backlogs
+6 Hogyan használjuk a Sprint Backlogot
 ===========================
-You made it this far? Whew, good
-job.
+Gratulálok, hogy már eddig eljutott.
 
-So now that we’ve completed the sprint planning meeting and told the world about our shiny
-new sprint, it is time for the Scrum master to create a sprint backlog. This needs to be
-done after the sprint planning meeting, but before the first daily scrum.
+Most, hogy vége a Sprint Planning Meetingnek és már mindenki tud az új sprintről, ideje, hogy a
+Scrum Master elkészítse a sprint backlogot. Ezt a Sprint Planning Meeting után, de még az első Napi
+Scrum előtt kell megcsinálni.
 
-Sprint backlog format
----------------------
-We’ve experimented with different formats for the sprint backlog,
-including Jira, Excel, and a physical taskboard on the wall. In the beginning we used Excel
-mostly, there are many publicly available Excel templates for sprint backlogs, including
-auto generated burn-down charts and stuff like that. I could talk a lot about how we refined
-our Excel-based sprint backlogs. But I won’t. I won’t even include an example here.
-
-Instead I’m going to describe in detail what we have found to be the most effective format
-for the sprint backlog – a wall-based taskboard!
-
-Find a big wall that is unused or contains useless stuff like the company logo, old diagrams
-or ugly paintings. Clear the wall (ask for permission only if you must). Tape up a big, big
-sheet of paper (at least 2x2 meters, or 3x2 meters for a large team). Then do this:
-
-<figure>
-
-You could of course use a whiteboard. But that’s a bit of a waste. If possible, save
-whiteboards for design scrawls and use non-whiteboard walls for taskboards.
-
-NOTE – if you use post-its for tasks, don’t forget to attach them using real tape, or
-you’ll find all the post-its in a neat pile on the floor one day.
-
-How the taskboard works
+Sprint Backlog formátum
 -----------------------
+Több formátumot is kipróbáltunk, többek között Jirá-t, Excel-t és falra ragasztható feladat-térképet
+is. Kezdetben főként Excel-t használtunk, amihez rengeteg template-t lehet letölteni sprint
+backlogtól kezdve automatikusan generált Burndown Chart-ig. Beszélhetnék arról, hogy milyen
+finomításokon esett át ez az Excel-alapú sprint backlog, de mégsem fogok, sőt még egy példát sem
+fogok felhozni.
+
+Ehelyett inkább arról a formátumról szeretnék beszélni, amit végül a leghatékonyabb megoldásnak
+találtunk: a fali feladat-térképről.
+
+Először is vegyen egy használaton kívüli nagyméretű falat (olyan is megteszi, amin csak olyan amúgy
+használatlan elemek vannak, mint a cég logója, idejétmúlt ábrák vagy randa képek). Tisztítsa le a
+falat (ha muszáj, kérjen előtte engedélyt), majd ragasszon fel egy nagy, legalább 2-szer 2 méteres
+(nagy csapatok esetén legalább 3x2 méteres) papírt. Ezután alakítsa a felületet az alábbihoz hasonló
+módon:
 
 <figure>
 
-You could of course add all kinds of additional columns. “Waiting for integration test”
-for example. Or “Cancelled”. However before you complicate matters, think deeply. Is
-this addition really, really necessary?
+Használhat persze letörölhető táblát is, de az nekem túlzásnak tűnik, szóval ha lehet, a táblákat
+inkább tartogassa a design tervezésre és használjon sima papírt a feladat-térképhez.
 
-I’ve found that simplicity is extremely valuable for these types of things, so I only
-add additional complications when the cost of not doing so is too great.
+Megjegyzés: ha a feladatokra post-it cetliket használ, ne felejtse el rögzíteni őket
+ragasztószalaggal is, hogy nehogy a földön végezzék.
 
-Example 1 – after the first daily scrum
+Hogyan működik a feladat-térkép
+-------------------------------
+
+<figure>
+
+Persze használhat további oszlopokat is, mint például "Integrációs tesztre vár", vagy "Törölve",
+de gondolja át kétszer is, mielőtt hozzáadja őket, mert bonyolíthatják a helyzetet.
+
+Tapasztalatom szerint az egyszerűség rendkívül értékes szempont, ezért tényleg csak akkor növelem a
+bonyolultságot ilyen dolgokkal, amikor egyébként a költségük nem túl jelentős.
+
+1. Példa - az első Napi Scrum után
 ---------------------------------------
-After the first daily scrum, the taskboard might
-look like this:
+Tegyük fel, hogy az első Napi Scrum után a feladat-térkép így néz ki:
 
 <figure>
 
-As you can see, three tasks have been "checked out", i.e. the team will be working on
-these items today.
+Amint az látható, három feladatot "vettek fel", azaz a csapat ma ezeken fog dolgozni.
 
-Sometimes, for larger teams, a task gets stuck in “checked out” because nobody remembers
-who was working on it. If this happens often in a team they usually introduce policies
-such labeling each checked out task with the name of the person who checked it out.
+Nagyobb csapatok esetén előfordulhat, hogy egy feladat "felvett" állapotban ragad, mert senki sem
+emlékszik, hogy ki is dolgozott rajta. Ha ez gyakran fordul elő, akkor előírható, hogy a felvett
+feladatokra a felvevő ráírja a nevét.
 
-Example 2 – after a few more days
+2. Példa - pár nappal később
 ---------------------------------
-A few days later the taskboard might look something
-like this:
+Egy pár nap múlva a tábla mondjuk valahogy így néz ki:
 
 <figure>
 
-As you can see we’ve completed the “deposit” story (i.e. it has been checked in to the
-source code repository, tested, refactored, etc). The migration tool is partially
-complete, the back office login is started, and the back office user admin is not
-started.
+Itt látható, hgoy már befejeztük a "betét" sztorit (azaz benn van a verziókövető rendszerben,
+átment a teszteken és refaktorálva lett, stb...). A migrációs eszköz részben kész, az
+adminisztrációs felület bejelentkezés funkcióját elkezdtük és hogy a felhasználó adminisztráció
+funkciója még nem lett elkezdve.
 
-We’ve had 3 unplanned items, as you can see down to the right. This is useful to
-remember when you do the sprint retrospective.
+Három előre nem tervezett feladat is látható a jobb alsó részen, amire érdemes emlékezni a sprint
+visszatekintőben.
 
-Here’s an example of a real sprint backlog near the end of a sprint. It does get rather
-messy as the sprint progresses, but that’s OK since it is short- lived. Every new sprint
-we create a fresh, clean, new sprint backlog.
-
-<figure>
-
-How the burndown chart works
-----------------------------
-Let’s zoom in on the burndown chart:
+Az alábbiakban egy tényleges sprint backlog látható a sprint vége felé. Elég kuszává tud válni a
+sprint előrehaladtával, de ez nem nagy probléma, mivel ez a dokumentum rövid élető és a következő
+sprint elején tiszta lappal indítjuk a sprint backlogot.
 
 <figure>
 
-This chart shows that:
-* On the first day of the sprint, august 1, the team estimated that
-there is approximately 70 story points of work left to do. This was in effect the
-estimated velocity of the whole sprint.
-* On august 16 the team estimates that there is
-approximately 15 story points of work left to do. The dashed trend line shows that they
-are approximately on track, i.e. at this pace they will complete everything by the end
-of the sprint.
+Hogyan működik a Burndown Chart
+-------------------------------
+Nagyítsuk csak ki a burndown chartot:
 
-We skip weekends on the x-axis since work is rarely done on weekends.
-We used to
-include weekends but this would make the burndown slightly confusing, since it would
-“flatten out” over weekends which would look like a warning sign.
+<figure>
 
-Taskboard warning signs
+Ez a grafikon a következőket mutatja:
+* A sprint első napján (augusztus 1) a csapat nagyjából 70 pontra becsülte a fennmaradó
+  munkamennyiséget, ami tulajdonképpen a sprint becsült sebessége.
+* Augusztus 16-n a fennmaradó munkamennyiséget körülbelül 16 pontra becsülték. A szaggatott vonal
+  alapján láthatjuk, hogy nagyjából menetrend szerint haladnak és a sprint végére mindent
+  befejeznek.
+
+Az x-tengelyen nem tüntetjuk fel a szombat-vasárnapokat, mivel ilyenkor ritkán történik érdemi
+munka. Régebben ezeket is jeleztük, de ettől a grafikon elég furán mutatott, mivel hétvégenként
+lapos a gráf, ami viszont összetéveszthető más intő jelekkel.
+
+Figyelmeztető jelek
 -----------------------
-A quick glance at the taskboard should give anyone an indication
-of how well the sprint is progressing. The Scrum master is responsible for making sure
-that the team acts upon warning signs such as:
+Ránézésre meg kell tudni állapítanunk, hogy pontosan hogyan is halad a sprint. A Scrum Master
+feladata a figyelmeztető jelekre reagálni.
 
 <figure>
 
@@ -1418,40 +1411,37 @@ that the team acts upon warning signs such as:
 
 <figure>
 
-Hey, what about traceability?!
-------------------------------
-The best traceability I can offer in this model is to
-take a digital photo of the taskboard every day. If you must. I do that sometimes but
-never find a need to dig up those photos.
+Node mi van a nyomon követéssel?
+--------------------------------
+A legjobb megoldás a nyomon követésre hogy naponta lefényképezzük a feladat-térképet. De csak ha
+tényleg muszáj. Néha én is le szoktam fényképezni, de őszintén szólva eddig még nem volt példa arra,
+hogy valamiért szükség lett volna a felvételekre.
 
-If traceability is very important to you, then perhaps the taskboard solution is not for
-you.
+Ahol a nyomkövetés tényleg elengedhetetlen, ott elképzelhető, hogy a feladat-térképes megoldás nem
+optimális.
 
-But I suggest you really try to estimate the actual value of detailed sprint
-traceability. Once the sprint is done and working code has been delivered and
-documentation checked in, does anyone really care how many stories were completed at day
-5 in the sprint? Does anyone really care what the time estimate for “write a failing
-test for Deposit” was?
+Azt javaslom, hogy próbáljon utánagondolni, hogy mekkora valódi értéket képvisel egy részletes
+sprint történet. Ha egyszer a sprintnek vége és a a működő kódot kiadták, a dokumentáció fel lett
+töltve, tulajdonképpen kit érdekel, hogy a sprint ötödik napján hány sztori volt készen?
+Hasonlóképp, kinek érdekes, hogy mennyi volt a kezdeti becslés a "meghiúsuló teszt írása a Betét
+sztorihoz"?
 
-Estimating days vs. hours
--------------------------
-In most books and articles on Scrum you’ll find that tasks are
-time- estimated in hours, not days. We used to do that. Our general formula was: 1
-effective man-day = 6 effective man-hours.
+Napokban becslés órák helyett
+-----------------------------
+A Scrum-ról szóló irodalomban többnyire azt fogja találni, hogy napok helyett órákban történik a
+becslés. Egy ideig mi is ezt használtuk, nálunk 1 ideális ember-nap 6 ideális ember-órának felelt
+meg.
 
-Now we’ve stopped doing that, at least in most of our teams, for the following reasons:
-* Man-hour estimates were too fine-granular, this tended to encourage too many tiny 1-2 hour tasks
-and hence micromanagement.
-* It turned out that everyone was thinking in
-terms of man-days anyway, and just multiplying by 6 before writing down man- hours.
-“Hmmmm, this task should take about a day. Oh I have to write hours, I’ll write 6 hours
-then”.
-* Two different units cause confusion. “Was that estimate in man- days or man-hours?”.
+Ezt a legtöbb csapatban már nem használjuk a következő okok miatt:
+* Az ember-óra túl finom és ezért több 1-2 órás feladathoz és így mikromenedzsmenthez vezet.
+* Mint kiderült, mindenki amúgy is napokban gondolkodott és csak felszorozták 6-tal. "Hmm, ez a
+  feladat nagyjából egy nap, de ide órákat kell írni... oké, legyen 6 óra"
+* Két különböző egység csak félreértéseket szül "Ez a becslés akkor most órában vagy napban volt?"
 
-So now we use man-days as a basis for all time estimates (although we call it story
-points). Our lowest value is 0.5, i.e. any task that is smaller than 0.5 is either
-removed, combined with some other task, or just left with a 0.5 estimate (no great harm
-in overestimating slightly). Nice and simple.
+Úgyhogy most már minden becslésünk ember-nap egységben történik (bár sztori pontnak hívjuk). A
+legkisebb érték 0.5, vagyis minden 0.5-nél kisebb feladatot vagy törlünk, vagy összevonunk egy másik
+feladattal, esetleg csak szimplán 0.5-nek vesszük (egy kis túllövés nem okoz nagy problémákat). Így
+a legegyszerűbb.
 
 7 How we arrange the team room
 ==============================
