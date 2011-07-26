@@ -1274,37 +1274,36 @@ Owner) is mosolyogva távozik és másnap is mosollyal ébred és kezdi meg az e
 De persze van egy csomó dolog, ami még összeomolhat a sprint során, de legalább a sprint terve
 tökéletes volt. :)
 
-5 How we communicate sprints
-============================
-It is important to keep the whole
-company informed about what is going on. Otherwise people will complain or, even worse, make
-false assumptions about what is going on.
+5 Hogyan kommunikáljuk a sprinteket
+===================================
+Ha nem informáljuk az egész vállalatot, az könnyen vezethet elégedetlenséghez, vagy - ami még
+rosszabb - hibás feltételezésekhez.
 
-We use a “sprint info page” for this.
-
-<figure>
-
-Sometimes we include info about how each story will be demonstrated as well.
-
-As soon as possible after the sprint planning meeting the Scrum master creates this page,
-puts it up on the wiki, and sends a spam to the whole company.
+Erre való a "Sprint adatlap".
 
 <figure>
 
-We also have a ”dashboard” page on our wiki, which links to all currently ongoing sprints.
+Néha a sztorik demonstrálásának módját is jelezzük.
+
+A Scrum Master feladata ezt az oldalt elkészíteni, a wikire feltölteni és a vállalat minden
+alkalmazottjának elküldeni a linket emailben.
 
 <figure>
 
-In addition, the Scrum master prints out the sprint info page and posts on the wall outside
-his team room. So anybody walking by can look at the sprint info page to find out what that
-team is doing. Since that includes the time and place for the daily scrum and sprint demo,
-he knows where to go to find out more.
-
-When the sprint nears the end, the Scrum master reminds everybody about the upcoming demo.
+Ezen túl a wikiben van még egy "állapotjelző" oldalunk is, amelyről linkek vezetnek az összes
+folyamatban lévő sprint oldalára.
 
 <figure>
 
-Given all this, nobody really has an excuse not to know what’s going on.
+A Scrum Master feladata továbbá a sprint adatlapot kinyomtatni és a csapat szobájának ajtajára
+tűzni, hogy bárki, aki arra jár láthassa, hogy a csapat éppen min dolgozik. Mivel ez tartalmazza a
+napi scrum helyét és idejét, tudja, hogy hova kell mennie, ha többre kíváncsi
+
+Amikor a sprint a végéhez közeledik, a Scrum Master kötelessége emlékeztetni mindenkit a demóra.
+
+<figure>
+
+Mindezek mellett igazán senki sem találhat kifogást, hogy miért nem tudta, hogy mi történik.
 
 6 How we do sprint backlogs
 ===========================
