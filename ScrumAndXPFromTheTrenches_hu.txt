@@ -1658,82 +1658,75 @@ dolgozzon. Ez teljesen rendben van, kérje meg Niklast, hogy pesztrálja Joe-t. 
 megpróbálkozhat ezzel. Ha Joe tényleg fontos tagja a csapatnak, megéri a fáradságot. Volt néhány
 ilyen szituációban részem és többé-kevésbé mindig működött.
 
-9 How we do sprint demos
+9 Hogyan demonstrálunk
 ========================
-The sprint demo (or sprint review as
-some people call it) is an important part of Scrum that people tend to underestimate.
+A Sprint demó (vagy "sprint áttekintés" ahogy mások hívják) a Scrum egy jelentős része, amit gyakran
+alulbecsülnek.
 
-“Oh do we really have to do a demo? There really isn’t much fun to show!”
-“We don’t have time to prepare a &%$# demo!”
-“I don’t have time to attend other team’s demos!”
+"Ó, tényleg demózni kell? Nincs igazán sok, amit be lehetne mutatni."
+"Nincs időnk erre a k&%$# demóra!"
+"Nincs időm más csapatok demóira bemenni."
 
-Why we insist that all sprints end with a demo
-----------------------------------------------
-A well executed sprint demo, although it may
-seem undramatic, has a profound effect.
-* The team gets credit for their accomplishment. They feel good.
-* Other people learn what your team is doing.
-* The demo attracts vital feedback
-from stakeholders.
-* Demos are (or should be) a social event where different teams can
-interact with each other and discuss their work. This is valuable.
-* Doing a demo forces the
-team to actually finish stuff and release it (even if it is only to a test environment).
-Without demos, we kept getting huge piles of 9% finished stuff. With demos we may get fewer
-items done, but those items are really done, which is (in our case) a lot better than having
-a whole pile of stuff that is just sort of done and will pollute the next sprint.
+Miért ragaszkodunk, hogy minden sprint után legyen demó
+-------------------------------------------------------
+A jól kivitelezett sprint demó még ha nem is tűnik annak, drámai jelentősége van.
+* A csapat elismerésben részesül a munkájáért. Jól fogják érezni maguk.
+* Más csapatok tudni fogják, hogy min dolgoznak.
+* A demó után fontos visszajelzéseket kaphat
+* A demók közösségi események, ahol a csapatok érintkezhetnek egymással és beszélhetnek a
+  munkájukról, ami értékes dolog.
+* A demó arra kényszeríti a csapatot, hogy tényleg befejezze a feladatokat és még ha csak a teszt
+  környezetbe is, de telepítse azt. Demók nélkül csak egy csomó 90%-ban befejezett dolgot kapnánk. A
+  demó hatására lehet, hogy kevesebb feladatot fejeznek be, de azok tényleg készen is lesznek, ami
+  jobb, mint rengeteg a következő sprintre is átnyúló félkész dolog.
 
-If a team is more or less forced to do a sprint demo, even when they don’t have much that
-really works, the demo will be embarrassing. The team will stutter and stumble while doing
-the demo and the applause afterwards will be half-hearted. People will feel a bit sorry for
-the team, some may be irritated that they wasted time going to a lousy demo.
+Amikor a csapatra rákényszerítik a demókat, akkor is ha nincs túl sok bemutatnivalójuk, a demó
+persze elég rosszul fog elsülni. A demó során rengeteg baki fog előfordulni és a végén kapott taps
+sem szívből szól. A kívülállók egy része sajnálni fogja a csapatot, míg egy másik része dühös lesz,
+hogy az idejét rabolják ilyen béna demókkal.
 
-This hurts. But the effect is like a bitter-tasting medicine. Next sprint, the team will
-really try to get stuff done! They will feel that “well, maybe we can only demonstrate 2
-things next sprint instead of 5, but dammit this time it’s going to WORK!”. The team knows
-that they will have to do a demo no matter what, which significantly increases the chance
-that there
-will be something useful to demonstrate. I’ve seen this happen several times.
+Ez elég fájdalmas tud lenni, de a hatása olyan, mint a keserű pirulának. A következő sprintben
+tényleg a legjobbat próbálják majd kihozni magukból, arra gondolva, hogy "lehet, hogy csak 2 dolgot
+tudunk majd bemutatni 5 helyett, de ezúttal tényleg MŰKÖDNI fog". A csapat tudni fogja, hogy nincs
+más választásuk, demózni kell, ami erősen növeli majd annak esélyét, hogy valami használható dolgot
+fognak bemutatni. Ezt magam is többször tapasztaltam.
 
-Checklist for sprint demos
---------------------------
-* Make sure you clearly present the sprint goal. If there are people at the demo who don’t
-know anything about your product, take a few minutes to describe the product.
-* Don’t spend
-too much time preparing the demo, especially not on flashy presentations. Cut the crap out
-and just focus on demonstrating actual working code.
-* Keep a high pace, i.e. focus your
-preparations on making the demo fast-paced rather than beautiful.
-* Keep the demo on a
-business-oriented level, leave out the technical details. Focus on “what did we do” rather
-than “how did we do it”.
-* If possible, let the audience try the product for themselves.
-* Don’t demonstrate a bunch of minor bug fixes and trivial features. Mention them but don’t
-demo them, since that generally takes too long and detracts focus from the more important
-stories.
+Sprint demó jótanácsok
+----------------------
+* Világosan ismertesse a sprint célját, illetve ha a jelenlevők között vannak olyanok, akik nem
+  ismerik a terméket, pár percet szánjon annak bemutatására is.
+* Ne töltsön túl sok időt a felkészüléssel, főképp ne előadásfóliákra. Összpontosítson a működő kód
+  bemutatására és ne a flancolásra.
+* Diktáljon gyors tempót, az esztétika helyett inkább erre fordítsa a figyelmét az előkészületek
+  során is.
+* Üzleti és ne technikai szemszögből próbáljon demonstrálni. Azt hangsúlyozza, hogy mit és ne azt,
+  hogy hogyan csinálták.
+* Ha lehet, hagyja a hallgatóságot is kipróbálni a terméket.
+* Ne demonstráljon hibajavításokat vagy triviális dolgokat. Meg lehet említeni, de nem szükséges
+  bemutatni őket, mivel ez általában túl sok időt vesz igénybe és elvonja a figyelmet a fontos
+  sztorikról.
 
-Dealing with “undemonstratable” stuff
--------------------------------------
-Team member: “I’m not going to demonstrate this item,
-because it can’t be demonstrated. The story is ‘Improve scalability so system can handle
-10,000 simultaneous users’. I can’t bloody well invite 10,000 simultaneous users to the demo
-can I?”
-Scrum master: “Are you done with the item?”
-Team member. “Yes, of course”.
-Scrum master: “How do you know?”
-Team member: “I set the system up in a performance test
-environment, started 8 load servers and pestered the system with simultaneous requests”.
-Scrum master: “But do you have any indication that the system will handle 10,000 users”.
-Team member: “Yes. The test machines are crappy, yet they could handle 50,000 simultaneous
-requests during my test”.
-Scrum master: “How do you know?”
-Team member (frustrated): “Well
-I have this report! You can see for yourself, it shows how the test was set up and how many
-requests were sent!”
-Scrum master: “Oh excellent! Then there’s your “demo”. Just show the
-report and go through it with the audience. Better than nothing right?”.
-Team member: “Oh, is that enough? But its ugly, need to polish it up.”.
-Scrum master: “OK, but don’t spend too long. It doesn’t have to be pretty, just informative.”
+Mit tegyen a "bemutathatatlan" dolgokkal
+----------------------------------------
+Csapattag: "Nem fogom bemutatni ezt a sztorit, mert ezt nem lehet bemutatni. A sztori az, hogy
+'Skálázhatóság javítása 10000 konkurrens felhasználóig'. Csak nem fogok behívni 10000 felhasználót a
+demóra."
+Scrum Master: "Végeztél ezzel a feladattal?"
+Csapattag: "Persze."
+Scrum Master: "Honnan tudod?"
+Csapattag: "Telepítettem a rendszert a teljesítménytesztelő környezetre és ráküldtem egy csomó
+egyidejű kérést."
+Scrum Master: "Rendben, van valami bizonyítékod, hogy a rendszer képes fogadni 10000 felhasználót?"
+Csapattag: "Igen. Bár a teszt szerverek elég gyengék, mégis 50000 konkurrens kérést ki tudtak
+szolgálni."
+Scrum Master: "Honnan tudod?"
+Csapattag: (idegesen) "Nos, itt a report! Láthatod te is hogy hogyan állítottam be a tesztet és hány
+kérést küldtem."
+Scrum Master: "Ó, remek! Íme a demód. Mutasd meg ezt a report és magyarázd el a hallgatóságnak. Több
+a semminél, nemde?"
+Csapattag: "Ja, hogy ez elég? De ez elég ronda, kicsit szépíteni kellene rajta."
+Scrum Master: "Ok, de ne pazarolj rá túl sok időt. Nem kell hogy szép legyen, csak a lényeg legyen
+rajta."
 
 10 How we do sprint retrospectives
 ==================================
