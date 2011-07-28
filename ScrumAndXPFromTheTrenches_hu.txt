@@ -1549,133 +1549,114 @@ fognak elhallgatni csak azért mert Ön megjelenik.
 Egy jól működő Scrum csapatban győződjön meg róla, hogy minden szükséges támogatást megkaptak, majd
 álljon félre az útjukból (a sprint demó kivételével).
 
-8 How we do daily scrums
-========================
-Our daily scrums are pretty much by
-the book. They start exactly on time, every day at the same place. In the beginning we
-would go to a separate room to do sprint planning (those were the days when we used
-electronic sprint backlogs), however now we do daily scrums in the team room right
-in front of the taskboard. Nothing can beat that.
+8 Hogyan bonyolítjuk a Napi Scrum-ot
+====================================
+A Napi Scrumjaink meglehetősen előírás szerintiek, mindig pontosan kezdődnek, minden nap ugyanabban
+az időben. Eleinte a sprint planning idejére átvonultunk egy másik helyiségbe (azokban az időkben,
+amikor elektronikus sprint backlogot használtunk), de mostanra a napi scrum-ot mindig a csapat
+szobájában a feladat-térkép előtt végezzük. Ezt találtuk a legjobb megoldásnak.
 
-We normally do the meetings standing up, since that reduces the risk of surpassing 15
-minutes.
+A meeting természetesen állva zajlik, mivel ez csökkenti annak az esélyét, hogy tovább tart 15
+percnél.
 
-How we update the taskboard
----------------------------
-We normally update the taskboard during the daily scrum. As
-each person describes what he did yesterday and will do today, he pulls post-its around
-on the taskboard. As he describes an unplanned item, he puts up a post-it for that. As
-he update his time estimates, he writes the new time estimate on the post-it and crosses
-off the old one. Sometimes the Scrum master does the post-it stuff while people talk.
+Hogyan frissítjük a feladat-térképet
+------------------------------------
+Általában a napi scrum alatt frissítjük a táblát. Miközben valaki elmondja, hogy mit csinált tegnap
+és mit fog csinálni ma, egyúttal át is rendezi a cetliket. Ha egy előre nem tervezett feladatról
+számol be, feltesz egy új cetlit. Ha frissítette az időbecsléseit, azt rögtön felvezeti a táblára
+is. Esetenként a Scrum Master végzi a cetlik frissítését, amíg az egyes tagok beszélnek.
 
 <figure>
 
-Some teams have a policy that each person should update the taskboard before each
-meeting. That works fine as well. Just decide on a policy and stick to it.
-Regardless
-of what format your sprint backlog is in, try to get the whole team involved in keeping
-the sprint backlog up-to-date. We’ve tried doing sprints where the Scrum master is the
-sole maintainer of the sprint backlog and has to go around every day and ask people
-about their remaining time estimates. The disadvantages of this are:
-* The Scrum master
-spends too much time administrating stuff, instead of supporting the team and removing
-impediments.
-* Team members are unaware of the status of the sprint, since the sprint backlog is not
-something they need to care about. This lack of feedback reduces the overall agility and
-focus of the team.
+Néhány csapat megállapodott arról, hogy mindenki frissíti a feladat-térképet a meetingek előtt, ami
+ugyanolyan jól működik. A lényeg, hogy megállapodjanak egy stratégiában és hogy betartsák azt.
 
-If the sprint backlog is well-designed it should be just as easy for each team member to
-update it himself.
+Függetlenül a backlog formátumától, próbálja a teljes csapatot bevonni a backlog naprakészen
+tartásába. Próbálkoztunk olyan sprintekkel, ahol egyedül a Scrum Master felelős a sprint backlog
+frissítéséért és így minden nap körbe kell mennie és mindenkitől egyenként megkérdezni, hogy mennyi
+maradt még a feladataik befejezéséig. Ennek a módszernek a hátrányai azonban a következőek:
+* A Scrum Master túl sok időt tölt adminisztrációval ahelyett, hogy támogatná a csapatot azzal, hogy
+  eltávolítja a felmerülő akadályokat.
+* A csapattagok nem látják át a sprint aktuális helyzetét, mivel nem szükséges foglalkozniuk a
+  sprint backloggal, ami csökkenti a csapat flexibilitását és koncentrációját.
 
-Immediately after the daily scrum meeting, someone sums up all the time estimates
-(ignoring those in the “done” column of course) and plots a new point on the sprint
-burndown.
+Egy jól átgondolt sprint backlog esetén nem okozhat problémát az egyes tagoknak frissíteni azt.
 
-Dealing with latecomers
+Közvetlenül a Napi Scrum után valaki összefoglalja az időbecsléseket (a "kész" feladatokat kihagyva
+természetesen) és berajzol egy újabb pontot a sprint burndown grafikonra.
+
+Mit tegyen a későkkel
 -----------------------
-Some teams have a can of coins and bills. When you are late,
-even if only one minute late, you add a fixed amount to the can. No questions asked. If
-you call before the meeting and say you’ll be late you still have to pay up.
+Néhány csapat tart egy perselyt. Ha valaki késik, akár csak egy percet is, bedob ebbe valami előre
+megállapodott összeget. Akadékoskodás nélkül. Még ha előzőleg jelezte is, hogy késni fog, akkor is
+fizetnie kell és csak nagyon jó kifogással lehet kikerülni a fizetést (például orvosnál vagy esküvőn
+volt).
 
-You only get off the hook if you have a good excuse such as a doctor’s appointment or
-your own wedding or something.
+A pénzt aztán közösségi eseményekre fordítják, mint például pizza rendelésre az irodai lanpartin.
 
-The money in the can is used for social events. To buy hamburgers when we have gaming
-nights for example :o)
+Ez jól működik, de igazán csak akkor számít, ha gyakran késnek az emberek.
 
-This works well. But it is only necessary for teams where people often come late. Some
-teams don’t need this type of scheme.
 
-Dealing with “I don’t know what to do today”
---------------------------------------------
-It is not uncommon for somebody to say
-“Yesterday I did bla bla bla, but today I haven’t the foggiest clue of what to do” (hey
-that last bit rhymed).
-Now what?
+Mit tegyen, ha valaki "nem tudja mit csináljon ma"
+--------------------------------------------------
+Nem ritka azt hallani, hogy "Tegnap ezt és ezt csináltam, de ma halvány lila gőzöm sincs, hogy mit
+csináljak". Most mi legyen?
 
-Let’s say Joe and Lisa are the ones who don’t know what to do today.
+Tegyük fel, hogy Joe és Lisa akik nem tudják, min dolgozzanak ma.
 
-If I am Scrum master I just move on and let the next guy talk, but make note of which
-people didn’t have anything to do. After everybody’s had their say, I go through the
-taskboard with the whole team, from top to bottom, and check that everything is in sync,
-that everybody knows what each item means, etc. I invite people to add more post-its.
-Then I go back to those people who didn’t know what to do “now that we’ve gone through
-the taskboard, do you have any ideas about what you can do today”? Hopefully they will.
+Ha én vagyok a Scrum Master, gondolatban megjegyzem ezt, de továbblépek a következő emberre. Miután
+mindenki végzett, végigmegyek a feladatlistán az egész csapattal és leelenőrzöm, hogy minden
+frissítve van-e és hogy mindenki tudja, hogy mi mit jelent. Lehetőséget adok új cetlik hozzáadására
+is. Ezután azokhoz fordulok, akik nem tudták, mit csináljanak és azt kérdezem: "most, hogy
+végigmentünk a feladatlistán, van már ötletetek, hogy mit csináljatok ma?". Remélhetőleg lesz.
 
-If not, I consider if there is any pair-programming opportunity here. Let’s say Niklas
-is going to implement the back office user admin GUI today.
-In that case I politely
-suggest that perhaps Joe or Lisa could pair program with Niklas on that. That usually
-works.
+De ha mégsem, akkor ez például remek lehetőség a páros programozásra. Tegyük fel, hogy Niklas ma az
+adminisztrációs felület GUI-ján dolgozik. Joe-t vagy Lisá-t megkérhetem, hogy dolgozzon együtt
+Niklas-szal, ami általában jól működik.
 
-And if that doesn’t work, here’s the next trick.
+És ha ez sem működik, van másik:
 
-Scrum master: “OK, who wants to demonstrate the beta-ready release to us?” (assuming that was the
-sprint goal)
-Team: confused silence
-Scrum master: “Aren’t we done?”
-Team: “um... no”
-Scrum master: “Oh darn. Why not? What’s left to do?”
-Team: “Well we don’t even have a test server to run
-it on, and the build script is broken.”
-Scrum master: “Aha.” (adds two post-its to the task wall).  “Joe and Lisa, how can you help us today?”
-Joe: “Um.... I guess I’ll try to find some test server somewhere”.
-Lisa: “... and I’ll try to fix that build script”.
+Scrum Master: "OK, ki szeretné bemutatni a bétára kész kiadást" (feltéve, hogy az volt a sprint
+célja)
+Csapat: értetlen csend
+Scrum Master: "Hát nem vagyunk készen?"
+Csapat: "ööö... nem"
+Scrum Master: "A fenébe. Miért, mi van még hátra?"
+Csapat: "Hát még nincs egy teszt szerverünk se, ráadásul a build szkript se fut."
+Scrum Master: "Aha" (feltesz két új feladatot a listára) "Joe, Lisa, hogyan tudtok segíteni ma?"
+Joe: "Ööö... megpróbálhatok keríteni egy teszt szervert valahonnan"
+Lisa: "... én pedig megnézem mit lehet kezdeni a build szkripttel."
 
-If you are lucky, someone will actually demonstrate the beta-ready release you asked for.
-Great! You have achieved your sprint goal. But what if you are in mid-sprint? Easy.
-Congratulate the team on a job well done, grab one or two of the stories from the “next”
-section at the bottom right of your taskboard, and move them to the “not checked out” column
-to the left. Then redo the daily scrum. Notify the product owner that you have added some
-items to the sprint.
+Ha mázlis, lehet, hogy valaki tényleg be fogja mutatni a bétára kész kiadást, amit kért. Ez szuper
+dolog, sikerült elérnie a sprint célját. De mi legyen, ha még csak a sprint közepén tart? Egyszerűen
+gratuláljon a csapatnak a sikeres munkához, majd tegyen át egy pár sztorit a feladat-lista
+"következő" részéből a "még nincs elkezdve" részre. Értesítse a Product Ownert, hogy hozzáadott
+néhány feladatot a sprinthez.
 
-But what if the team has not yet achieved the print goal and Joe and Lisa still refuse to come
-up with something useful to do. I usually consider one of the following strategies (none of
-them are very nice, but then this is a last resort):
+Mit lehet tenni akkor, ha a csapat még nem érte el a sprint célját, de Joe és Lisa továbbra sem
+állnak elő semmilyen használható dologgal. Én általában a következő taktikákat alkalmazom (egyik se
+túl kedves, de végtére is ez a legutolsó dolog, amivel próbálkozom):
 
-* Shame: “Well if you have no idea how you can help the team, I suggest you go home, or read a
-book or something. Or just sit around until someone calls for your help.”.
-* Old-school: Simply assign them a task.
-* Peer pressure: Say “feel free to take your time Joe and Lisa,
-we’ll all just stand here and take it easy until you come up with something to do that will
-help us reach the goal.”
-* Servitude: Say “Well you can help the team indirectly by being
-butlers today. Fetch coffee, give people massage, clean up some trash, cook us some lunch,
-and whatever else we may ask for
-during the day.” You may be surprised by how fast Joe and Lisa manage to come up with useful
-technical tasks :o)
+* Megszégyenítés: "Ok, ha nincs semmi kézzelfogható ötletetek, akkor menjetek haza, vagy olvassatok
+  egy könyvet, esetleg csak üljetek csendben, amíg valakinek szüksége van rátok".
+* Oldschool: Csak simán osszon ki rájuk egy feladatot.
+* Csoportnyomás: "Nyugodtan gondolkodjatok csak, az egész csapat itt fogja várni, amíg előálltok
+  valami használható ötlettel".
+* Szolgalélek: "Ok, akkor közvetve segíthetitek a csapatot. Ma egész nap teljesíthetitek mindenki
+  kívánságait, hozhattok kávét, kitakaríthattok, főzhettek ebédet". Meg fog lepődni, milyen gyorsan
+  előállnak majd használható technikai jellegű feladatokkal.
 
-If one person frequently forces you to go that far, then you should probably take that
-person aside and do some serious coaching. If the problem still remains, you need to
-evaluate whether this person is important to your team or not.
+Ha valaki gyakran kényszeríti ezen taktikák használatára, valószínűleg hasznos félrevonni az illetőt
+és komolyabb tréningben részesíteni. Ha a probléma ezután is fennáll, gondolkozzon el, hogy valóban
+fontos-e a csapat számára.
 
-If he isn’t too important, try to get him removed from your team.
+Ha nem túl fontos, akkor próbálja eltávolítani a csapatból.
 
-If he is important, then try to pair him up with somebody else who can act as his
-“shepherd”. Joe might be a great developer and architect, just that he really prefers other
-people to tell him what to do. Fine. Give Niklas the duty of being Joe’s permanent shepherd.
-Or take on the duty yourself. If Joe is important enough to your team it will be worth the
-effort. We’ve had cases like this and it more or less worked.
+Ha viszont fontos, megpróbálhat kirendelni mellé egy "őrangyalt", akivel párban programozhat. Lehet,
+hogy Joe kitűnő fejlesztő és architekt, de szüksége van arra, hogy valaki megmondja neki, hogy min
+dolgozzon. Ez teljesen rendben van, kérje meg Niklast, hogy pesztrálja Joe-t. Esetleg saját maga is
+megpróbálkozhat ezzel. Ha Joe tényleg fontos tagja a csapatnak, megéri a fáradságot. Volt néhány
+ilyen szituációban részem és többé-kevésbé mindig működött.
 
 9 How we do sprint demos
 ========================
