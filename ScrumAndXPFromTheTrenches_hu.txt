@@ -1443,122 +1443,111 @@ legkisebb érték 0.5, vagyis minden 0.5-nél kisebb feladatot vagy törlünk, v
 feladattal, esetleg csak szimplán 0.5-nek vesszük (egy kis túllövés nem okoz nagy problémákat). Így
 a legegyszerűbb.
 
-7 How we arrange the team room
-==============================
+7 Hogyan rendezzük be a csapatszobát
+====================================
 
-The design corner
------------------
-I’ve noticed that many of the most interesting and valuable design
-discussions take place spontaneously in front of the taskboard.
-
-For this reason, we try to arrange this area as an explicit “design corner”.
+Tervezői sarok
+--------------
+Azt vettem észre, hogy a legérdekesebb tervezői viták általában spontán egy tábla előtt történnek,
+ezért mindig ki próbálunk alakítani egy kimondottan ilyen beszélgetéseket segítő "tervezői sarkot".
 
 <figure>
 
-This is really quite useful. There is no better way to get an overview of the system
-than to stand in the design corner and glance at both walls, then glance at the computer
-and try the latest build of the system (if you are lucky enough to have continuous
-build, see pg 81 “How we combine Scrum with XP”).
+Ez azért hasznos, mert nincs jobb módja egy rendszer megértésére, mint a tervezői sarokban a két
+falat áttekinteni, majd a számítógépen kipróbálni a legfrissebb buildet (már ha elég szerencsés, és
+használ folyamatos build rendszert - lásd "Hogyan elegyítjük az XP-t a Scrum-mal").
 
-The “design wall” is just a big whiteboard containing the most important design scrawls
-and printouts of the most important design documentation (sequence charts, GUI
-prototypes, domain models, etc).
+A "tervezői fal" igazából csak egy nagy tábla, amin a legfontosabb diagrammok és kinyomtatott
+dokumentumok taláhatóak (például szekvenciadiagrammok, GUI prototípusok, domain modellek, stb...)
+
 
 <figure>
-Above: a daily scrum going on in the aforementioned corner.
 
-Hmmmm..... that burndown looks suspiciously nice and straight doesn’t it. But the team
-insists that it is real :o)
+Fent: egy Napi Scrum az előzőekben említett sarokban
 
-Seat the team together!
+Hmm... az a burndown gyanúsan szép egyenes, nem? De a csapat szerint ez a valóság :)
+
+Ültesse egybe a csapatot!
 -----------------------
-When it comes to seating and desk layout there is one thing
-that can’t be stressed strongly enough.
+Egy dolog van az iroda ülési rendjének tervezésekor, amit nem tudok eléggé hangsúlyozni.
 
-Seat the team together!
+Ültesse egybe a csapatot!
 
-To clarify that a bit, what I’m saying is
+Csak a világosság kedvéért ez a következőt jelenti:
 
-!!! Seat the team together !!!
+!!! Ültesse egybe a csapatot !!!
 
-People are reluctant to move. At least in the places I’ve worked. They don’t want to
-have to pick up all their stuff, unplug the computer, move all their junk to a new desk,
-and plug everything in again. The shorter the distance, the greater the reluctance.
-“Come ON boss, what’s the point of moving just 5 meters?”
+Az emberek - legalábbis ahol eddig dolgoztam - nem szeretnek helyet cserélni. Nem szeretik, ha össze
+kell szedniük a dolgaikat, kihúzni a számítógépeket és minden cuccukat áttelepíteni az új helyre,
+összerakni a gépeket, stb. Ráadásul minél közelebb költöznek, annál nagyobb ez a húzódzkodás:
+"Ugyanmár, főnök, mi értelme 5 méterrel arréb ülni?".
 
-When building effective Scrum teams, however, there is no alternative.
-Just get the
-team together. Even if you have to personally threaten each individual, carry all their
-gear, and wipe up their old coffee stains. If there is no space for the team, make
-space. Somewhere. Even if you have to place the team in the basement. Move tables
-around, bribe the office manager, do whatever it takes. Just get the team together.
+Ha azonban hatékony Scrum csapatot szeretnénk építeni, akkor nincs más választásunk, muszáj a
+csapatot egy helyre ültetni, még ha személyesen is kell megfenyegetnie az összes tagot, magának kell
+átcipelnie az összes cuccukat és letörölni a régi kávéfoltokat. Ha pedig nincs elég hely az egész
+csapatnak, akkor csináljon. Bárhol, ha kell akár az alagsorban is. Tolja szét az asztalokat, fizesse
+le az irodavezetőt, de csináljon elég helyet, hogy a csapat egy helyen dolgozhasson.
 
-Once you have the team together the payoff will be immediate. After just one sprint the
-team will agree that it was a good idea to move together (speaking from personal
-experience that is, there’s nothing saying your team won’t be too stubborn to admit
-it).
+Az eredmény azonnal jelentkezni fog, már egy sprint után a csapat egyet fog érteni abban, hogy jó
+ötlet volt (személyes tapasztalatból beszélek, de elképzelhető, hogy a csapata túl makacs ahhoz ezt
+nyíltan bevallja).
 
-Now what does “together” mean? How should the desks be laid out?
-Well, I don’t have any
-strong opinion on the optimal desk layout. And even if I did, I assume most teams don’t
-have the luxury of being able to decide exactly how to layout their desks. There are
-usually physical constraints – the neighboring team, the toilet door, the big slot
-machine in the middle of the room, whatever.
+És hogy mit is jelent pontosan az "egybeültetés"? Hogyan rendezze el az asztalokat, például? Nos,
+nincs igazán kialakult véleményem a "legjobb" asztal elrendezésről és még ha lenne is, nem hiszem,
+hogy minden csapatnak megadatik az a luxus, hogy teljesen szabadon döntsön erről. Gyakran szab
+határt a tér nagysága, a szomszédos csapatok, a vécéajtó, a szoba közepére rakott automata és
+hasonló dolgok.
 
-“Together” means:
-* Audibility: Anybody in the team can talk to anybody else without shouting or leaving
-his desk.
-* Visibility: Everybody in the team can see everybody else.
-Everyone can see
-the taskboard. Not necessarily close enough to be able to read it, but at least see it.
-* Isolation: If your whole team were to suddenly stand up and engage in a spontaneous and
-lively design discussion, there is nobody outside the team close enough to be disturbed.
-And vice versa.
+Az "egybeültetés" a következőt jelenti:
+* Hallhatóság: a csapat minden tagja képes bárki mással kiabálás nélkül beszélni
+  anélkül, hogy a saját asztalától fel kelljen kelnie.
+* Láthatóság: a csapat minden tagja lát mindenki mást és elég közel ülnek a feladat-térképhez, hogy
+  probléma nélkül láthassák azt.
+* Elszigeteltség: ha az egész csapat hirtelen feláll és heves vitába kezd a rendszer architektúráját
+  illetően, ezzel nem zavarják a kívülállokat (és viszont).
+Az "elszigeteltség" persze nem jelenti az, hogy a csapat teljesen "elszigetelt". Egy fülke-rendszerű
+környezetben elég lehet, ha a csapatnak saját tere van elég elhatároló elemmel, ami kiszűri a
+legtöbb külső zajt.
 
-“Isolation” doesn’t mean that the team has to be completely isolated. In a cubicle
-environment it may be enough that your team has its own cubicle and big enough cubicle
-walls to filter out most of the noise from non-team elements.
+Ha pedig földrajzilag elosztott a csapata, akkor nincs szerencséje. Próbáljon minél több technikai
+eszközt bevetni, hogy minimalizálja a távolságot: videókonferencia, webkamerák, távoli asztal, stb.
 
-And what if you have a distributed team? Well then you are out of luck.
-Use as many
-technical aids as you can to minimize the damage – video conferencing, webcams, desktop
-sharing tools, etc.
-
-Keep the product owner at bay
+Legyen kéznél a Product Owner
 -----------------------------
-The product owner should be near enough so that the team
-can wander over and ask him something, and so that he can wander over to the taskboard.
-But he should not be seated with the team. Why? Because chances are he will not be able
-to stop himself from meddling in details, and the team will not “gel” properly (i.e.
-reach a tight, self-managed, hyperproductive state).
+A Product Owner legyen elég közel a csapathoz, hogy a tagok bármikor odamehessenek tisztázni valamit
+és hogy ő is bármikor egyszerűen megtekinthesse a feladat-térképet, azonban ne ültesse közvetlenül
+egybe a csapattal, mert akkor nagy valószínűséggel nem fog tudni ellenállni a kísértésnek, hogy
+beleszóljon a részletekbe, ami viszont megakadályozza, hogy a csapat kellőképpen összeforrjon (azaz
+hogy eljusson egy rendkívül hatékony, önmenedzselő állapotba).
 
-To be honest, this is speculation. I haven’t actually seen a case where the product
-owner is sitting with the team, so I have no actual empirical reason to say that it is a
-bad idea. Just gut feeling and hearsay from other Scrum masters.
-Keep the managers and coaches at bay This is a bit hard for me to write about, since I
-was both manager and coach...
-It was my job to work as closely with the teams as possible. I set up the teams, moved
-between them, pair programmed with people, coached Scrum masters, organized sprint
-planning meetings, etc. In retrospect most people thought this was a Good Thing, since I
-had some experience with agile software development.
+Persze őszintén szóval ez mind spekuláció, mivel még sosem voltam abban a helyzetben, hogy a Product
+Owner valóban együtt ült volna a csapattal, szóval csak a saját megérzéseimre és más Scrum Masterek
+elbeszéléseire tudok hivatkozni.
 
-But, then, I was also (enter Darth Vader music) the chief of development, a functional
-manager role. Which means by entering a team it would automatically become less
-self-managing. “Heck, boss is here, he probably has lots of opinions on what we should
-be doing and who should be doing what. I’ll let him do the talking.”
+Tartsa kéznél a menedzsereket és az oktatókat
+---------------------------------------------
+Elég nehéz erről beszélnem, hiszen én menedzser is és oktató is voltam és így az volt a feladatom,
+hogy minél közelebb dolgozzam a csapattal. Én alakítottam ki a csapatokat, pár-programoztam a
+tagokkal, én képeztem Scrum Mastereket és hívtam össze sprint planning meetingeket. Így
+visszatekintve a legtöbben azt gondolhatták, hogy ez egy Jó Dolog, mivel nekem már volt
+tapasztalatom az agilis fejlesztésben.
 
-My point is this; If you are Scrum coach (and perhaps also a manager), do get involved
-as closely as possible. But only for a limited period, then get out and let the team gel
-and self-manage. Check up on the team once in a while (not too often) by attending
-sprint demos and looking at the taskboard and listening in on morning scrums. If you see
-an improvement area, take the Scrum master aside and coach him. Not in front of the
-team.
-Another good idea is to attend sprint retrospectives (see pg 67 “How we do sprint
-retrospectives”), if your team trusts you enough not to let your presence clam them
-up.
+Ugyanakkor én voltam a (ide képzelje Darth Vader zenéjét) a vezető fejlesztő is, ami gyakorlatilag
+egy menedzser szerepkör, vagyis ha a csapat része vagyok, az automatikusan azt jelenti, hogy az
+kevésbé önmenedzselővé válik. "A francba, itt a főnök, biztos rengeteg ötlete van, hogy mit és
+hogyan csináljunk, inkább hagyom, hadd beszéljen ő."
 
-As for well-functioning Scrum teams, make sure they get everything they need, then stay
-the hell out of the way (except during sprint demos).
+Arra próbálok kilyukadni, hogy ha Ön Scrum tréner (és esetleg egyben menedzser is), próbáljon minél
+közelebb kerülni a csapathoz. De ezt csak rövid távon tegye, utána álljon félre és hagyja, hogy a
+csapat összerázódjon és saját magát irányítsa. Nézzen rájuk időről időre (ne túl gyakran), kövesse a
+sprint demókat, tartsa szemmel a feladattáblát és vegyen részt szemlélőként a napi scrumon. Ha
+valami olyat lát, amin javítani lehetne, vonja félre a Scrum Mastert és beszélje meg vele, de ne a
+csapat előtt. Az is jó ötlet, ha beül a sprint visszatekintőkre (lásd "Hogyan használjuk a Sprint
+Visszatekintőket"), már amennyiben úgy gondolja hogy élvezi annyira a csapat bizalmát, hogy nem
+fognak elhallgatni csak azért mert Ön megjelenik.
+
+Egy jól működő Scrum csapatban győződjön meg róla, hogy minden szükséges támogatást megkaptak, majd
+álljon félre az útjukból (a sprint demó kivételével).
 
 8 How we do daily scrums
 ========================
