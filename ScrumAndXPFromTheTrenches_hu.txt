@@ -1728,171 +1728,164 @@ Csapattag: "Ja, hogy ez elég? De ez elég ronda, kicsit szépíteni kellene raj
 Scrum Master: "Ok, de ne pazarolj rá túl sok időt. Nem kell hogy szép legyen, csak a lényeg legyen
 rajta."
 
-10 How we do sprint retrospectives
-==================================
+10 Hogyan bonyolítjuk le a sprint visszatekintőket
+==================================================
 
-Why we insist that all teams do retrospectives
-----------------------------------------------
+Miért ragaszkodunk, hogy minden csapat végezzen visszatekintést
+---------------------------------------------------------------
 
-The most important thing about retrospectives
-is to make sure they happen.
+A legfőbb dolog a visszatekintésekkel kapcsolatban az, hogy tényleg megtartsuk őket.
 
-For some reason, teams don’t always seem inclined to do retrospectives.
-Without gentle
-prodding most of our teams would often skip the retrospective and move on to the next sprint
-instead. It may be a cultural thing in Sweden, not sure.
+Valamilyen megmagyarázhatatlan okból a csapatok nem mindig érzik fontosnak a lebonyolításukat.
+Laza felügyelet nélkül a legtöbben inkább kihagynák ezt és kezdenék már a következő sprintet.
+Persze elképzelhető, hogy ez csak a svéd kultúrára jellemző.
 
-Yet, everybody seems to agree that retrospectives are extremely useful. In fact, I’d say the
-retrospective is the second most important event in Scrum (the first being the sprint
-planning meeting) because this is your best chance to improve!
+Abban azonban mindenki egyetérteni látszik, hogy a visszatekintők rendkívül hasznosan. Én
+továbbmennék és azt állítom, hgoy a visszatekintő a Scrum második legfontosabb eleme (a sprint
+planning meeting után), mivel ez a legjobb lehetőség a dolgok javítására.
 
-Of course, you don’t need a retrospective meeting to come up with good ideas, you can do
-that in your bathtub at home! But will the team accept your idea? Maybe, but the likelihood
-of getting buy-in from the team is very much higher if the idea comes “from the team”, i.e.
-comes up during the retrospective when everyone is allowed to contribute and discuss the
-ideas.
+Persze visszatekintő nélkül is előállhat az ember jó ötletekkel, akár otthon a fürdőszobában is
+utolérhet minket az ihlet, de vajon ezeket az ötleteket a csapat is elfogadja majd? Elképzelhető, de
+annak a valószínűsége, hogy tényleg egyetértenek majd sokkal nagyobb, ha az ötlet "magától a
+csapattól származik", azaz a visszatekintő során vetődik fel, amikor bárki beleszólhat a vitákba.
 
-Without retrospectives you will find that the team keeps making the same mistakes over and
-over again.
+A visszatekintők nélkül ráadásul a csapat nagy valószínűséggel fogja ismételten elkövetni
+ugyanazokat a hibákat.
 
-How we organize retrospectives
-------------------------------
-The general format varies a bit, but usually we do it
-something like this:
-* We allocate 1 – 3 hours depending on how much discussion is anticipated.
-* Participants: The product owner, the whole team, and myself.
-* We move off to a closed room, a cozy sofa corner, the rooftop patio, or some place like
-that. As long as we can have undisturbed discussion.
-* We usually don’t do retrospectives in the team room, since people’s attentions will tend to wander.
-* Somebody is designated as secretary.
-* The Scrum master shows the sprint backlog and, with help from the team,
-summarizes the sprint. Important events and decisions, etc.
-* We do “the rounds”. Each person
-gets a chance to say, without being interrupted, what they thought was good, what they think
-could have been better, and what they would like to do differently next sprint.
-* We look at
-the estimated vs. actual velocity. If there is a big difference we try to analyze why.
-* When time is almost up the Scrum master tries to summarize concrete suggestions about what we can
-do better next sprint.
+Hogyan szervezzük a visszatekintőket
+------------------------------------
+Az formátum gyakran változik, de nagyjából az alábbiakhoz hasonló:
+* 1 - 3 órát különítünk el attól függően, hogy mennyi vitára számítunk.
+* Jelenlevők: Product Owner, az egész csapat és jómagam.
+* Elvonulunk egy külön helyiségbe, egy kényelmes kanapéhoz, a tetőkertbe, vagy valami hasonló
+  helyre, ahol zavartalanul beszélgethetünk.
+* Nem szoktuk a csapatszobában tartani a visszatekintőket, mert ott túl sok a zavaró tényező.
+* Valakit kijelölünk titkárnak.
+* A Scrum Master bemutatja a sprint backlogot és a csapat segítségével összefoglalja a sprintet,
+  illetve a főbb eseményeket és döntéseket.
+* Körbe megyünk, mindenki lehetőséget kap elmondani, hogy mit tartottak jónak, min lehetett volna
+  javítani és mit szeretnének másképp csinálni a következő sprint során.
+* Összevetjük a becsült és valós sebességet és ha nagy eltérések adódnak, akkor megpróbáljuk
+  megérteni az okát.
+* Amikor a kijelölt idő a vége felé közeledik, a Scrum Master összefoglalja a konkrét javaslatokat.
 
-Our retrospectives are generally not too structured. The underlying theme is always the same
-though: “what can we do better next sprint”.
+A visszatekintőink nem túl szervezettek, de a mögöttes téma mindig ugyanaz: "min tudunk javítani a
+következő sprintben".
 
-Here is a whiteboard example from a recent retrospective:
+Íme egy példa egy nem túl régi visszatekintőkből:
 
 <figure>
 
-Three columns:
-* Good: If we could redo the same sprint again, we would do these things the
-same way.
-* Could have done better: If we could redo the same sprint again, we would do these
-things differently.
-* Improvements: Concrete ideas about how we could improve in the future.
+Három oszlop:
+* Jó dolgok: Ha a sprintet újrakezdhetnénk, ezeket pontosan ugyanúgy csinálnánk
+* Lehetett volna jobban: Ha a sprintet újrakezdhetnék, ezeket máshogy csinálnánk
+* Javaslatok: Konkrét javaslatok a jövőre
 
-So column 1 and 2 look into the past, while column 3 looks into the future.
+Az első és második oszlop tehát a múltra vonatkozik, míg a harmadik a jövőre.
 
-After the team brainstormed up all these post-its, they used “dot voting” to determine which
-improvements to focus on during next sprint. Each team member was given 3 magnets and
-invited to vote on whatever improvements they would like the team to prioritize during next
-sprint.
-Each team member could distribute the magnets as they like, even placing all three
-on a single issue.
+Miután a csapat előállt ezekkel a cetlikkel, pöttyökkel szavaztak arról, hogy melyik elemekre
+összpontosítsanak a következő sprint alatt. Minden tag három mágneses pöttyöt kapott, amelyet a
+szerintük legfontosabb javaslatokra oszthattak el tetszésük szerint. Ha akarták, mindhárom
+szavazatukat ugyanarra a javaslatra is leadhatták.
 
-Based on this they selected 5 process improvements to focus on, and will follow this up
-during next retrospective.
+Ezek alapján öt javaslatot választottak ki a következő sprintre, aminek eredményét aztán a következő
+visszatekintőben meg fogunk vizsgálni.
 
-It is important not too get overambitious here. Focus on just a few improvements per sprint.
+Fontos, hogy ne akarjunk mindent egyszerre csinálni, hanem sprintenként csak néhány javaslatra
+összpontosítsunk.
 
-Spreading lessons learned between teams
----------------------------------------
-The information that comes up during a sprint
-retrospective is usually extremely valuable. Is this team having a hard time focusing
-because the sales manager keeps kidnapping programmers to participate as “tech experts” in
-sales meetings? This is important information. Perhaps other teams are having the same
-problem? Should we be educating the product management more about our products, so they can
-do the sales support themselves?
+Tanulságok megosztása csapatok között
+-------------------------------------
+A visszatekintők során előkerülő információk rendkívüli értékkel bírnak. Vajon azért nem tud a
+csapat a célra összpontosítani, mert az egyik sales menedzser állandóan berángatja a programozókat a
+sales meetingekre "szakértőknek"? Ez egy fontos észrevétel, de elképzelhető, hogy más csapatok is
+ugyanezzel a problémával küszködnek. Vajon érdemes lenne-e jobban felkészíteni a
+termékmenedzsereket, hogy akár ők is támogathassák a sales menedzsereket?
 
-A sprint retrospective is not only about how this one team can do a better job during next
-sprint, it has wider implications than that.
+A sprint visszatekintő valójában nem csak arról szól, hogy ez a konkrét csapat hogyan végezheti
+hatékonyabban a munkáját a következő sprint során, hanem sokkal mélyebb jelentőséggel is bír.
 
-Our strategy for handling that is very simple. One person (in this case me) attends all sprint
-retrospectives and acts as the knowledge bridge. Quite informal.
+Mi ezt a következőképp kezeljük. Egy kijelölt személy (esetünkben ez én vagyok) minden
+visszatekintőre beül és információs hídként viselkedik. Nagyvonalakban így lehet összefoglalni.
 
-An alternative would be to have each Scrum team publish a sprint retrospective report. We have tried
-that but found that not many people read such reports, and even fewer act upon them. So we do it the
-simple way instead.
+Egy másik megoldás az lehet, hogy minden csapat készít egy reportot a visszatekintőről. Ezt mi is
+kipróbáltuk, de az a tapasztalat, hogy nem sokan olvassák ezeket a reportokat és még kevesebben
+váltják ezt tényleges tevékenységekre, szóval inkább az egyszerűbb megoldást választottuk.
 
-Important rules for the “knowledge bridge” person:
-* He should be a good listener.
-* If the
-retrospective is too silent, he should be prepared to ask simple but well-aimed questions that
-stimulate discussion within
-the group. For example “if you could rewind time and redo this same sprint from day 1, what would
-you do differently?”.
-* He should be willing to spend time visiting all retrospectives for all teams.
-* He should be in some kind of position of authority, so he can act upon improvement suggestions that
-are outside the team’s control.
+Fontos szabályok az "Információs Híd" számára:
+* Meg kell hallgatnia az embereket
+* Ha a visszatekintő túl csendes, jól irányzott kérdésekkel kell tudnia felélénkíteni a
+* beszélgetést. Például: "Ha visszamehetnél az időben és az elejéről kezdhetnéd a sprintet, mit
+  csinálnál másképp?"
+* Hajlandónak kell lennie beülni az összes visszatekintőre
+* Elég tekintéllyel kell rendelkeznie, hogy a csapat hatáskörén kívül eső javaslatokra ténylegesen
+  és tevőlegesen reagálhasson.
 
-This works fairly well but there may be other approaches that work
-a whole lot better. In that case please enlighten me.
+Ez nálunk jól működik, de ha olyan stratégiát talál, ami ennél sokkal jobban működik, lépjen
+kapcsolatba velem.
 
-To change or not to change
---------------------------
-Let’s say the team concludes that “we communicated too little within the
-team, so we kept stepping on each other’s toes and messing up each other’s designs.”
+Változtatni vagy nem változtatni
+--------------------------------
+Tegyük fel, hogy a csapat egyetért abban, hogy "nem egyeztettünk eleget a csapaton belül, ezért
+folyton zavartuk egymás kódját."
 
-What should you do about it? Introduce daily design meetings? Introduce new tools to ease
-communication? Add more wiki pages? Well, maybe.
-But then again, maybe not.
+Mit tegyünk ez ellen? Vezessünk be napi megbeszéléseket, esetleg telepítsünk új eszközöket a
+kommunikáció hatékonyságának javítására? Talán írjunk több wiki cikket? Elképzelhető. És az is, hogy
+ezek nem segítenek.
 
-We’ve found that, in many cases, just identifying a problem clearly is enough for it to solve itself
-automatically next sprint. Especially if you post the sprint retrospective on the wall in the team
-room (which we always forget to do, shame on us!). Every change you introduce has some kind of cost
-so, before introducing changes, consider doing nothing at all and hoping that the problem will
-disappear (or become smaller) automatically.
+Az a tapasztalatunk, hogy gyakran elég ha felismerjük a problémát és az a következő sprintre
+önmagától megoldódik. Kiváltképp, ha a sprint visszatekintőt kitűzi a csapatszoba falára (amit mi
+széngyenletes módon mindig elfelejtünk). Minden apró változtatás ugyanakkor valamilyen költséggel
+jár, ezért első közelítésben érdemes nem tenni semmit annak reményében, hogy a probléma magától
+eltűnik (vagy legalábbis kisebbé válik).
 
-The example above (“we communicated too little within the team...”) is a typical example of
-something that may be best solved by doing nothing at all.
+A fenti "nem egyeztettünk eleget..." tipikus példa arra az esetre, amikor a probléma legjobb esetben
+éppen magától tűnik el.
 
-If you introduce a new change every time someone complains about something, people may become
-reluctant to reveal minor problem areas, which would be terrible.
+Ha minden kis apró-cseprő probléma hatására változásokat eszközöl, szinte biztos, hogy valaki
+előbb tiltakozni fog majd lassanként inkább nem hozakodnak elő a problémákkal, ami rendkívül káros
+hatással tud lenni.
 
-Examples of things that may come up during retrospectives
-Here are some examples of typical things
-that come up during sprint planning, and typical actions.
+Az alábbiakban álljon néhány példa a visszatekintőben felmerülő problémákra és a tipikus válasz
+rájuk.
 
-                    “We should have spent more time breaking down stories into sub items and tasks”
-This is quite
-common. Every day at the daily scrum, team members find themselves saying “I don’t really know
-what to do today”. So after each daily scrum you spend time finding concrete tasks. Usually more
-effective to do that upfront.
+                              "Több időt kellett volna fordítanunk a sztorik feladatokra bontására"
 
-Typical actions: none. The team will probably sort this out themselves during next sprint
-planning. If this happens repeatedly, increase the sprint planning time-box.
+Ez egy meglehetősen gyakori probléma. A napi scrum során a csapattagok gyakran "nem tudják, hogy mit
+csináljanak az adott napon", ezért a meeting után sok idő megy el a konkrét feladatok keresésével,
+amit sokkal hatékonyabb lenne előre megcsinálni.
 
-                                                                  “Too many external disturbances”
-Typical actions:
-* ask the team to reduce their focus factor next
-sprint, so that they have a more realistic plan * ask the team to record disturbances better next
-sprint. Who disturbed, how long it took. Will make it easier to solve the problem later.
-* ask the team to try to funnel all disturbances to the scrum master or product owner
-* ask the team to
-designate one person as “goalkeeper”, all disturbances are routed to him, so that the rest of the
-team can focus. Could be the Scrum master or a rotating position.
-                                            “We overcommitted and only got half of the stuff done”
-Typical actions: none. The team will
-probably not overcommit next sprint. Or at least not overcommit as badly.
+Tipikus válasz: semmi. A csapat valószínűleg megoldja ezt magától is a következő sprint planning
+meetingen. Ha mégis többször előfordulna, javasoljon hosszabb időkeretet a sprint planningre.
 
-                                                    “Our office environment is too noisy and messy”
-Typical actions:
-* try to create a better
-environment, or move the team offsite. Rent a hotel room. Whatever. See pg 55 “How we arrange the
-team room’).
-* If not possible, tell the team to decrease their focus factor next sprint, and to
-clearly state that this is because of the noisy and messy environment. Hopefully this will cause
-the product owner to start pestering upper management about this.
+                                                                        "Túl sok külső zavarforrás"
 
-Fortunately I’ve never had to threaten to move the team offsite. But I will if I have to :o)
+Tipikus válaszok:
+* javasolja, hogy a csapat csökkentse a koncentrációs tényezőjét a következő sprint idejére
+* javasolja, hogy a csapat jegyezze fel ezeket a zavarokat. Ki zavarta meg őket és mennyi idejüket
+  vette igénybe? Ez a későbbiekben segíthet a probléma megoldásában.
+* kérje meg a csapattagokat, hogy minden zavaró tényezőt irányítsanak a Scrum Master vagy a Product
+  Owner felé.
+* kérje meg a csapatot, hogy jelöljön ki egy "kapust", aki egy személyben foglalkozik az összes
+  zavaró tényezővel, hogy a csapat többi tagja a saját feladataira koncentrálhasson. Ez lehet a
+  Scrum Master, vagy egy állandóan változó személy.
+
+                          "Túl sokat vállaltunk és ezért csak a feladatok felét sikerült befejezni"
+
+Tipikus válaszok: semmi. A csapat valószínűleg nem fog túl sokat vállalni a következő sprintben.
+Legalábbis nem ennyivel.
+
+                                                                      "Mindig káosz van az irodában"
+
+Tipikus válaszok:
+* próbáljon jobb környezetet kialakítani, vagy költöztesse a csapatot az irodán kívül, béreljen
+  például egy hotelszobát. Lásd: "Hogyan alakítjuk ki a csapatszobát"
+* ha ezek nem lehetségesek, javasolja, hogy a csapat a káoszra hivatkozva csökkentse a koncentrációs
+  tényezőjét a következő sprint idejére. Remélhetőleg ez elegendő lesz ahhoz, hogy a Product Owner
+  beszéljen a felsővezetéssel.
+
+Szerencsére nekem még sosem kellett azzal fenyegetőznöm, hogy a csapatot az irodán kívül
+költöztetem, de ha muszáj, nem fogok habozni. :)
 
 11 Slack time between sprints
 =============================
