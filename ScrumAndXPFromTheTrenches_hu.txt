@@ -1887,67 +1887,63 @@ Tipikus válaszok:
 Szerencsére nekem még sosem kellett azzal fenyegetőznöm, hogy a csapatot az irodán kívül
 költöztetem, de ha muszáj, nem fogok habozni. :)
 
-11 Slack time between sprints
-=============================
-In real life, you can’t always sprint. You need to
-rest between sprints. If you always sprint, you are in effect just jogging.
+11 Pihenőidő a sprintek között
+==============================
+A való életben nem lehet folyamatosan sprintelni, szükség van néha pihenni két sprint között. Ha
+állandóan sprintel, akkor valójában legfeljebb kocog.
 
-The same in Scrum and software development in general. Sprints are quite intensive. As a developer
-you never really get to slack off, every day you have to stand at that danged meeting and tell
-everyone what you accomplished yesterday. Few will be inclined to say “I spent most of the day
-with my feet on the table browsing blogs and sipping cappuccino”.
+Ugyanez igaz a Scrum-ra és nagy általánosságban a szoftverfejlesztésre is. A sprintek elég
+kimerítőek tudnak lenni. A fejlesztők nem igazán kapnak pihenőt, mert minden áldott nap ott kell
+állniuk azon a nyavalyás napi scrumon és elmondani, hogy mit csináltak az előző nap. Elég kevesen
+fogják azt mondani, hogy "tegnap a nap nagy részét a lábamat lógattam és cappuccinózás közben
+blogokat olvasgattam".
 
-In addition to the actual rest itself, there is another good reason to have some slack between
-sprints. After the sprint demo and retrospective, both the team and the product owner will be full
-of information and ideas to digest. If they immediately run off and start planning the next
-sprint, chances are nobody will have had a chance to digest any information or lessons learned,
-the product owner will not have had time to adjust his priorities after the sprint demo, etc.
+A pihenésen túl van még egy jó ok arra, hogy szüneteket iktasson a sprintek közé: a sprint demó és
+visszatekintő után a csapat és a Product Owner egyaránt rengeteg megemésztendő információval fog
+rendelkezni. Nagy a veszélye, hogy ha rögtön nekifutásból tervezni kezdik a következő sprintet, nem
+lesz elég idejük ezeket az információkat feldolgozni és levonni a megfelelő tanulságokat, és ezért
+például a Product Owner nem fogja tudni rendesen felmérni a feladatok fontosságát.
 
-Bad:
-
-<figure>
-
-We try to introduce some kind of slack before starting a new sprint (more specifically, the period
-after the sprint retrospective and before the next sprint planning meeting). We don’t always
-succeed though.
-
-At the very least, we try to make sure that the sprint retrospective and the subsequent sprint
-planning meeting don’t occur on the same day.
-Everybody should at least have a good night’s
-sprintless sleep before starting a new sprint.
-
-Better:
+Rossz megoldás:
 
 <figure>
 
-Even better:
+A sprintkezdés előtt (egész pontosan a sprint visszatekintő és a következő sprint planning meeting
+között) elég időt próbálunk hagyni pihenésre, ami persze nem mindig sikerül.
+
+Legalább annyit megpróbálunk elérni, hogy a sprint visszatekintő és a sprint planning meeting ne
+essen egy napra. Mindenkinek legalább egy kipihent éjszakát próbálunk biztosítani a következő sprint
+előtt.
+
+Jobb megoldás:
 
 <figure>
 
-One way to do this is “lab days” (or whatever you choose to call them).
-That is, days where
-developers are allowed to do essentially whatever they want (OK, I admit, inspired by Google). For
-example read up on the latest tools and APIs, study for a certification, discuss nerdy stuff with
-colleagues, code a hobby project, etc.
-
-Our goal is to have a lab day between each sprint. That way you get a natural rest between
-sprints, and you will have a dev team that gets a realistic chance to keep their knowledge
-up-to-date. Plus it’s a pretty attractive employment benefit.
-Best?
+Még jobb megoldás:
 
 <figure>
 
-Currently we have lab days once per month. The first Friday every month to be specific. Why not
-between sprints instead? Well, because I felt it was important that the whole company takes the
-lab day at the same time.
-Otherwise people tend to not take it seriously. And since we (so far)
-don’t have aligned sprints across all products, I had to select a sprint- independent lab day
-interval instead.
+Egy érdekes módszer a "20%" (vagy ahogy hívni szeretné) bevezetése. Ezek olyan napok, ahol a
+fejlesztők gyakorlatilag azon dolgozhatnak, amin csak akarnak (igen, bevallom a Google ihlette).
+Például utánaolvashatnak a legújabb eszközöknek és API-knak, felkészülhetnek egy vizsgára, kocka
+dolgokról beszélhetnek a kollégákkal vagy esetleg egy hobbi projekten dolgozhatnak.
 
-We might some day try to synchronize the sprints across all products (i.e.
-same sprint start and
-end date for all products and teams). In that case we will definitely place a lab day between
-each sprint.
+A célunk az, hogy mindig legyen egy "20%" nap két sprint között, ami biztosítja az megfelelő
+kipihentséget ráadásul olyan csapatot eredményez, amely naprakész tudással rendelkezik. Ráadásul
+vonzó "kiegészítő juttatás" tud lenni.
+
+A legjobb?
+
+<figure>
+
+Jelenleg havonta egyszer, a hónap első péntekén tartunk "20%" napot. Azért nem két sprint között,
+mert úgy éreztem, jobb, ha az egész vállalatban egy időben tartjuk, mert így tényleg komolyan is
+veszik az emberek. Mivel a sprintjeink nincsenek szinkronizálva az egyes termékek között, kénytelen
+voltam egy sprint-től független "20%" napot bevezetni.
+
+Lehet, hogy egy nap majd összehangoljuk a sprinteket (azaz hogy az összes termék és csapat sprintje
+azonos napon kezdődik és végződik), amely esetben a "20%" napot biztos, hogy a sprintek közé fogom
+beiktatni.
 
 12 How we do release planning and fixed price contracts
 =======================================================
