@@ -1945,153 +1945,144 @@ Lehet, hogy egy nap majd összehangoljuk a sprinteket (azaz hogy az összes term
 azonos napon kezdődik és végződik), amely esetben a "20%" napot biztos, hogy a sprintek közé fogom
 beiktatni.
 
-12 How we do release planning and fixed price contracts
-=======================================================
-Sometimes we need to plan ahead more than one
-sprint at a time.
-Typically in conjunction with a fixed price contract where we have to plan
-ahead, or else risk signing something that we can’t deliver on time.
+12 Hogyan tervezzük a kiadásokat és mit teszünk fixáras szerződések esetén
+==========================================================================
+Néha több sprintre előre kell terveznünk, kiváltképp, ha egy fixáras szerződésünk van, amelyben ha
+nem szeretnénk azt kockáztatni, hogy nem végzünk időben, muszáj előre terveznünk.
 
-Typically, release planning for us is an attempt to answer the question “when, at latest, will we
-be able to deliver version 1.0 of this new system”.
+A kiadások tervezése általában arra a kérdésre ad választ, hogy "mi az a legkésőbbi időpont, amelyre
+az új rendszer 1.0 változata elkészül".
 
-If you really want to learn about release planning I suggest you skip this chapter and instead buy
-Mike Cohn’s book “Agile Estimating and Planning”. I really wish I had read that book earlier (I
-read it after we had figured this stuff out on our own...). My version of release planning is
-a bit simplistic but should serve as a good starting point.
+Ha behatóbban szeretné tanulmányozni a kiadás-tervezést, akkor azt javaslom, hogy ugorja át ezt a
+fejezetet és helyette olvassa el Mike Cohn "Agilis Becslés és Tervezés" című könyvét. Magam is azt
+kívánom, bárcsak előbb tettem volna (én is csak azután olvastam, miután már egyedül rájöttem a
+dolgokra...). Az én verzióm eléggé leegyszerűsített, de éppen ezért jó kiindulópontot adhat.
 
-Define your acceptance thresholds
----------------------------------
-
-In addition to the usual product backlog, the product owner
-defines a list of acceptance thresholds which is a simple classification of what the importance
-levels in the product backlog actually mean in terms of the contract.
-
-Here’s an example of acceptance threshold rules:
-* All items with importance >= 100 must be included in version 1.0, or else we’ll be fined to death.
-* All items with importance 50 - 9 should be
-included in version 1.0, but we might be able to get away with doing them in a quick follow-up
-release.
-* Items with importance 25 - 4 are required, but can be done in a follow-up release 1.1.
-* Items with importance < 25 are speculative and might never be needed at all.
-
-And here’s an example of a product backlog, color-coded based on the above rules.
-
-<figure>
-
-Red = must be included in version 1.0 (banana – pear)
-Yellow = should be included in version 1.0 (raisin – onion)
-Green = may be done later (grapefruit – peach)
-
-So if we deliver everything from banana to onion by the deadline we’re safe. If time runs short we
-might get away with skipping raisin, peanut, donut or onion. Everything below onion is bonus.
-
-Time estimate the most important items
+Az elfogadás feltételeinak definiálása
 --------------------------------------
-In order to do release planning the product owner needs
-estimates, at least for all stories that are included in the contract. Just like when sprint
-planning, this is cooperative effort between the product owner and the team – the team estimates,
-the product owner describes the items and answers questions.
+A szokásos Product Backlog-on kívül a Product Owner definiálja az elfogadás feltételeit, ami
+tulajdonképpen azt határozza meg, hogy a product backlog fontossági szintjei mit jelentenek a
+szerződés szempontjából.
 
-A time estimate is valuable if it turns out to be close to correct, less valuable if it turns out
-to be off by, say, a factor 30%, and completely worthless if it doesn’t have any connection to
-reality.
+Íme egy példa erre:
+* A 100-nál magasabb fontossági szintű elemeket be kell fejezni az 1.0 verzióig, mert ha nem, a
+  bírságok csődbe viszik a céget.
+* Az 50 és 99 közötti fontosságú elemeket be kell venni az 1.0 verzióba, de elképzelhető, hogy ezek
+  kiadhatóak egy közvetlenül az 1.0 utáni frissítésben is.
+* A 25 és 49 közötti elemek szükségesek, de elég az 1.1 verzióra befejezni őket.
+* A 25-nél kisebb elemek nincsenek lefixálva és lehet, hogy nem is kell majd implementálni őket.
 
-Here’s my take on the value of a time estimate in relation to who calculates it and how long time
-they spend doing it.
-
-<figure>
-
-All that was just a long-winded way of saying:
-* Let the team do the estimates.
-* Don’t make them spend too much time.
-* Make sure they understand that the time estimates are crude estimates, not commitments.
-
-Usually the product owner gathers the whole team in a room, provides some refreshments, and tells
-them that the goal of this meeting is to time- estimate the top 20 (or whatever) stories in the
-product backlog. He goes through each story once, and then lets the team get to work. The product
-owner stays in the room to answer questions and clarify the scope for each item as necessary. Just
-like when doing sprint planning, the “how to demo” field is a very useful way to lessen the risk
-of misunderstanding.
-
-This meeting must be strictly time-boxed, otherwise teams tend to spend too much time estimating
-too few stories.
-If the product owner wants more time spent on this he simply schedules another
-meeting later. The team must make sure that the impact of these meetings on their current sprints
-is clearly visible to the product owner, so that he understands that their time-estimating work
-doesn’t come for free.
-
-Here is an example of how the time estimates might end up (in story points):
+Íme továbbá egy példa a fenti szabályok alapján színkódolt product backlog-ra.
 
 <figure>
 
-Estimate velocity
+Piros = mindenképpen benne vannak az 1.0-ban (banán - körte)
+Sárga = ha lehet, bele kell venni az 1.0-ba (mazsola - hagyma)
+Zöld = későbbre lehet halasztani (grapefruit - barack)
+
+Tehát ha a banántól a hagymáig mindent sikerül bejefezni a határidőre, minden rendben. Ha kifutni
+látszunk az időből, kihagyhatjuk a mazsolát, mogyorót, fánkot vagy hagymát. A hagyma utáni feladatok
+pedig bónusz.
+
+A legfontosabb feladatok becslése
+---------------------------------
+A release planninghez a Product Ownernek szüksége van legalább azoknak az elemeknek a becsléseire,
+amik a szerződésbe lettek foglalva. Ahogy a sprint planning is, ez is egy csapattevékenység, azaz a
+a csapat végzi a becsléseket, míg a Product Owner szolgáltatja a feladatok részleteit és válaszol a
+felmerülő kérdésekre.
+
+A becsült idő hasznos dolog, ha jól fedi a valóságot, kevésbé hasznos, ha utólag kiderül, hogy
+mondjuk 30%-kal eltér a valóságtól és teljesen értéktelen, ha nincs is köszönőviszonyban a
+valósággal.
+
+Az alábbi ábrával szeretném érzékeltetni, hogy szerintem milyen kapcsolat van a becslések és az azt
+végző személyek, illetve a ráfordított idő között.
+
+<figure>
+
+Végső soron ezzel azt szerettem volna hangsúlyozni, hogy:
+* Hagyja a csapatot becsülni.
+* Ne töltsenek túl sok időt vele.
+* Győződjön meg arról, hogy a csapat megértette, hogy ezek csak közelítések és nem jelentenek
+  kötelezettséget.
+
+Általában a Product Owner összehívja a csapatot egy szobába, biztosít frissítőket, majd
+elmagyarázza, hogy a meeting célja, hogy a fegfontosabb 20 (vagy akármennyi) sztorit megbecsüljék.
+Ezután egyesével végigmegy a sztorikon és hagyja a csapatot dolgozni. Továbbra is a szobában marad
+azonban, hogy válaszolhasson a felmerülő kérdésekre. Fontos megjegyezni, hogy ahogy a sprint
+planning meetingen is, itt is rendkívül hasznos kitölteni a "demó módja" mezőt, az esetleges
+félreértéseket elkerülendő.
+
+A meeting idejét szigorúan meg kell szabni, mert egyébként a csapat túl sok időt tölt néhány sztori
+becslésével. Ha a Product Owner úgy találja, hogy több időre van szükség, természetesen összehívhat
+egy újabb meetinget később. A csapat kötelessége emlékeztetni a Product Ownert, hogy a meeting
+kihatással van az éppen futó sprintre, vagyis nem ingyen van.
+
+Íme egy példa az becslések eredményeire (sztori pontban számítva):
+
+<figure>
+
+Becsült sebesség
 -----------------
-OK, so now we have some kind of crude time estimate for the most important
-stories.
-Next step is to estimate our average velocity per sprint.
+Rendben, most hogy már van valami fogalmunk a legfontosabb sztorikra szükséges időről, a következő
+lépés, hogy a sprintek átlagos sebességét megbecsüljük, ami azt jelenti, hogy meg kell egyezni a
+koncentrációs tényezőben is. (Lásd: "Hogyan dönti el a csapat, hogy mely sztorik kerüljenek a 
+sprintbe?"
 
-This means we need to decide on our focus factor. See pg 24 "How does the team decide which
-stories to include in the sprint".
+A koncentrációs tényező gyakorlatilag azt határozza meg, hogy "a csapat mennyi időt tud a jelenleg
+kiválaszott feladatokra fordítani". Ez sosem 100%, mivel a csapatok időt vesztenek az előre nem
+tervezett feladatokkal, a feladatok közötti váltásokkal, más csapatok segítésével, email olvasással,
+az elromlott számítógépük megjavításával, politikai viták folytatásával a konyhában, stb...
 
-Focus factor is basically “how much of the team’s time is spent focusing on there currently
-committed stories”. It is never 100% since teams lose time doing unplanned items, doing context
-switches, helping other teams, checking their email, fixing their broken computer, arguing
-politics in the kitchen, etc.
+Tegyük fel, hogy a csapat koncentrációs tényezőjét 50%-ban állapítottuk meg (ami elég alacsony, mi
+általában 70% környékén szoktunk mozogni) hogy a sprint három hétig (15 nap) tartani és hogy a
+csapat 6 főből áll.
 
-Let’s say we determine focus factor for the team to be 50% (quite low, we normally hover around
-70%). And let’s say our sprint length will be 3 weeks (15 days) long and our team size is 6.
+Egy sprint tehát 90 ember-nap, azonban a tényleges sztorikra fordítható idő 45 ember nap az 50%-os
+koncentrációs tényező miatt. Ebből tehát a becsült sebességünk 45-re adódik.
 
-Each sprint is thus 0 man-days long, but can only be expected to produce complete 45 man-days
-worth of stories (due to the 50% focus factor).
+Ha minden sztorit 5 napra becsültük (ami általában persze nem igaz), akkor ez a csapat sprintenként
+nagyjából 9 sztorit tud befejezni.
 
-So our estimated velocity is 45 story points.
-
-If each story had a time estimate of 5 days (which they don’t) then this team would crank out
-approximately
-stories per sprint.
-
-Put it together into a release plan
+A kiadási terv összeállítása
 -----------------------------------
-Now that we have time estimates and a velocity (45) we can easily chop the product backlog into sprints:
+Most, hogy megvannak a becsléseink és a sebességünk (45), a product backlogot feloszthatjuk
+sprintekre:
 
 <figure>
 
-Each sprint includes as many stories as possible without exceeding the estimated velocity of 45.
+Minden sprint annyi sztorit tartalmaz, ami még belefér a becsült 45 pontos sebességbe.
 
-Now we can see that we’ll probably need 3 sprints to finish all the “must haves” and “should haves”.
+Ez azt jelenti, hogy valószínűleg 3 sprintre lesz szükségünk a "mindenképpen" és a "lehetőleg"
+sztorik befejezéséhez.
 
-3 sprints = calendar weeks = 2 calendar months. Now is that the deadline we promise
-the customer? Depends entirely on the nature of the contract; how fixed the scope is etc. We
-usually add a significant buffer to protect against bad time estimates, unexpected problems,
-unexpected features, etc. So in this case we might agree to set the delivery date to 3 months in
-the future, giving us 1 month “reserve”.
+3 sprint = 9 naptári hét = 2 naptári hónap. Ez összeegyeztethető a megrendelőnek ígért határidővel?
+Minden persze a szerződés jellegétől függ, azaz hogy mennyire rögzítettek a feladatok. Ezen felül mi
+általában hozzá szoktunk még adni egy jelentős puffert, hogy csökkentsük a pontatlan becslések,
+előre nem látott problémák, előre nem tervezett feladatok, stb hatásait, így például ebben az
+esetben mondjuk három hónapban egyeznénk meg, ami nagyjából egy hónapnyi "vésztartalékot" biztosít.
 
-The nice thing is that we can demonstrate something
-usable to the customer every 3 weeks and invite him to change the requirements as we go along
-(depending of course on how the contract looks).
+Az igazán jó dolog az, hogy három hetente be tudunk mutatni a megrendelőnek egy működőképes dolgot,
+ami alapján menet közben is változtathat a követelményeken (a szerződéstől függően persze)
 
-Adapting the release plan
+A kiadási terv frissítése
 -------------------------
-Reality will not adapt itself to a plan, so it must be the other way
-around.
+A valóság nem szokott a tervekhez igazodni, ezért a terveket kell a valósághoz igazítanunk.
 
-After each sprint we look at the actual velocity for that sprint. If the actual velocity was
-very different from the estimated velocity, we revise the estimated velocity for future sprints
-and update the release plan. If this puts us into trouble, the product owner may start
-negotiating with the customer or start checking how he can reduce scope without breaking the
-contract. Or perhaps he and the team comes up with some way to increase velocity or increase
-focus factor by removing some serious impediment that was identified during the sprint.
+Minden sprint után kiszámítjuk a valós sebességünket az adott sprintre. Ha ez radikális mértékben
+eltér a becsülttől, akkor a jövőbeni sprintek várható sebességét is módosítjuk, ami a kiadási terv
+változásával jár. Ez azoban problémát jelent, így a Product Owner megpróbálhat egyeztetni a
+megrendelővel, vagy esetleg megpróbálhatja valamely feladat méretét a szerződés keretein belül
+lecsökkenteni. További lehetőség, hogy a csapattal közösen megoldást próbálnak találni a sebesség
+növelésére vagy a zavaró tényezők kiiktatásával a koncentrációs tényező növelésére.
 
-The product owner might call the customer and say “hi, we’re running a bit behind schedule but I
-believe we can make the deadline if we just remove the “embedded Pacman” feature that takes a
-lot of time to build.
-We can add it in the follow-up release 3 weeks after the first release if
-you like”.
+A Product Owner felhívhatja a megrendelőt: "Hello, egy kicsit kiszaladni látszunk az időből, de be
+tudjuk fejezni határidőre, ha kivesszük ezt a "beépített Pacman" feature-t, ami túl sok időt vesz
+el. Ezt kiadhatjuk három héttel később a következő verzióban."
 
-Not good news to the customer perhaps, but at least we are being honest and giving the customer
-an early choice – should we deliver the most important stuff on time or deliver everything late.
-Usually not a hard choice :o)
+A megrendelő nem fog ennek örülni, de legalább becsületesen bevalljuk és hagyunk időt, hogy a
+megrendelő eldöntse, hogy a legfontosabb szolgáltatásokat kiadjuk időben, vagy minden csússzon.
+Átalában nem nehéz a döntés :)
 
 13 How we combine Scrum with XP
 ===============================
