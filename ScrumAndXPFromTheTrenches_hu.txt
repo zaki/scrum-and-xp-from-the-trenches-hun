@@ -2166,143 +2166,133 @@ Ez rendkívül gyors fejlesztés-telepítés-teszt ciklust eredményez, ami véd
 adva önbizalmat a gyakori refaktoringhoz, ami cserében azt jelenti, hogy az architektúra a rendszer
 növekedésével sem lesz rosszabb.
 
-TDD on new code
----------------
-We do TDD for all new development, even if that means initial project setup
-takes longer (since we need more tools and support for test harnesses etc). That’s a bit of a
-no-brainer, the benefits are so great that there really is no excuse not to do TDD.
+TDD új kód esetén
+-----------------
+Mi minden új fejlesztésnél TDD-t használunk még akkor is, ha ez azt jelenti, hogy a projekt
+előkészítése több időt vesz igénybe (mivel több eszközre és teszt keretrendszerre van szükségünk).
+A megtérülés olyan jelentős, hogy meg sem fordul a fejünkben nem alkalmazni a TDD-t.
 
-TDD on old code
----------------
-TDD is hard, but trying to do TDD on a code base that wasn’t built using TDD
-from start... that’s really hard! Why? Well, actually, I could write many pages on this topic
-so I think I’ll stop here. I’ll save that for my next paper “TDD from the Trenches” :o)
-
-We spent quite a lot of time trying to automate integration testing in one of our more complex
-systems, a code base that had been around for a while and was in a severely messed up state
-and completely devoid of tests.
-
-For every release of the system we had a team of dedicated testers who would perform a whole
-bunch of complex regression and performance tests. The regression tests were mostly manual
-work. This significantly slowed down our development and release cycle. Our goal was to
-automate these tests. After banging our heads against the wall for a few months, however, we
-hadn’t really gotten that much closer.
-
-After that we switched approach. We conceded to the fact that we were stuck with manual
-regression testing, and instead starting asking ourselves “How can we make the manual testing
-process less time consuming?” This was a gaming system, and we realized that a lot of the test
-team’s time was spent doing quite trivial setup tasks, such as browsing around in the back
-office to set up tournaments for testing purposes, or waiting around for a scheduled
-tournament to start. So we created utilities for that.
-Small, easily accessible shortcuts and
-scripts that did all the grunt work and let the testers focus on the actual testing.
-
-That effort really paid off! In fact, that is probably what we should have done from start. We
-were too eager to automate the testing that we forgot to do it step-by-step, where the first
-step was to build stuff that makes manual testing more efficient.
-
-Lesson learned: If you are stuck with having to do manual regression testing, and want to
-automate this away, don’t (unless it is really easy).
-Instead, build stuff that makes manual
-regression testing easier. Then consider automating the actual testing.
-
-Incremental design
-------------------
-This means keeping the design simple from start and continuously improving
-it, rather than trying to get it all right from the start and then freezing it.
-
-We’re doing fairly well at this, i.e. we spend a reasonable amount of time refactoring and
-improving existing design, and we rarely spend time doing big up-front designs. Sometimes we
-screw up of course, for example by allowing a shaky design to “dig in” too strongly so that
-refactoring becomes a big project. But all in all we’re fairly satisfied.
-
-Continuous design improvement is mostly an automatic side effect of doing TDD
-
-Continuous integration
+TDD meglévő kód esetén
 ----------------------
-Most of our products have a fairly sophisticated continuous integration
+A TDD önmagában is nehéz, de egy olyan kódbázison, amely a kezdetektől nem használt TDD-t... nos, az
+embertelenül nehéz. Több oldalt tudnék írni arról, hogy ez miért is van így, de inkább itt
+megállok és az értekezést a "TDD a frontvonalról" című következő írásomra hagyom. :)
 
-setup based on Maven and QuickBuild. This is extremely valuable and
-HOW WE COMBINE SCRUM WITH XP | 85
-time-saving. It is the ultimate solution to the good ol’ “hey but it works on my machine”
-issue. Our continuous build server acts as the “judge” or reference point from which to
-determine the health of all our codebases.
-Every time someone checks something in to the
-version control system the continuous build server will wake up, build everything from scratch
-on a shared server, and run all the tests. If anything goes wrong it will send an email
-notifying the entire team that the build failed, including info about exactly which code
-change broke the build, link to test reports, etc.
+Elég sok időt fordítottunk az integrációs tesztek automatizálására az egyik bonyolultabb, régóta
+meglevő és eléggé rossz állapotban levő, teszteket hallomásból sem ismerő rendszerben.
 
-Every night the continuous build server will rebuild the product from scratch and publish
-binaries (ears, wars, etc), documentation, test reports, test coverage reports, dependency
-reports, etc, to our internal documentation portal. Some products will also be automatically
-deployed to a test environment.
+Eredetileg a rendszer minden egyes kiadásához teszterek egy csapatát kellett alkalmaznunk, akik -
+jórészt kézzel - végrehajtottak egy csomó regressziós és teljesítménytesztet, ami jelentősen
+lassította a fejlesztési és kiadási ciklusainkat. A célunk ezen tesztek automatizálása volt, ám jó
+pár hónap fejtörés után sem kerültünk közelebb ehhez a célhoz.
 
-Setting this up was a lot of work, but worth every minute.
+Ezután stratégiát váltottunk. Beletörődtünk, hogy a regressziós teszteket kézzel kell végrehajtani,
+ehelyett inkább arra a kérdésre próbáltunk összpontosítani, hogy "hogyan csökkenthetjük az ezekhez a
+tesztekhez szükséges időt?". Ez egy játékkonzol volt és arra kellett rádöbbennünk, hogy a teszterek
+idejének java része triviális inicializációkkal telik, mint például az adminisztrációs felületen
+tournamentek létrehozása vagy éppen az időzített tournamentek kezdetére várás. Ígyhát ehhez kezdtünk
+segédeszközöket készíteni, olyan apró, hozzáférhető shortcutokat és szkripteket, amelyek elvégzik a
+munka dandárját és hagyják a tesztereket a tényleges tesztekre koncentrálni.
 
-Collective code ownership
+Ez elég jól működött. Valószínűleg a kezdetektől fogva ezt kellett volna tennünk, de annyira arra
+összpontosítottunk, hogy a tesztek automatizálva legyenek, hogy elfelejtettük ezt lépésről-lépésre
+csinálni, ahol az első lépés az lett volna, hogy a manuális teszteket hatékonyabbá tevő
+segédeszközöket készítünk.
+
+A tanulság: ha kénytelen kézzel végezni a regressziós teszteket, de szeretné azokat autotizálni,
+inkább ne tegye (hacsak nem nagyon könnyű). Ehelyett inkább készítsen olyan segédeszközöket, amelyek
+leegyszerűsítik a kézi regressziós tesztek futtatását. Később elgondolkodhat a tesztek tényleges
+automatizálásán.
+
+Inkrementális architektúra
+--------------------------
+Ez azt jelenti, hogy a kezdetektől az egyszerűségre törekedünk, amit lépésenként javítunk és nem
+arra, hogy már az elején minden tökéletes legyen, amit aztán befagyasztunk.
+
+Ezzel elég jól haladunk, azaz időnk java részét refaktorálással és az eddigi architektúra
+fejlesztésével töltjük és viszonylag ritkán tervezünk meg mindent előre, Bár néha elkövetünk olyan
+hibákat, mint például hogy egy gyenge elemet olyan sokáig tűrünk meg a rendszerben, hogy a
+módosítása magában egy nagyobb projektté válik. Összességében azonban nagyon elégedettek vagyunk.
+
+Az architektúra folyamatos javulása egyébként nagyrészt a TDD egy automatikus mellékhatása.
+
+Folyamatos integráció (CI)
+--------------------------
+Termékeink jelentős részében egy Maven-re és QuickBuild-re épülő fejlett folyamatos integrációs
+rendszert használunk, ami rendkívül hasznosnak bizonyult. Tökéletes megoldás az olyan olyan
+problémákra, mint a "de az én gépemen fut". A CI szerverünk játssza a "bíró" vagy referenciapont
+szerepét a rendszer állapotának felmérésében. Amint valaki feltölt valamit a verziókövető
+rendszerbe, a CI szerver feléled, nulláról elkészíti a buildet egy üres szerveren és lefuttatja az
+összes tesztet. Ha valamilyen probléma adódik, emailt küld a csapat összes tagjának a meghiúsult
+build-ről, illetve hogy pontosan melyik változtatás eredményeként hiúsult meg továbbá linkeket a
+tesztek eredményeihez stb.
+
+A CI szerver minden éjjel nulláról felépíti a terméket és feltölti a binárisokat (ear, war, stb),
+a dokumentációt, teszt eredményeket, a teszt lefedettségi reportot, függőségi dokumentációt a belső
+dokumentációs portálunkra. Bizonyos termékeket feltelepít a teszt környezetre is.
+
+Az egész rendszer felállításában rengeteg munka van, de minden egyes perce megérte.
+
+A kód a csapat tulajdona
 -------------------------
-We encourage collective code ownership but not all teams have
-adopted this yet. We’ve found that pair programming with frequent rotation of pairs
-automatically leads to a high level of collective code ownership.
-Teams with a high level of
-collective code ownership have proven to be very robust, for example their sprint doesn’t die
-just because some key person is sick.
+Ugyan még nem minden csapatunk alkalmazza ezt az elvet, támogatjuk azt a nézetet, hogy a kód a
+csapat egészének tulajdona. Tapasztalatunk szerint a gyakran váltott párokkal való páros programozás
+nagymértékben hozzájárul ennek kialakulásához. Azok a csapatok, akik közösen birtokolják a kódot,
+rendkívül hatékonynak bizonyulnak, mivel a sprintjeik nem omlanak össze ha például egy fontos tag
+megbetegszik.
 
-Informative workspace
+Áttekinthető munkatér
 ---------------------
-All teams have access to whiteboards and empty wall space and make quite
-good use of this. In most rooms you’ll find the walls plastered with all kinds of information
-about the product and project. The biggest problem is old junk accumulating on the walls, we
-might introduce a “housekeeper” role in each team.
+Minden csapatunk rendelkezésére állnak táblák és üres falfelületek és ezt általában jól ki is
+használják. A legtöbb irodánkban a falakat a termékről és a projektről szóló különböző papírok
+borítják. A legnagyobb probléma, hogy régi, már elavult információk gyűlnek össze a falon, amire
+néha egy "házvezetőt" jelölünk ki a csapatból.
 
-We encourage the use of taskboards, but not all teams have adopted this yet. See pg 55 “How we
-arrange the team room.”
+Támogatjuk a feladat-térképek használatát is, bár még nem minden csapatunk használja azt. Lásd
+"Hogyan alakítjuk ki a csapatszobát".
 
-Coding standard
----------------
-Lately we’ve started defining a coding standard. Very useful, wish we had done
-it earlier. It takes almost no time at all, just start simple and let it grow. Only write down
-stuff that isn’t obvious to everyone and link to existing material whenever possible.
+Kódolási szabályok
+------------------
+Az utóbbi időben elkezdtük definiálni a jó kódra vonatkozó szabályokat, ami rendkívül hasznos és azt
+kívánom, bárcsak hamarabb tettük volna. Szinte semmibe nem kerül, elég pár egyszerű elemből
+kiindulni és idővel kibővíteni. Csak olyan dolgokat írjon le, ami egyébként nem triviális és ha
+lehet mindig kapcsolja az új szabályokat már létező dolgokhoz.
 
-Most programmers have their own distinct coding style. Little details like how they handle
-exceptions, how they comment code, when they return
-null, etc. In some cases the difference doesn’t matter, in other cases it can lead to a
-severely inconsistent system design and hard-to-read code. A code standard is very useful
-here, as long as you focus on the stuff that matters.
+A legtöbb programozó saját kódolási stílussal rendelkezik. Olyan apró részletekre gondoljon, mint
+hogy hogyan kezelik a kivételeket, hogyan írják a kommenteket, mikor adnak vissza null-t, stb. Az
+esetek egy részében ezek a különbségek nem számítanak, míg más esetekben inkonzisztens rendszerhez
+és olvashatatlan kódhoz vezethetnek. A kódolási szabályok sokat segítenek, amennyiben ténylegesen a
+lényeges dolgokra koncentrálódnak.
 
-Here are some examples from our code standard:
-* You may break any of these rules, but make sure there is a good reason and document it.
-* Use the Sun code conventions by default:
-http://java.sun.com/docs/codeconv/html/CodeConvTOC.doc.html
-* Never, ever, ever catch exceptions
-without logging the stack trace or rethrowing. log.debug() is fine, just don’t lose that stack
-trace.
-* Use setter-based dependency injection to decouple classes from each other (except of
-course when tight coupling is desirable).
-* Avoid abbreviations. Well-known abbreviations
-such as DAO are fine.
-* Methods that return Collections or arrays should not return null.
-Return empty collections and arrays instead of null.
+Az alábbiakban álljon néhány példa a mi kódolási szabályainkra:
+* Bármely szabály megszeghető ha arra jó indok van és az dokumentálva van.
+* Alapértelmezésben használja a Sun kódolási szabályait:
+  http://java.sun.com/docs/codeconv/html/CodeConvTOC
+* Soha, soha, de soha ne kezeljen kivételeket a stacktrace logolása vagy a kivétel újradobása
+  nélkül. A log.debug() elfogadható, de ügyeljen a stacktrace megőrzésére.
+* Használjon setter-alapú dependency injection-t (függőség injektálás) az osztályok szétválasztására
+  (kivéve persze ha az összekapcsolás a cél).
+* Kerülje a rövidítéseket. A jól ismert rövidítések, mint a DAO használata elfogadható.
+* Azok a metódusok, amelyek tömböt, vagy collection-t adnak vissza, nem adhatnak vissza null-t. A
+  null helyett használjon üres tömböt vagy collection-t.
 
-Sustainable pace / energized work
----------------------------------
-Many books on agile software development claim that extended
-overtime is counterproductive in software development.
+Fenntartható iram / stimulált munka
+-----------------------------------
+Sok agilis fejlesztésről szóló könyvben írták már, hogy a huzamos ideig tartó túlórázás erősen
+csökkenti a hatékonyságot. Néhány akaratomon kívüli kísérlet után azt kell mondjam, hogy tökéletesen
+egyetértek velük.
 
-After some unwilling experimentation on this I can only agree wholeheartedly!
+Úgy egy éve az egyik legnagyobb csapatunk embertelen mennyiségű túlórát dolgozott. A kód minősége
+egyszerűen pocsék volt, ezért idejük legnagyobb részét tűzoltással töltötték. A teszterek (akik
+szintén túlóráztak) esélyük sem volt rendes minőségellenőrzést végezniük. A felhasználó magukon
+kívül voltak, míg a bulvárlapok rajtunk csámcsogtak.
 
-About a year ago one of our teams (the biggest team) was working insane amounts of overtime.
-The quality of the existing code base was dismal and they had to spend most of their time
-firefighting. The test team (which was also doing overtime) didn’t have a chance to do any
-serious quality assurance. Our users were angry and the tabloids were eating us alive.
+Pár hónappal később sikerült a munkaidőt normális keretek közé visszaszorítani. Mindenki normális
+mennyiségű időt dolgozott (néhány kivételtől eltekintve) és meglepő módon a minőség és
+termelékenység érzékelhetően javultak.
 
-After a few months we had managed to lower people’s work hours to decent levels. People worked
-normal hours (except during project crunches sometimes). And, surprise, productivity and
-quality improved noticeably.
-
-Of course, reducing the work hours was by no means the only aspect that led to the
-improvement, but we’re all convinced it had a large part in it.
+Persze a munkaidő lecsökkentése nem az egyetlen tényező, ami közrejátszott, de meg vagyunk győződve,
+hogy igen nagy szerepe volt.
 
 14 How we do testing
 ====================
