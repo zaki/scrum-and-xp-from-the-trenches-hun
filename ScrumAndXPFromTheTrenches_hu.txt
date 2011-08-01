@@ -2084,95 +2084,87 @@ A megrendelő nem fog ennek örülni, de legalább becsületesen bevalljuk és h
 megrendelő eldöntse, hogy a legfontosabb szolgáltatásokat kiadjuk időben, vagy minden csússzon.
 Átalában nem nehéz a döntés :)
 
-13 How we combine Scrum with XP
-===============================
-To say that Scrum and XP (eXtreme Programming) can be fruitfully
-combined is not really a controversial statement. Most of the stuff I see on the net supports
-that hypothesis, so I won’t spend time arguing why.
+13 Hogyan egyesítjük a Scrum-ot az XP-vel
+=========================================
+Nem túlzás azt állítani, hogy a Scrum és XP (eXtrém Programozás) remekül egyesíthető, az interneten
+taláható cikkel is mind erre utalnak, ezért én nem fogom azzal húzni az időt, hogy elmondjam miért.
 
-Well, I will mention one thing. Scrum focuses on management and organization practices while XP
-focuses mostly on actual programming practices. That’s why they work well together – they
-address different areas and complement each other.
+Azonban egy dolgot hadd említsek meg: a Scrum a menedzsmentre és szervezési gyakorlatra koncentrál,
+míg az XP szinte kizárólag a programozásra. Épp amiatt működnek olyan jól együtt, mert remekül
+kiegészítik egymást.
 
-I hereby add my voice to the existing empirical evidence that Scrum and XP can be fruitfully
-combined!
+Tehát itt szeretnék ceremónikusan csatlakozni azok táborához, akik szerint a Scrum és XP kiválóan
+egyesíthetőek.
 
-I’m going to highlight some of the more valuable XP practices and how they apply to our
-day-to-day work. Not all our teams have managed to adopt all practices, but in total we’ve
-experimented with most aspects of the XP/Scrum combination. Some XP practices are directly
-addressed by Scrum and can be seen as overlapping, for example “Whole Team”, “Sit Together”,
-“Stories”, and “Planning game”. In those cases we’ve simply stuck to Scrum.
+A továbbiakban kiemelem majd a főbb XP előírásokat, illetve kitérek arra, hogy ezek a napi
+gyakorlatban hogyan hasznosíthatóak. Nem minden csapatunk alkalmazta ezeket a gyakorlatokat, de
+összességében azért a Scrum és XP szinte minden kombinációját kipróbáltuk. Az XP néhány előírása
+közvetlenül megjelenik a Scrum-ban is, míg mások esetében vannak legalább átfedések. Példának okáért
+a "Teljes Csapat", "Együtt Ülés", "Sztorik" vagy a "Tervezési Játék". Ezekben az esetekben
+egyszerűen a Scrum-ra hagyatkoztunk.
 
-Pair programming
-----------------
-We started doing this lately in one of our teams. Works quite well actually.
-Most of our other teams still don’t pair program very much but, having actually tried it in one
-team for a few sprints now, I’m inspired to try to coach more teams into giving it a shot.
+Páros Programozás
+-----------------
+Ezt nemrég kezdtük el az egyik csapatban és ami azt illeti, elég jól bevált. A legtöbb csapat nem
+használja túl gyakran, de most, hogy egy pár sprint erejéig kipróbálhattam, valószínűleg több
+csapatban is be fogjuk vezetni.
 
-Some conclusions so far about pair programming:
-* Pair programming does improve code quality.
-* Pair programming does improve team focus (for example when the guy behind you says “hey is that
-stuff really necessary for this sprint?”).
-* Surprisingly many developers that are strongly against pair programming actually haven’t tried
-it, and quickly learn to like it once they do try it.
-* Pair programming is exhaustive and should
-not be done all day.
-* Shifting pairs frequently is good.
-* Pair programming does improve
-knowledge spread within the group. Surprisingly fast too.
-* Some people just aren’t comfortable
-with pair programming.
-Don’t throw out an excellent programmer just because he isn’t
-comfortable with pair programming.
-* Code review is an OK alternative to pair programming.
-* The
-“navigator” (the guy not using the keyboard) should have a computer of his own as well. Not for
-development, but for doing little spikes when necessary, browsing documentation when the
-“driver” (the guy at the keyboard) gets stuck, etc.
-* Don’t force pair programming upon people.
-Encourage people and provide the right tools but let them experiment with it at their own pace.
+Néhány megjegyzés a páros programozással kapcsolatban:
+* A páros programozás tényleg javít a kód minőségén.
+* A páros programozás tényleg javítja a csapat összpontosítását (például amikor a hátad mögül azt
+  hallod: "hé, ez tényleg kell ebben a sprintben?")
+* A páros programozástól ódzkodók között meglepően sokan vannak, akik még igazából sosem próbálták
+  ki de valójában gyorsan hozzászoknak és megszeretik.
+* A páros programozás rendkívül kimerítő tevékenység, amit nem szabad egész nap csinálni.
+* A párok gyakori cseréje jó hatással van.
+* A páros programozás valóban segít a tudás gyors megosztásában.
+* Néhányan nem szeretik a páros programozást. Csak ezért azonban ne mondjon le egy egyébként kiváló
+  programozóról.
+* A code review jó alternatívája a páros programozásnak.
+* A "navigátornak" (aki nem programozik) szintén legyen saját számítógépe. Nem fejlesztésre, hanem
+  például a dokumentáció böngészésére amikor a "pilóta" (a programozó) elakad.
+* Ne kényszerítse a páros programozást az emberekre, csak ösztönözze őket és tegye elérhetővé a
+  megfelelő eszközöket, de hagyja, hogy a saját tempójukban kísérletezzenek a páros programozással.
 
-Test-driven development (TDD)
------------------------------
-Amen! This, to me, is more important than both Scrum and XP. You can
-take my house and my TV and my dog, but don’t try to stop me from doing TDD! If you don’t like TDD
-then don’t let me in the building, because I will try to sneak it in one way or another :o)
+Teszt-vezérelt fejlesztés (TDD)
+-------------------------------
+Ámen! Ez számomra sokkal fontosabb, mint a Scrum és XP együttvéve. Megfoszthatnak a házamtól,
+elvehetik a tévém, elvihetik a kutyám, de a TDD-t nem adom! Ha ki nem állhatja a TDD-t, akkor jobb,
+ha nem enged az épületbe, mert így vagy úgy, de megpróbálom majd becsempészni. :)
 
-Here’s a 10 second summary of TDD:
+Íme egy 10 másodperces áttekintő:
 
-    Test-driven development means that you write an automated test, then you write just enough
-    code to make that one test pass, then you refactor the code primarily to improve readability
-    and remove duplication. Rinse and repeat.
+    A teszt-vezérelt fejlesztésben legelőször is írunk egy automatizált tesztet, majd elég kódot,
+    hogy ez a teszt sikeresen lefusson, ezután a kód olvashatóságának javítása és a duplikációk
+    eltávolítása végett refaktorálásra kerül. Majd újra az elejétől.
 
-Some reflections on test-driven development.
+Néhány észrevétel a TDD-vel kapcsolatban:
+* A TDD nehéz és eltart egy ideig, amíg valaki valóban megérti. Ami azt illeti, néha nem számít,
+  hogy mennyi időt tölt tréningeléssel, oktatással és demonstrációkkal - a legtöbb esetben az
+  egyetlen mód a TDD elsajátítására, ha egy TDD-t már jól ismerő programozóval párba állunk. Viszont
+  ha egyszer valaki tényleg megérti, nem nagyon akar majd visszamenni a TDD előtti programozáshoz.
+* A TDD alapvetéseiben javítja a rendszer felépítését.
+* Egy új rendszer esetében eltart egy ideig a TDD bevezetése, főként a feketedoboz alapú integrációs
+  tesztek esetében, de mindez nagyon hamar megtérül.
+* Fektessen elég időt a könnyen írható tesztekbe. Ez azt jelenti, hogy használja a megfelelő
+  eszközöket, biztosítson megfelelő oktatást mindenkinek, használják a megfelelő kiegészítő- és alap
+  osztálykönyvtárakat, stb...
 
-* TDD is hard. It takes a while for a programmer
-to get it. In fact, in many cases it doesn’t really matter how much you teach and coach and
-demonstrate – in many cases the only way for a programmer to get it is to have him pair
-program with somebody else who is good at TDD. Once a programmer does get it, however, he will
-usually be severely infected and will never want to work in any other way.
-* TDD has a profoundly positive effect on system design.
-* It takes time to get TDD up and running effectively in a new product, especially black-box
-integration tests, but the return on investment is fast.
-* Make sure you invest the time
-necessary to make it easy to write tests. This means getting the right tools, educating
-people, providing the right utility classes or base classes, etc.
+Mi a következő eszközöket használjuk a teszt-vezérelt fejlesztés során:
+* jUnit / httpUnit / jWebUnit. Fontolgatjuk továbbá a TestNG és Selenium használatát.
+* HSQLDB, egy beépített, memória-rezidens adatbázis.
+* Jetty, egy beépített, memória-rezidens webtároló.
+* Cobertura a teszt-lefedettségi mértékekhez.
+* Spring keretrendszer a különböző teszt fixtúrák felépítéséhez (mock-kal, mock nélkül, külső
+  adatbázissal, memória-rezidens adatbázissal, stb)
 
-We use the following tools for test-driven development:
-* jUnit / httpUnit / jWebUnit. We are considering TestNG and Selenium.
-* HSQLDB as an embedded in-memory DB for testing purposes.
-* Jetty as an embedded in-memory web container for testing purposes.
-* Cobertura for test coverage metrics.
-* Spring framework for wiring up different types of test fixtures (with
-mocks, without mocks, with external database, with in- memory database, etc).
+A - TDD szempontjából - legbonyolultabb termékeinkben automatizált feketedoboz-alapú elfogadási
+teszteket alkalmazunk. Ezek a teljes rendszert adatbázissal és webszerverekkel együtt memóriába
+töltik és kizárólag a nyilvános interfészeket (mint például HTTP) használva tesztelik.
 
-In our most sophisticated products (from a TDD perspective) we have automated black-box
-acceptance tests. These tests start up the whole system in memory, including databases and
-webservers, and access the system using only its public interfaces (for example HTTP).
-
-This makes for extremely fast develop-build-test cycles. This also acts as a safety net,
-giving the developers confidence enough to refactor often, which means the design stays clean
-and simple even as the system grows.
+Ez rendkívül gyors fejlesztés-telepítés-teszt ciklust eredményez, ami védőhálóként is szolgál, ezzel
+adva önbizalmat a gyakori refaktoringhoz, ami cserében azt jelenti, hogy az architektúra a rendszer
+növekedésével sem lesz rosszabb.
 
 TDD on new code
 ---------------
