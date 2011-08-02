@@ -2473,114 +2473,105 @@ működő szoftvert készíteniük az előző verzió folyamatos javításai mia
 
 A második sprintben található piros vonalak jelképezik ezt a káoszt.
 
-Not too pretty eh? Well, the sad thing is that the problem remains even if you have an
-acceptance test team. The only difference is that most of the bug reports will come from the
-test team instead of from angry end users.
-That’s a huge difference from a business
-perspective, but for developers it amounts to almost the same thing. Except that testers are
-usually less aggressive than end users. Usually.
+Elég rondán néz ki, nem? Az igazán szomorú dolog, hogy a problémát nem oldja meg egy kimondottan
+elfogadási tesztekre szakosodott csapat sem, mert úgy legfeljebb nem a dühös felhasználóktól
+érkeznek a hibajelentések. Ez ugyan üzleti szempontból jelentős különbség, de a fejlesztők
+szemszögéből gyakorlatilag ugyanaz azzal a különbséggel, hogy ezek a teszterek általában kevésbé
+agresszívek, mint a felhasználók. Általában.
 
 <figure>
 
-We haven’t found any simple solution to this problem. We’ve experimented a lot with different
-models though.
+Bár sok modellel kísérleteztünk, nincs igazán jó megoldásunk erre a problémára.
 
-First of all, again, maximize the quality of the code that the Scrum team releases. The cost
-of finding and fixing bugs early, within a sprint, is just so extremely low compared to the
-cost of finding and fixing bugs afterwards.
+Először is, maximalizálja a kiadott kód minőségét. A hibák feltárásának és javításának költsége
+sokkal alacsonyabb a sprinten belül, mint az után.
 
-But the fact remains, even if we can minimize the number of bugs, there will still be bug
-reports coming after a sprint is complete. How do we deal with that?
+Ettől függetlenül, még ha a hibák számát minimalizálta is, biztos, hogy érkeznek majd hibajelentések
+a sprint vége után is. Hogyan kezelhetjük ezeket?
 
-Approach 1: “Don’t start building new stuff until the old stuff is in production”
+1. Stratégia: "Új fejlesztésekbe csak azután kezdünk, hogy a előző dolgok már élesben működnek"
 ---------------------------------------------------------------------------------
-Sounds nice doesn’t it? Did you also get that warm fuzzy feeling?
+Jól hangzik, nem? Ön is átérezte mennyire jónak tűnik?
 
-We’ve been close to adopting this approach several times, and drawn fancy models of how we
-would do this. However we always changed our minds when we realized the downside. We would
-have to add a non time- boxed release period between sprints, where we do only testing and
-debugging until we can make a production release.
+Párszor már elég közel kerültünk ennek a stratégiának a bevezetéséhez és sokat agyaltunk, hogy
+hogyan is fogjuk majd csinálni. De valahogy mindig meggondoltuk magunk a módszer hátulütői miatt,
+ugyanis ezzel megjelenik egy nem időkorlátos elem a sprintek között, ahol csak tesztelünk és
+debuggolunk amíg össze nem áll egy kiadásra kész verzió.
 
 <figure>
 
-We didn’t like the notion of having non time-boxed release periods between sprints, mainly
-because it would break the regular sprint heartbeat. We could no longer say that “every 3 weeks
-we start a new sprint”. Besides, this
-doesn’t completely solve the problem. Even if we have a release period, there will be urgent
-bug reports coming in from time to time, and we have to be prepared to deal with them.
+Nem igazán barátkoztunk meg egy nem időkorlátos elem gondolatával a sprintjeink között, mivel ez
+teljesen felborítaná a sprintek szívverés-szerű ütemét. Nem mondhatnánk többé, hogy "három hetente
+új sprint indul". Ráadásul ez sem orvosolja teljesen a problémát. Ha be is iktatunk ilyen
+időszakokat, attól még fell kell készülnünk az időről-időre felbukkanó sürgős hibajelentésekre.
 
-Approach 2: “OK to start building new stuff, but prioritize getting the old stuff into production”
+2. Stratégia: "Elkezdhetünk dolgozni új fejlesztéseken, de az előző dolgok éles rendszerre
+telepítése élvez elsőbbséget."
 --------------------------------------------------------------------------------------------------
-This is our preferred approach. Right now at least.
+Mi ezt a megoldást javasoljuk, legalábbis jelenleg.
 
-Basically, when we finish a sprint we move on to the next one. But we expect to be spending
-some time in the next sprint fixing bugs from the last sprint. If the next sprint gets
-severely damaged because we had to spend so much time fixing bugs from the previous sprint, we
-evaluate why this happened and how we can improve quality. We make sure sprints are long
-enough to survive a fair amount of bug fixing from the previous sprint.
+Amint egy sprintet befejezünk, kezdjük a következőt, de arra számítunk, hogy az időnk egy részét az
+előző sprint hibáinak javításával fogjuk tölteni. Ha a következő sprint jelentős hátrányba kerül az
+előző sprintbe felmerülő hibák miatt, akkor megpróbáljuk megérteni, hogy ez miért történt és hogy
+hogyan kerülhetjük ezt el a jövőben. Fontos, hogy a sprintjeink elég hosszúak legyenek, hogy elég
+időnk legyen az előző sprint hibáinak javítására.
 
-Gradually, over a period of many months, the amount of time spent fixing bugs from previous
-sprints decreased. In addition we were able to get fewer people involved when bugs did happen,
-so that the whole team didn’t need to get disturbed each time. Now we are at a more acceptable
-level.
+Ezt a stratégiát alkalmazva néhány hónap alatt az előző sprintekben előforduló hibák javítására
+fordított idő, továbbá a hibákon dolgozó emberek száma is fokozatosan csökkent. Mára már sokkal
+elfogadhatóbb szinten vagyunk.
 
 <figure>
 
-During sprint planning meetings we set the focus factor low enough to account for the time we
-expect to spend fixing bugs from last sprint. With time, the teams have gotten quite good at
-estimating this. The velocity metric helps a lot (see pg. 24 “How does the team decide which
-stories to include in the sprint?”).
+A sprint planning meeting során elég alacsonyra választjuk a koncentrációs tényezőt, hogy maradjon
+elég idő a hibák javítására. Idővel a csapat elég gyakorlottá vált ennek a tényezőnek a becslésében.
+A sebességgel kapcsolatos információk is sokat segítenek (Lásd: "Hogyan dönti el a csapat, hogy mely
+sztorik kerüljenek a sprintbe?").
 
-Bad approach – “focus on building new stuff”
---------------------------------------------
-This in effect means “focus on building new stuff
-rather than getting old stuff into production”. Who would want to do that? Yet we made this
-mistake quite often in the beginning, and I’m sure many other companies do as well. It’s a
-stress-related sickness. Many managers don’t really understand that, when all the coding is
-finished, you are usually still far
-from production release. At least for complex systems. So the manager (or product owner) asks
-the team to continue adding new stuff while the backpack of old almost-ready-to-release code
-gets heavier and heavier, slowing everything down.
+Rossz stratégia - "új fejlesztésekre koncentrálni"
+--------------------------------------------------
+Ez voltaképp azt jelenti, hogy "új fejlesztésekre koncentrálunk ahelyett, hogy a már meglevő
+dolgokat az éles rendszerbe integráljuk". Ugyan ki akarná ezt? A kezdetekben mégis gyakran
+beleestünk ebbe a csapdába és biztos vagyok benne, hogy mások vállalatokban is előfordul. Ez egy
+stressz miatt fellépő tünet. Rengeteg menedzser nem igazán tudja, hogy ha a kódolás készen van, az
+még nem jelenti azt, hogy közel van az éles kiadás - egalábbis bonyolult rendszerek esetén - így a
+menedzser (vagy a Product Owner) egyre több új funkciót kér a csapattól, miközben a régebbi,
+"majdnem-kész-az-éles-telepítésre" funckiók listája egyre csak bővül, lassítva a fejlesztést.
 
-Don’t outrun the slowest link in your chain
--------------------------------------------
-Let’s say acceptance test is your slowest link.
-You have too few testers, or the acceptance test period takes long because of the dismal code
-quality.
+Ne hagyja le a leglassabb láncszemet
+------------------------------------
+Mondjuk, hogy az elfogadási teszt a leglassabb láncszem: túl kevés teszterrel rendelkezik, vagy a
+horribilis kód-minőség miatt sokáig tart a tesztelés. Tegyük fel, hogy a teszter csapat heti három
+funckiót képes tesztelni (nem, nem használjuk a "funkció per hét" mértékegységet, ezt kizárólag a
+példa kedvéért találtam ki), illetve, hogy a fejlesztők 6 funkciót fejlesztenek hetente.
 
-Let’s say your acceptance test team can test at most 3 features per week (no, we don’t use
-“features per week” as a metric; I’m using it just for this example). And let’s say your
-developers can develop 6 new features per week.
+Elég csábítóan hangzik egy menedzser vagy Product Owner (esetleg akár a csapat egésze) számára, hogy
+heti 6 funkciós ütemet diktáljon.
 
-It will be tempting for the managers or product owners (or maybe even the team) to schedule
-development of 6 new features per week.
+Ne tegye! A valóság így vagy úgy, de utoléri majd és az elég fájdalmas.
 
-Don’t! Reality will catch up to you one way or another, and it will hurt.
+Ehelyett ütemezzen 3 funkciót hetente és a fennmaradó időt fordítsa a tesztelési problémák
+feloldására. Például:
+* Kérjen fel néhány fejlesztőt, hogy teszteljenek (nagyon fognak ennek örülni...)
+* Automatizálja a teszteket
+* Növelje a sprint hosszát és vegye be az elfogadási teszt fázist a sprintbe.
+* Néhány sprintet jelöljön ki "teszt sprint"-nek, amikor az egész csapat az elfogadási teszteken
+  dolgozik.
+* Vegyen fel további tesztereket (még ha ez fejlesztők elbocsájtását is jelenti)
 
-Instead, schedule 3 new features per week and spend the rest of the time alleviating the
-testing bottleneck. For example:
-* Have a few developers work as testers instead (oh they will
-love you for that...).
-* Implement tools and scripts that make testing easier.
-* Add more automated test code.
-* Increase sprint length and have acceptance test included in sprint.
-* Define some sprints as “test sprints” where the whole team works as an acceptance test team.
-* Hire more testers (even if that means removing developers)
+Mi az utolsón kívül az összes felsorolt stratégiát kipróbáltuk. Hosszú távon a 2-es és 3-as pont
+működik a legjobban.
 
-We’ve tried all of these solutions (except the last one). The best long term solution is of course
-point 2 and 3, i.e. better tools and scripts and test automation.
+A visszatekintők remek lehetőséget biztosítanak a leglassabb elem azonosítására.
 
-Retrospectives are a good forum for identifying the slowest link in the chain.
+Vissza a valóságba
+------------------
+Ezek után azt gondolhatná, hogy minden csapatunkban külön tesztereket és minden termékhez külön
+elfogadási teszter csapatot alkalmazunk, hogy minden sprint után kiadás történik, stb.
 
-Back to reality
----------------
-I’ve probably given you the impression that we have testers in all Scrum teams, that
-we have a huge acceptance test teams for each product, that we release after each sprint, etc, etc.
+Pedig nem.
 
-Well, we don’t.
-
-We’ve sometimes managed to do this stuff, and we’ve seen the positive effects of it. But we are
-still far from an acceptable quality assurance process, and we still have a lot to learn there.
+Volt már rá példa, hogy ezeket meg tudtuk tenni és meggyőződtünk az előnyeiről, de még elég messze
+vagyunk egy használható minőségellenőrzési folyamattól és még sokat tanulhatunk ezen a téren.
 
 15 How we handle multiple Scrum teams
 =====================================
