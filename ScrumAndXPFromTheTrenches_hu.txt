@@ -2294,196 +2294,184 @@ termelékenység érzékelhetően javultak.
 Persze a munkaidő lecsökkentése nem az egyetlen tényező, ami közrejátszott, de meg vagyunk győződve,
 hogy igen nagy szerepe volt.
 
-14 How we do testing
+14 Hogyan tesztelünk
 ====================
-This is the hardest part. I’m not sure if
-it’s the hardest part of Scrum, or just the hardest part of software development in general.
+Ez a legnehezebb rész. Nem tudom, hogy csak a Scrum legnehezebb része, vagy úgy általában a
+szoftverfejlesztésé.
 
-Testing is the part that probably will vary most between different organizations. Depending on
-how many testers you have, how much test automization you have, what type of system you have
-(just server+webapp? or do you actually ship boxed software?), size of release cycles, how
-critical the software is (blog server vs. flight control system), etc.
+A tesztelés az a rész, amely vállalatról vállalatra a leginkább változik. Olyan tényezőktől függ,
+mint a teszterek száma, az automatizálás aránya, a rendszer típusa (szerver és webalkalmazás vagy
+esetleg dobozos szoftver?), kiadási ciklusok hossza, a rendszer kritikussága (blog szerver vagy
+repülésirányítási rendszer), stb...
 
-We’ve experimented quite a lot with how to do testing in Scrum. I’ll try to describe what
-we’ve been doing and what we’ve learnt so far.
+Elég sokat kísérletezgettünk a teszteléssel a Scrum kereteiben, a következőkben megpróbálom majd
+leírni, hogy mit próbáltunk ki és mi működött eddig.
 
-You probably can’t get rid of the acceptance test phase
--------------------------------------------------------
-In the ideal Scrum world, a sprint
-results in a potentially deployable version of your system. So just deploy it, right?
-
-<figure>
-
-Wrong.
-
-Our experience is that this usually doesn’t work. There will be nasty bugs.
-If quality has
-any sort of value to you, some kind of manual acceptance testing phase is required. That’s
-when dedicated testers that are not part of the team hammer the system with those types of
-tests that the Scrum team couldn’t think of, or didn’t have time to do, or didn’t have the
-hardware to
-do. The testers access the system in exactly the same way as the end users, which means they
-must be done manually (assuming your system is for human users).
-
-<figure>
-
-The test team will find bugs, the Scrum team will have to do bug-fix releases, and sooner or
-later (hopefully sooner) you will be able to release a bug-fixed version 1.0.1 to the end
-users, rather than the shaky version 1.0.0.
-
-When I say “acceptance test phase” I am referring to the whole period of testing, debugging,
-and re-releasing until there is a version good enough for production release.
-
-Minimize the acceptance test phase
-----------------------------------
-The acceptance test phase hurts. It feels distinctly
-un-agile. Although we can’t get rid of it, we can (and do) try to minimize it. More
-specifically, minimize the amount of time needed for the acceptance test phase. This is done
-by:
-* Maximizing the quality of the code delivered from the Scrum team
-* Maximizing the efficiency
-of the manual test work (i.e. find the best testers, give them the best tools, make sure they
-report time- wasting tasks that could be automated)
-
-So how do we maximize the quality of
-the code delivered from the Scrum team? Well, there are lots of ways. Here are two that we
-find work very well:
-* Put testers in the Scrum team
-* Do less per sprint
-
-Increase quality by putting testers in the Scrum team
+Valószínűleg nem nagyhatja el az elfogadási teszteket
 -----------------------------------------------------
+A tökéletes Scrum világában, a sprint eredménye egy telepíthető verzió, amit csak telepít és kész.
+Vagy nem?
 
 <figure>
 
-Yes, I hear both objections:
-* “But that’s obvious! Scrum teams are supposed to be cross functional!”
-* “Scrum teams are supposed to be role-less! We can’t have a guy who is only a tester!”
+Hát nem.
 
-Let me clarify. What I mean by “tester” in this case is “A guy whose primary skill is
-testing”, rather than “a guy whose role is to do only testing”.
-
-Developers are often quite lousy testers. Especially developers testing their own code.
-
-                                                                    The tester is the “signoff guy”
-In addition to being “just” a team member, the tester has an important job.
-He is the signoff guy. Nothing is considered “done” in a sprint until he says
-it’s done. I’ve found that developers often say something is done when it really isn’t. Even
-if you have a very clear definition of “done” (which you really should, see pg 32 “Definition
-of “done””), developers will frequently forget it. We programmers are impatient people and
-want to move on to the next item ASAP.
-
-So how does Mr. T (our tester) know something is done then? Well, first of all, he should
-(surprise) test it! In many cases it turns out that something a developer considered to be
-“done” wasn’t even possible to test! Because it wasn’t checked in, or wasn’t deployed to the
-test server, or couldn’t be started, or whatever. Once Mr. T has tested the feature, he should
-go through the “done” checklist (if you have one) with the developer. For example if the
-definition of “done” mandates that there should be a release note, then Mr. T checks that
-there is a release note. If
-there is some kind of more formal specification for this feature (rare in our case) then Mr. T
-checks up on that as well. Etc.
-
-A nice side effect of this is that the team now has a guy who is perfectly suited to organize
-the sprint demo.
-
-What does the tester do when there is nothing to test?
-------------------------------------------------------
-
-This question keeps coming up. Mr. T:
-“Hey Scrum master, there’s nothing to test at the moment, so what should I do?”. It may take a
-week before the team completes the first story, so what should the tester do during that time?
-
-Well, first of all, he should be preparing for tests. That is, writing test specs, preparing a
-test environment, etc. So when a developer has something that is ready to test, there should
-be no waiting, Mr. T should dive right in and start testing.
-
-If the team is doing TDD then people spend time writing test code from day 1. The tester
-should pair-program with developers that are writing test code. If the tester can’t program at
-all he should still pair-program with developers, except that he should only navigate and let
-the developer do the typing. A good tester usually comes up with different types of tests than
-a good developer does, so they complement each other.
-If the team is not doing TDD, or if
-there isn’t enough test-case writing to fill up the tester’s time, he should simply do
-whatever he can to help the team achieve the sprint goal. Just like any other team member. If
-the tester can program then that’s great. If not, your team will have to identify all
-non-programming tasks that need to be done in the sprint.
-
-When breaking down stories into tasks during the sprint planning meeting, the team tends to
-focus on programming tasks. However usually there are lots of non-programming tasks that need
-to be done in the sprint.
-If you spend time trying to identify the non-programming tasks
-during the sprint planning phase, chances are Mr. T will be able to contribute quite a lot,
-even if he can’t program and there is no testing to do right now.
-
-Examples of non-programming tasks that often need to be done in a sprint:
-* Set up a test environment.
-* Clarify requirements.
-* Discuss deployment details with operations.
-* Write deployment documents (release notes, RFC, or whatever your organization does).
-* Contact with external resources (GUI designers for example).
-* Improve build scripts.
-* Further breakdown of stories into tasks.
-* Identify key questions from the developers and get them answered.
-
-On the converse side, what do we do if Mr. T becomes a bottleneck? Let’s say we are on the
-last day of the sprint and suddenly lots of stuff is done and Mr. T doesn’t have a chance to
-test everything. What do we do? Well we could make everybody in the team into Mr. T’s
-assistants. He decides which stuff he needs to do himself, and delegates grunt testing to the
-rest of the team. That’s what cross functional teams are all about!
-
-So yes, Mr. T does have a special role in the team, but he is still allowed to do other work,
-and other team members are still allowed to do his work.
-
-Increase quality by doing less per sprint
------------------------------------------
-This goes back to the sprint planning meeting.
-Simply put, don’t cram too many stories items into the sprint! If you have quality problems,
-or long acceptance test cycles, do less per sprint! This will almost automatically lead to
-higher quality, shorter acceptance test cycles, fewer bugs affecting end users, and higher
-productivity in the long run since the team can focus on new stuff all the time rather than
-fixing old stuff that keeps breaking.
-
-It is almost always cheaper to build less, but build it stable, rather than to build lots of
-stuff and then have to do panic hot-fixes.
-
-Should acceptance testing be part of the sprint?
-------------------------------------------------
-We waver a lot here. Some of our teams
-include acceptance testing in the sprint. Most of our teams however don’t, for two reasons:
-* A sprint is time-boxed. Acceptance testing (using my definition which includes debugging and
-re-releasing) is very difficult to time-box. What if time runs out and you still have a
-critical bug?
-Are you going to release to production with a critical bug? Are you going to
-wait until next sprint? In most cases both solutions are unacceptable. So we leave manual
-acceptance testing outside.
-* If you have multiple Scrum teams working on the same product, the
-manual acceptance testing must be done on the combined result of both team’s work. If both
-teams did manual acceptance within the sprint, you would still need a team to test the final
-release, which is the integrated build of both team’s work.
+Az a tapasztalatunk, hogy ez a gyakorlatban ritkán működik. Helyette csúnya bugokat fog találni,
+szóval ha Önnek egy kicsit is számít a minőség, nem ússza meg valamiféle kézi elfogadási tesztek
+nélkül. Ez az, amikor a csapaton kívüli teszterek nekiesnek a rendszernek olyan tesztekkel, amikre a
+Scrum csapat álmában se gondolt volna, vagy legalábbis nem volt ideje gondolni. A teszterek pontosan
+úgy férnek hozzá a rendszerhez, mint a felhasználók, ami azt jelenti, hogy a teszteket manuálisan
+kell végezni (feltételve persze, hogy a rendszer emberek számára készül).
 
 <figure>
 
-This is by no means a perfect solution but good enough for us in most cases.
+A teszterek hibákat találnak majd, amit Scrum csapatnak kell kijavítani bugfix kiadásokban és előbb
+vagy utóbb (remélhetőleg előbb) a felhasználóknak is kiadható az 1.0.1-es hibajavított verzió.
 
-Sprint cycles vs. acceptance test cycles
+Amikor "elfogadási teszt fázis"-ról beszélek, akkor arról a hosszabb tesztelés-debuggolás-kiadás
+ciklusról van szó, aminek a végén egy elfogadható minőségű ténylegesen kiadható rendszert kapunk.
+
+Minimalizálja az elfogadási teszt fázist
 ----------------------------------------
-In a perfect McScrum world you don’t need acceptance
-test phases since each Scrum team releases a new production-ready version of your system after
-each sprint.
+Az elfogadási teszt fázis fájdalmas és nagyon nem tűnik agilisnak. Bár nem lehet teljesen
+megszabadulni tőle, megpróbálhatjuk minimalizálni, egész pontosan minimalizálni az elfogadási teszt
+fázisra fordított időt. Ezt a következő módon érjük el:
+* A Scrum csapat által szállított kód minőségének maximalizálásával
+* A kézi tesztek hatékonyságának növelésével (azaz alkalmazza a legjobb tesztereket, biztosítsa
+  számukra a legjobb eszközöket és gondoskodjon arról, hogy jelezzék a leginkább időigényes
+  feladatokat, amiket aztán automatizálhat).
+
+Hogyan is maximalizálhatjuk a Scrum csapat által szállított kód minőségét? Nos erre számtalan mód
+van, de íme kettő ami nekünk elég jól működött:
+* Teszterek hozzáadása a Scrum csapathoz
+* Sprintenként kevesebb feladat vállalása
+
+Minőség javítása teszterek hozzáadásával
+----------------------------------------
 
 <figure>
 
-Well, here’s a more realistic picture:
+Igen, már hallom is az ellenérveket:
+* "De ez egyértelmű! A Scrum csapat tagjai több téren is képzett kell legyenek!"
+* "A Scrum csapat tagjainak nincs kijelölt szerepköre! Nincs olyan, hogy valaki csak teszter!"
+
+Hadd pontosítsak. Ebben az esetben a "teszter" olyan személyt jelent, akinek az "elsődleges
+képzettsége tesztelés" és nem olyan személyt, akinek "az egyetlen feladata a tesztelés".
+
+A fejlesztők gyakran elég rossz teszterek, főleg amikor a saját kódjukat kell tesztelni.
+
+                                                                A teszter az "utolsó ellenőrzőpont"
+Amellett, hogy a csapat egy "normális" tagja, a teszternek van egy fontos felelőssége, mégpedig hogy
+az utolsó ellenőrzőpont legyen. Egy feladat addig nem tekinthető késznek, amíg ő azt nem mondja,
+hogy készen van. Az a tapasztalatom, hogy a fejlesztők gyakran mondanak olyan dolgokat is
+"kész"-nek, amik valójában nincsenek készen még akkor is, ha a "kész" definíciója világos (amiről
+egyébként érdemes gondoskodnia, Lásd: "A "kész" definíciója"), mert a fejlesztők erről gyakran
+megfeledkeznek. Mi programozók türelmetlen népség vagyunk, akik amint lehet, szeretnénk belekezdeni
+a következő feladatba.
+
+Honnan tudja tehát Mr. T (a teszterünk), hogy valami készen van? Először is - meglepő módon -
+tesztelnie kell. Sok esetben előfordul, hogy amit a fejlesztő "kész"-nek gondolt, azt nem lehet még
+tesztelni sem, mert nincs a verziókövetőben, nincs a teszt környezetre telepítve, nem fut, stb. Ha
+Mr T elvégezte a funkció tesztjét, a fejlesztővel közösen végigmennek a "kész" szabálylistán (már ha
+van ilyen). Például elképzelhető, hogy ez a lista előírja, hogy kiadási megjegyzést kell készíteni.
+Ilyenkor Mr T gondosan ellenőrzi, hogy ez megtörtént-e. Ha tartozik a funkcióhoz formális
+specifikáció (esetünkben ilyen nem nagyon van), akkor Mr T ezt is leellenőrzi.
+
+Egy kellemes mellékhatás, hogy a csapatban így biztosan van legalább egy ember, aki tökéletes a
+sprint demó megszervezésére.
+
+Mit csinál a teszter, amikor nincs mit tesztelni?
+-------------------------------------------------
+
+Elég gyakran felmerülő szituáció, hogy Mr T azt mondja a Scrum Master-nek, hogy épp nincs mit
+tesztelni, most mit tegyen. Akár egy hétig is eltarthat, amíg a csapat befejezi az első sztorit, mit
+tegyen ez alatt a teszter?
+
+Először is fel kell készülnie a tesztekre, például teszt specifikációt írni vagy a teszt környezetet
+konfigurálni, hogy amikor a fejlesztő elkészül, ne kelljen várnia és Mr T azonnal elkezdhesse a
+teszteket.
+
+Ha a csapat TDD-t használ, akkor a tagok eleve a kezdetektől fogva írnak teszteket. A teszter párba
+állhat az éppen teszteket író fejlesztőkkel, még akkor is, ha egyébként a teszter nem tud
+programozni (de ekkor csak navigátori szerepben). Egy jó teszter általában másféle tesztekkel áll
+elő, mint egy jó programozó, ezért remekül kiegészítik egymást.
+
+Ha a csapat nem használ TDD-t, vagy nincs elég teszt, hogy kitöltse a teszter idejét, bármi mással
+is foglalkozhat, ami közelebb viszi a csapatot a sprint céljának eléréséhez - pontosan mint a csapat
+többi tagja. Ha a teszter tud programozni, nagyszerű. Ha nem, akkor a csapat összegyűjtheti számára
+a programozást nem igénylő feladatokat.
+
+Amikor a sztorikat feladatokra bontjuk a sprint planning meetingben, a csapat általában programozási
+feladatokra koncentrál, azonban rengeteg programozást nem igénylő feladat is van a sprintben. Ha a
+sprint planning során megpróbálja azonosítani ezeket a feladatokat, nagy valószínűség szerint Mr T
+is sokat fog tudni segíteni még ha nem is tud programozni és nincs éppen tesztelendő funkció.
+
+Néhány példa gyakran felmerülő, programozást nem igénylő feladatokra:
+* Teszt környezet telepítése.
+* Követelmények tisztázása.
+* A telepítés részleteinek egyeztetése az üzemeltetőkkel.
+* Telepítési dokumentáció írása (kiadási megjegyzések, RFC-k, vagy amire éppen szükség van).
+* Kapcsolattartás külsősökkel (például GUI dizájnerek).
+* A build szkript fejlesztése.
+* Sztorik lebontása feladatokra.
+* A fejlesztők főbb kérdéseinek összegyűjtése és megválaszolása.
+
+Mit tegyünk, ha épp ellenkezőleg, Mr T a szűk keresztmetszet? Mondjuk a sprint utolsó napján egy
+csomó dolog hirtelen elkészül és Mr T-nek esélye sincs mindent tesztelni. Ebben az esetben a csapat
+minden tagját kinevezhetjük Mr T segédjének. Mr T dönti el, hogy mi az, amit magának kell
+megcsinálnia és a fennmaradó dolgokat feloszthatja a csapat többi tagja között. Végtére is ez a
+lényege a több téren is képzett csapatnak.
+
+Tehát Mr T igenis rendelkezik külön szerepkörrel a csapaton belül, de ettől még ugyanúgy végezhet
+más feladatokat is, ugyanúgy, ahogy a csapat többi is nyugodtan tesztelhet.
+
+A minőség javítása sprintenként kevesebb feladat vállalásával
+-------------------------------------------------------------
+Ez a sprint planning meeting-ig nyúl vissza. Leegyszerűsítve, ne próbáljon túl sok sztorit
+belezsúfolni a sprintbe. Ha gondja van a minőséggel vagy túl hosszú az elfogadási teszt fázisa,
+egyszerűen vállaljon kevesebbet sprintenként. Ez majdnem teljesen automatikusan jobb minőséghez,
+rövidebb elfogadási teszt időszakhoz, kevesebb bughoz és hosszú távon jobb hatékonysághoz vezez,
+mivel a csapat ideje java részét a régi dolgok állandó javítása helyett új funkciók fejlesztésével
+töltheti.
+
+Szinte mindig kifizetődőbb kevesebb, de stabilabb funkciót fejleszteni, mint többet, amit viszont
+később rohamtempóban kell javítgatni.
+
+A sprint része legyen-e az elfogadási teszt?
+--------------------------------------------
+Itt elég sokat szoktunk vacillálni. Bár néhány csapatban az elfogadási teszt a sprint rész, a
+legtöbb esetén nem, méghozzá két okból:
+* Egy sprint fix időkorláttal rendelkezik. Az elfogadási tesztet (ideértve a debuggolást és
+  újra-kiadást) azonban rendkívül nehéz keretek közé szorítani. Mi legyen, ha kifutunk az időből és
+  még mindig vannak kritikus hibák? Adjuk ki a rendszert hibákkal együtt, vagy várjunk a következő
+  sprintig? A legtöbb esetben mindkét megoldás elfogadhatatlan, azért inkább kihagyjuk az elfogadási
+  tesztet a sprintből.
+* Ha egy terméken több Scrum csapat is dolgozik, az elfogadási tesztet az összes sprint eredményén
+  kell végezni még akkor is, ha egyébként mindkét csapat sprintjében benne volt egy elfogadási teszt
+  fázis.
 
 <figure>
 
-After sprint 1, a buggy version 1.0.0 is released. During sprint 2, bug reports start pouring
-in and the team spends most of its time debugging and is forced to do a mid-sprint bug-fix
-release 1.0.1. Then at the end of sprint 2 they release a new feature-version 1.1.0, which of
-course is even buggier since they had even less time to get it right this time due to all the
-disturbances from last release. Etc etc.
+Ez nem tökéletes megoldás, de a legtöbb esetben megfelelőnek bizonyult.
 
-The diagonal red lines in sprint 2 symbolize chaos.
+Sprint ciklus és elfogadási teszt ciklus
+----------------------------------------
+Az ideális Scrum világban nincs szükség elfogadási tesztekre, hiszen minden Scrum csapat minden
+sprint végén gyakorlatilag kiadásra kész terméket készít.
+
+<figure>
+
+A valóság azonban kissé más:
+
+<figure>
+
+Az első sprint után egy hibás 1.0.0 kerül kiadásra. A második sprint alatt elkezdenek beérkezni a
+hibajelentések, ezért a csapat ideje nagy részét debuggolással tölti és arra kényszerül, hogy a
+sprint közepén kiadjon egy 1.0.1-es hibajavítást. A második sprint végén kiadnak egy új funkciókat
+tartalmazó 1.1.0-t, ami persze még az előzőnél is bugosabb, mivel kevesebb idejük volt helyesen
+működő szoftvert készíteniük az előző verzió folyamatos javításai miatt.
+
+A második sprintben található piros vonalak jelképezik ezt a káoszt.
 
 Not too pretty eh? Well, the sad thing is that the problem remains even if you have an
 acceptance test team. The only difference is that most of the bug reports will come from the
