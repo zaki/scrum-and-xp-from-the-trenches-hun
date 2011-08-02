@@ -336,9 +336,9 @@ haladunk, szóval teljesen kezdőként is érdekesnek találhatja ezt az írást
 
 2 Hogyan használjuk a Product Backlogot
 =======================================
-A Product Backlog a Scrum motorja. Minden itt kezdődik. A Product Backlog egy prioritás alapján rendezett követelmény-,
-sztori-, feature- vagy akármi- lista. Olyan akármik, amit a kliens szeretne, a kliens
-nyelvezetével leírva.
+A Product Backlog a Scrum motorja. Minden itt kezdődik. A Product Backlog egy prioritás alapján
+rendezett követelmény-, sztori-, feature- vagy akármi- lista. Olyan akármik, amit a kliens szeretne,
+a kliens nyelvezetével leírva.
 
 Mi ezeket Sztori-nak hívjuk, vagy néha egyszerűen csak Backlog Bejegyzés-nek.
 
@@ -348,8 +348,8 @@ Ez azért szükséges, hogy ne veszítsük el véletlenül a sztorikat, amikor �
 * Név – rövid, kifejező sztori név. Például “A saját tranzakció-történet
 megjelenítése” Elég világos kell, legyen, hogy a fejlesztők és a termék-tulajdonos nagyjából
 értsék miről van szó és hogy elkülönüljön a többi sztoritól. Általában 2-10 szó.
-* Fontosság – a termék-tulajdonos által eldöntött fontosság értéke. Például 10, vagy 150. Minél nagyobb a
-szám, annál fontosabb.
+* Fontosság – a termék-tulajdonos által eldöntött fontosság értéke. Például 10, vagy 150. Minél
+  nagyobb a szám, annál fontosabb.
   o Amikor csak lehet, próbálom kerülni a "prioritás" kifejezést, mivel tipikusan 1 a legmagasabb
   prioritás, ami akkor tud gondot okozni, amikor egy _még_ fontosabb feladat érkezik. Milyen
   prioritást adjunk annak? 0-t? -1-t?
@@ -458,7 +458,7 @@ További módszerek, amiket kipróbáltunk vagy fontolóba vettünk:
 
 4 Hogyan tervezzük a Sprinteket
 ===========================
-A Sprint Planning egy nagyon fontos meeting, talán a legfontosabb dolog a Scrum-ban (legalábbis 
+A Sprint Planning egy nagyon fontos meeting, talán a legfontosabb dolog a Scrum-ban (legalábbis
 véleményem szerint) Egy rosszul végrehajtott Sprint Planning Meeting hatással lehet a teljes
 Sprint-re.
 
@@ -2026,7 +2026,7 @@ Becsült sebesség
 -----------------
 Rendben, most hogy már van valami fogalmunk a legfontosabb sztorikra szükséges időről, a következő
 lépés, hogy a sprintek átlagos sebességét megbecsüljük, ami azt jelenti, hogy meg kell egyezni a
-koncentrációs tényezőben is. (Lásd: "Hogyan dönti el a csapat, hogy mely sztorik kerüljenek a 
+koncentrációs tényezőben is. (Lásd: "Hogyan dönti el a csapat, hogy mely sztorik kerüljenek a
 sprintbe?"
 
 A koncentrációs tényező gyakorlatilag azt határozza meg, hogy "a csapat mennyi időt tud a jelenleg
