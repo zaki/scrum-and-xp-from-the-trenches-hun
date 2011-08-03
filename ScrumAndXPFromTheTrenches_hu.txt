@@ -3224,29 +3224,28 @@ A sprint végén
 * Frissítse a sprint statisztikáit tartalmazó dokumentumon. Adja meg a tényleges sebességet és a
   visszatekintő főbb kérdéseit
 
-18 Parting words
-================
-Whew! Never thought it would get this long.
+18 Zárszó
+=========
+Hű, sose gondoltam volna hogy eljutunk a végére.
 
-Hope this paper gave you some useful ideas, whether you are new to Scrum or a seasoned veteran.
+Remélhetőleg ezen írás tartalmazott hasznos ötleteket az Ön számára, akár újonc, akár veterán a
+Scrum terén.
 
-Since Scrum must be tailored specifically to each environment it is hard to argue
-constructively over best practices at a general level. Nevertheless I’m interested in hearing
-your feedback. Tell me how your approach differs from mine. Give me ideas on how to improve!
+Mivel a Scrum-ot az egyes környezetekhez kell igazítani, elég nehéz "bevett gyakorlatokról" vitázni,
+de ettől függetlenül szívesen veszek mindenféle visszajelzést. Mondja el, hogyan különbözik az Ön
+gyakorlata az enyémtől. Adjon ötleteket a fejlesztésükhoz.
 
-Feel free to contact me at henrik.kniberg@crisp.se.
-I also keep an eye on scrumdevelopment@yahoogroups.com.
+Nyugodtan írjon nekem a henrik.kniberg@crisp.se címen. Szemmel szoktam tartani a
+scrumdevelopment@yahoogroups.com levelezési listát is.
 
-If you liked this book you might want to check in on my blog from time to time. I hope to be
-adding some posts on Java and agile software development.
-http://blog.crisp.se/henrikkniberg/
+Ha tetszett ez a könyv, időről-időre nézzen fel a blogomra is. Remélhetőleg hasznos cikkeket talál
+a Java-ról és az agilis szoftverfejlesztésről: http://blog.crisp.se/henrikkniberg/
 
-Oh, and don’t forget...
-It’s just a job right?
+És végezetül ne felejtse:
+Ez csak egy állás.
 
-Recommended reading Here are some books that have provided me with lots of inspiration and
-ideas. Highly recommended!
-
+Javasolt irodalom
+Íme néhány könyv, ami rengeteg ihletet és ötletet adott.
 
 About the author
 ================
