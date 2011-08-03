@@ -3107,97 +3107,89 @@ nincs pihenőidő a sprint visszatekintő rész és a sprint planning meeting r�
 Azoknál a termékeknél, ahol csak egy csapat van, a sprint planning meeting során nem szükséges
 összefoglalni a visszatekintőn megbeszélteket, mivel mindenki részt vett a visszatekintőn.
 
-16 How we handle geographically distributed teams
-=================================================
-What happens when team members are in different
-geographic locations?
-Much of the Scrum and XP “magic” is based on co-located tightly
-collaborating team members that pair program and meet face-to-face every day.
+16 Mit teszünk földrajzilag elosztott csapatok esetén
+=====================================================
+Mi történik, ha a csapat tagjai különböző helyeken vannak? A Scrum és XP "varázsa" pont az egy
+helyen levő, szorosan együttműködő csapattagokra épül, akik páros programozást használnak és nap
+mint nap találkoznak.
 
-We have some geographically separated teams, and we also have team members working from home
-from time to time.
+Nálunk is vannak földrajzilag elválasztott csapatok, illetve olyan tagok, akik időnként otthonról
+dolgoznak.
 
-Our strategy for this is quite simple. We use every trick we can come up with to maximize the
-communication bandwidth between the physically separated team members. I don’t only mean
-communication bandwidth as in Mbit/second (although that is of course important as well). I
-mean communication bandwidth in a wider sense:
+A stratégiánk rendkívül egyszerű: minden rendelkezésünkre álló eszközt bevetünk annak érdekében,
+hogy a különböző helyeken lévő tagok közti kommunikáció sávszélességét maximalizáljuk. És itt nem
+csak Mbps jellegű sávszélességekről beszélek (bár persze az is lényeges), hanem a szó tágabb
+értelmében:
+* Páros programozás lehetősége
+* A Napi Scrum-on szemtől-szembeni találkozás lehetősége.
+* Lehetőség bármikor szemtől-szemben beszélgetni
+* Lehetőség fizikailag találkozni és szocializálni
+* Spontán meetingek összehívásának lehetősége
+* Annak lehetősége, hogy ugyanazt a sprint backlogot, burndown-t, product backlogot és egyéb
+  információt láthassuk
 
-* The ability to pair program together.
-* The ability to meet face-to-face at the daily scrum.
-* The ability to have face-to-face discussions at any time.
-* The ability to meet physically and
-socialize.
-* The ability to have spontaneous meetings with the whole team.
-* The ability to see
-the same view of the sprint backlog, sprint burndown, product backlog, and other information
-radiators.
+Azon dolgok, amiket már bevezettünk (vagy éppen bevezetés alatt állnak, mivel még nem végeztünk
+minddel):
+* Webkamera és headset minden géphez.
+* Távolról is elérhető konferenciatermek, webkamerákkal, mikrofonokkal, mindig készen álló
+  számítógépekkel, távoli asztal megosztó szoftverrel, stb.
+* "Távoli ablakok". Minden helyen üzembe helyeztünk nagyméretű monitorokat, amik a többi helyet
+  mutatják. Ez olyan, mint valami virtuális ablak két részleg között. A monitor előtt állva
+  integethet a túlsó oldalon lévőknek. Láthatja, hogy ki van az asztalánál, vagy hogy ki kivel
+  beszél éppen. Ez arra szolgál, hogy kialakuljon egy egészséges "mindenki közös célért dolgozik"
+  érzés.
+* Csereprogram, aminek kereteiben az egyes helyekről rendszeresen látogatást tehetnek az emberek más
+  helyekre.
 
-Some of the measures we have implemented (or are implementing, we haven’t done them all yet)
-are:
-* Webcam and headset at each workstation.
-* “Remote-enabled” conference rooms with webcams, conference microphones, always-on-always-ready
-computers, desktop sharing software, etc.
-* “Remote windows”. Big screens at each location, showing a permanent view of the other
-locations. Sort of like a virtual window between two departments. You can stand there and
-wave. You can see who is at his desk and who is talking to who.  This is to create a feeling of
-“hey we’re in this together”.
-* Exchange programs, where people from each location travel and visit each other on a regular basis.
+Ezekkel a technikákkal felfegyverezve lassan de biztosan kialakítottunk egy jól működő rendszert a
+sprint planning meeting-ek, demók, visszatekintők, napi scrumok, stb bonyolítására földrajzilag
+elosztott csapatok esetén.
 
-Using these techniques and more we are slowly but surely starting to get the hang of how to do
-sprint planning meetings, demos, retrospectives, daily scrums, etc, with team members
-distributed geographically.
+Mint mindin esetben ez is a kísérletezésen múlik. Megfigyelés => Változtatás => Megfigyelés =>
+Változtatás => Megfigyelés => Változtatás
 
-As usual it’s all about experimenting. Inspect => adapt => inspect => adapt => inspect => adapt
-=> inspect => adapt => inspect => adapt
-
-Offshoring
-----------
-We have several offshore teams and have been experimenting with how to handle this
-efficiently using Scrum.
-
-There are two main strategies here: separated teams or separated team members.
+Offshore
+--------
+Több "offshore" csapatunk is van és többféle módszert is kipróbáltunk ezek hatékony kezelésére a
+Scrum keretein belül.
 
 <figure>
 
-The first strategy, separated teams, is a compelling choice. Nevertheless, we have started with
-the second strategy, separated team members. There are several reasons for this.
-1. We want the team members to get to know each other well.
-2. We want excellent communication
-infrastructure between the two locations, and want to give the teams a strong incentive to set
-this up.
-3. In the beginning, the offshore team is too small to form an effective scrum team
-on their own.
-4. We want a period of intense knowledge sharing before independent offshore
-teams will be a feasible option.
+Az első stratégia a csapatok szétválasztása, ami elég vonzónak tűnik. Ettől függetlenül mi a második
+stratégiával, a csapattagok szétválasztásával kezdtük, amire több indokunk is volt:
+1. Azt szerettük volna, ha a csapattagok jól ismerik egymást.
+2. Kiváló kommunikációs infrastruktúrát szerettünk volna látni a két helyszín között és
+megfelelő ösztönzést akartunk biztosítani a csapatoknak, hogy ezt maguktól kialakítsák.
+3. Kezdetben az offshore csapat túl kicsi, hogy hatékonyan működjön, mint önálló Scrum csapat.
+4. Szerettünk volna biztosítani az akadálytalan információ-megosztást legalább addig, amíg az
+offshore csapat önállóan is képes működni.
 
-In the long run we may well move towards the “separated teams” strategy.
+Hosszú távon elképzelhető, hogy a "szétválasztott csapat" stratégia felé fogunk elmozdulni.
 
-Team members working from home
+Otthonról dolgozó csapattagok
 ------------------------------
-Working from home can be really good sometimes. Sometimes you
-can get more programming done in one day at home than a whole week at work. At least if you
-don’t have kids :o)
+Otthonról dolgozni néha nagyon hasznos tud lenni. Van úgy, hogy otthon egy nap alatt többet sikerül
+elérni, mint a munkahelyen egy teljes hét alatt. Legalábbis, ha nincsenek gyerekei :)
 
-Yet one of the fundamentals in Scrum is that the whole team should be physically collocated. So
-what do we do?
+A Scrum egyik alapvetése azonban, hogy az egész csapat fizikailag egy helyen tartózkodik. Mit
+tegyünk ilyenkor?
 
-Basically we leave it to the teams to decide when and how often it is OK to work from home.
-Some team members work from home regularly due to long commutes. We do, however, encourage the
-teams to be physically collocated “most” of the time.
+Gyakorlatilag a csapatokra hagyjuk annak eldöntését, hogy mikor és mennyit lehessen otthonról
+dolgozni. Néhány tag gyakran dolgozik otthonról, mivel sokáig tart bejutni a munkahelyre. Ennek
+ellenére ösztönözzük a csapatokat, hogy az idő nagy részét együtt töltsék.
 
-When team members work from home they join the daily scrum using a Skype voice call (sometimes
-video). They are online through instant messaging all day. Not as good as being in the same
-room, but good enough.
+Ha valaki otthonról dolgozik, a napi scrumban Skype videókonferencián keresztül csatlakozik, továbbá
+egész nap elérhetőek chaten, ami ugyan nem ugyanolyan, mintha fizikailag a szobában lennének, de
+teljesen megteszi.
 
-We once tried the concept of having Wednesdays designated as focus day.
-That basically meant
-"if you would like to work from home, that’s fine, but do it on Wednesdays. And check with your
-team" This worked pretty well with the team that we tried it on. Usually most of the team
-stayed home on Wednesdays and they get a lot done, while still collaborating fairly well. Since
-it only was one day, the team members didn’t get too out-of-sync with each other. For some
-reason this never quite caught on with the other teams though.
+Egyszer megpróbáltuk bevezetni "Fókusz Szerdákat", ami azt jelenti, hogy ha valaki otthonról
+szeretne dolgozni, az "rendben van, de csak szerdánként, ha csapattal előre egyeztetett". Ez elég
+jól működött. A csapat nagy része otthonról dolgozott szerdánként, amikor rengeteg feladatot
+sikerült befejezniük és ennek ellenére is elég összehangoltan dolgoztak. Mivel ez csak egy napot
+jelentett, a csapattagok szinkronban tudtak maradni egymással. Azonban ez valamilyen ismeretlen
+okból kifolyólag nem terjedt át más csapatokra.
 
-On the whole people working from home has not really been a problem for us.
+Nagy általánosságban az otthonról dolgozó tagok sosem jelentettek nagy problémát számunkra.
 
 17 Scrum master checklist
 =========================
