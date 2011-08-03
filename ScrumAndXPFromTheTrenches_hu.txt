@@ -7,146 +7,141 @@ Henrik Kniberg
 Magyar fordítás:
 Dezso Zoltan
 
-  Acknowledgements
-  ----------------
-  The first draft of this paper took only one weekend to type, but it sure was
-  an intensive weekend! 150% focus factor :o)
-  Thanks to my wife Sophia and kids Dave and Jenny for putting up with
-  my asocialness that weekend, and to Sophia’s parents Eva and Jörgen for
-  coming over to help take care of the family.
-  Thanks also to my colleagues at Crisp in Stockholm and people on the
-  scrumdevelopment yahoo group for proofreading and helping me improve
-  the paper.
-  And, finally, thanks to all my readers who have provided a constant
-  stream of useful feedback. I’m particularly glad to hear that this paper has
-  sparked so many of you to give agile software development a shot!
+  Köszönetnyilvánítás
+  -------------------
+  Ezen cikk első vázlata nagyjából egy hétvégét vett igénybe, de az aztán tényleg intenzív hétvége
+  volt. 150%-os koncentrációs tényező! :)
+  Szeretném megköszönni feleségemnek, Sophiának és gyermekeimnek, Dave-nek és Jenny-nek, hogy
+  elviseltek azon a hétvégén és Sophia szüleinek, Eva-nak és Jörgennek, hogy segítettek felügyelni a
+  gyerekekre. Köszönet illeti még kollégáimat a stockholmi Crisp-nél, illetve a scrumdevelopment
+  yahoo levelezőlista tagjait, hogy lektorálták és ötleteikkel segítették a cikket.
+  Végül szeretnék köszönetet mondani Olvasóimnak. Az ő folyamatos visszajelzéseik rendkívül sokat
+  segítettek. Kiváltképp örülök annak, hogy ez a cikk ennyi mindenkit ihletett az agilis fejlesztési
+  módszertan kipróbálására.
 
 ----------------------------------------------------------------------------------------------------
 
-  Contents
-  ========
-  FOREWORD BY JEFF SUTHERLAND
-  FOREWORD BY MIKE COHN
-  INTRO
+  Tartalomjegyzék
+  ===============
+  JEFF SUTHERLAND ELŐSZAVA
+  MIKE COHN ELŐSZAVA
+1 BEVEZETŐ
     Disclaimer
-    Why I wrote this
-    But what is Scrum?
-  HOW WE DO PRODUCT BACKLOGS
-    Additional story fields
-    How we keep the product backlog at a business level
-  HOW WE PREPARE FOR SPRINT PLANNING
-  HOW WE DO SPRINT PLANNING
-    Why the product owner has to attend
-    Why quality is not negotiable
-    Sprint planning meetings that drag on and on...
-    Sprint planning meeting agenda
-    Defining the sprint length
-    Defining the sprint goal
-    Deciding which stories to include in the sprint
-    How can product owner affect which stories make it to the sprint?
-    How does the team decide which stories to include in the sprint?
-    Why we use index cards
-    Definition of “done”
-    Time estimating using planning poker
-    Clarifying stories
-    Breaking down stories into smaller stories
-    Breaking down stories into tasks
-    Defining time and place for the daily scrum
-    Where to draw the line
-    Tech stories
-    Bug tracking system vs product backlog
-    Sprint planning meeting is finally over!
-  HOW WE COMMUNICATE SPRINTS
+    Miért írtam ezt a cikket
+    De mi is ez a Scrum?
+2 HOGYAN HASZNÁLJUK A PRODUCT BACKLOGOT
+    További sztori mezők
+    Hogyan vezetjük a Product Backlogot az üzleti szinten
+3 HOGYAN KÉSZÜLÜNK FEL A SPRINT PLANNING MEETINGRE
+4 HOGYAN TERVEZZÜK A SPRINTEKET
+    Miért kell a Product Ownernek jelen lennie
+    Miért nem engedünk a minőségből
+    Véget nem érő Sprint Planning Meeting-ek...
+    Sprint Planning Meeting napirend
+    A sprint hosszának megválasztása
+    A sprint céljának megválasztása
+    A sprint alatt elvégzendő sztorik kiválogatása
+    Hogyan befolyásolhatja a Product Owner, hogy mely sztorik kerülnek be a sprintbe?
+    Hogyan dönti el a csapat, hogy mely sztorik kerüljenek a sprintbe?
+    Miért használunk cetliket
+    A "kész" definíciója
+    Időbecslés Planning Poker-rel
+    Sztorik pontosítása
+    Sztorik felbontása kisebb sztorikra
+    Sztorik felbontása feladatokra
+    A Napi Scrum helyének és idejének kijelölése
+    Hol húzzuk meg a határt
+    Technikai sztorik
+    Hibakövető rendszer és a Product Backlog
+    A Sprint Planning Meeting vége
+5 HOGYAN KOMMUNIKÁLJUK A SPRINTEKET
 
 ----------------------------------------------------------------------------------------------------
 
-  HOW WE DO SPRINT BACKLOGS
-    Sprint backlog format
-    How the taskboard works
-    Example 1 – after the first daily scrum
-    Example 2 – after a few more days
-    How the burndown chart works
-    Taskboard warning signs
-    Hey, what about traceability?!
-    Estimating days vs. hours
-  HOW WE ARRANGE THE TEAM ROOM
-    The Design Corner
-    Seat the team together!
-    Keep the product owner at bay
-    Keep the managers and coaches at bay
-  HOW WE DO DAILY SCRUMS
-    How we update the taskboard
-    Dealing with latecomers
-    Dealing with “I don’t know what to do today”
-  HOW WE DO SPRINT DEMOS
-    Why we insist that all sprints end with a demo
-    Checklist for sprint demos
-    Dealing with “undemonstratable” stuff
-  HOW WE DO SPRINT RETROSPECTIVES
-    Why we insist that all teams do retrospectives
-    How we organize retrospectives
-    Spreading lessons learned between teams
-    To change or not to change
-    Examples of things that may come up during retrospectives
-  SLACK TIME BETWEEN SPRINTS
+6 HOGYAN VEZETJÜK A SPRINT BACKLOGOT
+    A Sprint Backlog formátuma
+    Hogyan működik a feladat-térkép
+    1. Példa - az első Napi Scrum után
+    2. Példa - pár nappal később
+    Hogyan működik a Burndown Chart
+    Figyelmeztető jelek
+    Node mi van a nyomon követéssel?
+    Napokban becslés órák helyett
+7 HOGYAN RENDEZZÜK BE A CSAPATSZOBÁT
+    Tervezői sarok
+    Ültesse egybe a csapatot!
+    Legyen kéznél a Product Owner
+    Tartsa kéznél a menedzsereket és az oktatókat
+8 HOGYAN BONYOLÍTJUK A NAPI SCRUM-OT
+    Hogyan frissítjük a feladat-térképet
+    Mit tegyünk a későkkel
+    Mit tegyünk, ha valaki "nem tudja mit csináljon ma"
+9 HOGYAN DEMONSTRÁLUNK
+    Miért ragaszkodunk, hogy minden sprint után legyen demó
+    Sprint demó jótanácsok
+    Mit tegyünk a "bemutathatatlan" dolgokkal
+10 HOGYAN BONYOLÍTJUK LE A SPRINT VISSZATEKINTŐKET
+    Miért ragaszkodunk, hogy minden csapat végezzen visszatekintést
+    Hogyan szervezzük a visszatekintőket
+    Tanulságok megosztása a csapatok között
+    Változtatni vagy nem változtatni
+11 PIHENŐIDŐ A SPRINTEK KÖZÖTT
 
 ----------------------------------------------------------------------------------------------------
 
-  HOW WE DO RELEASE PLANNING AND FIXED PRICE CONTRACTS
-    Define your acceptance thresholds
-    Time estimate the most important items
-    Estimate velocity
-    Put it together into a release plan
-    Adapting the release plan
-  HOW WE COMBINE SCRUM WITH XP
-    Pair programming
-    Test-driven development (TDD)
-    Incremental design
-    Continuous integration
-    Collective code ownership
-    Informative workspace
-    Coding standard
-    Sustainable pace / energized work
-  HOW WE DO TESTING
-    You probably can’t get rid of the acceptance test phase
-    Minimize the acceptance test phase
-    Increase quality by putting testers in the Scrum team
-    Increase quality by doing less per sprint
-    Should acceptance testing be part of the sprint?
-    Sprint cycles vs acceptance test cycles
-    Don’t outrun the slowest link in your chain
-    Back to reality
-  HOW WE HANDLE MULTIPLE SCRUM TEAMS
-    How many teams to create
-    Synchronized sprints – or not?
-    Why we introduced a “team lead” role
-    How we allocate people to teams
-    Specialized teams – or not?
-    Rearrange teams between sprints - or not?
-    Part-time team members
-    How we do Scrum-of-Scrums
-    Interleaving the daily scrums
-    Firefighting teams
-    Splitting the product backlog – or not?
-    Code branching
-    Multi-team retrospectives
+12 HOGYAN TERVEZZÜK A KIADÁSOKAT ÉS MIT TESZÜNK FIXÁRAS SZERZŐDÉSEK ESETÉN
+    Az elfogadás feltételeinak meghatározása
+    A legfontosabb feladatok becslése
+    Becsült sebesség
+    A kiadási terv összeállítása
+    A kiadási terv frissítése
+13 HOGYAN EGYESÍTJÜK A SCRUM-OT AZ XP-VEL
+    Páros Programozás
+    Teszt-vezérelt fejlesztés (TDD)
+    Inkrementális tervezés
+    Folyamatos integráció (CI)
+    A kód a csapat tulajdona
+    Áttekinthető munkatér
+    Kódolási szabályok
+    Fenntartható iram / stimulált munka
+14 HOGYAN TESZTELÜNK
+    Valószínűleg nem nagyhatja el az elfogadási teszteket
+    Minimalizálja az elfogadási teszt fázist
+    Minőség javítása teszterek hozzáadásával
+    A sprint része legyen-e az elfogadási teszt?
+    Sprint ciklus és elfogadási teszt ciklus
+    Ne hagyja le a leglassabb láncszemet
+    Vissza a valóságba
+15 HOGYAN KEZELÜNK EGYSZERRE TÖBB SCRUM CSAPATOT
+    Hány csapatot alakítsunk
+    Szinkronizált sprintek - vagy ne?
+    Miért vezettük be a team lead szerepkört
+    Hogyan rendeljük a tagokat a csapatokhoz
+    Szakosodott csapatok - vagy ne?
+    Csapatok újraosztása sprintek között - vagy ne?
+    Részidős csapattagok
+    Hogyan alkalmazzuk a "Scrumok Scrumját"
+    A Napi Scrumok időzítése
+    Tűzoltó csapatok
+    A product backlog szétbontása - vagy ne?
+    Branch-ek
+    Visszatekintő több csapattal
 
 ----------------------------------------------------------------------------------------------------
 
-  HOW WE HANDLE GEOGRAPHICALLY DISTRIBUTED
-  TEAMS
-    Offshoring
-    Team members working from home
-  SCRUM MASTER CHECKLIST
-    Beginning of sprint
-    Every day
-    End of sprint
-  PARTING WORDS
-  RECOMMENDED READING
-  ABOUT THE AUTHOR
+16 MIT TESZÜNK FÖLDRAJZILAG ELOSZTOTT CSAPATOK ESETÉN
+    Offshore
+    Otthonról dolgozó csapattagok
+17 SCRUM MASTER CHECKLISTA
+    A sprint kezdetén
+    Minden nap
+    A sprint végén
+18 ZÁRSZÓ
+  AJÁNLOTT IRODALOM
+  A SZERZŐRŐL
 
-Előszó - Jeff Sutherland
-===========================
+Jeff Sutherland előszava
+========================
 Egy csapatnak tudnia kell a Scrum alapjait. Hogyan készítsünk és becsüljünk Product Backlog-ot?
 Hogyan csináljunk belőle Sprint Backlogot? Hogyan használjuk a Burndown Chart-ot és hogyan számítsuk
 a csapat sebességét? Henrik könyve tartalmazza az alapvető gyakorlatokat, amik segítségével egy
@@ -179,7 +174,7 @@ követelményeinek:
 * A Scrum csapatban van egy kirendelt Product Owner és a csapat tudja, hogy ki az
 * A Product Owner rendelkezik Product Backlog-gal, amiben a csapat becslései is szerepelnek.
 * A csapat rendelkezik Burndown Chart-tal és ismeri a sebességét.
-* A csapaton kívüli személyek nem zavarják meg a csapatot egy Sprint közben.
+* A csapaton kívüli személyek nem zavarják meg a csapatot egy sprint közben.
 
 A 30 Scrum-ot használó személy közül mindössze 3 felelt meg a Nokia Scrum tesztjének. Ezek azok a
 csapatok, akikbe a befektetői ismerőseim  a jövőben be fognak fektetni.
@@ -196,8 +191,8 @@ Ph.D., a Scrum társszerzője
 
 ----------------------------------------------------------------------------------------------------
 
-Előszó - Mike Cohn
-=====================
+Mike Cohn előszava
+==================
 A Scrum is és az Extreme Programming (XP) azt várja el a csapatoktól, hogy egy iteráció végére
 elkészítsenek egy kézzel fogható, működő terméket. Ezek az iterációk szándékosan rövidek és
 rögzített hosszal rendelkeznek. Ez a rövid idő alatt működő kód elkészítésére való koncentráció azt
@@ -257,8 +252,8 @@ projektben Scrum-ot fogok használni.
 
 ----------------------------------------------------------------------------------------------------
 
-1 Bevezetés
-===========
+1 Bevezető
+==========
 Hamarosan bevezetésre kerül a Scrum a vállalatában. Esetleg már néhány hónapja
 Scrum-ot használ. Az alapokat ismeri, a könyveket kiolvasta, az is elképzelhető, hogy Scrum
 Master minősítést szerzett. Gratulálok!
@@ -402,8 +397,8 @@ amikor a sztorik fontosságát határozza meg.
 * Bugkövető ID - amennyiben külön bugkövető rendszert használ (ahogy mi is Jira-t használunk), nagy
   segítséget jelent, ha közvetlenül összekapcsolhatjuk a sztorit a hozzá tartozó hibabejelentésekkel.
 
-Hogyan használjuk a Termék Backlogot az üzleti szinten
-------------------------------------------------------
+Hogyan vezetjük a Product Backlogot az üzleti szinten
+-----------------------------------------------------
 Ha a Product Owner technikai beállítottságú, előfordulhat, hogy olyan sztorik jelennek meg, mint
 például "Az Events táblához indexek hozzáadása". De igazából miért van erre szüksége? A valódi ok
 valószínűleg valami olyasmi, hogy "az adminisztrációs felületen a keresések gyorsítása".
@@ -431,7 +426,7 @@ pontos? Hogy minden prioritás legyen lefixálva? Nem, nem és nem! Mindössze a
   o Ami azt illeti, nem probléma, ha a nem fontos elemekhez ugyanazt az értéket rendeli, mivel nagy
   valószínűséggel azok úgysem fognak előkerülni a Sprint Planning Meeting során.
   o Minden sztori, amiről a Product Owner úgy véli, hogy valós esélye van, hogy bekerüljön a
-  következő Sprint-be, egyedi értékkel rendelkezzen.
+  következő sprintbe, egyedi értékkel rendelkezzen.
   o A fontossági érték mindössze arra szolgál, hogy az elemeket fontossági sorrendbe állítsuk. Azaz,
   ha az A Sztori fontossága 20 és B Sztori fontossága 100, ez csak annyit jelent, hogy B fontosabb,
   mint A, nem azt, hogy B ötször olyan fontos, mint A. Ha B fontossága 21 lenne, az is pontosan
@@ -456,8 +451,8 @@ További módszerek, amiket kipróbáltunk vagy fontolóba vettünk:
 * Agilis fejlesztőeszközök, mint például VersionOne, ScrumWorks, XPlanner, stb... Még nem jutottunk
   el oda, hogy ezeket messzemenően teszteljük, de előbb-utóbb ki fogjuk őket próbálni.
 
-4 Hogyan tervezzük a Sprinteket
-===========================
+4 Hogyan tervezzük a sprinteket
+===============================
 A Sprint Planning egy nagyon fontos meeting, talán a legfontosabb dolog a Scrum-ban (legalábbis
 véleményem szerint) Egy rosszul végrehajtott Sprint Planning Meeting hatással lehet a teljes
 Sprint-re.
@@ -467,10 +462,10 @@ zavartalanul dolgozhassanak egy pár hétig illetve hogy elég biztonságot adjo
 hogy ezt engedje is.
 
 Na jó, ez elég általános volt. Konkrétan a következő dolgokról születik döntés:
-* A Sprint célja
+* A sprint célja
 * A csapat tagjainak listája (és a rendelkezésreállásuk szintje, ha nem 100%)
-* Egy Sprint Backlog ( = a Sprint alatt elvégzendő sztorik listája)
-* A Sprint demonstráció dátuma
+* Egy Sprint Backlog ( = a sprint alatt elvégzendő sztorik listája)
+* A sprint demó dátuma
 * A Napi Scrum Meeting helye és időpontja
 
 Miért kell a Product Ownernek jelen lennie
@@ -618,12 +613,12 @@ Sprint Planning Meeting: 13:00- 17:00 (10 perc szünet minden órában)
 Ezt a menetrendet nem tartatjuk be vasszigorral. A Scrum Master a körülményeknek megfelelően
 hosszabbíthatja vagy rövidítheti az egyes lépéseket.
 
-A Sprint hosszának megválasztása
+A sprint hosszának megválasztása
 --------------------------------
 A Sprint Planning Meeting egyik eleme a sprint demo idejének megválasztása. Ez valójában a sprint
 időtartamának megválasztását is jelenti.
 
-Mit tekinthetünk jó Sprint hossznak?
+Mit tekinthetünk jó sprint hossznak?
 
 Jó, ha a sprint rövid, mivel ez segíti a vállalat "agilitását", azaz, hogy gyakran képes irányt
 váltani.
@@ -634,7 +629,7 @@ De ugyanakkor a hosszabb sprintek is jók, mivel időt adnak a csapatnak hogy fe
 teret ad nekik a problémák megoldására, hogy végül a sprint célját teljesítsék; továbbá kevesebb
 időt veszítenek a Sprint Planning Meetingeken vagy demókon.
 
-A Product Owner-ek általában a rövid-, míg a fejlesztők hosszabb sprinteket szeretnek. A Sprint
+A Product Owner-ek általában a rövid-, míg a fejlesztők hosszabb sprinteket szeretnek. A sprint
 hossza valójában kompromisszum kérdése. Elég sokat kísérleteztünk ezzel és végül a három hetes
 sprint működött a legjobban nekünk. A legtöbb (de nem az összes) csapat 3 hetes sprinteket használ.
 Elég rövid, hogy biztosítsa a vállalat flexibilitását, de elég hosszú, hogy a csapat megfelelően
@@ -1148,7 +1143,7 @@ Rendben, az idő nagyon fogytán van, mit hagyhatunk ki a sprint planning meetin
 
 Én általában az alábbi fontossági sorrendet használom:
 
-1: A Sprint célja és a demó időpontja. Ez az abszolút minimum a sprint elkezdéséhez. Ha
+1: A sprint célja és a demó időpontja. Ez az abszolút minimum a sprint elkezdéséhez. Ha
 a cél világos és meg lett választva a sprint vége, a csapat elkezdhet dolgozni közvetlenül a Product
 Backlogból, ami persze szívás és komolyan érdemes elgondolkodni egy új meeting összehívásán, de ha
 tényleg muszáj elkezdeni a sprintet, akkor ez is megteszi. Ugyanakkor őszintén szólva én ennyi
@@ -1305,16 +1300,16 @@ Amikor a sprint a végéhez közeledik, a Scrum Master kötelessége emlékeztet
 
 Mindezek mellett igazán senki sem találhat kifogást, hogy miért nem tudta, hogy mi történik.
 
-6 Hogyan használjuk a Sprint Backlogot
-===========================
+6 Hogyan vezetjük a Sprint Backlogot
+====================================
 Gratulálok, hogy már eddig eljutott.
 
 Most, hogy vége a Sprint Planning Meetingnek és már mindenki tud az új sprintről, ideje, hogy a
 Scrum Master elkészítse a sprint backlogot. Ezt a Sprint Planning Meeting után, de még az első Napi
 Scrum előtt kell megcsinálni.
 
-Sprint Backlog formátum
------------------------
+A Sprint Backlog formátuma
+--------------------------
 Több formátumot is kipróbáltunk, többek között Jirá-t, Excel-t és falra ragasztható feladat-térképet
 is. Kezdetben főként Excel-t használtunk, amihez rengeteg template-t lehet letölteni sprint
 backlogtól kezdve automatikusan generált Burndown Chart-ig. Beszélhetnék arról, hogy milyen
@@ -1585,7 +1580,7 @@ Egy jól átgondolt sprint backlog esetén nem okozhat problémát az egyes tago
 Közvetlenül a Napi Scrum után valaki összefoglalja az időbecsléseket (a "kész" feladatokat kihagyva
 természetesen) és berajzol egy újabb pontot a sprint burndown grafikonra.
 
-Mit tegyen a későkkel
+Mit tegyünk a későkkel
 -----------------------
 Néhány csapat tart egy perselyt. Ha valaki késik, akár csak egy percet is, bedob ebbe valami előre
 megállapodott összeget. Akadékoskodás nélkül. Még ha előzőleg jelezte is, hogy késni fog, akkor is
@@ -1597,7 +1592,7 @@ A pénzt aztán közösségi eseményekre fordítják, mint például pizza rend
 Ez jól működik, de igazán csak akkor számít, ha gyakran késnek az emberek.
 
 
-Mit tegyen, ha valaki "nem tudja mit csináljon ma"
+Mit tegyünk, ha valaki "nem tudja mit csináljon ma"
 --------------------------------------------------
 Nem ritka azt hallani, hogy "Tegnap ezt és ezt csináltam, de ma halvány lila gőzöm sincs, hogy mit
 csináljak". Most mi legyen?
@@ -1660,7 +1655,7 @@ ilyen szituációban részem és többé-kevésbé mindig működött.
 
 9 Hogyan demonstrálunk
 ========================
-A Sprint demó (vagy "sprint áttekintés" ahogy mások hívják) a Scrum egy jelentős része, amit gyakran
+A sprint demó (vagy "sprint áttekintés" ahogy mások hívják) a Scrum egy jelentős része, amit gyakran
 alulbecsülnek.
 
 "Ó, tényleg demózni kell? Nincs igazán sok, amit be lehetne mutatni."
@@ -1706,7 +1701,7 @@ Sprint demó jótanácsok
   bemutatni őket, mivel ez általában túl sok időt vesz igénybe és elvonja a figyelmet a fontos
   sztorikról.
 
-Mit tegyen a "bemutathatatlan" dolgokkal
+Mit tegyünk a "bemutathatatlan" dolgokkal
 ----------------------------------------
 Csapattag: "Nem fogom bemutatni ezt a sztorit, mert ezt nem lehet bemutatni. A sztori az, hogy
 'Skálázhatóság javítása 10000 konkurrens felhasználóig'. Csak nem fogok behívni 10000 felhasználót a
@@ -1794,8 +1789,8 @@ visszatekintőben meg fogunk vizsgálni.
 Fontos, hogy ne akarjunk mindent egyszerre csinálni, hanem sprintenként csak néhány javaslatra
 összpontosítsunk.
 
-Tanulságok megosztása csapatok között
--------------------------------------
+Tanulságok megosztása a csapatok között
+---------------------------------------
 A visszatekintők során előkerülő információk rendkívüli értékkel bírnak. Vajon azért nem tud a
 csapat a célra összpontosítani, mert az egyik sales menedzser állandóan berángatja a programozókat a
 sales meetingekre "szakértőknek"? Ez egy fontos észrevétel, de elképzelhető, hogy más csapatok is
@@ -1846,8 +1841,8 @@ Ha minden kis apró-cseprő probléma hatására változásokat eszközöl, szin
 előbb tiltakozni fog majd lassanként inkább nem hozakodnak elő a problémákkal, ami rendkívül káros
 hatással tud lenni.
 
-Az alábbiakban álljon néhány példa a visszatekintőben felmerülő problémákra és a tipikus válasz
-rájuk.
+Az alábbiakban álljon néhány példa a visszatekintőben felmerülő problémákra és a rájuk adott tipikus
+válaszokra.
 
                               "Több időt kellett volna fordítanunk a sztorik feladatokra bontására"
 
@@ -1958,8 +1953,8 @@ fejezetet és helyette olvassa el Mike Cohn "Agilis Becslés és Tervezés" cím
 kívánom, bárcsak előbb tettem volna (én is csak azután olvastam, miután már egyedül rájöttem a
 dolgokra...). Az én verzióm eléggé leegyszerűsített, de éppen ezért jó kiindulópontot adhat.
 
-Az elfogadás feltételeinak definiálása
---------------------------------------
+Az elfogadás feltételeinak meghatározása
+----------------------------------------
 A szokásos Product Backlog-on kívül a Product Owner definiálja az elfogadás feltételeit, ami
 tulajdonképpen azt határozza meg, hogy a product backlog fontossági szintjei mit jelentenek a
 szerződés szempontjából.
@@ -2204,8 +2199,8 @@ inkább ne tegye (hacsak nem nagyon könnyű). Ehelyett inkább készítsen olya
 leegyszerűsítik a kézi regressziós tesztek futtatását. Később elgondolkodhat a tesztek tényleges
 automatizálásán.
 
-Inkrementális architektúra
---------------------------
+Inkrementális tervezés
+----------------------
 Ez azt jelenti, hogy a kezdetektől az egyszerűségre törekedünk, amit lépésenként javítunk és nem
 arra, hogy már az elején minden tökéletes legyen, amit aztán befagyasztunk.
 
@@ -2573,7 +2568,7 @@ Pedig nem.
 Volt már rá példa, hogy ezeket meg tudtuk tenni és meggyőződtünk az előnyeiről, de még elég messze
 vagyunk egy használható minőségellenőrzési folyamattól és még sokat tanulhatunk ezen a téren.
 
-15 Hogyan kezelünk több Scrum csapatot egyszerre
+15 Hogyan kezelünk egyszerre több Scrum csapatot
 ================================================
 A dolgokat jelentősen bonyolítja, ha több Scrum csapat dolgozik egyszerre ugyanazon a terméken. A
 probléma univerzális és nem kizárólag a scrum jellegzetessége: több fejlesztő = több komplikáció.
@@ -3244,37 +3239,37 @@ a Java-ról és az agilis szoftverfejlesztésről: http://blog.crisp.se/henrikkn
 És végezetül ne felejtse:
 Ez csak egy állás.
 
-Javasolt irodalom
+Ajánlott Irodalom
+=================
 Íme néhány könyv, ami rengeteg ihletet és ötletet adott.
 
-About the author
-================
-Henrik Kniberg (henrik.kniberg@crisp.se) is a consultant at Crisp in Stockholm
-(www.crisp.se), specializing in Java and Agile software development.
+A szerzőről
+===========
+Henrik Kniberg (henrik.kniberg@crisp.se) a stockholmi Crisp (www.crisp.se) tanácsadója, aki Javára
+és Agilis fejlesztési módszertanokra specializálódik.
 
-Ever since the first XP books and the agile manifesto appeared Henrik has embraced agile
-principals and tried to learn how to apply them efficiently in different types of
-organizations. As co-founder and CTO of Goyada 198-2003 he had ample opportunity to experiment
-with test-driven development and other agile practices as a he built and managed a technical
-platform and a 30-person development team.
+Az első XP könvyvek és az agile manifesto megjelenése óta az agilis alapelvek által vezérelten a
+módszertanok különböző vállalatokban történő hatékony bevezetését kutatja. 1998 és 2003 között a
+Goyada társalapítója és CTO-jaként a cég technikai platformjának illetve harmincfős fejlesztői
+csapatának felépítése és igazgatása során számtalan alkalma nyílt a teszt-vezérelt fejlesztéssel és
+az agilis módszertanokkal való kísérletezésre.
 
-In late 2005 Henrik was contracted as chief of development at a Swedish company in the gaming
-business. The company was in a crisis situation with urgent organizational and technical
-problems. Using Scrum and XP as a tool, Henrik helped the company out of the crisis by
-implementing agile and lean principles at all levels in the company.
+2005 vége felé Henrik egy svéd játékfejlesztő cég fejlesztési vezető pozíciójába igazolt. A cég
+rengeteg sürgősen megoldandó szervezeti és technikai problémával küszködött és gyakorlatilag
+válsághelyzetben volt. Henrik a Scrum és XP használatával és az agilis és lean alapelvek egész cégre
+kiterjedő bevezetésével segítette ki a céget ebből a krízisből.
 
-One Friday in November 2006 Henrik was home in bed with a fever and decided to jot down some
-notes for himself about what he had learned over the past year. Once he started writing,
-however, he couldn’t stop and after three days of frantic typing and drawing, the initial notes
-had grown into an 80-page article entitled “Scrum and XP from the Trenches”, which ultimately
-became this book.
+2006 novemberének egyik péntekén Henrik lázasan feküdt ágyában, amikor az az ötlete támadt, hogy
+feljegyezze magának az előző év tanulságait. Amint azonban írni kezdett, nem volt megállás: három
+napon keresztül eszeveszett tempóban írt és rajzolt, aminek eredményeképpen született meg egy 80
+oldalas cikk "Scrum és XP a frontvonalról" címmel, ami aztán ennek a könyvnek az alapjául szolgált.
 
-Henrik takes a holistic approach and enjoys adopting different roles such as manager,
-developer, scrummaster, teacher, and coach. He is passionate about helping companies build
-excellent software and excellent teams, taking on whatever role is necessary.
+Henrik hozzáállása holisztikusnak mondható, szeret többféle szerepkört is kipróbálni a menedzsertől
+a fejlesztőn vagy épp tanáron át a trénerig. Szenvedélyesen segít a vállalatoknak kiváló szoftvert
+és kiváló csapatokat építeni mindig olyan szerepkörben, amire épp szükség van.
 
-Henrik grew up in Tokyo and now lives in Stockholm with his wife Sophia and two kids. He is an
-active musician on his freetime, composing music and playing bass and keyboard with local
-bands.
-For more info see http://www.crisp.se/henrik.kniberg
+Henrik Tokióban nőtt fel és jelenleg feleségével és két gyermekükkel Stockholmban élnek.
+Szabadidejében zenét szerez és basszusgitáron vagy zongorán játszik helyi együttesekben.
+
+További információk: http://www.crisp.se/henrik.kniberg
 
