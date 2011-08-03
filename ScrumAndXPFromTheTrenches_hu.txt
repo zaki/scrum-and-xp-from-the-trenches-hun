@@ -2573,237 +2573,220 @@ Pedig nem.
 Volt már rá példa, hogy ezeket meg tudtuk tenni és meggyőződtünk az előnyeiről, de még elég messze
 vagyunk egy használható minőségellenőrzési folyamattól és még sokat tanulhatunk ezen a téren.
 
-15 How we handle multiple Scrum teams
-=====================================
-A lot of things get much harder when you
-have multiple Scrum teams working on the same product. That problem is universal and doesn’t really
-have anything to do with Scrum. More developers = more complications.
+15 Hogyan kezelünk több Scrum csapatot egyszerre
+================================================
+A dolgokat jelentősen bonyolítja, ha több Scrum csapat dolgozik egyszerre ugyanazon a terméken. A
+probléma univerzális és nem kizárólag a scrum jellegzetessége: több fejlesztő = több komplikáció.
 
-We have (as usual) experimented with this. At most we had a team of approximately 40 people working
-on the same product.
+Mint máskor is, ezzel is sokat kísérletezgettünk. Az ugyanazon a terméken dolgozó legnagyobb
+csapatunk 40 főt számlált.
 
-The key questions are:
-* How many teams to create
-* How to allocate people into teams
+Az alapvető kérdések:
+* Hány csapatot alakítsunk
+* Hogyan osszuk el az embereket a csapatok között
 
-How many teams to create
+Hány csapatot alakítsunk
 ------------------------
-If dealing with multiple Scrum teams is so hard, why do we bother? Why not
-just put everyone in the same team?
+Ha a több scrum csapat kezelése olyan nehéz, akkor miért is vesződünk? Miért nem osztunk mindenkit
+egy csapatba?
 
-The biggest single Scrum team we’ve had was around 11 people. It worked, but not too well. Daily
-scrums tended to drag on past 15 minutes.
-Team members didn’t know what other team members were
-doing, so there would be confusion. It was difficult for the Scrum master to keep everyone aligned
-towards the goal, and difficult to find time to address all obstacles that were reported.
+A legnagyobb csapat, amit kipróbáltunk 11 főt számlált. Működött, de korántsem olajozottan. A napi
+scrum rendre kicsúszott a 15 perces keretből, a csapattagok nem tudták, hogy a többiek min
+dolgoznak, a Scrum Masternek rengeteg erőfeszítésébe került a koordinálás és az akadályok
+elhárítása.
 
-The alternative is to split into two teams. But is that better? Not necessarily.
+Ehelyett két csapatra is oszolhatunk, de vajon az jobb-e? Nem minden esetben.
 
-If the team is experienced and comfortable with Scrum, and there is a logical way of splitting the
-roadmap into two distinct tracks, and those two tracks don’t both involve the same source code, then
-I’d say it’s a good idea to split the team. Otherwise I’d consider sticking to one team, despite the
-disadvantage of big teams.
+Ha a csapatnak van már gyakorlata a Scrum-ban és logikusan felosztható az ütemterv két párhuzamos
+részre úgy, hogy ezek a részek nem érintik ugyanazt a kódot, akkor úgy gondolom, hogy érdemes két
+csapatra oszlani, de egyébként a hátrányok ellenére is inkább az egy csapatot javasolnám.
 
-My experience is that it is better to have fewer teams that are too big than to have many small
-teams that keep interfering with each other. Make small teams only when they don’t need to
-interfere with each other!
+Az a tapasztalatom, hogy jobb kevesebb nagy csapat, mint sok kicsi, amik állandóan zavarják egymást.
+Csak akkor alakítson kis csapatokat, ha kicsi a valószínűsége, hogy zavarni fogják egymást.
 
-Virtual teams
--------------
-How do you know if you made the right or wrong decision with respect to the “big
-team” vs. “many teams” tradeoff?
+Virtuális csapatok
+------------------
+Honnan tudni, hogy helyesen döntött a csapatméreteket illetően? Ha nyitott szemmel jár, előbb-utóbb
+azt tapasztalja majd, hogy virtuális csapatok formálódnak.
 
-If you keep your eyes and ears open you may notice that “virtual teams” form.
-
-Example 1: You choose to have one large team. But when you start looking at who talks to whom
-during the sprint, you notice that the team has effectively split into two sub-teams.
+1. példa: Egy nagy csapat mellett dönt, de amikor megfigyeli, hogy a sprint alatt ki kivel beszél,
+azt találja, hogy a csapat gyakorlatilag két kisebb al-csoportra oszlott.
 
 <figure>
 
-Example 2: You choose to have three smaller teams. But when you start looking at who talks to
-whom during the sprint, you notice that team 1 and team 2 are talking to each other all the
-time, while team 3 is working in isolation.
+2. példa: Három kisebb csapat mellett dönt, de amikor megfigyeli, hogy a sprint alatt ki kivel
+beszél, azt találja, hogy az 1. és 2. csapat állandóan kommunikál egymással, míg a hármas csapat
+önállóan dolgozik.
 
 <figure>
 
-So what does that mean? That your team division strategy was wrong?
-Yes, if the virtual teams
-seem to be sort of permanent. No, if the virtual teams seem to be temporary.
+Ez azt jelenti, hogy a csapatfelosztási stratégiája helytelen volt? Amennyiben a virtuális csapatok
+állandónak bizonyulnak, igen. Ha a virtuális csapatok ideiglenesek, a válasz nem.
 
-Look at example 1 again. If the two virtual sub-teams tend to change once in a while (i.e.
-people move between the virtual sub-teams) then you probably made the right decision to
-have them as a single Scrum team. If the two virtual sub-teams stay the same throughout the
-whole sprint, you probably want to break them apart into two real Scrum teams next sprint.
+Vessünk újra egy pillantást az 1. példára. Ha a két virtuális al-csapat néha változik (azaz
+a tagok mozognak a virtuális al-csapatok között), akkor valószínűleg helyes volt azon döntése,
+hogy egy nagy csapatot alakítson. Ha azt találja, hogy a virtuális csapatok a sprint egészében
+változatlanok, akkor érdemes lehet két csapatra oszlani a következő sprintben.
 
-Now look at example 2 again. If team 1 and team 2 are talking to each (and not team 3)
-throughout the whole sprint, you probably want to combine team 1 and team 2 into a single Scrum team
-next sprint. If team 1 and team 2 are talking to each other a lot throughout the first half of the
-sprint, and then team 1 and team 3 talk to each other throughout the second half of the sprint, then
-you should consider combining all three teams into one, or just leaving them as three teams. Bring
-up the question during the sprint retrospective and let the teams decide for themselves.
+Most nézzük meg újra a 2. példát. Ha az 1-es és 2-es csapat kommunikál egymással (de a 3-as
+csapattal nem) az egész sprint alatt, akkor valószínűleg érdemes összevonni őket egy csapattá a
+következő sprintben. Ha a sprint felében az 1-es és 2-es csapat kommunikál, de másik felében inkább
+az 1-es és 3-as, akkor megfontolandó a három csapat egybeolvasztása, bár akár békén is hagyhatja a
+felosztást. Hozza fel a kérdést a sprint visszatekintőben és hagyja, hogy a csapatok maguk
+döntsenek.
 
-Team division is one of the really hard parts of Scrum. Don’t think too deeply or optimize too
-hard. Experiment, keep watch for virtual teams, and make sure you take plenty of time to
-discuss this type of stuff during your retrospectives. Sooner or later you will find the right
-solution for your particular situation. The important thing is that the teams are comfortable
-and don’t stumble over each other too often.
+A csapatfelosztás a Scrum egyik legnehezebb része. Ne próbálja túlanalizálni a helyzetet, inkább
+kísérletezzen, figyelje meg a virtuális csapatok alakulását és biztosítson elég időt a vitára a
+sprint visszatekintőben. Előbb-utóbb meg fogja találni az arany középutat. A lényeg, hogy a csapatok
+elégedettek legyenek és ne kelljen lépten-nyomon más csapatokba botlaniuk.
 
-Optimal team size
------------------
-Most books I’ve read claim that the “optimal” team size is somewhere around 5–9 people.
-From what I’ve seen so far I can only agree. Although I’d say 3 – 8 people. In fact, I believe
-it is worth taking some pains to achieve teams of that size.
+Optimális csapatméret
+---------------------
+A szakirodalom az "optimális" csapatméretet általában 5 és 9 fő között definiálja, amivel eddigi
+tapasztalataim alapján én is egyetértek, bár én inkább 3 és 8 közé helyezném az optimális méretet.
+Úgy vélem, hogy érdemes harcolni ezen méret eléréséért.
 
-Let’s say you have a single Scrum team of 10 people. Consider ejecting the two weakest team
-members. Oops, did I just say that?
+Mondjuk egy 10 fős Scrum csapat esetén fontolja meg a két leggyengébb tag kiiktatását. (Hoppá,
+tényleg ezt mondtam?)
 
-Let’s say you have two different products, with one 3-person team per product, and both are
-moving too slow. It might be a good idea to combine them into one single 6-person team
-responsible for both products. In that case let one of the two product owners go (or give him
-an advisory role or something).
+Tegyük fel, hogy adott két termék, amin egy-egy 3 fős csapat dolgozik és mindkettő túl lassú.
+Érdemes lehet egy nagyobb, 6 fős csapatot alakítani, amely mindkét termékért felelős. Ebben az
+esetben az egyik Product Owner-nek mennie kell (vagy helyezze például tanácsadói pozícióba).
 
 <figure>
 
-Let’s say you have a single 12-person Scrum team, because the code base is in such a crappy
-state that there is no way for 2 different teams to work on it independently. Put some serious
-effort into fixing the code base (instead of building new features) until you get to a point
-where you can split the team. This investment will probably pay off quite quickly.
+Tegyük fel, hogy annyira rossz állapotban van a kódbázisa, hogy képtelenség két különböző csapatra
+bízni a fejlesztést és így egy nagy 12 fős csapata van. Tegyen komoly erőfeszítéseket a kód
+kijavítására (akár az új funkciók rovására is), amíg olyan helyzetbe kerül, hogy a csapat könnyen
+felosztható. A befektetett munka rendkívül gyorsan meg fog térülni.
 
-Synchronized sprints – or not?
-------------------------------
-Let’s say you have three Scrum teams working on the same
-product.
-Should their sprints be synchronized, i.e. start and end together? Or should they
-overlap?
+Szinkronizált sprintek - vagy ne?
+----------------------------------
+Tegyük fel, hogy három Scrum csapat dolgozik ugyanazon a terméken. Szinkronizáljuk a sprintjeiket
+(azaz kezdődjenek és végződjenek egyszerre) vagy inkább legyen időbeli átfedés a sprintek között?
 
-Our first approach was to have overlapping sprints (with respect to time).
+Első közelítésben átfedő sprinteket használtunk.
 
 <figure>
 
-This sounded nice. At any given moment in time there would be an ongoing sprint just about to
-end and a new sprint just about to begin. The product owner’s workload would be evenly spread
-out over time. There would be releases flowing continuously out of the system. Demos every
-week. Hallelujah.
+Ez jól hangzik, mivel mindig lesz egy sprint, amely nemsokára véget ér és egy, ami nemsokára
+kezdődik. A Product Owner terhelése egyenletesen oszlik el és folyamatosan érkeznek kiadások. Minden
+héten demó! Halleluja!
 
-Yeah, I know, but it really did sound convincing at the time!
+Tudom, tudom, de akkoriban tényleg meggyőzően hangzott.
 
-We had just started doing this when I one day had the opportunity to talk to Ken Schwaber (in
-conjunction with my Scrum certification). He pointed out that this was a bad idea, that it
-would be much better to
-synchronize the sprints. I don’t remember his exact reasons, but after some discussion I was
-convinced.
+Épp elkezdtük használni ezt a stratégiát, amikor szerencsém volt beszélni Ken Schwaber-rel (a Scrum
+tanúsítványom kapcsán). Ő mutatott rá, hogy ez egy nagyon rossz ötlet és jobb lenne szinkronizálni a
+sprinteket. Nem emlékszem már a konkrét érveire, csak arra, hogy a beszélgetés során meggyőzött.
 
 <figure>
 
-This is the solution we’ve used ever since, and never regretted it. I’ll never know if the
-overlapping sprints strategy would have failed, but I think so. The advantage of synchronized
-sprints is:
-* There is a natural time at which to rearrange teams – between sprints! With
-overlapping sprints, there is no way to rearrange teams without disturbing at least one team in
-mid-sprint.
-* All teams could work towards the same goal in a sprint and do sprint planning
-meetings together, which leads to better collaboration between teams.
-* Less administrative overhead, i.e. fewer sprint planning meetings, sprint demos, and releases.
-Why we introduced a “team lead” role
-------------------------------------
-Let’s say we have a single product with three teams.
+Azóta is ezt a stratégiát alkalmazzuk és ezt nem bántuk meg. Sosem fogom megtudni, hogy az átfedő
+sprintek tényleg szétesnének-e, de az az érzésem, hogy igen. A szinkronizált sprintek előnyei:
+* Természetes keretet biztosít a csapatok átrendezésére: a sprintek közötti időt. Ha a sprintjeink
+  átfednék egymást, a csapatok átrendezése legalább egy csapat sprintjét megzavarná.
+* Az összes csapat ugyanazon a sprint cél elérésén dolgozhat és együtt tervezhetik a sprintjeiket,
+  ami hatékonyabb együttműködéshez vezet a csapatok között.
+* Kevesebb adminisztrációval jár: kevesebb sprint planning meeting, kevesebb sprint demó és kiadás.
+
+Miért vezettük be a team lead szerepkört
+-------------------------------------------
+Legyen egy termékünk három csapattal.
 
 <figure>
 
-The red guy labeled P is Product Owner. The black guys labeled S are Scrum Masters. The rest
-are grunts... er... respectable team members.
+A P-vel jelölt vörös figura a Product Owber. Az S-sel jelölt fekete figurák a Scrum Master-ek. A
+többiek a rabszolgák... izé... megbecsült csapattagok.
 
-With this constellation, who decides which people should be in which teams? The product owner?
-The three Scrum masters together? Or does every person get to select his own team? But then
-what if everyone wants to be in team 1 (because Scrum master 1 is so good looking)?
+Ebben a felállásban ki dönti el, hogy ki melyik csapathoz tartozik? A Product Owner? Esetleg a három
+Scrum Master közösen? Vagy mindenki maga dönt, hogy melyik csapathoz szeretne tartozni? Mi van
+akkor, ha mindenki az 1-es csapatban szeretne lenni (mert az 1-es csapat Scrum Master-e olyan
+jóképű)?
 
-What if it later turns out that it is really not possible to have more than two teams working
-in parallel on this code base, so we need to transform this into two -person teams instead of
-three 6-person teams. That means 2 Scrum masters. So which one of the current 3 Scrum masters
-will be relieved of his title?
+Mi legyen akkor, ha később kiderül, hogy ezen a kódon legfeljebb két csapat tud egyszerre
+párhuzamosan dolgozni, így két kilencfős csapatra kell oszlani három 6 fős helyett. Ez két Scrum
+Mastert igényel, a jelenlegi három közül melyik legyen megfosztva a címétől?
 
-In many companies these will be quite sensitive issues.
+A legtöbb vállalatnál ezek elég kényes kérdések.
 
-It is tempting to let the product owner do the allocation and reassignment of people. But that
-isn’t really product owner stuff right? The product owner is the domain expert who tells the
-team in which direction they should run. He should not really have to get involved in the nitty
-gritty details. Especially since he is a “chicken” (if you’ve heard the chicken and pig
-metaphor, otherwise google up “chickens and pigs”).
+Elég vonzónak tűnhet az a megoldás, hogy a Product Owber döntsön az emberek szétosztásáról, de ezek
+nem igazán tartoznak a Product Owner feladatköréhez, mivel ő normális esetben a szakértő szerepét
+játssza, aki a termék irányvonalát szabja meg és nem az ilyen apró-cseprő dolgokkal foglalkozik.
+Főként mivel a szerepe "csirke" szerep (ha esetleg nem ismerné a csirke és a malac metaforáját,
+keressen rá a google-ön).
 
-We’ve solved this by introducing a “team lead” role. This corresponds to what you might call
-“Scrum of Scrums master” or “the boss” or “main Scrum master” etc. He doesn’t have to lead any
-single team, but he is responsible for cross-team issues such as who should be Scrum master for
-teams, how people should be divided into teams, etc.
+Ezt végül a team lead szerepkör bevezetésével oldottuk meg. Lehetne még "Scrum of Scrums
+Master"-nek, vagy "A főnök"-nek, esetleg "fő Scrum Master"-nek is nevezni. Ez a személy nem irányít
+egy csapatot sem, ehelyett a csapatok közt felmerülő kérdésekben hivatott dönteni, mint például a
+Scrum Masterek kijelölése, a csapatok beosztása, stb.
 
-We had a hard time coming up with a good name for this role. “Team lead” was the least lousy
-name we could find.
+Próbáltunk egy megfelelő nevet találni erre a szerepkörre, végül a "team lead" hangzott a
+legkevésbé idiótán.
 
-This solution has worked well for us and I can recommend it (regardless of what you decide to
-call the role).
+Ez a megoldás nagyon jól működött nálunk és csak ajánlani tudom (attól függetlenül, hogy végül hogy
+fogja nevezni ezt a szerepkört).
 
-How we allocate people to teams
+Hogyan rendeljük a tagokat a csapatokhoz
+----------------------------------------
+Két alapvető stratégia van az emberek csapatokhoz rendelésére, ha egy termékhez több csapat is
+tartozik:
+* Egy kijelölt személy, mint például a fentiekben említett "team lead", a Product Owner, vagy egy
+  menedzser osztja be a csapatokat.
+* A tagok maguk oszlanak csapatokra.
+
+Mi mindhárom stratégiát kipróbáltuk. Hogy hogyhogy mindhárhat? Az 1-es stratégiát a 2-es stratégiát
+és a kettő kombinációját. Végeredményben a kettő kombinációja tűnik a legjobbnak.
+
+A sprint planning meeting előtt a team lead összehív egy csapat-elosztó meetinget a Product Owner és
+az összes Scrum Master között. Itt összefoglaljuk az előző sprintet és eldöntjük, hogy szükséges-e a
+csapatok újrarendezése. Elképzelhető, hogy két csapatot össze szeretnénk vonni, vagy néhány embert
+egyik csapatból a másikba mozgatni. Összeírjuk ezeket a javaslatokat, amit aztán ismertetünk a
+sprint planning meeting során.
+
+A sprint planning meetingen először végigmegyünk a legfontosabb sztorikon, majd a team lead valami
+hasonlóval áll elő:
+
+"Jó napot mindenkinek. A következő sprint idejére az alábbi javaslataink vannak a csapatfelosztást
+illetően."
+
+<figure>
+
+"Mint láthatjátok, ez azt jelenti, hogy négy helyett három csapatunk lenne, amibe előzetesen
+beosztottunk mindenkit. Az egyes csapatok találjanak maguknak egy fal-részt."
+
+(a team lead megvárja, amíg mindenki megtalálja a helyét és ki nem alakul három csoport, akik
+egy-egy üres falfelület mellett állnak)
+
+"Ez nem feltétlenül a végleges felosztás, csak egy kiindulópont. A sprint planning meeting során az
+ésszerűség határain belül bárki átmehet bármelyik csapatba, kettévághatjátok vagy egyesíthetitek a
+csapatotokat tetszés szerint. Próbáljátok figyelembe venni a Product Owner által meghatározott
+fontossági sorrendet."
+
+Nálunk ez a stratégia működik a legjobban. Egy előzetes javarészt központosított döntés, amit aztán
+javarészt decentralizált optimalizáció követ.
+
+Szakosodott csapatok - vagy ne?
 -------------------------------
-There are two general strategies for allocating people to
-teams, when you have multiple teams on the same product.
-* Let a designated person do the allocation, for example the “team lead” that I mentioned
-above, the product owner, or the functional manager (if he is involved enough to be able to
-make good decisions here).
-* Let the teams do it themselves somehow.
-
-We’ve experimented with all three. Three? Yeah. Strategy 1, Strategy 2, and a combination of both.
-
-We found that the combination of both works best.
-
-Before the sprint planning meeting, the team lead calls for a team allocation meeting together
-with the product owner and all Scrum masters. We talk about last sprint and decide if any team
-reallocations are warranted. Perhaps
-we want to combine two teams, or move some people from one team to another. We decide on
-something and write it down as a proposed team allocation, which we bring to the sprint
-planning meeting.
-
-The first thing we do during the sprint planning meeting is go through the top-priority items
-in the product backlog. The team lead then say something like:
-
-“Hi everyone. We suggest the following team allocation for next sprint.”
+Tegyük fel, hogy a következő három komponens alkotja a technológiáját:
 
 <figure>
 
-“As you see, this would mean a reduction from 4 to 3 teams. We have listed members for each
-team. Please group up and grab yourself a wall section.”
+Tegyük továbbá fel, hogy 15 ember dolgozik ezen a terméken, ezért nem szeretne egy nagy csapatot
+alkotni. Milyen csapatokra oszoljanak?
 
-(team lead waits while people wander around in the room, after a while there are 3 groups of
-people, each standing next to an empty wall section).
-
-“Now this team division is preliminary! It is just a starting point, to save time. As the
-sprint planning meeting progresses you are free to wander off to another team instead, split
-your team into two, combine with another team, or whatever. Use common sense based on the
-product owner’s priorities.”
-
-This is what we have found works best. A certain level of centralized control initially,
-followed by a certain level of decentralized optimization afterwards.
-
-Specialized teams – or not?
----------------------------
-Let’s say your technology consists of three main components:
+1. Stratégia: az egyes komponensekre szakosodó csapatok
+-------------------------------------------------------
+Egy megoldás, hogy a csapatokat a komponensek mentén osztjuk fel, például "kliens csapat", "szerver
+csapat", "adatbázis csapat".
 
 <figure>
 
-And let’s say you have 15 people working on this product, so you really don’t want to run them
-as a single Scrum team. What teams do you create?
+Mi is ezzel próbálkoztunk először, azonban ez nem működik túl jól, legalábbis ha a legtöbb sztori
+több komponenst is érint.
 
-Approach 1: component-specialized teams
----------------------------------------
-One approach is to create component-specialized teams
-such as a “client team”, a “server team”, and a “DB team”.
-
-<figure>
-
-This is where we started. Doesn’t work too well, at least not when most stories involve
-multiple components.
-
-For example let’s say we have a story named “notice-board where users can post messages to each
-other”. This notice board feature would involve updating the user interface in the client,
-adding logic to the server, and adding some tables in the database.
+Legyen mondjuk az egyik sztori az, hogy "üzenőfal, amelyen a felhasználók üzenetet küldhetnek
+egymásnak". Ez az üzenőfal funkció érinti a kliens felhasználói felületét, új logikát jelent a
+szerveren és új táblákat az adatbázisban.
 
 <figure>
 
