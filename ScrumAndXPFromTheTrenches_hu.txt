@@ -3191,39 +3191,38 @@ okból kifolyólag nem terjedt át más csapatokra.
 
 Nagy általánosságban az otthonról dolgozó tagok sosem jelentettek nagy problémát számunkra.
 
-17 Scrum master checklist
-=========================
-In this final chapter I will show you our scrum master “checklist”,
-listing the most common administrative routines of our Scrum masters. Stuff that is easy to
-forget. We skip the obvious things such as “remove impediments from the team”.
+17 Scrum Master checklista
+==========================
+Ebben az utolsó fejezetben gyűjtöttem össze azokat a dolgokat, amelyek a mi Scrum Mastereink
+adminisztratív jellegű feladatait alkotják, mivel túl könnyű ezekről megfeledkezni. Az olyan
+triviális dolgokat, mint az "akadályok elhárítása" kihagytam a listáról.
 
-Beginning of sprint
--------------------
-* After the Sprint planning meeting, create a Sprint info page.
-  o Add a link to your page from the dashboard on the wiki.
-  o Print the page and put it on the wall where people pass by your team.
-* Send an email to everyone announcing that a new sprint is started. Include the sprint
-goal and a link to the Sprint info page.
-* Update the sprint statistics document. Add your
-estimated velocity, team size, sprint length, etc.
+A sprint kezdetén
+-----------------
+* Készítsen Sprint Info oldalt a sprint planning meeting után
+  o Linkelje be az oldalt a wiki főoldalán
+  o Nyomtassa ki az oldalt és tegye ki a csapat falára
+* Küldjön emailt az új sprint kezdetéről. Írja le a sprint célját és a sprint oldalára mutató linket
+* Frissítse a sprint statisztikáit tartalmazó dokumentumot. Adja meg a becsült sebességet, a csapat
+  méretét, a sprint hosszát, stb.
 
-Every day
----------
-* Make sure the Daily Scrum meeting is started and ended on time.
-* Make sure Stories are
-added/removed from the Sprint backlog as necessary to keep the sprint on schedule.
-  o Make sure the Product owner is notified of these changes.
-* Make sure the Sprint backlog and burndown is kept up-to-date by the team.
-* Make sure problems/impediments are solved or reported to Product owner and/or Chief of development.
+Minden nap
+----------
+* Biztosítsa, hogy a napi scrum időben kezdődik és időben végződik
+* A sprint menetrendjének betartása érdekében ha szükséges, módosítsa a sztorikat
+  o Értesítse a Product Ownert ezekről a változásokról
+* Győződjön meg arról, hogy a csapat naprakészen tartja a sprint backlogot és a burndown-t
+* Győződjön meg arról, hogy az akadályok vagy ténylegesen elhárításra kerültek, vagy jelentve lettek
+  a Product Ownernek vagy a fejlesztés vezetőjének
 
-End of sprint
--------------
-* Do an open Sprint demo.
-* Everyone should be notified about the demo a day or two before.
-* Do a Sprint retrospective with the whole team and Product owner. Invite Chief of development as
-well, so he can help spread the lessons learned.
-* Update the sprint statistics document. Add
-the actual velocity and key points from the retrospective.
+A sprint végén
+--------------
+* Bonyolítsa le a nyitott sprint demót
+* Értesítsen mindenkit a demóról egy-két nappal a demó előtt
+* Szervezze meg a sprint visszatekintőt a Product Owner és a teljes csapat részvételével. Hívja meg
+  a fejlesztés vezetőjét is, hogy a tanulságokat továbbadhassa
+* Frissítse a sprint statisztikáit tartalmazó dokumentumon. Adja meg a tényleges sebességet és a
+  visszatekintő főbb kérdéseit
 
 18 Parting words
 ================
