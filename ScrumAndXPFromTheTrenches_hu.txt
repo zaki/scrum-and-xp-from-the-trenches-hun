@@ -2781,7 +2781,7 @@ csapat", "adatbázis csapat".
 
 <figure>
 
-Mi is ezzel próbálkoztunk először, azonban ez nem működik túl jól, legalábbis ha a legtöbb sztori
+Mi ezt használtuk először, azonban ez nem működik túl jól, legalábbis ha a legtöbb sztori
 több komponenst is érint.
 
 Legyen mondjuk az egyik sztori az, hogy "üzenőfal, amelyen a felhasználók üzenetet küldhetnek
@@ -2790,328 +2790,322 @@ szerveren és új táblákat az adatbázisban.
 
 <figure>
 
-This means all three teams - the client team, the server team, and the DB team - have to
-collaborate to get this story done. Not too good.
+Ez azt jelenti, hogy mindhárom - kliens-, szerver-, adatbázis- - csapat együtt kell, működjön a
+sztori befejezéséhez. Nem túl jó ötlet.
 
-Approach 2: cross-component teams
----------------------------------
-A second approach is to create cross-component teams, i.e.
-teams that are not tied to any specific component.
-
-<figure>
-
-If many of your stories involve multiple components this team type division strategy will work
-better. Each team can implement a whole story including the client parts, server parts, and DB
-parts. The teams can thereby work more independently of each other, which is a Good Thing.
-
-One of the first things we did when introducing Scrum was to break up the existing
-component-specialized teams (approach 1) and create cross- component teams instead (approach
-2). This lessened the number of cases of “we can’t complete this item because we are
-waiting for the server guys to do their part.”
-
-We do, however, sometimes assemble temporary component-specialized teams when there is a strong
-need.
-
-Rearrange teams between sprints - or not?
------------------------------------------
-Each sprint is usually quite different from the
-other, depending on which types of stories that are top priority at that particular moment. As
-a result, the optimal team setup may be different for each sprint.
-
-In fact, almost every sprint we found ourselves saying something like “this sprint isn’t really
-a normal sprint because (bla bla bla)....”. After a while we just gave up the notion of
-“normal” sprints. There are no normal sprints. Just like there are no “normal” families or
-“normal” people.
-
-One sprint it may be a good idea to have a client-only team, consisting of everyone who knows
-the client code base well. Next sprint it may be a good idea to have two cross-component teams
-and split the client people between them.
-
-One of the key aspects of Scrum is “team gel”, i.e. if a team gets to work together over
-multiple sprints they will usually become very tight. They will learn to achieve group flow and
-reach an incredible productivity level. But it takes a few sprints to get there. If you keep
-changing the teams around you will never achieve really strong team gel.
-
-So if you do want to rearrange the teams, make sure you consider the consequences. Is this a
-long term change or a short term change? If it is a short term change considering skipping it.
-If it is a long term change, go for it.
-
-One exception is when you start doing Scrum with a large team for the first time. In this case
-it is probably worth experimenting a bit with team subdivision until you find something that
-everyone is comfortable with.  Make sure everybody
-understands that it is OK to get it all wrong the first few times, as long as you keep improving.
-
-Part-time team members
-----------------------
-I can only confirm what the Scrum books say – having part-time members
-of a Scrum team is generally not a good idea.
-
-Let’s say you are about to take on Joe as a part-time member of your Scrum team. Think
-carefully first. Do you really need Joe on your team?
-Are you sure you can’t get Joe
-full-time? What are his other commitments? Can someone else take over Joe’s other commitment
-and let Joe taken on a more passive, supportive role with respect to that commitment? Can Joe
-join your team full time from next sprint, and in the mean time transfer his other
-responsibilities to someone else?
-
-Sometimes there is just no way out. You desperately need Joe because he is the only DBA in the
-building, but the others teams need him just as badly so he will never be allocated fulltime to
-your team, and the company can’t hire more DBAs. Fine. That’s a valid case for having him on a
-part-time basis (which by the way is exactly what happened to us).
-But make sure you really do
-this evaluation every time.
-
-In general I’d rather have a team of 3 full-timers than 8 part-timers.
-
-If you have one person that will divide his time among multiple teams, like the aforementioned
-DBA, it is a good idea to still have him primarily assigned to one team. Figure out which team
-is likely to need him the most, and make that his “home team”. When nobody else is dragging him
-off, he will attend that team’s daily scrums, sprint planning meetings, retrospectives, etc.
-
-How we do Scrum-of-Scrums
--------------------------
-Scrum-of-scrums is basically a regular meeting where all Scrum
-masters gather up to talk.
-
-At one point in time we had four products, where three of the products only had one Scrum team
-each, and the last product had 25 people divided into several Scrum teams. Something like this:
+2. Stratégia: Multi-komponens csapatok
+--------------------------------------
+A második lehetőség, hogy az összes komponenssel egyszerre foglalkozó csapatokat hozunk létre.
 
 <figure>
 
-This means we had two levels of Scrum-of-Scrums. We had one “product level” Scrum-of-Scrums
-consisting of all teams within Product D, and one “corporate level” Scrum-of-Scrums consisting
-of all products.
+Ha a legtöbb sztori több komponensen is átnyúlik, akkor ez a csapatfelosztási stratégia hatékonyabb.
+A csapatok egész sztorikon dolgozhatnak még ha a sztorik az összes szinte (kliens, szerver és
+adatbázis) módosítását igénylik is, ráadásul a csapatok egymástól függetlenül dolgozhatnak, ami Jó
+Dolog.
 
-Product level Scrum-of-Scrums
------------------------------
-This meeting was very important. We did it once per week,
-sometimes more often than that. We discussed integration issues, team balancing issues,
-preparations for next sprint planning meeting, etc. We allocated 30 minutes but frequently
-overran. An alternative would have been to have Scrum-of-Scrums every day but we never got
-around to trying that.
+A Scrum bevezetésekor az egyik legelső változtatásunk épp az egyes komponensekre specializált (1.
+stratégia) csapatok felbontása és az összes szinten átnyúló csapatok (2. stratégia) létrehozása
+volt. Ezzel jelentősen csökkent az olyan esetek száma, amikor például "azért nem tudtuk befejezni
+ezt a sztorit, mert a szerver csapatra várunk".
 
-Our Scrum-of-Scrums agenda was
-1) Round the table, everyone describes what their team
-accomplished last week, what they plan to accomplish this week, and what impediments they have.
-2) Any other cross-team concerns that need to be brought up, for example integration issues.
+Időnként azonban, ha erre igény van, továbbra is alkotunk időlegesen egyes komponensekre
+specializált csapatokat.
 
-The agenda for Scrum-of-Scrums is not really important to me, the important thing is that you
-have regular Scrum-of-Scrums meetings.
+Csapatok újraosztása sprintek között - vagy ne?
+-----------------------------------------------
+Attól függően, hogy épp mi a legfontosabb cél vagy épp milyen sztorijaink vannak, a sprintek elég
+eltérőek tudnak lenni, aminek eredményeképp sprintenként más és más lehet az optimális
+csapatfelosztás.
 
-Corporate level Scrum-of-Scrums
--------------------------------
-We called this meeting ”The Pulse”. We’ve done this meeting in
-a variety of formats, with a variety of participants. Lately we’ve ditched the whole concept
-and replaced it with a weekly all-hands (well, all people involved in development) meeting
-instead. 15 minutes.  What? 15 minutes? All-hands? All members of all teams of all products?
-Does that work?
+Az az igazság, hogy szinte minden sprintre azt mondtuk, hogy ez a sprint azért nem igazán átlagos
+sprint, mert... blablabla. Egy idő után aztán feladtuk az "átlagos" sprintekbe vetett hitünket:
+nincsenek "átlagos" sprintek, csakúgy, mint ahogy "átlagos" családok vagy "átlagos" emberek
+sincsenek.
 
-Yes it works if you (or whoever runs the meeting) are strict about keeping it short.
+Az egyik sprintben hasznos lehet egy kizárólag kliens-oldallal foglalkozó csapatot alakítani azokkal
+a tagokkal, akik jól ismerik a kliens kódját. Egy másik sprintben hasznos lehet két komponenseken
+átnyúló csapatot alakítani és szétosztani a kliens kódját jól ismerő tagokat a kettő között.
 
-The meeting format is:
-1) News and updates from the chief of development. Info about upcoming events for example.
-2) Round-robin. One person from each product group reports on what they
-accomplished last week, what they plan to accomplish this week, and any problems. Some other
-people report as well (CM lead, QA lead, etc).
-3) Anybody else is free to add any info or ask questions
+A Scrum egyik alapvető kérdése a csapat "olajozottsága", vagyis ha a csapattagok huzamosabb időn
+keresztül együtt dolgoznak, akkor előbb-utóbb szoros kapcsolatok alakulnak ki, ami egy közös
+rendkívül hatékony állapothoz vezet. Ehhez azonban több sprintre van szükség, így ha túl gyakran
+cserélgeti a csapattagokat, nem fogja elérni ezt az olajozottan működő állapotot.
 
-This is a forum for brief information, not discussion or reflection. By leaving it at that, 15
-minutes usually works. Sometimes we overrun, but very rarely to more than 30 minutes total. If
-interesting discussions pop up I pause them and invite those who are interested to stay after
-the meeting and continue the discussion.
+Amennyiben a csapatok átrendezését fontolgatja tehát, gondoljon a következményekre is. Hosszú távra
+szól ez a változás? Ha igen, nyugodtan változtasson, de ha nem, akkor lehet, hogy érdemesebb nem
+bolygatni a csapatfelosztást.
 
-Why do we do an all-hands pulse meeting? Because we noticed that the corporate-level Scrum of
-Scrums was mostly about reporting. We rarely had actual discussions in that group. In addition,
-many other people outside the group were hungry for this type of info. Basically, teams want to
-know what others teams are doing. So we figured that if we are going to meet and spend time
-informing each other about what each team is doing, why not just let everyone attend.
+Az egyetlen kivétel amikor egy nagyobb csapatnál először vezeti be a Scrum-ot. Ebben az esetben
+megéri kísérletezgetni különböző csapatfelosztásokkal addig, amíg olyan felosztást nem talál, amivel
+mindenki elégedett. Tegye egyértelművé, hogy az első pár alkalommal az sem baj, ha teljes
+katasztrófa a felosztás, feltéve, hogy ezen mindenki folyamatosan javítani próbál.
 
-Interleaving the daily scrums
------------------------------
-If you have many Scrum teams within a single product, and they
-all do the daily scrum at the same time, you have a problem. The product owner (and nosy people
-like me) can only attend one team’s daily scrum per day.
+Részidős csapattagok
+--------------------
+Én is csak azt tudom mondani, amit a Scrum irodalom: nagy általánosságban rossz ötlet részidős
+csapattagokat alkalmazni.
 
-So we ask teams to avoid having daily scrums at the same time.
+Tételezzük fel, hogy Joe-t részidőben alkalmazná a csapatában. Fontolja meg a következőket. Először
+is tényleg szüksége van Joe-ra a csapatban? Nem tudja Joe-t teljes idejű csapattagként alkalmazni?
+Joe-nak milyen más feladatai vannak? Nem lehet valaki mást megkérni, hogy Joe ezen feladatait -
+esetleg Joe passzívabb felügyelete mellett - átvegye? Elképzelhető-e, hogy Joe a következő sprinttől
+teljes időben csatlakozzon és addigra átadja a jelenlegi feladatait valaki másnak?
 
-<figure>
+Néha nincs más megoldás, Joe-ra égető szüksége van, mert ő az egyetlen adatbázis-adminisztrátor az
+épületben, de persze a többi csapatnak is ugyanígy szüksége van rá, így sosem érheti el, hogy teljes
+időben csatlakozzon az Ön csapatához, ráadásul az is elképzelhetetlen, hogy a vállalat új DBA-t
+vegyen fel. Rendben, ebben az esetben tökéletesen elfogadható, hogy részidőben alkalmazza Joe-t
+(egyébként mi pontosan ebben a helyzetben voltunk), de ne feledje el minden esetben mérlegelni
+ezeket a kritériumokat.
 
-The sample schedule above is from the period when we had daily scrums in separate rooms, rather
-than in the team room. The meetings are normally 15 minutes but each team gets a 30-minute slot
-in the room in case they need to overrun slightly.
+Személy szerint én szívesebben dolgoznék 3 teljes idejű taggal, mint 8 részidőssel.
 
-This is extremely useful for two reasons.
-1. People like the product owner and myself can visit all daily scrums on a single morning.
-There’s no better way to get an accurate picture of how the sprint is coming along, and what
-the key threats are.
-2. Teams can visit each other’s daily scrums. Doesn’t happen too often,
-but once in a while two teams will be working on a similar area, so a few members drop in on
-each other’s daily scrums to stay in sync.
+Ha van is valaki, aki az előző példában látott DBA-hoz hasonlóan több csapat között osztja meg az
+idejét, akkor is érdemes elsődlegesen valamelyik csapathoz osztani. Fontolja meg, hogy melyik
+csapatnak van a legnagyobb szüksége erre a személyre és rendelje ehhez a csapathoz. Hacsak nincs
+dolga máshol, ennek a csapatnak a napi scrumjain, sprint planning meetingjein és visszatekintőin
+vesz részt.
 
-The downside is less freedom for the team – they can’t choose any time they like for the daily
-scrum. This hasn’t really been a problem for us though.
-
-Firefighting teams
-------------------
-We had a situation where a large product was unable to adopt Scrum because
-they spent too much time firefighting, i.e. panic-fixing bugs on their prematurely released
-system. This was a real vicious cycle, they were so busy firefighting that they didn’t have
-time to work proactively to prevent fires (i.e. improve the design, automating tests, create
-monitoring tools, alarm tools, etc).
-
-We addressed this problem by creating a designated firefighting team, and a designated Scrum
-team.
-
-The Scrum team’s job was to (with the product owner’s blessing) try to stabilize the system
-and, effectively, prevent fires.
-The firefighting team (we called them “support” actually) had two jobs.
-1) Fight fires
-2) Protect the Scrum team from all kinds of disturbances, including
-things such as fending off ad-hoc feature requests coming in from nowhere.
-
-The firefighting team was placed nearest the door; the Scrum team was placed in the back of the
-room. So the firefighting team could actually physically protect the Scrum team from
-disturbances such as eager salespeople or angry customers.
-
-Senior developers were placed on both teams, so that one team wouldn’t be too dependent on core
-competence from the other.
-
-This was basically an attempt to solve a Scrum bootstrapping problem.
-How can we start doing
-Scrum if the team doesn’t have a chance to plan their work more than one day at a time? Our
-strategy was, as mentioned, to split the group.
-
-This worked pretty well. Since the Scrum team was given room to work proactively they were
-finally able to stabilize the system. In the meantime the firefighting team completely gave up
-the notion of being able to plan ahead, they worked completely reactively, just fixing whatever
-panic issue would come up next.
-
-Of course, the Scrum team was not completely undisturbed. Frequently the firefighting team had
-to involve key people from the Scrum team, or at worst the whole team.
-
-Anyway, after a couple of months the system was stable enough that we could ditch the
-firefighting team and create additional Scrum teams instead. The firefighters were quite happy
-to park their battered helmets and join Scrum teams instead.
-
-Splitting the product backlog – or not?
+Hogyan alkalmazzuk a "Scrumok Scrumját"
 ---------------------------------------
-Let’s say you have one product and two Scrum teams.
-How many product backlogs should you have? How many product owners? We’ve evaluated three
-models for this. The choice has a pretty big effect on how sprint planning meetings are carried
-out.
+A Scrumok Scrumja egyszerűen egy rendszeres meeting az összes Scrum Master között.
 
-Strategy 1: One product owner, one backlog
-------------------------------------------
-This is the “There Can Only Be One” model. Our preferred model.
-
-The good thing about this model is that you can let teams pretty much form themselves based on
-the product owner’s current top priorities. The product owner can focus on what he needs, and
-let the teams decide how to split the work up.
+Egy ponton egyszerre négy terméken dolgoztunk, amiből háromhoz egy-egy Scrum csapat volt rendelve,
+míg a negyediken 25 ember dolgozott több kisebb csapatba osztva az alábbi ábrához hasonlóan:
 
 <figure>
 
-To be more concrete, here’s how the sprint planning meeting works for this team:
+Ez azt jelenti, hogy a Scrumok Scrumja két szintű volt, egy "termék szintű" Scrumok Scrumja, amibe a
+D termékhez tartozó csapatok tartoztak és egy "vállalati szintű" Scrumok Scrumja, ami az összes
+terméket magába foglalta.
 
-The sprint planning meeting takes place at an external conference center.
+Termék szintű Scrumok Scrumja
+-----------------------------
+Ez a heti rendszerességű, vagy esetenként akár gyakoribb meeting rendkívül fontos volt. Itt
+beszéltük meg az integrációs- és a csapategyensúlyt érintő kérdéseket, itt készültünk fel a
+következő sprint planning meetingekre, stb. Fél óra volt kiszabva rá, de gyakran kicsúsztunk az
+időből. Az alternatíva az lett volna, hogy minden nap összeülünk, de végül ezt sosem próbáltuk ki.
 
-Just before the meeting, the product owner declares one wall to be the “product backlog wall”
-and puts up stories up there (index cards), ordered by relative priority. He keeps putting them
-up until that wall is full, which is usually more than enough items for a sprint.
+A meeting menetrendje a következő volt:
+1) Sorban mindenki elmondja, hogy a csapat mit csinált a múlt héten, mit terveznek csinálni ezen a
+héten és milyen akadályokkal néznek szembe.
+2) Bármi más, több csapatot is érinthető kérdés megvitatása (mint például integrációs problémák)
+
+Ez a menetrend igazából annyira nem fontos, a lényeg, hogy rendszeresen tartson Scrumok Scrumja
+meetinget.
+
+Vállalati szintű Scrumok Scrumja
+--------------------------------
+Ezt a meetinget csak "Pulzus"-nak becéztük. Sokféle felállással próbálkoztunk, de mostanában az
+egészet inkább elhagytuk és helyette hetente tartunk teljes céges helyzetjelentést (a teljes cég
+alatt persze a fejlesztésben érintett személyeket kell érteni). Az egész 15 perc. Hogy micsoda? 15
+perc? A teljes céggel? Az összes termék összes csapatának összes tagjával? Ez működőképes?
+
+Igen, de csak akkor ha a szervezője ténylegesen betartatja a rövid időkorlátot.
+
+A meeting a következőképp néz ki:
+1) A fejlesztés vezetője ismerteti a főbb híreket, következő eseményeket.
+2) Minden termék csoportjából egy ember elmondja, mit csináltak a múlt héten, mit terveznek erre a
+hétre és esetleg ha valamilyen akadállyal küszködnek. Néhány további ember is megszólal
+(konfigurációmenedzsment, minőségellenőrzés, stb).
+3) Bárki más szabadon hozzáadhat vagy kérdezhet.
+
+A meeting rövid és tömör információcserére szolgál, nem pedig vitákra vagy elmélkedésekre. Ha így
+használjuk, akkor 15 perc általában elég és ha ki is futunk néha az időből, nagyon ritka, hogy fél
+óránál többet vegyen igénybe. Ha valahol vita alakulna ki, egy pillanatra megállunk és megkérem az
+érdekelteket, hogy a meeting után maradjanak és ott folytassák a megbeszélést.
+
+Azért tartjuk ez a teljes céges "pulzus" meetinget, mert tapasztalatunk szerint a vállalati szintű
+Scrumok Scrumja amúgy is javarészt információközlésből állt, szinte sose volt tárgyalás jellegű.
+Ráadásul a jelenlevőkön kívül is sokakat érdekeltek és érintettek ezek az információk, úgyhogy
+inkább úgy döntöttünk, hogy ha már egyszer időt fordítunk arra, hogy megosszuk, hogy az egyes
+csapatok hogyan állnak, miért ne osztanánk ezt meg mindenkivel.
+
+A Napi Scrumok időzítése
+------------------------
+Problémát okoz, ha több ugyanazon a terméken dolgozó Scrum csapat is ugyanabban az időben tartja a
+Napi Scrumját, mert így a Product Owner (és a hozzám hasonló kíváncsiskodók) csak egy napi scrumra
+tudnak bemenni.
+
+Ezért aztán arra kérjük a csapatokat, hogy ha lehet ne ugyanabban az időben tartsák a Napi
+Scrumjaik.
 
 <figure>
 
-Each Scrum team selects an empty wall section for themselves and posts their team name there.
-That’s their “team wall”. Each team then grab stories from the product backlog wall, starting
-from the top priority stories, and pulls the index cards to their own team wall.
+A fenti példa abból az időből származik, amikor a Napi Scrumjainkat egy külön irodában és nem a
+csapat szobában tartottuk. Az egész általában 15 perc, de minden csapat egy 30 perces időkeretet kap
+arra az esetre, ha egy kicsit túlszaladnának a 15 percen.
 
-This is illustrated in the picture below, with yellow arrows symbolizing the flow of story
-index cards from the product backlog wall to the team walls.
+Ez két szempontból is hasznos:
+1. A Product Owner és a hozzám hasonló emberek az összes napi scrumon jelen tudnak lenni minden
+reggel, aminél nincs jobb módszer a sprint pontos állapotának és az esetleges kockázatok
+felmérésére.
+2. A csapattagok beülhetnek más csapatok napi scrumjaira is. Bár ez nem túl gyakran fordul elő, néha
+több csapat is hasonló dolgon dolgozik, ezért néhányan belehallgatnak a másik csapatok napi
+scrumjaiba, hogy naprakészek legyenek.
+
+A dolog hátránya, hogy kevesebb szabadságot biztosít a csapatoknak, mivel nem választhatnak
+tetszőleges időpontot a napi scrumra. Nálunk azonban ez eddig sosem okozott gondot.
+
+Tűzoltó csapatok
+----------------
+Egy esetben egy nagyobb terméket fejlesztő csapatban képtelenek voltunk bevezetni a Scrum-ot, mivel
+túl sok idejüket töltötték tűzoltással, azaz a félkészen kiadott rendszerük pánikszerű foltozásával.
+Ez egy ördögi kör, azzal hogy az idejük nagy részét a tűzoltásra kellett fordítaniuk, nem jutott
+idejük a tűzvész megelőzésére (mint például az architektúra javítása, tesztek automatizálása,
+monitoring rendszer bevezetése, riasztások beállítása, stb).
+
+Ezt azzal orvosoltuk, hogy egy külön tűzoltó- és egy külön Scrum csapatot hoztunk létre.
+
+A Scrum csapat feladata volt - a Product Owner beleegyezésével - a rendszer stabilitásának javítása
+és gyakorlatilag a tüzek megakadályozása.
+
+A tűzoltó csapatnak (amit igazából "terméktámogató" csapatnak hívtunk) két feladata volt:
+1) Tűzoltás
+2) Elhatárolni a Scrum csapatot az olyan zavaró tényezőktől, mint például a derült égből váratlanul
+felbukkanó ad-hoc kérések.
+
+A tűzoltó csapat az ajtóhoz közel, míg a Scrum csapat az iroda másik végében ült, így fizikailag is
+védelmet nyújthattak például egy túlbuzgó sales-es vagy egy dühös felhasználó ellen.
+
+Mindkét csapatba osztottunk senior fejlesztőket, hogy egyik csapatnak se kelljen a másikra
+hagyatkoznia.
+
+Ez tulajdonképpen a Scrum bevezetésének problémáját volt hivatott megoldani. Hogyan kezdhetünk neki
+a Scrumnak, ha a csapatnak esélye sincs egy napnál előbbre tervezni? Mi ezt úgy oldottuk meg, hogy a
+csapatot kettéosztottuk, ami remekül működött.
+
+Mivel a Scrum csapat elég teret kapott, hogy előrelátóan dolgozzon, végre stabilizálni tudták a
+rendszert. Mindeközben a tűzoltó csapat teljesen lemondott arról, hogy előre tervezzenek és reaktív
+módon dolgoztak mindig az éppen felfedezett hibákon.
+
+Persze a Scrum csapat hétköznapjai nem voltak teljesen zavarmentesek, a tűzoltó csapat gyakran
+kellett, hogy konzultáljon a Scrum csapat egyes tagjaival, vagy rossz esetben az egész csapattal.
+
+Végül aztán egy pár hónap múlva a rendszer elég stabillá vált, hogy teljesen megszabadulhattunk a
+tűzoltó csapat gondolatától és helyette egy újabb Scrum csapatot alakíthattunk ki. A tűzoltók nagy
+örömmel akasztották a szögre kormos sisakjaik, hogy végre a Scrum csapatokhoz csatlakozzanak.
+
+A product backlog szétbontása - vagy ne?
+----------------------------------------
+Mondjuk van egy terméke két Scrum csapattal. Hány product backlogot készítsen? Hány Product Owner
+legyen? Ezzel kapcsolatban három stratégiát próbáltunk ki. A választás nagyban ki fog hatni a sprint
+planning meeting menetére.
+
+1. Stratégia: Egy Product Owner, egy backlog
+--------------------------------------------
+Mi ezt a "csak egy maradhat" modellt favorizáljuk.
+
+A modell szépsége, hogy a csapatokat hagyja maguktól kialakulni a Product Owner aktuális prioritásai
+alapján. A Product Owner meghatározza, hogy mire van szüksége, majd a csapatokra bízza a munka
+felosztását.
 
 <figure>
 
-As the meeting progresses, the product owner and the teams haggle over the index cards, moving
-them around between teams, moving them up and down to change priority, breaking them down into
-smaller items, etc.
-After an hour or so, each team has a first candidate version of a sprint
-backlog on their team wall. After that the teams work independently, time estimating and
-breaking down to tasks.
+Még közelebbről a sprint planning meeting az alábbiak szerint működik:
+
+A sprint planning meetinget egy közeli konferenciaközpontban tartjuk.
+
+Közvetlenük a meeting előtt, a Product Owner kijelöl egy falat "product backlog fal"-nak és ide
+teszi fel a sztorik cetlijeit fontossági sorrendben amíg a fal be nem telik (ami általában több is,
+mint amire a sprintben szükség van)
 
 <figure>
 
-It’s messy and chaotic and exhausting, but also effective and fun and social. When time is up,
-all teams usually have enough information to start their sprint.
+Minden Scrum csapat választ egy üres faldarabot magának. Ezután minden csapat a legfontosabbakkal
+kezdve sztorikat tesz át a product backlogból a saját falára.
 
-Strategy 2: One product owner, multiple backlogs
-------------------------------------------------
-In this strategy, the product owner maintains
-multiple product backlogs, one per team. We haven’t actually tried this approach, but we’ve
-been close. This is basically our fallback plan in case the first approach fails.
-
-The weakness of this strategy is that the product owner is allocating stories to teams, a task
-that teams probably are better at doing themselves.
+A következő ábra hivatott ezt illusztrálni. A sárga nyíl jelképezi a sztori cetlik haladási irányát
+a product backlogból a csapatok falaira.
 
 <figure>
 
-Strategy 3: Multiple product owners, one backlog per owner
-This is like the second strategy, one product backlog per team, but with one product owner per team as well!
+A meeting folyamán a product owner és a csapatok egyezkednek a cetliket illetően, egyik csapattól a
+másikba tehetik, felfelé vagy lefelé mozgathatják őket hogy megváltoztassák a prioritásokat vagy
+kisebb sztorikra bonthatják azokat, stb. Nagyjából egy órán belül minden csapat falán kialakul egy
+előzetes sprint backlog. Ezután a csapatok már függetlenül dolgozhatnak a feladatokra bontáson és az
+időbecsléseken.
 
 <figure>
 
-We haven’t done this, and we probably never will.
+Ez elég kaotikus és fárasztó tud lenni, de ugyanakkor hatékony, szórakoztató és közösségi
+tevékenység is. Az idő lejártával az összes csapatnak elég információja lesz, hogy elkezdjen a
+sprinten dolgozni.
 
-If the two product backlogs involve the same code base, this will probably cause serious
-conflicts of interest between the two product owners.
+2. Stratégia: Egy Product Owner, több backlog
+---------------------------------------------
+Ebben a modellben a product owner csapatonként egy product backlogot készít. Ugyan közel jártunk
+ennek a stratégiának a használatához, de igazából sosem próbáltuk ki. Ha az 1. stratégia nem
+működne, ez lenne a következő, amit kipróbálnánk.
 
-If the two product backlogs involve separate codebases, this is essentially the same as
-splitting the whole product into separate sub-products and running them independently. This
-means we are back to the one-team-per- product situation, which is nice and easy.
+A stratégia gyenge pontja, hogy a Product Owner oszt sztorikat az egyes csapatokra, ami egy olyan
+tevékenység, amit hatékonyabb a csapatokra bízni.
 
-Code branching
---------------
-With multiple teams working on the same code base we inevitably have to deal
-with code branches in the SCM (software configuration management) system. There are lots of
-books and articles on how to deal with multiple people working on the same code base so I won’t
-get into detail here. I don’t have anything new or revolutionary to add. I will, however,
-summarize some of the most important lessons learned so far by our teams.
-* Be strict about keeping the mainline (or trunk) in a consistent state. This means, at the very
-least, that everything should compile and all unit tests should pass. It should be possible to
-create a working release at any given moment. Preferably the
-continuous build system should build and auto-deploy to a test environment every night.
-* Tag each release. Whenever you release to acceptance test or to production, make sure there is a
-version tag on your mainline identifying exactly what was released. That means you can, at any
-time in the future, go back and create a maintenance branch from that point.
-* Create new branches only when necessary. A good rule of thumb is to branch off a new codeline only when
-you can’t use an existing codeline without breaking that codeline’s policy. When in doubt,
-don’t branch. Why? Because each active branch costs in administration and complexity.
-* Use branches primarily to separate different lifecycles. You may or may not decide to have each
-Scrum team code on their own codeline. But if you mix short-term fixes with long term changes
-on the same codeline, you will find it very difficult to release the short-term fixes!
-* Synchronize often. If you are working on a branch, synchronize to mainline whenever you have
-something that builds. Every day when you get to work, synchronize from mainline to your
-branch, so that your branch is up-to-date with respect to other teams’ changes. If this gives
-you merge-hell just accept the fact that it would have been even worse to wait.
+<figure>
 
-Multi-team retrospectives
--------------------------
-How do we do sprint retrospectives when there are multiple teams
-working on the same product?
+3. Stratégia: Több Product Owner saját backloggal
+----------------------------------------------------------
+Ez nagyban hasonlít a 2. stratégiára azzal a különbséggel, hogy csapatonként nem csak egy külön
+backlog, de külön Product Owner is van.
 
-Immediately after the sprint demo, after the applause and the mingle, each team goes off to a
-room of their own, or to some comfortable out-of-office location. They do their retrospectives
-pretty much as I described on pg 67 "How we do Sprint retrospectives".
+<figure>
 
-During the sprint planning meeting (which all teams attend, since we do synchronized sprints
-within each product), the first thing we do is let one spokesman from each team stand up
-and summarize the key points from their retrospective. Takes about 5 minutes per team. Then we
-have open discussion for about 10 – 20 minutes. Then we take a break. Then we start the actual
-sprint planning.
+Ezt sosem próbáltuk ki és nagyon valószínű, hogy sosem fogjuk.
 
-We haven’t tried any other way for multiple teams, this works good enough. The biggest
-disadvantage is that there is no slack time after the sprint retrospective part, before the
-sprint planning part of the meeting.  (See pg 73 "Slack time between sprints" )
+Ha a két product backlog ugyanazt a kódbázist érinti, ez valószínűleg komoly érdekellentéthez vezet
+a Product Ownerek között.
 
-For single-team products, we don’t do any retrospective summary during the sprint planning
-meeting. No need to, since everybody was present at the actual retrospective meeting.
+Ha a két product backlog két külön kódbázist érint, ez gyakorlatilag ugyanolyan, mintha a terméket
+magát bontanánk két független részre, azaz visszajutunk az egy csapat per termék szituációhoz, ami
+viszont egyszerűen kezelhető.
+
+Branch-ek
+---------
+Ha több csapat dolgozik ugyanazzal a kódbázissal, akkor elkerülhetetlen, a branchek használata.
+Rengeteg könyv foglalkozik azzal a kérdéssel, hogy mit tegyünk ha több fejlesztő dolgozik egyszerre
+ugyanazon a kódon, ezért a részletekbe nem mennék bele és mivel nincs semmi forradalmi újdonság,
+amit hozzáadhatnék a témához, inkább összefoglalnám a csapatunkban megtanult fontosabb leckéket.
+* Biztosítsa, hogy a master branch (trunk) mindig konzisztens, azaz hogy a kód minimum lefordul és a
+  tesztek sikeresen lefutnak, így bármikor működő kiadást készíthet. Remélhetőleg a folyamatos build
+  rendszer minden éjjel automatikusan telepíti a legfrissebb változatot a teszt környezetre.
+* Minden kiadáshoz készítsen tag-et. Minden egyes elfogadási tesztre- vagy élesbe szánt kiadáshoz
+  készítsen egy olyan tag-et, ami egyértelműen jelzi, hogy pontosan mi került kiadásra. Így a
+  jövőben bármikor visszatérhet és egy karbantartási ágat készíthet ettől a ponttól.
+* Csak akkor készítsen új branch-eket, ha ez feltétlenül szükséges. Az ökölszabály, hogy akkor
+  indítunk új ágat, ha a jelenlegi ág szabályait nem tudunk betartani az új fejlesztéssel. Ha
+  kételyei vannak, inkább ne készítsen új branch-et, mert minden aktív ág jelentősen növeli az
+  adminisztrációt és a komplexitást.
+* A brancheket elsődlegesen a különböző életciklusok szétválasztására használja. Az nem olyan fontos
+  kérdés, hogy az egyes Scrum csapatoknak saját ága legyen-e, de ha vegyíti a rövid- és hosszú távú
+  hibajavításokat egy ágon belül, az sok problémát fog okozni amikor a rövid távú javításokat ki
+  szeretné adni.
+* Szinkronizáljon gyakran. Ha külön ágon dolgozik, mindig szinkronizáljon a fő ághoz amint
+  működőképes állapotba kerül. Minden reggel frissítsen a fő ágból, hogy szinkronban maradjon a
+  többi tag változásaival. Ha ez sok merge konfliktust eredményez, fogadja el, hogy ha várna, a
+  helyzet ennél csak rosszabbá válna.
+
+Visszatekintő több csapattal
+----------------------------
+Hogyan szervezzük a sprint visszatekintőket, amikor több csapat dolgozik ugyanazon a terméken?
+
+A sprint demó végeztével, amikor elhal a tapsvihar és a csapatoknak volt némi idejük keveredni,
+minden csapat elvonul egy külön irodába vagy egy kényelmes külső helyre és többé-kevésbé ugyanúgy
+bonyolítják le a visszatekintőjüket, mint ahogy a "Hogyan szervezzük a visszatekintőket" pontnál
+leírtam.
+
+A sprint planning meeting alatt (amin az összes csapat részt vesz, mivel a sprintjeink
+szinkronizáltak a termékeken belül) a legelső, ami történik, hogy minden csapatból feláll egy
+kijelölt személy, aki összefoglalja a visszatekintőn megbeszélteken. Ez csapatonként nagyjából 5
+percet vesz igénybe, ami után 10-20 percnyi időt biztosítunk vitákra. Ezt követően rövid szünetet
+tartunk, ami után elkezdődhet az igazi sprint tervezés.
+
+Nem próbáltunk ki más módszereket, mivel ez megfelelően működik. A legnagyobb hátrány talán az, hogy
+nincs pihenőidő a sprint visszatekintő rész és a sprint planning meeting rész között. (Lásd 
+"Pihenőidő a sprintek között")
+
+Azoknál a termékeknél, ahol csak egy csapat van, a sprint planning meeting során nem szükséges
+összefoglalni a visszatekintőn megbeszélteket, mivel mindenki részt vett a visszatekintőn.
 
 16 How we handle geographically distributed teams
 =================================================
