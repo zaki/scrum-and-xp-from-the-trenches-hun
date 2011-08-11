@@ -417,29 +417,29 @@ egy megjegyzésként tartjuk meg ("Indexek hozzáadása az events táblához tal
 
 3 Hogyan készülünk fel a sprint planning meetingre
 ==================================================
-OK, a sprint planning napja egyre közeleg. Egy dolog, amivel lépten-nyomon találkozunk:
+OK, egyre közeleg a sprint planning napja. A következő leckét mi is újra és újra meg kell, tanuljuk:
 
-Tanulság: A Sprint Planning Meeting előtt mindenképpen tegyük rendbe a Product Backlogot.
+Jótanács: A Sprint Planning Meeting előtt mindenképpen tegyük rendbe a Product Backlogot.
 
 Hogy mindez mit jelent? Hogy minden sztori legyen teljesen definiálva? Hogy minden becslés legyen
 pontos? Hogy minden prioritás legyen lefixálva? Nem, nem és nem! Mindössze a következőket jelenti:
 * A Product Backlog létezik! (képzelje csak el)
-* Egy Product Backlog és egy Product Owner van (minden termékhez természetesen).
-* Minden fontos elemhez hozzá van rendelve egy egyedi fontossági érték.
-  o Ami azt illeti, nem probléma, ha a nem fontos elemekhez ugyanazt az értéket rendeli, mivel nagy
-  valószínűséggel azok úgysem fognak előkerülni a Sprint Planning Meeting során.
-  o Minden sztori, amiről a Product Owner úgy véli, hogy valós esélye van, hogy bekerüljön a
-  következő sprintbe, egyedi értékkel rendelkezzen.
-  o A fontossági érték mindössze arra szolgál, hogy az elemeket fontossági sorrendbe állítsuk. Azaz,
+* Egy Product Backlog és egy Product Owner van (természetesen termékenként értendő).
+* Minden lényegesebb elemhez hozzá van rendelve egy egyedi fontossági érték.
+  o Ami azt illeti, nem probléma, ha a nem fontos elemekhez ugyanazt az értéket rendeli, mivel azok
+  valószínűleg úgysem fognak előkerülni a Sprint Planning Meeting során.
+  o Minden sztorihoz, amiről a Product Owner úgy véli, valós eséllyel rendelkezik, hogy bekerüljön a
+  következő sprintbe, egyedi érték van rendelve.
+  o A fontossági érték mindössze arra szolgál, hogy az elemeket fontossági sorrendbe állítsuk, azaz,
   ha az A Sztori fontossága 20 és B Sztori fontossága 100, ez csak annyit jelent, hogy B fontosabb,
   mint A, nem azt, hogy B ötször olyan fontos, mint A. Ha B fontossága 21 lenne, az is pontosan
   ugyanezt jelentené.
-  o Hasznos lehet a fontossági értékek között egy kevés hézagot hagyni, ha esetleg egy C jelenik
+  o Hasznos lehet a fontossági értékek között hézagokat hagyni, ha esetleg egy C feladat jelenne
   meg, ami fontosabb, mint A, de kevésbé fontos, mint B. Persze használhatnánk 20,5-t is C-re, de az
-  ilyen értékek elég hamar kicsúsznak az irányítás alól, úgyhogy jobb hézagokat hagyni.
+  ilyen értékek elég hamar kicsúsznak az ember irányítása alól, úgyhogy jobb hézagokat hagyni.
 * A Product Owner érti az összes sztorit
   (általában ő írja a sztorikat, de néha mások is hozzáadnak kéréseket, amiket a Product Owner-nek
-   kell fontossági sorrendbe állítani). Az nem szükséges, hogy pontosan tudja, hogy hogyan lesz
+   kell fontossági sorrendbe állítania). Az nem szükséges, hogy pontosan tudja, hogy hogyan lesz
   implementálva, de legalább azt értenie kell, hogy miért van a sztori a listán.
 
 Megjegyzés: Más személyek is adhatnak sztorikat a Product Backlog-hoz, de csak és kizárólag a
@@ -448,11 +448,11 @@ adhat meg időbecsléseket.
 
 További módszerek, amiket kipróbáltunk vagy fontolóba vettünk:
 * Jira-t használni a Product Backlog tárolásához. Ezt a legtöbb Product Owner nehézkesnek tartotta,
-  mivel túl sok kattintást igényelt. Az Excel lapot könnyen tudják szerkeszteni. Könnyű színkódokat
-  hozzáadni, cellákat átrendezni, új oszlopokat hozzáadni, megjegyzéseket hozzáadni, importálni és
+  mivel túl sok kattintást igényelt. Az Excel lapot könnyen tudják szerkeszteni, könnyű színkódokat
+  megadni, cellákat átrendezni, új oszlopokat hozzáadni, megjegyzéseket írni, importálni és
   exportálni, stb...
-* Agilis fejlesztőeszközök, mint például VersionOne, ScrumWorks, XPlanner, stb... Még nem jutottunk
-  el oda, hogy ezeket messzemenően teszteljük, de előbb-utóbb ki fogjuk őket próbálni.
+* Agilis fejlesztőeszközöket, mint például VersionOne, ScrumWorks, XPlanner, használni. Még nem
+  jutottunk el oda, hogy ezeket behatóbban tanulmányozzuk, de előbb-utóbb ki fogjuk őket próbálni.
 
 4 Hogyan tervezzük a sprinteket
 ===============================
