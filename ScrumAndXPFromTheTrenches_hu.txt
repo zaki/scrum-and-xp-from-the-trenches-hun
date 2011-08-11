@@ -10,7 +10,7 @@ Dezső Zoltán
   Köszönetnyilvánítás
   -------------------
   Ezen cikk első vázlata nagyjából egy hétvégét vett igénybe, de az aztán tényleg intenzív hétvége
-  volt. 150%-os koncentrációs tényező! :)
+  volt. 150%-os koncentrációs tényezővel! :)
   Szeretném megköszönni feleségemnek, Sophiának és gyermekeimnek, Dave-nek és Jenny-nek, hogy
   elviseltek azon a hétvégén és Sophia szüleinek, Eva-nak és Jörgennek, hogy segítettek felügyelni a
   gyerekekre. Köszönet illeti még kollégáimat a stockholmi Crisp-nél, illetve a scrumdevelopment
@@ -144,48 +144,48 @@ Jeff Sutherland előszava
 ========================
 Egy csapatnak ismernie kell a Scrum alapjait. Hogyan készítsünk és becsüljünk Product Backlog-ot?
 Hogyan csináljunk belőle Sprint Backlogot? Hogyan használjuk a Burndown Chart-ot és hogyan számítsuk
-a csapat sebességét? Henrik könyve tartalmazza az alapvető gyakorlatokat, amik segítségével egy
-Scrum-ot próbálgató csapatból egy Scrum-ot teljes mértékben kihasználó csapat válik.
+ki a csapat sebességét? Henrik könyve bemutatja azokat az alapvető gyakorlatokat, amik segítségével
+egy Scrum-ot próbálgató csapatból egy, a Scrum-ot teljes mértékben kihasználó csapat lehet.
 
-A megfelelő Scrum gyakorlat az utóbbi időben egyre fontosabbá válik olyan csapatok számára, akik
-befektetésben reménykednek. Agile trénerként egy befektetői csoportot segítek, akiknek célkitűzése,
-hogy csak a befektetésre érdemes, a Scrum-ot jól használó cégekbe fektetnek. A csoport Senior
-Partner-e minden jelölttől megkérdezi, hogy ismerik-e a csapataik sebességét (velocity). Jelenleg a
-legtöbbjük nem vagy csak nehezen tud válaszolni. A jövőben a befektetésekhez elengedhetetlen lesz,
-hogy a csapatok ismerjék a fejlesztési sebességeiket.
+A Scrum-ban való járatosság az utóbbi időben egyre fontosabbá válik olyan csapatok számára is, akik
+befektetésben reménykednek. Agile trénerként én is egy olyan befektetői csoportot segítek, akik
+egyik követelménye, az agilis fejlesztési módszertanok beható ismerete. A csoport Senior Partner-e
+minden jelölttől megkérdezi, hogy ismeri-e a csapatai sebességét (velocity). Jelenleg a legtöbbjük
+nem vagy csak nehezen tud válaszolni. A jövőben a befektetésekhez elengedhetetlen lesz, hogy a
+csapatok ismerjék a fejlesztési sebességeiket.
 
 Hogy ez miért olyan fontos? Ha a csapatok nem ismerik a sebességüket, akkor a Product Owner nem tud
-előre tervezni és kivitelezhető kiadási dátumokat adni. Ha pedig nincs megbízható kiadási dátum,
-akkor a cég könnyen tönkre mehet, mivel a befektetők elvesztik a pénzüket.
+előre tervezni és teljesíthető kiadási dátumokat megadni. Ha pedig nincs megbízható kiadási dátum,
+akkor a cég könnyen tönkre mehet és a befektetők elvesztik a pénzüket.
 
 Ez egy olyan probléma, ami minden vállalkozást - kicsit és nagyot, régit és újat, befektetőkkel
-rendelkezőt és nem rendelkezőt - egyaránt érint. Nemrég a Google Scrum használatáról tartott londoni
-beszéd során megkérdeztem a hallgatóságot (135 főt), hogy hányan használnak Scrum-ot és 30-an
-felelték, hogy igen, ők Scrum-ot használnak. Ezután megkérdeztem, hogy hányan felelnek meg a Nokia
-iteratív fejlesztési szabványának. Az iteratív fejlesztés az Agile Kiáltvány (agile manifesto) egyik
-alappillére - használható szoftvert kiadni a kezdetektől és gyakran. A Nokia több száz fejlesztői
-csapat több évnyi visszajelzése alapján megállapított néhány alapkövetelményt az iteratív
-fejlesztéshez:
-* Minden iteráció legfeljebb hat hetes rögzített időtartammal rendelkezik.
+rendelkezőt és nem rendelkezőt - egyaránt érint. Nemrég, a Google Scrum használatáról tartott
+londoni beszédem során megkérdeztem a hallgatóságot (135 főt), hogy hányan használnak Scrum-ot.
+30-an jelezték, hogy igen, ők Scrum-ot használnak. Ezután megkérdeztem, hogy hányan felelnek meg a
+Nokia iteratív fejlesztési szabványának. Az iteratív fejlesztés az Agile Manifesto (agilis
+kiáltvány) egyik alappillére - használható szoftvert kiadni gyakran és már a kezdetektől. A Nokia
+több száz fejlesztői csapat több évnyi visszajelzése alapján megállapított néhány alapkövetelményt
+az iteratív fejlesztéshez:
+* Minden iteráció legfeljebb hat hetes, rögzített időtartammal rendelkezik.
 * Az iteráció végén a kód minőségteszten esett át és helyesen működik.
 
 A 30 főből, akik azt mondták, hogy Scrum-ot használnak, csak 15 állította, hogy megfelelnek a Nokia
-iteratív fejlesztési követelményeinek. Ezután azt kérdeztem meg, hogy megfelelnek-e a Nokia Scrum
-követelményeinek:
-* A Scrum csapatban van egy kirendelt Product Owner és a csapat tudja, hogy ki az
+iteratív fejlesztési követelményeinek. Tőlük ezután azt kérdeztem meg, hogy megfelelnek-e a Nokia
+Scrum követelményeinek:
+* A Scrum csapatban van egy kirendelt, a csapat tagjai által elismert Product Owner.
 * A Product Owner rendelkezik Product Backlog-gal, amiben a csapat becslései is szerepelnek.
 * A csapat rendelkezik Burndown Chart-tal és ismeri a sebességét.
 * A csapaton kívüli személyek nem zavarják meg a csapatot egy sprint közben.
 
 A 30 Scrum-ot használó személy közül mindössze 3 felelt meg a Nokia Scrum tesztjének. Ezek azok a
-csapatok, akikbe a befektetői ismerőseim  a jövőben be fognak fektetni.
+csapatok, akikbe a beruházói köröm ismerősei a jövőben be fognak fektetni.
 
-Henrik könyvének igazi értéke, hogy ha az általa ismertetett gyakorlatokat követi, használ Product
-Backlog-ot, becsüli a Backlog elemeket, rendelkezik Burndown Chart-tal és ismeri a sebességét és úgy
-általában olajozottan fog működni a Scrum Önnek. Meg fog felelni a Nokia követelményeinek és
-méltán reménykedhet külső befektetésben. Amennyiben cége egy startup, akár tőkét kaphat egy
-befektetői csoporttól. Ön lehet a jövő sikeres szoftverfejlesztője és a következő
-generáció sikertermékének szülőatyja.
+Henrik könyvének igazi értéke, hogy ha az általa ismertetett gyakorlatokat követi akkor rendelkezik
+majd Product Backlog-gal, becslést készít majd a Backlog elemeihez, rendelkezni fog Burndown Chart-
+tal és ismerni fogja a sebességét. Úgy általában olajozottan fog működni a Scrum a cégében. Meg fog
+felelni a Nokia követelményeinek és méltán reménykedhet majd külső befektetésben. Amennyiben cége
+épp csak megalakult, kezdeti tőkét kaphat egy befektetői csoporttól. Ön lehet a jövő sikeres
+szoftverfejlesztője és a következő generáció sikertermékének szülőatyja.
 
 Jeff Sutherland,
 Ph.D., a Scrum társszerzője
@@ -194,19 +194,19 @@ Ph.D., a Scrum társszerzője
 
 Mike Cohn előszava
 ==================
-A Scrum is és az Extreme Programming (XP) azt várja el a csapatoktól, hogy egy iteráció végére
-elkészítsenek egy kézzel fogható, működő terméket. Ezek az iterációk szándékosan rövidek és
-rögzített hosszal rendelkeznek. Ez a rövid idő alatt működő kód elkészítésére való koncentráció azt
+A Scrum is és az Extreme Programming (XP) is azt várják el a csapatoktól, hogy egy iteráció végére
+előálljanak egy kézzel fogható, működő termékkel. Ezek az iterációk szándékosan rövid,
+rögzített hosszal rendelkeznek. A rövid idő alatt működő kód elkészítésére való összpontosítás azt
 jelenti, hogy egy Scrum vagy XP csapatban nincs idő elmélkedni. Nem lényeges hogy a legszebb UML
 modellt készítsük el, a legtökéletesebb követelmény-elemzést írjuk meg, vagy hogy minden lehetséges
 jövőbeni módosításra kész kódot írjunk. Ehelyett egy Scrum vagy XP csapatban a hangsúly azon van,
-hogy a termék elkészüljön. Ezek a csapatok elfogadják, hogy előfordul, hogy hibáznak majd, de azt is
-felismerik, hogy a hibák feltárásának legjobb módja hogy az ember a elméleti eszmefuttatások helyet
+hogy a termék elkészüljön. Ezek a csapatok elfogadják, hogy hibák előfordulnak majd, de azt is
+felismerik, hogy ezen hibák feltárásának legjobb módja hogy az ember a elméleti eszmefuttatások helyett
 felgyűri az ingujjat és nekiáll ténylegesen elkészíteni a szoftvert.
 
-Pont ez az elméleti helyett a tevékenység hangsúlyozása az, ami megkülönbözteti ezt a könyvet.
-Hogy Henrik is érti ezt, az teljesen világos már a kezdetektől. Nem ír regényeket arról, hogy mi is
-a Scrum (helyette az érdeklődő számára ajánl néhány weboldalt). Inkább a közepébe vág és
+Pont ez a pragmatikus hozzáállás az, ami miatt ez a könyv többet nyújt a megszokottaknál.
+Hogy Henrik is érti ezt, az már a kezdetektől teljesen világos. Nem ír regényeket arról, hogy mi is
+a Scrum (helyette az érdeklődő számára inkább néhány weboldalt ajánl). Inkább a közepébe vág és
 elmagyarázza, hogy hogyan használja a csapata a Product Backlogot. Ebből a kezdőpontból bontja ki
 aztán a többi, jól működő agilis projekthez elengedhetetlen elemet. Nincsenek elmélkedések.
 Nincsenek hivatkozások. Nincsenek lábjegyzetek. És nincs is rájuk szükség: Henrik könyve nem egy
@@ -237,85 +237,85 @@ Előszó – Hé, a scrum működött!
 =================================
 A Scrum működött. Legalábbis nekünk (ami alatt a jelenlegi
 stockholmi megbízót értem, akit nem fogok megnevezni). Remélem, hogy Önnek is működni fog.
-Talán ezt az írást is hasznos iránymutatónak fogja találni.
+Talán ezt az írást is hasznos iránymutatónak találja majd.
 
-Ez az első alkalom, hogy egy fejlesztői metodológia (elnézést Ken, keretrendszer) elsőre
-működött. Csont nélkül. Mindannyian elégedettek vagyunk vele – fejlesztők, teszterek,
-menedzserek. Átsegített néhány nehéz helyzeten és közben segített megőriznünk a lendületünk és
-koncentrációnk a kemény piaci viszonyok és sorozatos leépítések között is.
+Ez az első alkalom, hogy egy fejlesztői metodológia (bocsánat, Ken, keretrendszer) elsőre
+működött. Csont nélkül. Mindannyian elégedettek vagyunk vele – a fejlesztők, a teszterek,
+a menedzserek. Átsegített néhány nehéz helyzeten és közben segített megőriznünk a lendületünk és
+koncentrációnk a nehéz piaci viszonyok és sorozatos leépítések között is.
 
 Nem szabadna azt mondanom, hogy ez az eredmény meglepett, de mégis ezt kell mondanom. Néhány
-könyv elolvasása után a Scrum jónak tűnt, de majdnem túl jónak is, hogy igaz legyen (ismerjük a
-mondást “ha valami túl jónak tűnik, hogy igaz legyen…”). Érhető módon szkeptikus voltam.
-Aztán egy évnyi Scrum után meglehetősen elégedett voltam (és a csapat többi tagja is elégedett
-volt), olyannyira, hogy ezentúl hacsak nincs egy jó érv ellene, alapértelmezés szerint minden új
+könyv elolvasása után a Scrum jónak tűnt, de talán túl jónak is, hogy igaz legyen (ismerjük a
+mondást “ha valami túl jónak tűnik, hogy igaz legyen...”), így talán érhető a kezdeti kétkedésem.
+Azonban egy évnyi Scrum után meglehetősen elégedett lettem (csakúgy, mint a csapat többi tagja);
+olyannyira, hogy ezentúl hacsak nincs egy jó érv ellene, alapértelmezés szerint minden új
 projektben Scrum-ot fogok használni.
 
 ----------------------------------------------------------------------------------------------------
 
 1 Bevezető
 ==========
-Hamarosan bevezetésre kerül a Scrum a vállalatában. Esetleg már néhány hónapja
+Hamarosan bevezetésre kerül a Scrum a vállalatában, vagy már néhány hónapja
 Scrum-ot használ. Az alapokat ismeri, a könyveket kiolvasta, az is elképzelhető, hogy Scrum
 Master minősítést szerzett. Gratulálok!
 
 És mégis valahol ott bujkál egy kis zavarodottság.
 
-Ken Schwaber szavaival élve, a Scrum nem egy metodológia, hanem egy keretrendszer. Ez abban
-nyilvánul meg, hogy a Scrum nem fogja megmondani, hogy milyen helyzetben pontosan mit is
+Ken Schwaber szavaival élve, a Scrum nem egy metodológia, hanem egy keretrendszer, ami abban
+nyilvánul meg, hogy a Scrum nem mondja meg, hogy milyen helyzetben pontosan mit is
 tegyen. A fenébe!
 
-A jó hír az, hogy én messzemenő részletességgel el fogom mondani, hogy én hogyan használom a
-Scrum-ot. A rossz hír az, hogy ez csak azt fogja elmondani, hogy én hogyan használom a
-Scrum-ot. Ami nem jelenti azt, hogy Önnek is így kell használnia. Ami azt illeti, én magam is
+A jó hír az, hogy én messzemenő részletességgel be fogom mutatni, hogy én hogyan használom a
+Scrum-ot. A rossz hír az, hogy ez csak azt fogja leírni, ahogy én használom a
+Scrum-ot, ami nem jelenti azt, hogy Önnek is így kell használnia. Ami azt illeti, én magam is
 elképzelhető, hogy egy más szituációban másképp használnám.
 
-A Scrum erőssége és egyben a gyengesége is hogy megköveteli, hogy mindig az adott helyzethez
+A Scrum erőssége, és egyben a gyengesége is, hogy megköveteli, hogy mindig az adott helyzethez
 igazítsák.
 
 A Scrum-hoz való hozzáállásom jelenleg egy évnyi kísérletezés eredménye egy nagyjából 40 fős
 fejlesztői csapattal. A cég meglehetősen nehéz helyzetben volt, rengeteg túlórával, óriási
-minőségi problémákkal, állandó tűzoltással, kitolt határidőkkel, stb. Döntés született a Scrum
-bevezetéséről, de ez a gyakorlatban már nem valósult meg teljesen: ez az én feladatom lett. A
-fejlesztői csapat nagy részének a “Scrum” csak egy fura “buzzword” volt, amit néha hallani
-lehet a folyosókon, ám ami a napi gyakorlatban nem jelenik meg.
+minőségi problémákkal, állandó tűzoltással, kitolt határidőkkel, stb. Döntés született ugyan a Scrum
+bevezetéséről, de ez a gyakorlatba már nem lett teljesen átültetve: és ez lett az én feladatom.
+Ezekben az időkben a fejlesztői csapat nagy részének a “Scrum” csak egy fura “buzzword” volt, amit
+néha hall az ember, ám ami a napi gyakorlatra abszolút nincs kihatással.
 
 Egy év alatt, bevezettük a Scrum-ot a cég teljes hierarchiájában, kipróbáltunk különböző csapat
 méreteket (3-12 fő), különböző sprint hosszokat (2-6 hét), különböző “kész” definíciókat,
-különböző backlog formátumokat (Excel, Jira, papír kártya), különböző teszt stratégiákat,
-különböző demo módokat, különböző csapat-szinkronizációs módokat, stb…Kísérleteztünk XP
-módszerekkel – különböző folyamatos integrációs módok, pár-programozás, teszt-alapú
-programozás, stb. és ezek integrációja a Scrum-mal.
+különböző backlog formátumokat (Excel, Jira, cetlik), különböző teszt stratégiákat,
+különböző demó módokat, különböző csapat-szinkronizációs módokat, stb... Kísérleteztünk XP
+módszerekkel – különböző folyamatos integrációs módokkal, pár-programozással, teszt-alapú
+programozással, illetve ezek a Scrum-ba történő integrációjával.
 
 Ez egy állandó tanulási folyamat, szóval a történet persze itt nem ér véget. Meggyőződésem,
-hogy a cég továbbra is fejlődni fog (ha betartják a sprint visszatekintőket (retrospective))
-és új felfedezéseket fognak tenni arra vonatkozóan, hogy az ő helyzetükben mi a legjobb módszer a
-Scrum használatára.
+hogy a cég továbbra is fejlődni fog (legalábbis ha betartják a sprint visszatekintőket
+(retrospective)) és új felfedezéseket fognak tenni arra vonatkozóan, hogy az ő helyzetükben mi a
+legjobb módszer a Scrum használatára.
 
 Jogi nyilatkozat
 ================
 Ez az írás nem “Az Egy Helyes Mód” a Scrum használatára, hanem csak egy mód a sok
-lehetséges közül, ami egy évnyi folyamatos finomhangolás eredménye. Az is elképzelhető, hogy
-teljesen rossz úton járunk.
+lehetséges közül, ami egy évnyi folyamatos finomhangolás eredménye. De persze az is elképzelhető,
+hogy teljesen rossz úton járunk.
 
 Az írás teljes egészében a személyes véleményemet tartalmazza és nem feltétlenül tükrözi a
 Crisp vagy bármely kliensem hivatalos álláspontját. Éppen ezért szándékosan nem fogok konkrét
-személyeket vagy termékekre hivatkozni.
+személyekre vagy termékekre hivatkozni.
 
 Miért írtam ezt a cikket
 ========================
 Kezdetben, amikor a Scrum-ot próbáltam megérteni, elolvastam a
-Scrum-ról szóló könyveket, átböngésztem az összes internetes cikket és fórumot, letettem Ken
+Scrum-ról szóló összes könyvet és az összes internetes cikket vagy fórumot, letettem Ken
 Schwaber vizsgáját, elárasztottam őt kérdésekkel és rengeteget beszéltem a munkatársakkal a
-témáról. Mindeközben az egyik leghasznosabb információ-forrásomnak a valós történetek
-bizonyultak. Ezen “háborús történetek” végén az Alapelvekből és Gyakorlat-okból… nos… “De
-Valójában Hogyan Használod” lesz. Abban is segítségemre voltak, hogy felismerjem (és néha el is
-kerüljem) a  Scrum tipikus csapdáit.
+témáról. Mindeközben az egyik leghasznosabb információ-forrásomnak mégis a valós történetek
+bizonyultak. Ezen “háborús történetek” végére az Alapelvekből és Előírásokból-okból... nos... “Jó,
+De **Valójában** Hogyan Használod” lesz. Abban is segítségemre voltak, hogy felismerjem (és néha el
+is kerüljem) a Scrum tipikus csapdáit.
 
-Ez tehát az én lehetőségem, hogy valamit visszaadja. Ez az én történetem a frontról.
+Ez tehát az én lehetőségem, hogy valamit visszaadjak a közösségnek. Ez az én történetem a frontról.
 
-Remélem a cikk apropóján majd néhányuk hasznos visszajelzésekkel szolgál. Örömmel várom hogy
-mások hogyan gondolkodnak a hasonló szituációkról.
+Remélem a cikk apropóján mások is felbátorodnak majd és megosztják velem, hogy hasonló helyzetekben
+ők hogyan cselekedtek.
 
 De mi is ez a Scrum?
 ====================
@@ -325,8 +325,8 @@ linket ajánlanám figyelmébe:
 * http://www.mountaingoatsoftware.com/scrum
 * http://www.xprogramming.com/xpmag/whatisxp.htm
 
-A türelmetlenek nyugodtan olvassanak tovább. A zsargon nagy részét meg fogom magyarázni ahogy
-haladunk, szóval teljesen kezdőként is érdekesnek találhatja ezt az írást.
+A türelmetlenek nyugodtan olvassanak tovább. A zsargon nagy részét menet közben meg fogom
+magyarázni, szóval teljesen kezdőként is érdekesnek találhatja ezt az írást.
 
 ----------------------------------------------------------------------------------------------------
 
