@@ -332,87 +332,88 @@ magyarázni, szóval teljesen kezdőként is érdekesnek találhatja ezt az ír�
 
 2 Hogyan használjuk a Product Backlogot
 =======================================
-A Product Backlog a Scrum motorja. Minden itt kezdődik. A Product Backlog egy prioritás alapján
-rendezett követelmény-, sztori-, feature- vagy akármi- lista. Olyan akármik, amit a kliens szeretne,
+A Product Backlog a Scrum motorja. Minden azzal kezdődik. A Product Backlog egy prioritás alapján
+rendezett követelmény-, sztori-, feature- vagy akármi- lista. Olyan dolgok, amiket a kliens szeretne,
 a kliens nyelvezetével leírva.
 
-Mi ezeket Sztori-nak hívjuk, vagy néha egyszerűen csak Backlog Bejegyzés-nek.
+Mi ezeket Sztoriknak hívjuk, vagy néha egyszerűen csak Backlog Bejegyzés-nek.
 
 A sztorijaink a következő adatokkal rendelkeznek:
 * ID – egy egyedi azonosító, jobbára csak egy automatikusan léptetett szám.
-Ez azért szükséges, hogy ne veszítsük el véletlenül a sztorikat, amikor átnevezzük őket.
-* Név – rövid, kifejező sztori név. Például “A saját tranzakció-történet
-megjelenítése” Elég világos kell, legyen, hogy a fejlesztők és a termék-tulajdonos nagyjából
+Ez azért szükséges, hogy ne veszítsük el véletlenül a sztorikat, amikor például átnevezzük őket.
+* Név – rövid, kifejező Sztori név. Például “A saját tranzakció-előzmények
+megjelenítése” Elég világos kell, legyen, hogy a fejlesztők és a Product Owner nagyjából
 értsék miről van szó és hogy elkülönüljön a többi sztoritól. Általában 2-10 szó.
-* Fontosság – a termék-tulajdonos által eldöntött fontosság értéke. Például 10, vagy 150. Minél
-  nagyobb a szám, annál fontosabb.
+* Fontosság – a Product Owner által meghatározott fontosság számszerű értéke. Például 10, vagy 150.
+  Minél nagyobb a szám, annál fontosabb a Sztori.
   o Amikor csak lehet, próbálom kerülni a "prioritás" kifejezést, mivel tipikusan 1 a legmagasabb
   prioritás, ami akkor tud gondot okozni, amikor egy _még_ fontosabb feladat érkezik. Milyen
   prioritást adjunk annak? 0-t? -1-t?
-* Kezdeti becslés - a sztori más feladatokhoz viszonyított elvégzendő munkamennyiségének becslése.
+* Kezdeti becslés - a sztori - más feladatokhoz viszonyított - elvégzendő munkamennyiségének becslése.
 Egysége a sztori pont, ami nagyjából egy ideális ember-napnak felel meg.
   o Kérdezze meg a csapatot, hogy "ha a sztorihoz szükséges ideális számú (se túl kevés, se
   túl sok, általában 2) emberrel bezárkóznak egy étellel jól ellátott szobába, ahol minden külső
   zavaró tényezőtől mentesen dolgozhatnak, hány nap múlva tudnak előállni a kész, bemutatható,
   tesztelt, kiadható implementációval?". Ha a válasz az, hogy "hárman bezárva egy szobába 4 nap",
   akkor a kezdeti becslés 12.
-  o Nem az a lényeg, hogy az abszolút becslések helyesek legyenek (vagyis hogy egy 2 pontos sztori
+  o Nem az a lényeg, hogy az abszolút becslések helyesek legyenek (vagyis hogy egy 2 pontos Sztori
     valóban 2 napot vegyen igénybe), hanem hogy a relatív becslések helyesek legyenek (azaz hogy
     egy 2 pontos sztori nagyjából fele annyi időt vegyen igénybe, mint egy 4 pontos)
-* Hogyan demonstrálható - egy áttekintő leírás arról, hogy ezt a sztorit hogyan kell bemutatni a
-  sprint demóban. Ez igazából egy leegyszerűsített teszt előírás. "Ezeket a lépéseket végrehajtva,
-  ez kell legyen az eredmény".
-  o Ha TDD-t (teszt-vezérelt fejlesztés) használ, ez a leírás szolgálhat az elfogadási teszt
-  alapjául egyfajta pszeudokódként.
-* Megjegyzések - minden más információ, pontosítások, más forrásokra való hivatkozás. Jó, ha minél
+* Demó módja - egy áttekintő leírás arról, hogy ezt a sztorit hogyan kell bemutatni a
+  sprint demó során. Ez igazából egy leegyszerűsített teszt előírás. "Ezeket a lépéseket végrehajtva,
+  ez kell, legyen az eredmény".
+  o Ha TDD-t (teszt-vezérelt fejlesztés) használ, ez a leírás szolgálhat az elfogadási teszt,
+  egyfajta pszeudokódban megadott, alapjául.
+* Megjegyzések - minden más információ, pontosítás, más forrásokra való hivatkozás. Legyen minél
   rövidebb
 
 <figure>
 
-Kipróbáltunk más adatokat is, de végül a fenti hat mező volt, amit valójában mindig használtunk.
+Kipróbáltunk más adatokat is, de végül a fenti hat mező volt, amit ténylegesen használtunk.
 
-Általában egy megosztott Excel táblázatban tároljuk a backlog bejegyzéseket. Hivatalosan a Termék
-Tulajdonos felelős a dokumentumért, de persze nem akarjuk a többi felhasználót kizárni. Sok esetben
-egy fejlesztő hasznos pontosításokat adhat hozzá, vagy esetleg megváltoztathat egy becslést.
+Általában egy megosztott Excel táblázatban tároljuk a backlog bejegyzéseket. Hivatalosan a Product
+Owner felelős a dokumentumért, de persze nem zárjuk ki a többi felhasználót sem, mivel sok esetben
+egy fejlesztő pontosíthat egy Sztorit, vagy esetleg megváltoztathat egy becslést.
 
-Hasonló okokból ezt a dokumentumot nem tároljuk verziókövető rendszerben, hanem egy hálózati
+Hasonló okokból nem tároljuk ezt a dokumentumot a verziókövető rendszerben, ehelyett egy hálózati
 meghajtóra tesszük. Ez bizonyult a legegyszerűbb módszernek arra, hogy zárolások vagy konfliktusok
-nélkül több felhasználónak egyidőben is hozzáférést biztosítsunk.
+nélkül több felhasználónak egyidőben hozzáférést biztosítsunk.
 
 Minden más dokumentumot azonban verziókövető rendszerben tárolunk.
 
 További sztori mezők
 ====================
-Néha további mezőket is használunk a backlogban, többnyire hogy megkönnyítsük a Product Owner dolgát
-amikor a sztorik fontosságát határozza meg.
-* Kategória – a sztori hozzávetőleges fajtája, például "optimalizáció" vagy "backend". Ezt használva
-  a Product Owner könnyen kiválaszthatja az összes "optimalizáció"-t és például alacsony prioritást
-  állíthat be.
+Néha további mezőket is használunk a backlogban, többnyire, hogy megkönnyítsük a Product Owner dolgát
+amikor a Sztorik fontosságát határozza meg.
+* Kategória – a Sztori hozzávetőleges fajtája, például "optimalizáció" vagy "backend". Ezt használva
+  a Product Owner könnyen kiválaszthatja például az összes optimalizációs feladatot és mondjuk
+  azok prioritását alacsonyra állíthatja.
 * Komponens - általában jelölőnégyzetként jelenik meg az Excel dokumentumban, például "adatbázis,
-  szerver, kliens". A Product Owner ezek segítségével könnyen azonosíthatja a komponenseket, amelyek
+  szerver, kliens". A Product Owner ezek segítségével könnyen azonosíthatja azokat komponenseket, amelyek
   az implementációban szerepet játszanak. Ez akkor lehet hasznos, amikor több Scrum csapat van
-  (például egy a "backend"-hez, egy a klienshez), mivel leegyszerűsíti a sztori választást az egyes
-  csapatokban.
-* Megrendelő - a Product Owner dokumentálhatja, hogy melyik külső- vagy belső megbízó kérte a sztori
-  implementálását, hogy később könnyen visszajelezhessen ennek a megrendelőnek.
-* Hibakövető ID - amennyiben külön hibakövető rendszert használ (ahogy mi is Jira-t használunk),
-  nagy segítséget jelent, ha közvetlenül összekapcsolhatjuk a sztorit a hozzá tartozó
+  (például egy a "backend"-hez, egy a klienshez), mivel leegyszerűsítheti a sztorik csapatokhoz
+  rendelését.
+* Megbízó - a Product Owner dokumentálhatja, hogy melyik külső- vagy belső megbízó kérte a sztori
+  implementálását, hogy később könnyen visszajelezhessen ennek a személynek.
+* Hibakövető ID - amennyiben külön hibakövető rendszert is használ (mi például Jira-t),
+  nagy segítséget jelent, ha közvetlenül összekapcsolhatja a sztorit a hozzá tartozó
   hibajelentésekkel.
 
 Hogyan vezetjük a Product Backlogot az üzleti szinten
 -----------------------------------------------------
-Ha a Product Owner technikai beállítottságú, előfordulhat, hogy olyan sztorik jelennek meg, mint
-például "Az Events táblához indexek hozzáadása". De igazából miért van erre szüksége? A valódi ok
-valószínűleg valami olyasmi, hogy "az adminisztrációs felületen a keresések gyorsítása".
+Ha a Product Owner technikai beállítottságú, előfordulhat, hogy olyan sztorik kerülnek a Backlogba, mint
+például "Indexek hozzáadása az Events táblához". De igazából miért van erre szüksége? A valódi ok
+valószínűleg valami olyasmi, hogy "keresések felgyorsítása az adminisztrációs felületen".
 
-Az is elképzelhető, hogy tulajdonképpen a keresések nem az indexek hiánya miatt voltak lassúak,
-hanem valami teljesen más ok miatt. Általában a fejlesztő csapat sokkal jobban képes meghatározni és
-megoldani a problémát, ezért a Product Owner inkább az üzleti oldalra koncentráljon. Amikor ilyen
-technikai beállítottságú sztorikat találok, a Product Owner-től addig kérdezem, hogy "de miért" amíg
-meg nem találjuk a mögöttes valódi indokot. Ekkor átfogalmazhatjuk a sztorit ezt az indokot
-használva ("az adminisztrációs felületen keresés felgyorsítása"). Az eredeti technikai jellegű
-megfogalmazást pedig egy megjegyzésként tartjuk meg ("Indexek hozzáadása az events táblához talán jó
-megoldás").
+Előfordulhat az is, hogy a keresések nem is az indexek hiánya miatt voltak lassúak,
+hanem valami teljesen más ok miatt. Általában a fejlesztő csapat sokkal jobb pozícióban van, hogy a
+probléma forrását meghatározza és elhárítsa, ezért biztosabb, ha a Product Owner inkább az üzleti
+oldalra koncentrál.
+
+Amikor ilyen technikai beállítottságú sztorikkal találkozom, a Product Owner-t addig nyúzom "de
+miért" kérdésekkel amíg meg nem találjuk a valódi indokot, és a sztorit át nem fogalmazzuk ("keresés
+felgyorsítása az adminisztrációs felületen"). Az eredeti - technikai jellegű - megfogalmazást pedig
+egy megjegyzésként tartjuk meg ("Indexek hozzáadása az events táblához talán megoldja a problémát").
 
 3 Hogyan készülünk fel a sprint planning meetingre
 ==================================================
