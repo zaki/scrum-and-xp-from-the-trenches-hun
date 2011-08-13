@@ -456,12 +456,12 @@ További módszerek, amiket kipróbáltunk vagy fontolóba vettünk:
 
 4 Hogyan tervezzük a sprinteket
 ===============================
-A Sprint Planning egy nagyon fontos meeting, talán a legfontosabb dolog a Scrum-ban (legalábbis
-véleményem szerint) Egy rosszul végrehajtott Sprint Planning Meeting hatással lehet a teljes
+A Sprint Planning a Scrum egy fontos - ha nem a legfontosabb - eleme (legalábbis
+véleményem szerint) Egy rosszul végrehajtott Sprint Planning Meeting kihatással lehet a teljes
 Sprint-re.
 
 A Sprint Planning Meeting célja, hogy a csapat számára elég információval szolgáljon ahhoz, hogy
-zavartalanul dolgozhassanak egy pár hétig illetve hogy elég biztonságot adjon a Product Owner-nek,
+zavartalanul dolgozhassanak egy pár hétig illetve hogy elég biztonságot nyújtson a Product Owner-nek,
 hogy ezt engedje is.
 
 Na jó, ez elég általános volt. Konkrétan a következő dolgokról születik döntés:
@@ -469,7 +469,7 @@ Na jó, ez elég általános volt. Konkrétan a következő dolgokról születik
 * A csapat tagjainak listája (és a rendelkezésre állásuk szintje, ha nem 100%)
 * Egy Sprint Backlog ( = a sprint alatt elvégzendő sztorik listája)
 * A sprint demó dátuma
-* A Napi Scrum Meeting helye és időpontja
+* A Napi Scrum helye és időpontja
 
 Miért kell a Product Ownernek jelen lennie
 ------------------------------------------
@@ -482,15 +482,15 @@ három egymástól erősen függő változó rejtőzik.
 
 <figure>
 
-A kiterjedést és a fontosságot a Product Owner határozza meg. A becslést a csapat. A Sprint Planning
-során a szemtől-szembeni megbeszéléssel folyamatosan ezeket a változókat finomhangoljuk.
+A kiterjedést és a fontosságot a Product Owner határozza meg. A becsült időt a csapat. A Sprint
+Planning során a szemtől-szembeni megbeszéléssel folyamatosan ezeket a változókat hangoljuk.
 
-Normális esetben a Product Owner a sprint céljának összefoglalásával és a legfontosabb sztorik
-listájával nyitja a meetinget. Ezután a csapat a legfontosabbal kezdve végigmegy sztorik listáján és
-megbecsüli a szükséges időket. A becslések közben azonban lényeges kérdések merülnek fel a sztori
-kiterjedését illetően - "ez a 'felhasználó törlése' magában foglalja azt, hogy megszakítjuk a
-felhasználó összes várakozó tranzakcióját?" Néhány esetben a válaszok meg is lephetik a csapatot és
-jelentősen befolyásolhatja a becsléseket.
+A Product Owber általában a sprint céljának összefoglalásával és a legfontosabb sztorik
+listájával nyitja a meetinget. Ezután a csapat fontossági sorrendben végigmegy sztorik listáján és
+megbecsüli a szükséges időket. A becslések közben azonban kérdések merülhetnek fel a sztori
+kiterjedésével kapcsolatban - "ez a 'felhasználó törlése' magában foglalja azt, hogy megszakítjuk a
+felhasználó összes várakozó tranzakcióját?" A válaszok akár meg is lephetik a csapatot és persze
+jelentősen befolyásolhatják a becsléseket.
 
 Egyes esetekben a sztorira adott becslés eltérhet a Product Owner elképzeléseitől. Ennek hatására
 megváltoztathatja a sztori fontosságát, vagy esetleg a sztori kiterjedését, ami aztán újabb becslést
@@ -511,7 +511,7 @@ tölteni? Általában a következő taktikák egyikét szoktam alkalmazni ebben 
   lenni."
 * Megpróbálom meggyőzni a vezetést, hogy rendeljenek ki egy új Product Owner-t.
 * Elhalasztom a sprintet amíg a Product Owner nem talál elég időt hogy jelen legyen és ezalatt nem
-  kötelezem el magam semmilyen kiadás mellett. A csapatot hagyom azokon a feladatokon dolgozni, amit
+  kötelezem el magam semmilyen kiadás mellett. A csapatot hagyom azokon a feladatokon dolgozni, amiket
   épp a legfontosabbnak gondolnak.
 
 Miért nem engedünk a minőségből
@@ -519,21 +519,21 @@ Miért nem engedünk a minőségből
 A fenti háromszögben szándékosan nem említettem egy negyedik változót: a minőséget.
 
 Kétféle minőséget szoktam megkülönböztetni: belső- és külső minőséget.
-* Külső minőségnek hívom a felhasználók által látható minőséget. A lassú vagy nem intuitív
-  felhasználói interfész jó példája a rossz külső minőségnek.
+* Külső minőségnek hívom a felhasználók által érzékelhető minőséget. A lassú vagy nem intuitív
+  felhasználói interfész a rossz külső minőség egy példája.
 * Belső minőségnek tekintem az olyan tényezőket, amelyek ugyan nem láthatóak a felhasználó számára,
   de jelentősen befolyásolják a rendszer karbantarthatóságát. Ide tartoznak az olyan dolgok, mint az
   architektúra konzisztenciája, teszt lefedettség, a kód olvashatósága vagy a refaktoring.
 
-Általánosságban egy kiemelkedő belső minőséggel rendelkező rendszer önmagában nem jelent jó külső
-minőséget. Azonban egy rossz belső minőséggel rendelkező rendszer nagyon ritkán rendelkezik jó külső
-minőséggel, mivel rendkívül nehéz jó dolgot építeni ha az alapozás düledezik.
+Általánosságban egy kiemelkedő belső minőséggel rendelkező rendszer önmagában még nem jelent jó külső
+minőséget, azonban egy rossz belső minőséggel rendelkező rendszer nagyon ritkán rendelkezik jó külső
+minőséggel, mivel rendkívül nehéz rothadó alapozásra jó dolgot építeni.
 
-A külső minőség a kiterjedés (scope) része. Esetenként üzleti szempontból teljesen elfogadható ha a
-felhasználói felület lassú vagy nehéz használni, ha például egy későbbi kiadásban ezeket javítjuk.
-Annak eldöntése, hogy ez tényleg megéri-e, a Product Owner dolga.
+A külső minőség a kiterjedés (scope) része. Üzleti szempontból néha teljesen elfogadható ha a
+felhasználói felület lassú vagy nehéz használni, amennyiben egy későbbi kiadásban ezeket javítjuk.
+A Product Owner dolga annak eldöntése, hogy ez tényleg megéri-e.
 
-A belső minőség azonban nem vita tárgya. A csapat feladata minden körülmények között megőrizni a
+A belső minőség azonban sosem vita tárgya. A csapat feladata minden körülmények között megőrizni a
 rendszer jó minőségét és ebből nem engedünk soha, semmi szín alatt.
 
 (Na jó, majdnem soha)
@@ -541,25 +541,25 @@ rendszer jó minőségét és ebből nem engedünk soha, semmi szín alatt.
 De hogyan is különböztetjük meg a belső és külső minőséget érintő kérdéseket?
 
 Tegyük fel, hogy a Product Owner azt mondja: "Rendben, értem én, hogy 6 sztori pontra becsültétek,
-de biztos vagyok benne, hogy fele idő alatt össze tudtok hozni egy gyors fixet, ha akarjátok."
+de biztos vagyok benne, hogy ha akarjátok, fele idő alatt össze tudtok hozni egy gyors fixet."
 
-Aha! A belső minőséget változónak próbálja tekinteni. Hogy miből tudom? Mert le akarja csökkenteni a
+Aha! A belső minőséget változónak próbálja tekinteni. Ezt onnan tudom, hogy le akarja csökkenteni a
 becslést anélkül, hogy azért fizetne a csökkentett kiterjedéssel. A "gyors fix" szó láttán
 gondolatban meg kell szólalnia egy vészcsengőnek...
 
 És hogy miért is nem hagyjuk ezt?
 
 Az a tapasztalatom, hogy a belső minőség feláldozása szinte mindig nagyon nagyon rossz ötlet. Ami
-időt nyerünk rajta, azt kamatostól elveszítjük mind rövid, mind pedig hosszú távon. Ha egy kódbázis
-minősége elkezd romlani, akkor nagyon nehéz azt utólag helyrehozni.
+időt nyerünk vele, azt kamatostól elveszítjük mind rövid-, mind pedig hosszú távon. Ha egy kódbázis
+minősége romlásnak indul, akkor nagyon nehéz azt utólag helyrehozni.
 
-Ehelyett megpróbálom a vitát a kiterjedés irányába terelni. "Mivel fontos hogy ezt a sztorit minél
+Ehelyett a vitát inkább a kiterjedés irányába próbálom terelni. "Mivel fontos hogy ezt a sztorit minél
 előbb kiadhassuk, lecsökkenthetjük-e a méretét, hogy gyorsabban implementálhassuk? Például a
 hibakezelést leegyszerűsítjük és később egy másik sztoriban dolgozunk a bonyolultabb hibakezelésen?
 Vagy módosíthatjuk a többi feladat fontosságát, hogy inkább erre koncentrálhassunk?"
 
-Ha a Product Owner megszokja, hogy a belső minőség nem egyezkedés tárgya, elég hamar ráérez, hogy
-helyett hogyan befolyásolja a többi paramétert.
+Ha a Product Owner megtanulja, hogy a belső minőséget illetően nincs helye kompromisszumoknak, elég
+hamar rájön, hogyan érje el a céljait a többi paraméter hangolásával.
 
 Véget nem érő Sprint Planning Meeting-ek...
 -------------------------------------------
@@ -567,32 +567,33 @@ A legnehezebb dolog a Spring Planning Meetingekben, hogy:
 1) Mindenki azt hiszi, hogy nem vesznek sok időt igénybe
 2) ... de igen.
 
-A Scrum-ban minden időkorlátos. Szeretem ezt az egyszerű, konzisztens szabályt és próbáljuk is
+A Scrum-ban minden időkorlátos. Szeretem ezt az egyszerű, konzisztens szabályt, amit mindig próbálunk is
 betartani.
 
 Mit tegyünk, ha egy ilyen időkorlátos Sprint Planning Meeting az időkorlát vége felé közeledik és
-még nincs eldöntött Sprint cél vagy Sprint Backlog? Egyszerűen hagyjuk félbe? Vagy toljuk ki egy
+még nincs Sprint cél vagy nincs készen a Sprint Backlog? Egyszerűen hagyjuk félbe? Vagy toljuk ki egy
 órával? Vagy esetleg hagyjuk félbe, de folytassuk másnap?
 
-Ez egy örökös probléma, főleg új csapatok esetében. Mit tegyünk hát? Fogalmam sincs. De mi általában
-brutálisan félbeszakítjuk még ha ez a sprint rovására megy is. Egész pontosan azt mondom a csapatnak
-és a Product Owner-ner, hogy "a meetingre kijelölt idő 10 perc múlva lejár és még nincs egy kézzel
-fogható sprint tervünk. Próbáljunk meg ezzel gazdálkodni, vagy hívjunk össze egy új 4-órás meetinget
-holnap reggel 8-ra?". Nem nehéz kitalálni, hogy általában mi a válasz... :)
+Ez a kérdés lépten-nyomon felmerül, főleg új csapatok esetében. Őszintén szólva nem tudom, mi a
+legjobb módszer, de mi általában brutálisan félbeszakítjuk még ha ez a sprint rovására megy is.
+Egész pontosan azt mondom a csapatnak és a Product Owner-ner, hogy "a meetingre kijelölt idő 10 perc
+múlva lejár és még nincs egy kézzel fogható sprint tervünk. Fussunk neki a sprintnek ezzel, vagy
+hívjunk össze egy új 4-órás meetinget holnap reggel 8-ra?". Nem nehéz kitalálni, hogy általában mi a
+válasz... :)
 
-Próbáltam kitolni a meetinget, de ez szinte soha sem vezetett semmire, mert az emberek már fáradtak.
-Ha nem voltak képesek összehozni egy normális sprint tervet 2-8 óra alatt (vagy amilyen hosszúra
-szabta az időkeretet) akkor valószínűleg egy további óra sem fog sokat számítani. A következő -
-amúgy teljesen oké - opció, hogy összehívunk egy új meetinget a következő napra. Csakhogy általában
-az emberek türelmetlenek és inkább nekikezdenének már a sprintnek ahelyett, hogy még egy napot
-töltsenek sprint tervezéssel.
+Próbáltam kitolni a meetinget, de ez szinte soha sem vezetett sehová, mert az emberek már fáradtak.
+Ha nem voltunk képesek összehozni egy normális sprint tervet 2-8 óra alatt (vagy amilyen hosszúra
+szabtuk időkeretet) akkor valószínűleg egy további óra sem fog sokat számítani. A következő -
+amúgy teljesen elfogadható - opció, hogy összehívunk egy új meetinget a következő napra. Csakhogy
+általában az emberek türelmetlenek és inkább nekikezdenének már a sprintnek ahelyett, hogy még egy
+napot töltsenek sprint tervezéssel.
 
 Úgyhogy félbevágom és igen, a sprint issza meg a levét. A jó oldala a dolognak viszont az, hogy a
 csapat megtanult egy fontos leckét és a következő sprint planning meeting sokkal gördülékenyebben
-fog menni. Ráadásul az emberek kevésbé fognak ellenkezni, ha egy olyan időkeretet szab, amit
+fog menni. Ráadásul az emberek kevésbé fognak ellenkezni, ha olyan időkeretet szabnék ki, amit
 egyébként túl hosszúnak tartanának.
 
-Fontos, hogy megtanulja betartani az időkereteket és hogy realisztikus időkereteket szabjon meg. Ez
+Fontos, hogy megtanulja betartani az időkereteket és hogy azokat realisztikusan válassza meg. Ez
 vonatkozik mind a meetingekre, mind pedig a sprint hosszára.
 
 Sprint Planning Meeting napirend
@@ -603,52 +604,51 @@ megszabott időkeretből.
 Íme a tipikus menetrendünk.
 Sprint Planning Meeting: 13:00- 17:00 (10 perc szünet minden órában)
 
-* 13:00 - 13:30. A Product Owner ismerteti a sprint célját és összefoglalja a Termék Backlogot.
-  Kijelölésre kerül a Demó helye és ideje.
-* 13:30 - 15:00. A csapat elkészíti a becsléseket és lebontja a nagyobb feladatokat. A Product Owner
+* 13:00 - 13:30. A Product Owner ismerteti a sprint célját és összefoglalja a Product Backlogot.
+  Kijelölésre kerül a demó helye és ideje.
+* 13:30 - 15:00. A csapat elkészíti a becsléseket és felbontja a nagyobb feladatokat. A Product Owner
   frissíti a sztorik fontosságát. A feladatok pontosításra kerülnek. Minden fontos sztorihoz
   kitöltésre kerül a "Demó módja" mező.
 * 15:00 - 16:00. A csapat kiválasztja a következő sprintbe kerülő elemeket. Ellenőrzik hogy a
   sztorik valóban beleférnek-e a sprintbe.
-* 16:00 - 17:00. Kijelölésre kerül a Napi Scrum helye és ideje (ha eltér az előző sprinttől). A
-  sztorik lebontása feladatokra.
+* 16:00 - 17:00. Kijelölésre kerül a Napi Scrum helye és ideje (amennyiben eltér az előző
+  sprinttől). A sztorik lebontása feladatokra.
 
-Ezt a menetrendet nem tartatjuk be vasszigorral. A Scrum Master a körülményeknek megfelelően
-hosszabbíthatja vagy rövidítheti az egyes lépéseket.
+Ehhez a menetrendhez nem ragaszkodunk vasszigorral. A Scrum Master a körülményeknek megfelelően
+meghosszabbíthatja vagy lerövidítheti az egyes részeket.
 
 A sprint hosszának megválasztása
 --------------------------------
-A Sprint Planning Meeting egyik eleme a sprint demó idejének megválasztása. Ez valójában a sprint
-időtartamának megválasztását is jelenti.
+A Sprint Planning Meeting egyik eleme a sprint demó idejének megválasztása, ami valójában a sprint
+időtartamának megválasztásával egyenértékű.
 
 Mit tekinthetünk jó sprint hossznak?
 
 Jó, ha a sprint rövid, mivel ez segíti a vállalat "agilitását", azaz, hogy gyakran képes irányt
 váltani.
-Rövid sprint = gyors visszajelzés = több kiadás = gyorsabb felhasználói visszajelzés = kevesebb idő
-pazarlása vakvágányokon = gyorsabb adaptáció, stb...
+Rövid sprint = gyors visszajelzés = több kiadás = gyorsabb visszajelzés a felhasználóktól = kevesebb
+idő pazarlása vakvágányokra = gyorsabb adaptáció, stb...
 
-De ugyanakkor a hosszabb sprintek is jók, mivel időt adnak a csapatnak hogy felgyorsuljanak és több
-teret ad nekik a problémák megoldására, hogy végül a sprint célját teljesítsék; továbbá kevesebb
-időt veszítenek a Sprint Planning Meetingeken vagy demókon.
+De ugyanakkor a hosszabb sprintek is jók, mivel időt hagynak a csapatnak hogy felgyorsuljanak és
+több teret ad nekik a problémák megoldására, hogy végül a sprint célját teljesítsék; kevesebb időt
+veszítenek továbbá a Sprint Planning Meetingeken vagy demókon.
 
-A Product Owner-ek általában a rövid-, míg a fejlesztők hosszabb sprinteket szeretnek. A sprint
+A Product Owner-ek általában rövid-, míg a fejlesztők hosszabb sprinteket szeretnek, így a sprint
 hossza valójában kompromisszum kérdése. Elég sokat kísérleteztünk ezzel és végül a három hetes
-sprint működött a legjobban nekünk. A legtöbb (de nem az összes) csapat 3 hetes sprinteket használ.
-Elég rövid, hogy biztosítsa a vállalat flexibilitását, de elég hosszú, hogy a csapat megfelelően
-koncentrálhasson és megoldhassa a sprint során esetlegesen felmerülő problémákat.
+sprintet találtuk a legmegfelelőbbnek. A legtöbb (de nem az összes) csapat 3 hetes sprinteket
+használ, ami elég rövid, hogy biztosítsa a vállalat flexibilitását, de elég hosszú, hogy a csapat
+megfelelően koncentrálhasson és megoldhassa a sprint során esetlegesen felmerülő problémákat.
 
-Az egyik tanulság, amit levontunk, hogy kezdetben érdemes kísérletezni különböző sprint hosszakkal.
-Nincs szükség mélyreható vizsgálatra, csak válasszon egy jónak tűnő hosszot és próbálja ki egy pár
-sprint erejéig.
+Azt javaslom, hogy kezdetben kísérletezzen különböző sprint hosszakkal. Nincs szükség mélyreható
+vizsgálatra, csak válasszon egy jónak tűnő hosszot és próbálja ki egy pár sprint erejéig.
 
-Ha viszont megtalálta a legjobban fekvő sprint hosszat, akkor már ne nagyon változtasson rajta. Mi
-egy pár hónap kísérletezgetés után arra jutottunk, hogy a három hét jó nekünk, szóval három hetes
-sprinteket használunk és kész.
+Ha viszont megtalálta a legkedvezőbb sprint hosszat, akkor már ne nagyon változtasson rajta. Mi
+egy pár hónap kísérletezgetés után arra jutottunk, hogy a három hét jól működik nálunk, ezért három
+hetes sprinteket használunk és kész.
 
-Néha ez túl hosszúnak fog tűnni és néha túl rövidnek. De az azonos hosszhoz ragaszkodás egyfajta
-céges szívveréssé válik, amibe mindenki beleszokik. Nincsenek viták a kiadások időpontját illetően,
-mivel mindenki tudja, hogy a kiadás három hetente történik. És kész.
+Néha a sprint túl hosszúnak fog tűnni és néha túl rövidnek. De az azonos hosszhoz ragaszkodás
+egyfajta céges szívveréssé válik, amibe mindenki beleszokik. Nincsenek viták a kiadások időpontját
+illetően, mivel mindenki tudja, hogy a kiadás három hetente történik. És kész.
 
 
 A sprint céljának megválasztása
@@ -679,21 +679,22 @@ pontosan mit is csinál a cég - és miért.
 
 A sprint alatt elvégzendő sztorik kiválogatása
 ----------------------------------------------
-A sprint planning meeting egyik fő tevékenysége eldönteni, hogy mely sztorik kerülnek be a sprintbe.
-Egész pontosan hogy a Product Backlog mely sztorijait másoljuk át a sprint backlogba.
+A sprint planning meeting alatt az egyik fő tevékenység a sprint sztorijainak kiválasztása, azaz
+pontosabban hogy a Product Backlog mely sztorijait másoljuk át a sprint backlogba.
 
 <figure>
 
 A fenti ábra minden téglalapja egy-egy sztorit jelez fontosság szerint rendezve. A legfontosabb
 sztori a lista tetején található. A téglalap nagysága a sztori nagyságát jelképezi (azaz az
 időmennyiség becslését sztori pontokban). A kék zárójel nagysága jelzi a csapat becsült sebességét,
-azaz hogy az adott sprintben hány sztoripontnyi feladatot tudnak befejezni.
+vagyis, hogy az adott sprintben hány sztoripontnyi feladatot tudnak befejezni.
 
 A jobb oldalon található sprint backlog a product backlogban található sztorik egy
 pillanatfelvétele. Ez tartalmazza azokat a sztorikat, amelyeket a csapat be kíván fejezni az adott
 sprintben.
 
-A csapat dönti el, hogy hány sztorit vesznek be a sprintbe és nem a Product Owner vagy valaki más.
+Az, hogy hány sztorit vesznek be a sprintbe a csapat és nem a Product Owner vagy valaki más
+feladata.
 Ez két kérdést vet fel:
 1. Hogyan dönti el a csapat, hogy melyik sztorikat vegye be a sprintbe?
 2. Hogyan befolyásolhatja a Product Owner a döntésüket?
@@ -706,7 +707,7 @@ Tegyük fel, hogy a következő szituáció áll elő a sprint planning meeting 
 
 <figure>
 
-A Product Owner elégedtlen, hogy a D sztori nem került be a sprintbe. Milyen lehetőségei vannak?
+A Product Owner elégedetlen, mert a D sztori nem került be a sprintbe. Milyen lehetőségei vannak?
 
 Az első opció, hogy újraértékeli a fontosságokat. Ha D-nek adja a legnagyobb prioritást, akkor a
 csapatnak kötelessége ezt bevenni a sprintbe (ebben az esetben a C sztorit kivéve a sprintből).
@@ -715,12 +716,12 @@ csapatnak kötelessége ezt bevenni a sprintbe (ebben az esetben a C sztorit kiv
 
 
 A második lehetőség, hogy megváltoztatja a kiterjedést - az A sztorit addig egyszerűsíti, amíg a
-csapat be nem tudja venni a D sztorit a sprintbe.
+csapat szerint bele nem fér a sprintbe.
 
 <figure>
 
 A harmadik opció a sztorik kettévágása. A Product Owner dönthet úgy, hogy az A sztori néhány része
-nem olyan fontos, tehát szétválaszthatja az A-t A1 és A2-re különböző fontossággal.
+nem olyan fontos, tehát szétválaszthatja az A-t A1-re és A2-re különböző fontossággal.
 
 <figure>
 
