@@ -731,13 +731,13 @@ rendelkezésére áll, hogy befolyásolja a sprintbe kerülő sztorik listáját
 Hogyan dönti el a csapat, hogy mely sztorik kerüljenek a sprintbe?
 ------------------------------------------------------------------
 Két taktikát szoktunk alkalmazni:
-1. megérzés alapján
-2. sebességszámítás alapján
+1. megérzés alapú becslés
+2. sebességszámítás alapú becslés
 
 Megérzés alapú becslés
 * Scrum master: "Mit gondoltok, be tudjuk fejezni A-t ebben a sprintben?" (a product backlog
   legfontosabb elemére mutat)
-* Lisa: "Simán! Három hetünk van rá és ez elég triviális feladat."
+* Lisa: "Simán! Három hetünk van rá és ez egy elég triviális feladat."
 * Scrum master: "Oké, mi van, ha a B-t is bevesszük?" (a második legfontosabb elemre mutat)
 * Tom és Lisa: "Naná!"
 * Scrum master: "Oké, A, B és C együtt?"
@@ -750,21 +750,21 @@ Megérzés alapú becslés
 * Scrum master: "Mennyire biztos? 0%? 50%?"
 * Lisa és Tom: "Közel 100%"
 * Scrum master: "Oké, akkor a D-t bevesszük. Mi van az E-vel?"
-* Sam: "Elképzelhető hogy belefér."
+* Sam: "Elképzelhető, hogy belefér."
 * Scrum master: "0%? 50%?"
 * Sam: "Mondjuk 50% körül."
 * Lisa: "Hát én nem tudom..."
-* Scrum master: "Oké, E-t kihagyjuk. A, B, C és D mellett kötelezzük el magunk. Ha belefér, akkor
-  persze E-t is befejezzük, de nem ígérünk semmit, hanem kihagyjuk a sprintből. Mit gondoltok?"
+* Scrum master: "Oké, E-t kihagyjuk és A, B, C és D mellett kötelezzük el magunk. Ha belefér, akkor
+  persze E-t is befejezzük, de mivel ez nem biztos, a sprintbe nem kerül be. Mit gondoltok?"
 * Mindeni: "Rendben!"
 
-Kis csapatokban és rövid sprintek esetén szokott jól működni a megérzés alapú tervezés.
+A megérzés alapú becslés inkább kis csapatokban és rövid sprintek esetén szokott jól működni.
 
 Sebességszámítás alapú becslés
 ------------------------------
 Ez a taktika két lépést igényel:
-1. Megállapodni egy becsült sebességben
-2. Kiszámítani, hogy hány sztori fér bele ebbe a sebességkeretbe
+1. Megállapodás egy becsült sebességben
+2. A sebességkeretbe beleférő sztorik kiszámítása
 
 A sebesség az "elvégzett munka" mértékegysége, ahol minden elemet a kezdeti becslésével súlyozunk.
 
@@ -773,27 +773,27 @@ sebességre. A téglalapok egy-egy sztorit jelölnek, a bennük található szá
 
 <figure>
 
-Vegyük észre, hogy a valós sebesség a kezdeti becslésen alapul, azaz a sprint közben történt
-változásokat figyelmen kívül hagyjuk.
+Vegyük észre, hogy a valós sebesség is a kezdeti becslésen alapul, azaz a sprint közben történt
+esetleges változásokat figyelmen kívül hagyjuk.
 
 Már hallom is, ahogy tiltakozik: "De ez miért jó? A sebesség mértéke így egy csomó olyan tényezőn
 múlik, mint hülye programozók, rossz kezdeti becslések, folytonosan növekvő feladatok, nem
 betervezett akadályok és így tovább..."
 
 Egyetértek abban, hogy ez egy közelítő érték, de attól még hasznos tud lenni és mindenképpen
-több, mint a semmi. Remek kiindulópontot biztosít. "Minden tényezőtől függetlenül, íme a különbség
-az előre megbecsült és a tényleges időtartam között."
+több, mint a semmi. Remek kiindulópontot biztosít. "Minden tényezőtől függetlenül, íme
+a becsült és a tényleges időtartam közötti különbség."
 
-Mi történik, ha egy sztorit nem sikerült teljesen befejezni a sprint alatt? Miért ne adnánk fél
+Mi történik, ha egy sztorit nem sikerült teljesen befejezni a sprint alatt? Miért ne adjunk fél
 pontokat a tényleges sebesség mérésekor? Ez jól tükrözi a Scrum (és minden agilis fejlesztési
-módszertan) szellemiségét, vagyis hogy a legfőbb dolog befejezett, kiadható dolgokat készíteni. A
-félkész termék értéke nulla (a valóságban akár negatív értéke is lehet). Ha többre kíváncsi ezzel
+módszertan) szellemiségét, vagyis hogy a legfőbb dolog, hogy befejezett, kiadható dolgokat készítsünk.
+A félkész termék értéke nulla (a valóságban akár negatív értéke is lehet). Ha többre kíváncsi ezzel
 kapcsolatban, olvassa el Donald Reinertsen "A dizájn-gyár irányítása" című könyvét.
 
 És hogy milyen fekete mágiát használunk a sebesség becslésére?
 
 Az egyik legegyszerűbb mód a sebesség becslésre a múltbeli értékek használata. Megnézzük, hogy
-mennyi volt az elmúlt pár sprintben vett sebesség és feltételezzük, hogy nagyjából most is
+hogyan adódott az elmúlt pár sprint sebessége és feltételezzük, hogy nagyjából most is
 ugyanannyi lesz.
 
 Ezt a módszert "tegnapi időjárás"-nak is nevezik és csak olyan csapatok esetén működik, akik már
@@ -807,11 +807,11 @@ Végeredményben:
 
 <figure>
 
-...vagyis ez 50 ember-napot jelent erre a sprintre.
+...vagyis erre a sprintre 50 ember-napot kapunk.
 
-Akkor a becsült sebességünk 50? Nem, mivel a becslésünk mértékegysége a sztori pont, ami esetünkben
+Tehát a becsült sebességünk 50? Nem, mivel a becslésünk mértékegysége a sztori pont, ami esetünkben
 nagyjából egy "ideális ember-nap"-nak felel meg. Egy ideális ember-nap egy tökéletesen hatékony és
-zavartalan munkanap, ami a gyakorlatban nagyon ritkán fordul elő. Ráadásul számolnunk kell előre nem
+zavartalan munkanap, ami a gyakorlatban nagyon ritkán fordul elő, ráadásul számolnunk kell előre nem
 tervezett feladatokkal, vagy esetleg lebetegedő emberekkel is.
 
 Éppen ezért a becsült sebességünk biztosan kisebb lesz 50-nél. No, de mennyivel kisebb? Erre
@@ -819,36 +819,37 @@ használjuk a "koncentrációs tényezőt".
 
 <figure>
 
-A koncentrációs tényező azt közelíti, hogy a csapat mennyire összpontosít. Ha ez a tényező alacsony,
-az azt jelenti, hogy a csapat sok akadállyal számol vagy például nem bízik a saját becsléseiben.
+A koncentrációs tényező arra ad közelítést, hogy a csapat mennyire tud összpontosítani a feladatokra.
+Ha ez a tényező alacsony, az jelentheti, hogy a csapat sok akadállyal számol vagy például nem bízik
+a saját becsléseiben.
 
-A koncentrációs tényező számításakor legreálisabb az előző sprintet (vagy ami még jobb, az elmúlt
-néhány sprint átlagát) alapul venni.
+A koncentrációs tényező számításakor legreálisabb, ha az előző sprintet (vagy ami még jobb, a legutóbbi
+néhány sprint átlagát) vesszük alapul.
 
 <figure>
 
 A valós sebesség az előző sprintben befejezett sztorik kezdeti becslésének összege.
 
 Tegyük fel, hogy egy három fős csapat (Tom, Lisa és Sam) az előző három hetes (45 ember-napos)
-sprintben 18 sztori pontot fejezett be és próbáljuk megbecsülni a következő sprint sebességét.
-Legyen a helyzet még bonyolultabb és csatlakozzon a csapathoz egy új ember, Dave. Mindent
+sprintben 18 sztori pontot fejezett be. Próbáljuk megbecsülni a következő sprint sebességét.
+Legyen ráadásul a helyzet még bonyolultabb és csatlakozzon a csapathoz egy új ember, Dave. Mindent
 egybevetve számoljuk egy 50 ember-napos sprinttel.
 
 <figure>
 
-Tehát az előzetes becslésünk 20 sztori pont, azaz hogy a csapat maximum 20 pont erejéig adhat
+Tehát az előzetes becslésünk 20 sztori pont, azaz a csapat maximum 20 pont erejéig adhat
 sztorikat a sprinthez.
 
 <figure>
 
 Ebben a helyzetben a csapat választhatja a legfelső 4 sztorit 1 sztori pont értékben vagy a felső 5
-sztorit 24 értékben. Tételezzük fel, hogy ebben az esetben 4 sztorit választanak, mivel ez van
-közelebb a 20 ponthoz. Kétség esetén inkább válasszon kevesebb sztorit.
+sztorit 24 értékben. Tételezzük fel, hogy ebben az esetben a 4 sztorit választják, mivel ez van
+közelebb a 20 ponthoz (kétség esetén inkább válasszon kevesebb sztorit).
 
-Mivel a 4 sztori összesen 1 sztori pontot jelent, a végső sebesség erre a sprintre 1-nek adódik.
+Mivel a 4 sztori összesen 19 sztori pontot jelent, a végső sebesség erre a sprintre 19-nek adódik.
 
 A tegnapi időjárás hasznos tud lenni, de csak ha nem gondolkodás nélkül használja. Ha az előző
-sprint kivételesen rossz volt, mert a csapat felét egy hétre leverte a láz, akkor nyugodtan
+sprint kivételesen rossz volt, mert mondjuk a csapat felét egy hétre leverte a láz, akkor nyugodtan
 feltételezheti, hogy ezúttal nem lesz ilyen pechje és használhat magasabb koncentrációs tényezőt. Ha
 a csapat nemrég állított üzembe egy villámgyors continuous build rendszert akkor nyugodt szívvel
 növelheti a koncentrációs tényezőt. Ha egy új tag érkezett a csapathoz, akkor nyugodtan csökkentse a
@@ -871,7 +872,7 @@ időjáráson át a rendelkezésre álló munkanapokon és a koncentrációs té
 
 Hogy mi melyik technikát használjuk?
 
-Általában a fentiek valamilyen elegyét használjuk, ami nem igazán vesz sok időt igénybe.
+Általában a fentiek valamilyen elegyét használjuk, ami nem vesz túl sok időt igénybe.
 
 Kezdetnek megnézzük az előző sprint tényleges sebességét és koncentrációs tényezőjét, majd
 összevetjük ezt a következő sprintre számított rendelkezésre állással és megbecsüljük a
@@ -880,8 +881,8 @@ végén megegyezünk egy értékben.
 
 Ha már van egy előzetes sztori listánk erre a sprintre, akkor megnézem, hogy mennyire érzem
 reálisnak, illetve a csapatot is megkérem, hogy egy pillanatra felejtsék el a pontokat és mondják
-el, hogy mennyire érzik reálisnak ez a lista a sprintre. Ha túl soknak tűnik, akkor kihagyunk egy
-sztorit, ha túl soknak, hozzáadunk egyet.
+el, hogy mennyire érzik reálisnak ezt a listát a sprintre. Ha túl soknak tűnik, akkor kihagyunk egy
+sztorit, ha túl kevésnek, hozzáadunk egyet.
 
 Végső soron a cél mindössze annyi, hogy kiválasszuk a sprintbe kerülő sztorikat. A koncentrációs
 tényezők, erőforrás rendelkezésre-állások és becsült sebességek mindössze eszközök arra, hogy ezt a
@@ -889,14 +890,14 @@ célt elérjük.
 
 Miért használunk cetliket
 -------------------------
-A sprint planning meeting nagy részében a product backlog sztorijait becsüljük, rendezzük őket
+A sprint planning meeting nagy részében a product backlog sztorijaira adunk becsléseket, rendezzük őket
 fontosság alapján, tisztázzuk vagy épp kisebb feladatokra osztjuk őket.
 
 Ez a gyakorlatban hogy is néz ki?
 
 Régebben kivetítettük a product backlogot tartalmazó Excel-t és valaki (tipikusan vagy a Product
-Owner vagy a Scrum Master) a billentyűzet mellől végigment az egyes sztorikon elindítva a
-beszélgetést. Amikor például a fontosság vagy bármi egyéb részlet változott, ez a valaki frissítette
+Owner vagy a Scrum Master) a billentyűzet mellett ülve végigment az egyes sztorikon elindítva a
+beszélgetést. Amikor például a fontosság vagy egyéb hasonló részlet változott, ez a valaki frissítette
 a sztorit közvetlenül az Excel táblában.
 
 Remekül hangzik? Hát nem az, hanem szívás. És ami a legrosszabb, hogy a csapat általában észre sem
@@ -907,35 +908,35 @@ Sokkal hatékonyabb megoldásnak találtuk a falra (vagy egy nagyobb asztalra) r
 
 <figure>
 
-Ez a következő szempontok alapján messze jobb a kivetítőnél:
+Ez messze jobb a kivetítőnél a következő okok miatt:
 * Az emberek állnak és körbesétálhatnak => tovább maradnak éberek
 * Sokkal személyesebb élményt nyújt (mintha csak egyvalakinél lenne a billentyűzet)
 * Egyszerre több sztorin lehet dolgozni
-* Triviális dolog átrendezni a fontosság alapján
-* A meeting után a cetlik könnyen átvihetőek a csapat szobájába és közvetlenül használhatóak a fali
+* Triviális dolog fontosság alapján átrendezni a cetliket
+* A meeting után a cetlik könnyen átvihetőek a csapatszobába és közvetlenül használhatóak a fali
   feladat-térképen. (Lásd: "Hogyan használjuk a Sprint Backlogot")
 
-Írhatja kézzel is (mi kézzel írjuk) de használhat például egy szkriptet, ami ezeket a cetliket
-közvetlenül a Product Backlog-ból generálja.
+Írhatja kézzel is (ahogy mi is) de használhat például egy szkriptet, ami legenerálja ezeket a cetliket
+közvetlenül a Product Backlog-ból.
 
 <figure>
 
-Ui: a blogomról letölthető a szkript, amit mi használunk: http://blog.crisp.se/henrikkniberg
+Ui: a blogomról letölthető az általunk használt szkript: http://blog.crisp.se/henrikkniberg
 
-Fontos! A Sprint Planning Meeting után a Scrum Master feladata kézzel frissíteni a product backlogot
-tartalmazó Excel táblát a cetlik alapján. Igen, ez némi többletmunkát jelent, de ez eltörpül a
+Fontos! A Sprint Planning Meeting után a Scrum Master feladata a cetlik alapján kézzel frissíteni a
+product backlogot tartalmazó Excel táblát. Igen, ez némi többletmunkát jelent, de ez eltörpül a
 Sprint Planning Meetingben nyert hatékonyság mellett.
 
-Egy gyors megjegyzés a "Fontosság" mezőről. A cetli készítésekor ez az Excel táblában található
-fontosságot tartalmazza, ami abban segít, hogy egyszerűen rendezhessük a cetliket fontosság alapján
+Egy gyors megjegyzés a "Fontosság" mezőről. A cetli megírásakor ez az Excel táblában található
+fontossággal azonos, ami segít egyszerűen fontossági sorrendbe rendezni a cetlijeinket
 (nálunk általában balról jobbra csökken a fontosság). Ha a cetlik már felkerültek a falra, akkor már
 nincs szükség ezekre a számértékekre, helyette egyszerűen a fizikai elhelyezkedés jelzi a
 fontosságot. Ha a Product Owner felcserél két cetlit, ne vesztegessen időt a fontosság mező
-frissítésével, elég ha a meeting után frissíti az Excel táblát.
+frissítésével, elég, ha a meeting után frissíti az Excel táblát.
 
 Az időbecslések általában egyszerűsödnek (és pontosabbá válnak) ha a sztorit kisebb feladatokra
-bontjuk. Mi általában az "aktivitás" szót használjuk, mert svéd nyelven a "feladat" szónak teljesen
-más a jelentése. Ez a felbontás is egyszerű a cetlik használatával, sőt több sztorit is könnyen szét
+bontjuk. Mi általában az "aktivitás" szót használjuk, mert svéd nyelven a "feladat" szó teljesen
+más jelentéssel bír. Ez a felbontás is egyszerű a cetlik használatával, sőt több sztorit is könnyen szét
 lehet bontani párhuzamosan.
 
 Ezt úgy szoktuk csinálni, hogy a sztori alá újabb cetliket ragasztunk, ahol minden cetli egy-egy
@@ -945,49 +946,48 @@ feladat a sztorin belül.
 
 <figure>
 
-Nem szoktuk felvezetni az Excel-alapú product backlogba a feladatokat már csak két okból sem:
+Nem szoktuk felvezetni az Excel-alapú product backlogba magukat a feladatokat már csak két okból sem:
 * A feladatok elég gyakran változnak a sprint során és túl sok munka lenne állandóan szinkronizálni
   a backlogot.
 * A Product Owner amúgy sem kell, hogy részt vegyen ezen a szinten
 
 Ahogy a sztori cetliket, úgy a feladat cetliket is közvetlenül fel lehet használni a sprint
-backlogban (Lásd "Hogyan használjuk a Sprint Backlogot")
+backlogban (Lásd "Hogyan használjuk a Sprint Backlogot").
 
 A "kész" definíciója
 --------------------
 Nagyon fontos, hogy a Product Owner és a csapat megegyezzen a "kész" pontos definíciójában. Készen
-van-e a sztori, amikor a kódot becsekkoljuk a verziókövető rendszerbe? Vagy esetleg csak akkor,
+van-e a sztori, amikor a kódot feltöltjük a verziókövető rendszerbe? Vagy esetleg csak akkor,
 amikor telepítettük a teszt rendszerre és az integrációs teszter csapat leellenőrizte? Mi a legtöbb
-esetben úgy definiáljuk a "készt", mint "éles telepítésre készen", de néha csak annyit tudunk
+esetben úgy definiáljuk a "készt", hogy "éles telepítésre készen", de néha csak annyit tudunk
 mondani, hogy "telepítve a teszt rendszerre és tesztre készen áll".
 
-Kezdetben részletes listát készítettünk ehhez, de újabban azt tartjuk, hogy "egy sztori akkor van
+Kezdetben részletes listákat készítettünk, de újabban az a gyakorlat, hogy "egy sztori akkor van
 kész, amikor a csapat azt mondja, hogy kész van". Ezután már a teszterek dolga biztosítani, hogy a
-csapat tényleg megértette a Product Owner szándékát és hogy a sztori megfelel az előre megegyezett
+csapat valóban megértette a Product Owner szándékát és hogy a sztori megfelel az előre megegyezett
 követelményeknek.
 
 Arra jöttünk rá, hogy nem lehet minden sztorit ugyanúgy kezelni. A "Felhasználó-keresés" teljesen
 más, mint például a "Üzemeltetői kézikönyv", mivel az utóbbi esetében a "kész" definíciója lehet,
-hogy egyszerűen csak az, hogy "az üzemeltető csoport elfogadta". A legtöbb esetben a józan ész
-használatával jobb eredményt lehet elérni, mint egy részletes listával.
+hogy egyszerűen csak az, hogy "az üzemeltetők elfogadták". A legtöbb esetben a józan paraszti ész
+használata jobb eredményre vezet, mint egy részletes lista.
 
 Ha gyakran merül fel probléma a "kész" definíciója kapcsán, érdemes lehet a sztorikhoz külön
 hozzáadni egy "kész definíciója" mezőt"
 
 Időbecslés Planning Poker-rel
-------------------------------------
+-----------------------------
 A becslés csapattevékenység, azaz a csapat minden tagja részt vesz minden sztori becslésében.
 Hogy miért?
 * A sprint tervezés folyamán általában még nem tudjuk, hogy az egyes részeket ki fogja majd
   implementálni.
 * A sztorik általában több különböző szakértelmet igényelnek (felhasználói felület dizájn,
   programozás, tesztelés, stb...)
-* A becsléshez elengedhetetlen, hogy tudjuk, hogy a sztori miről szól. Azzal, hogy mindenkit
+* A becsléshez elengedhetetlen, hogy tudjuk, a sztori miről szól. Azzal, hogy mindenkit
   megkérdezünk, voltaképp azt biztosítjuk, hogy mindenkinek lesz valamennyi fogalma az adott
   sztoriról, ami cserében megnöveli annak a valószínűségét, hogy a csapattagok a sprint során
-  segítenek majd egymásnak. Abban is segít továbbá, hogy a fontos kérdések már az elején
-  előjöjjenek.
-* Azzal, hogy mindenkit megkérdezünk, gyakran előfordul, hogy két csapattag drasztikusan különböző
+  segítenek majd egymásnak. Ráadásul a fontos kérdések és problémák így már a kezdetektől előkerülnek.
+* Amikor tényleg mindenkit megkérdezünk, előfordul, hogy két csapattag drasztikusan eltérő
   becslést ad ugyanarra a sztorira. Az így felmerülő kérdéseket jobb a lehető leghamarabb tisztázni.
 
 Amikor egy csapatot arra kér, hogy becsüljön meg egy feladatot, általában a feladatot legjobban
