@@ -993,20 +993,18 @@ Hogy miért?
 Amikor egy csapatot arra kér, hogy becsüljön meg egy feladatot, általában a feladatot legjobban
 ismerő tag fog először előállni egy becsléssel, ám ezzel befolyásolja a többiek döntését.
 
-Van egy remek stratégia ennek elkerülésére - úgy hívják, hogy Planning Poker (ha jól emlékszem Mike
-Cohn találmánya)
+Egy kiváló stratégia ennek elkerülésére a Planning Poker (ha jól emlékszem Mike Cohn találmánya)
 
 <figure>
 
-Minden tag kap egy a fentiekhez hasonló 13 kártyából álló paklit. Amikor egy sztorit becslünk, az
-egyes tagok kiválasztják és lefordítva az asztalra teszik azt a lapot, amely szerintük a becsült
-időtartamot (sztori pontban) a legjobban képviseli. Amikor mindenki készen áll, a kártyákat egyszerre
-megfordítják. Így mindenki saját maga kell, hogy döntsön és nem hagyatkozhat senki valaki más
-becslésére.
+Minden tag kap egy, a fentiekhez hasonló, 13 kártyából álló paklit. Amikor egy sztori becslésre kerül,
+a tagok kiválasztják és lefordítva az asztalra teszik azt a lapot, amely szerintük a becsült
+időtartamhoz (sztori pontban) a legközelebb áll. Amikor mindenki készen áll, a kártyákat egyszerre
+megfordítják. Így senki sem hagyatkozhat mások becslésére, azaz mindenkinek önállóan kell döntenie.
 
 Ha drasztikus eltérés van két érték között, akkor a csapat megbeszéli a különbségeket és megpróbál
-egy lapra kerülni a sztorit illetően. Ha kell, a feladatok részekre is bonthatják és újra
-becsülhetnek. Ezt a folyamatot addig ismétlik, amíg konszenzusra nem jutnak (azaz a becslések
+egy lapra kerülni a sztorit illetően. Ha kell, a feladatot részekre is bonthatják és újra
+becsülhetnek. Ezt a folyamatot addig ismétlik, amíg konszenzusra nem jutnak (vagyis a becslések
 nagyjából azonosak).
 
 Fontos emlékeztetni a csapatot, hogy a teljes munkát kell megbecsülniük és nem csak a "saját"
@@ -1015,19 +1013,19 @@ részüket, vagyis egy teszter nem csak a tesztekre szükséges időt méri fel.
 Vegyük észre, hogy a számsor nem lineáris, azaz például nincs semmi 40 és 100 között. Miért van
 ez?
 
-Ezzel próbáljuk meg eloszlatni annak illúzióját, hogy pontosan tudjuk becsülni a nagy időtartamokat.
-Ha egy sztorit 20 pontra becsültük, akkor nem igazán fontos azon vitázni, hogy ez pontosan 20 vagy
-18 vagy 21. Elég annyit tudnunk, hogy ez egy nagy feladat, amit nehéz előre felbecsülni, mi
-nagyjából 20 pontra gondoljuk.
+Ezzel annak illúzióját próbáljuk meg eloszlatni, hogy a nagy időtartamokat pontosan meg tudjuk becsülni.
+Ha egy sztorit 20 pontra értékeltünk, akkor nem igazán fontos azon vitázni, hogy ez pontosan 20 vagy
+18 esetleg 21. Elég annyit tudnunk, hogy ez egy nagy feladat, amit nehéz előre felmérni, és amit mi
+nagyjából 20 pontra gondolunk.
 
-Ha ennél pontosabb becslést szeretne, válassza szét a sztorit több kisebbre és becsülje azokat
-inkább.
+Ha ennél pontosabb becslést szeretne, válassza szét a sztorit kisebb sztorikra és becsülje inkább
+azokat.
 
-És nem ér csalni úgy, hogy egy 5-t és egy 2-t összerakva 7-t becsül. Vagy az 5-t vagy a 8-t kell
-választani, nincs olyan becslés, hogy 7.
+Nem ér csalni úgy, hogy egy 5-t és egy 2-t összerakva 7-t becsül. Vagy az 5-t vagy a 8-t kell
+választani, nincs 7 értékű becslés.
 
 Néhány különleges lap:
-* 0 = "ezt a sztorit már befejeztük korábban" vagy "ez teljesen triviális, legfeljebb pár percnyi
+* 0 = "ezt a sztorit már korábban befejeztük" vagy "ez teljesen triviális, legfeljebb pár percnyi
   munka".
 * ? = "halvány lila gőzöm sincs, de tényleg."
 * kávé = "túl fáradt vagyok gondolkodni, tartsunk pár perc szünetet."
@@ -1035,13 +1033,13 @@ Néhány különleges lap:
 Sztorik pontosítása
 -------------------
 A lehető legrosszabb dolog amikor a csapat nagy büszkén bemutatja a működő új dolgot a sprint
-demóban, de a Product Owner szomorúan közli, hogy "igen, ez szép és jó, csak épp nem ezt kértem".
+demóban, majd a Product Owner szomorúan közli, hogy "igen, ez szép és jó, csak épp nem ezt kértem".
 
 Hogyan lehetünk biztosak, hogy a csapat és a Product Owner elképzelés a sztoriról ugyanaz, vagy
-például hogy a csapattagok elképzelése ugyanaz? A rossz hír, hogy sosem lehet teljesen biztos,
-viszont van néhány stratégia a nyilvánvaló félreértések felderítésére. Legegyszerűbben azzal
-segíthet, hogy a sztorihoz tartozó összes mezőt kitölti (egész pontosan az összes fontos és ezáltal
-a sprintbe valószínűleg bekerülő sztorihoz tartozó összes mezőt).
+hogy a csapattagok elképzelése megegyezik? A rossz hír, hogy sosem lehetünk teljesen biztosak,
+azonban van néhány stratégia legalább a nyilvánvaló félreértések felderítésére. Legegyszerűbben azzal
+segíthet, ha a sztorihoz tartozó összes mezőt kitölti (egész pontosan az összes fontos és ezáltal
+a sprintbe valószínűleg bekerülő sztorihoz tartozó mezőket).
 
 1. Példa:
 Mind a csapat, mind a Product Owner elégedett a sprint tervével és már a meeting befejezésén
@@ -1058,7 +1056,7 @@ Mind a csapat, mind a Product Owner elégedett a sprint tervével és már a mee
 gondolkoznak, amikor a Scrum Master megszólal: "várjunk csak, itt ez a 'felhasználó hozzáadása'
 sztori, ezt hogyan fogjuk demonstrálni?". Pár perc tanácstalanság után valaki feláll és azt mondja
 "no igen, először is belépünk a weboldalra és...", amire a Product Owner közbevág: "Mi az, hogy
-belépünk a weboldalra? Nem, nem nem és nem, ez a sztori egyáltalán nem része a weboldalnak, csak egy
+belépünk a weboldalra? Nem, nem, nem és nem, ez a sztori egyáltalán nem része a weboldalnak, csak egy
 egyszerű SQL szkript a rendszergazdáknak".
 
 A "hogyan demonstráljuk" mező legyen minél tömörebb, egyébként sosem fog végezni a Sprint Planning
@@ -1066,7 +1064,6 @@ Meetinggel. Mindössze egy áttekintő és könnyen érthető teszt előírás a
 és ezt csináld, majd ez történik és így ellenőrizhető a dolog". Pályafutásom során többször segített
 ez az egyszerű leírás felfedni kisebb-nagyobb félreértéseket. És minél előbb sikerül őket
 felfedezni, annál jobb!
-
 
 Sztorik felbontása kisebb sztorikra
 ------------------------------------------
@@ -1077,12 +1074,12 @@ becsült sebesség 70 és a két legfontosabb sztori 40 40 pontos, akkor elég n
 Vagy kevesebbet vesz fel a listára (esetünkben csak egy sztorit) vagy túl sokat (a két legfontosabb
 sztorit).
 
-Az a tapasztalatom, hogy egy nagy sztorit szinte mindig fel lehet bontani kisebb sztorikra és csak
+Az a tapasztalatom, hogy egy nagy sztorit szinte mindig fel lehet bontani kisebb sztorikra, csak
 arra kell ügyelni, hogy a kisebb sztorik is kézzelfogható üzleti értéket képviseljenek.
 
 Általában arra törekszünk, hogy a sztorijaink 2-8 ember-nap körül legyenek. Mivel a sebességünk
 valahol 40 és 60 között mozog, ez nagyjából 10 sztorit jelent egy sprintben. Néha ez az érték csak 5
-és néha akár 15 is, de ezek mindegyike teljesen kezelhető a cetlis módszerrel.
+és néha akár 15-ig is felmegy, de ezek tökéletesen kezelhetőek a cetlis módszerrel.
 
 Sztorik felbontása feladatokra
 ------------------------------
@@ -1116,8 +1113,8 @@ Néhány figyelemre méltó észrevétel:
 azonban nem nagy tragédia, ha mégis kifutunk az időből (Lásd: "Hol húzzuk meg a határt")
 
 Megjegyzés: Mivel TDD-t (Teszt Alapú Fejlesztés) használunk, a gyakorlatban az első feladat mindig
-a "meghiúsuló teszt írása" és az utolsó mindig "refaktoring" (= a kód olvashatóságának javítása és
-duplikált kód eltávolítása).
+a "meghiúsuló teszt írása" és az utolsó mindig "refaktorálás" (= a kód olvashatóságának javítása és
+az esetlegesen duplikált kód eltávolítása).
 
 
 A Napi Scrum helyének és idejének kijelölése
@@ -1129,10 +1126,10 @@ az a hely, ahol a tagok eldöntik, hogy min is dolgozzanak.
 Én a reggeli meetingek híve vagyok, de be kell valljam, hogy tulajdonképpen sosem próbáltuk délre
 vagy délutánra ütemezni a napi scrumot.
 
-A délután tartott scrum meeting hátránya, hogy reggel emlékezni kell arra, hogy mit is mondott
+A délután tartott scrum meeting hátránya, hogy reggel emlékeznie kell arra, hogy mit is mondott
 tegnap, min fog ma dolgozni.
 
-A reggeli scrum meeting hátránya, hogy reggel emlékezni kell, hogy mit is csinált tegnap.
+A reggeli scrum meeting hátránya, hogy reggel emlékeznie kell, hogy mit is csinált tegnap.
 
 Véleményem szerint az előbbi hátránya jelentősebb, mivel a legfontosabb nem az, hogy mit csinált
 eddig, hanem hogy mit fog csinálni.
