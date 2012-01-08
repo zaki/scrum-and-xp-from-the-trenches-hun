@@ -1126,21 +1126,21 @@ az a hely, ahol a tagok eldöntik, hogy min is dolgozzanak.
 Én a reggeli meetingek híve vagyok, de be kell valljam, hogy tulajdonképpen sosem próbáltuk délre
 vagy délutánra ütemezni a napi scrumot.
 
-A délután tartott scrum meeting hátránya, hogy reggel emlékeznie kell arra, hogy mit is mondott
+A délután tartott scrum meeting hátránya, hogy emlékeznie kell arra, hogy mit is mondott
 tegnap, min fog ma dolgozni.
 
-A reggeli scrum meeting hátránya, hogy reggel emlékeznie kell, hogy mit is csinált tegnap.
+A reggeli scrum meeting hátránya, hogy emlékeznie kell, hogy mit is csinált tegnap.
 
-Véleményem szerint az előbbi hátránya jelentősebb, mivel a legfontosabb nem az, hogy mit csinált
-eddig, hanem hogy mit fog csinálni.
+Véleményem szerint az előbbi hátrány a jelentősebb, mivel sokkal fontosabb az, hogy mit fog csinálni,
+mint az, hogy eddig mit csinált.
 
-Mindig azt a legkorábbi időpontot próbáljuk választani, amire már senki sem morog. Ez általában
+Mindig azt a legkorábbi időpontot próbáljuk választani, amin már senki sem morog. Ez általában
 9:00, 9:30 vagy 10:00, de a legfőbb, hogy olyan időpontot válasszon, amibe a csapat minden tagja
 beleegyezik.
 
 Hol húzzuk meg a határt
 -----------------------
-Rendben, az idő nagyon fogytán van, mit hagyhatunk ki a sprint planning meetingből?
+Kicsúszni látszunk az időből, mit hagyhatunk ki a sprint planning meetingből?
 
 Én általában az alábbi fontossági sorrendet használom:
 
@@ -1150,22 +1150,22 @@ Backlogból, ami persze szívás és komolyan érdemes elgondolkodni egy új mee
 tényleg muszáj elkezdeni a sprintet, akkor ez is megteszi. Ugyanakkor őszintén szólva én ennyi
 információval még sosem kezdtem sprintet.
 2: A sprintbe felvett sztorik listája
-3: Az összes sztori időtartama becsülve
-4: "Demó módja" kitöltve az összes sprintbe foglalt sztorihoz
+3: Az összes sztori becsült időtartama
+4: A "Demó módja" mező kitöltve az összes sprintbe foglalt sztorihoz
 5: Sebességszámítás. A csapattagok listája és rendelkezésre állásuk mértéke (ami nélkül nem lehet
 a sebességet kiszámítani)
-6: A napi scrum helyének és idejének kijelölése. Ez legfeljebb egy pár percet vesz igénybe, de ha
+6: A napi scrum helyének és idejének kijelölése. Ez legfeljebb pár percet vesz igénybe, de ha
 kifut az időből, a Scrum Master utólag is dönthet és e-mailben értesítheti a csapattagokat.
 7: A sztorik felbontása feladatokra. Ezt lehet naponta is csinálni a Napi Scrum keretein belül, de
-az valamennyire megtöri a sprint lendületét.
+az valamelyest megtöri a sprint lendületét.
 
 Technikai sztorik
 -----------------
 A technikai jellegű sztorik (vagy nem-funkcionális elemek) meglehetősen összetett problémát
 jelentenek.
 
-Olyan dolgok ezek, amiket meg kell csinálni, de nem közvetlenül kiadhatóak és nem igazán tartoznak
-egyik másik sztorihoz sem, ráadásul nem képviselnek közvetlenül értéket a Product Owner számára.
+Ezek olyan dolgok, amiket bár meg kell csinálni, közvetlenül nem adhatóak ki és nem igazán tartoznak
+egyik másik sztorihoz sem. Ráadásul nem képviselnek közvetlenül értéket a Product Owner számára.
 
 Például:
 * Continuous build rendszer telepítése
@@ -1173,12 +1173,12 @@ Például:
   az iteráció végén integrációs problémák lépnek fel.
 * Áttekintő rendszerterv készítése
   o azért szükséges, mert a fejlesztők nem tudják állandóan fejben tartani a rendszer felépítését és
-  ez inkonzisztens kódot eredményez. Szükséges egy áttenkintő dokumentum, amire a tagok rendszeresen
+  ez inkonzisztens kódot eredményez. Szükséges egy áttekintő dokumentum, amire a tagok rendszeresen
   hivatkozhatnak.
 * Adatbázis-elérési réteg refaktorálása
   o azért szükséges, mert az adatbázis-elérési réteg eléggé rossz állapotban van már, ami lassítja
   a fejlesztést a sok hiba és félreértés miatt. A kód megtisztításával rengeteg időt lehet
-  megtakarítani és azzal egyidőben a rendszer stabilitása is nő.
+  megtakarítani és azzal egyidőben a rendszer stabilitása is javul.
 * JIRA (hibakövető) frissítése
   o azért kell, mert a jelenlegi verzió túl lassú és tele van hibákkal, a frissítés sok időt takarít
   meg.
@@ -1203,7 +1203,7 @@ a fontosságát.
 2) Ha ez nem lehetséges, akkor megpróbáljuk egy másik sztori keretein belül elvégezni a munkát.
 Például az "adatbázis-elérési réteg refaktorálása" elvégezhető a "felhasználó adatainak
 szerkesztése" sztori keretein belül, mivel az érinti az adatbázis-elérési réteget.
-3) Ha ez sem kivitelezhető, akkor technikai jellegű sztoriként vesszük fel, ám egy különálló
+3) Ha ez sem kivitelezhető, akkor technikai jellegű sztoriként vesszük fel, de egy különálló
 listára, amit a Product Owner megtekinthet, ám nem szerkeszthet. A "koncentrációs tényező" és
 "becsült sebesség" értékeket használva megpróbálunk megegyezni a Product Ownerrel, hogy a sprint egy
 részét a technikai sztorikra fordíthassuk.
@@ -1234,8 +1234,8 @@ Persze egy másik megoldás, a Product Owner-t teljesen kihagyni az egészből �
 javasolt koncentrációs tényezőből, de célszerű legalább megpróbálni konszenzusra jutni vele.
 
 Amennyiben a Product Owner hozzáértő és értelmes ember (és ebben mi nagyon szerencsések voltunk), én
-azt javaslom, hogy amennyire csak lehet beszéljen vele és hagyja, hogy ő hozza meg a fontosságot
-illető döntéseket. Végül is az áttekinthetőség a Scrum egyik alapértéke.
+azt javaslom, hogy amennyire csak lehet beszéljen vele és hagyja, hogy ő hozza meg a fontossági sorrendet
+illető döntéseket. Az áttekinthetőség végül is a Scrum egyik alapértéke.
 
 Hibakövető rendszer és a Product Backlog
 ----------------------------------------
@@ -1250,7 +1250,7 @@ Itt is többféle stratégiával próbálkoztunk:
 mellé a falra (amivel egyben a többi sztorihoz viszonyított fontosságuk is meghatározásra kerül)
 2) A Product Owner olyan sztorikat készít, amelyek hivatkoznak a JIRA bejegyzésekre, például "A
 legfőbb hibák kijavítása: Jira-124, Jira-126 és Jira-180".
-3) A hibajavítás nem tekintjük a sprint részének, azaz a csapat elég alacsonyan tartja a
+3) A hibajavítást nem tekintjük a sprint részének, azaz a csapat elég alacsonyan tartja a
 koncentrációs tényezőt (például 50%), hogy maradjon idő a hibák kijavítására. Ezzel gyakorlatilag
 implicite feltételezzük, hogy a csapat az ideje egy részét minden sprintben hibák javításával tölti.
 4) A Product Backlogot is JIRÁ-ban tároljuk (azaz kidobjuk az Excelt). A hibákat is normális
@@ -1261,12 +1261,12 @@ sprintről sprintre változik. Én az első stratégia felé hajlok, mivel az el
 
 A Sprint Planning Meeting vége
 ------------------------------
-Ó, sosem gondoltam volna, hogy ilyen hosszúra nyúlik majd ez a fejezet. Ez valahol biztos azt
+Sosem gondoltam volna, hogy ilyen hosszúra nyúlik majd ez a fejezet. Ez valahol biztos azt
 tükrözi, hogy talán a Scrum legfontosabb részének tartom a Sprint Planning Meetinget. Ha elég időt
 szán ennek tökéletesítésére, a maradék sokkal egyszerűbb lesz.
 
 A Sprint Planning Meeting akkor tekinthető sikeresnek, ha mindenki (az összes csapattag és a Product
-Owner) is mosolyogva távozik és másnap is mosollyal ébred és kezdi meg az első Napi Scrum-ot.
+Owner is) mosolyogva távozik és másnap is mosollyal ébred és kezdi meg az első Napi Scrum-ot.
 
 De persze van egy csomó dolog, ami még összeomolhat a sprint során, de legalább a sprint terve
 tökéletes volt. :)
@@ -1294,13 +1294,13 @@ folyamatban lévő sprint oldalára.
 
 A Scrum Master feladata továbbá a sprint adatlapot kinyomtatni és a csapat szobájának ajtajára
 tűzni, hogy bárki, aki arra jár láthassa, hogy a csapat éppen min dolgozik. Mivel ez tartalmazza a
-napi scrum helyét és idejét, tudja, hogy hova kell mennie, ha többre kíváncsi
+napi scrum helyét és idejét, tudja, hogy hova kell mennie, ha többre kíváncsi.
 
 Amikor a sprint a végéhez közeledik, a Scrum Master kötelessége emlékeztetni mindenkit a demóra.
 
 <figure>
 
-Mindezek mellett igazán senki sem találhat kifogást, hogy miért nem tudta, hogy mi történik.
+Mindezek mellett igazán senki sem találhat kifogásokat, hogy miért nem tudta, hogy mi történik.
 
 6 Hogyan vezetjük a Sprint Backlogot
 ====================================
@@ -1315,14 +1315,14 @@ A Sprint Backlog formátuma
 Több formátumot is kipróbáltunk, többek között Jirá-t, Excel-t és falra ragasztható feladat-térképet
 is. Kezdetben főként Excel-t használtunk, amihez rengeteg template-t lehet letölteni sprint
 backlogtól kezdve automatikusan generált Burndown Chart-ig. Beszélhetnék arról, hogy milyen
-finomításokon esett át ez az Excel-alapú sprint backlog, de mégsem fogok, sőt még egy példát sem
+finomításokon esett át ez az Excel-alapú sprint backlog, de mégsem fogok, sőt még példákat sem
 fogok felhozni.
 
 Ehelyett inkább arról a formátumról szeretnék beszélni, amit végül a leghatékonyabb megoldásnak
 találtunk: a fali feladat-térképről.
 
-Először is vegyen egy használaton kívüli nagyméretű falat (olyan is megteszi, amin csak olyan amúgy
-használatlan elemek vannak, mint a céglogó, idejétmúlt ábrák vagy randa képek). Tisztítsa le a
+Először is vegyen egy használaton kívüli nagyméretű falat (olyan is megteszi, amin csak amúgy
+használatlan elemek vannak, mint például céglogó, idejétmúlt ábrák vagy randa képek). Tisztítsa le a
 falat (ha muszáj, kérjen előtte engedélyt), majd ragasszon fel egy nagy, legalább 2-szer 2 méteres
 (nagy csapatok esetén legalább 3x2 méteres) papírt. Ezután alakítsa a felületet az alábbihoz hasonló
 módon:
@@ -1333,7 +1333,7 @@ Használhat persze letörölhető táblát is, de az nekem túlzásnak tűnik, s
 inkább tartogassa a design tervezésre és használjon sima papírt a feladat-térképhez.
 
 Megjegyzés: ha a feladatokra post-it cetliket használ, ne felejtse el rögzíteni őket
-ragasztószalaggal is, hogy nehogy a földön végezzék.
+ragasztószalaggal is, nehogy a földön végezzék.
 
 Hogyan működik a feladat-térkép
 -------------------------------
@@ -1366,7 +1366,7 @@ Egy pár nap múlva a tábla mondjuk valahogy így néz ki:
 
 Itt látható, hogy már befejeztük a "betét" sztorit (azaz benn van a verziókövető rendszerben,
 átment a teszteken és refaktorálva lett, stb...). A migrációs eszköz részben kész, az
-adminisztrációs felület bejelentkezés funkcióját elkezdtük és hogy a felhasználó adminisztráció
+adminisztrációs felület bejelentkezés funkcióját elkezdtük és a felhasználó adminisztráció
 funkciója még nem lett elkezdve.
 
 Három előre nem tervezett feladat is látható a jobb alsó részen, amire érdemes emlékezni a sprint
@@ -1408,7 +1408,7 @@ feladata a figyelmeztető jelekre reagálni.
 
 <figure>
 
-No, de mi van a nyomon követéssel?
+Jó, de mi van a nyomon követéssel?
 --------------------------------
 A legjobb megoldás a nyomon követésre hogy naponta lefényképezzük a feladat-térképet. De csak ha
 tényleg muszáj. Néha én is le szoktam fényképezni, de őszintén szólva eddig még nem volt példa arra,
@@ -1435,7 +1435,7 @@ Ezt a legtöbb csapatban már nem használjuk a következő okok miatt:
   feladat nagyjából egy nap, de ide órákat kell írni... oké, legyen 6 óra"
 * Két különböző egység csak félreértéseket szül "Ez a becslés akkor most órában vagy napban volt?"
 
-Úgyhogy most már minden becslésünk ember-nap egységben történik (bár sztori pontnak hívjuk). A
+Úgyhogy most már minden becslésünk ember-nap egységben történik (persze sztori pontnak hívjuk). A
 legkisebb érték 0.5, vagyis minden 0.5-nél kisebb feladatot vagy törlünk, vagy összevonunk egy másik
 feladattal, esetleg csak szimplán 0.5-nek vesszük (egy kis túllövés nem okoz nagy problémákat). Így
 a legegyszerűbb.
@@ -1445,8 +1445,8 @@ a legegyszerűbb.
 
 Tervezői sarok
 --------------
-Azt vettem észre, hogy a legérdekesebb tervezői viták általában spontán egy tábla előtt történnek,
-ezért mindig ki próbálunk alakítani egy kimondottan ilyen beszélgetéseket segítő "tervezői sarkot".
+Azt vettem észre, hogy a legérdekesebb tervezői viták általában spontán, egy tábla előtt történnek,
+ezért mindig ki próbálunk alakítani egy kimondottan az ilyen beszélgetéseket elősegítő "tervezői sarkot".
 
 <figure>
 
@@ -1454,7 +1454,7 @@ Ez azért hasznos, mert nincs jobb módja egy rendszer megértésére, mint a te
 falat áttekinteni, majd a számítógépen kipróbálni a legfrissebb buildet (már ha elég szerencsés, és
 használ folyamatos build rendszert - lásd "Hogyan elegyítjük az XP-t a Scrum-mal").
 
-A "tervezői fal" igazából csak egy nagy tábla, amin a legfontosabb diagrammok és kinyomtatott
+A "tervezői fal" igazából csak egy nagy tábla, amin a legfontosabb diagramok és kinyomtatott
 dokumentumok találhatóak (például szekvencia-diagramok, GUI prototípusok, üzleti modellek, stb...)
 
 
@@ -1524,12 +1524,12 @@ elbeszéléseire tudok hivatkozni.
 Tartsa kéznél a menedzsereket és az oktatókat
 ---------------------------------------------
 Elég nehéz erről beszélnem, hiszen én menedzser is és oktató is voltam és így az volt a feladatom,
-hogy minél közelebb dolgozzam a csapattal. Én alakítottam ki a csapatokat, pár-programoztam a
-tagokkal, én képeztem Scrum Mastereket és hívtam össze sprint planning meetingeket. Így
-visszatekintve a legtöbben azt gondolhatták, hogy ez egy Jó Dolog, mivel nekem már volt
+hogy minél szorosabban dolgozzam a csapattal. Én alakítottam ki a csapatokat, pár-programoztam a
+tagokkal, én képeztem a Scrum Mastereket és én hívtam össze sprint planning meetingeket. Így
+visszatekintve a legtöbben azt gondolhatták, hogy ez egy Jó Dolog™, mivel nekem már volt
 tapasztalatom az agilis fejlesztésben.
 
-Ugyanakkor én voltam a (ide képzelje Darth Vader zenéjét) a vezető fejlesztő is, ami gyakorlatilag
+Ugyanakkor én voltam a (ide képzelje Darth Vader zenéjét) vezető fejlesztő is, ami gyakorlatilag
 egy menedzser szerepkör, vagyis ha a csapat része vagyok, az automatikusan azt jelenti, hogy az
 kevésbé önmenedzselővé válik. "A francba, itt a főnök, biztos rengeteg ötlete van, hogy mit és
 hogyan csináljunk, inkább hagyom, hadd beszéljen ő."
@@ -1565,26 +1565,26 @@ is. Esetenként a Scrum Master végzi a cetlik frissítését, amíg az egyes ta
 
 <figure>
 
-Néhány csapat megállapodott arról, hogy mindenki frissíti a feladat-térképet a meetingek előtt, ami
-ugyanolyan jól működik. A lényeg, hogy megállapodjanak egy stratégiában és hogy betartsák azt.
+Egyes csapatok abban állapodtak meg, hogy mindenki frissíti a feladat-térképet a meetingek előtt, ami
+ugyanolyan jól működik. A lényeg, hogy kialakítsanak egy stratégiát és hogy betartsák azt.
 
 Függetlenül a backlog formátumától, próbálja a teljes csapatot bevonni a backlog naprakészen
-tartásába. Próbálkoztunk olyan sprintekkel, ahol egyedül a Scrum Master felelős a sprint backlog
-frissítéséért és így minden nap körbe kell mennie és mindenkitől egyenként megkérdezni, hogy mennyi
-maradt még a feladataik befejezéséig. Ennek a módszernek a hátrányai azonban a következőek:
-* A Scrum Master túl sok időt tölt adminisztrációval ahelyett, hogy támogatná a csapatot azzal, hogy
-  eltávolítja a felmerülő akadályokat.
+tartásába. Próbálkoztunk olyan sprintekkel, ahol egyedül a Scrum Master volt felelős a sprint backlog
+frissítéséért és így minden nap körbe kellett mennie és mindenkitől egyenként megkérdeznie, hogy mennyi
+idő maradt még a feladataik befejezéséig. Ennek a módszernek a hátrányai azonban a következőek:
+* A Scrum Master túl sok időt tölt adminisztrációval ahelyett, hogy támogatná a csapatot a
+  felmerülő akadályok elhárításával.
 * A csapattagok nem látják át a sprint aktuális helyzetét, mivel nem szükséges foglalkozniuk a
   sprint backloggal, ami csökkenti a csapat flexibilitását és koncentrációját.
 
 Egy jól átgondolt sprint backlog esetén nem okozhat problémát az egyes tagoknak frissíteni azt.
 
-Közvetlenül a Napi Scrum után valaki összefoglalja az időbecsléseket (a "kész" feladatokat kihagyva
-természetesen) és berajzol egy újabb pontot a sprint burndown grafikonra.
+Közvetlenül a Napi Scrum után valaki összefoglalja az időbecsléseket (a "kész" feladatokat természetesen
+kihagyva) és berajzol egy újabb pontot a sprint burndown grafikonra.
 
 Mit tegyünk a későkkel
 -----------------------
-Néhány csapat tart egy perselyt. Ha valaki késik, akár csak egy percet is, bedob ebbe valami előre
+Néhány csapat tart egy perselyt, ha valaki késik - akár csak egy percet is - bedob ebbe valami előre
 megállapodott összeget. Akadékoskodás nélkül. Még ha előzőleg jelezte is, hogy késni fog, akkor is
 fizetnie kell és csak nagyon jó kifogással lehet kikerülni a fizetést (például orvosnál vagy esküvőn
 volt).
@@ -1599,7 +1599,7 @@ Mit tegyünk, ha valaki "nem tudja mit csináljon ma"
 Nem ritka azt hallani, hogy "Tegnap ezt és ezt csináltam, de ma halvány lila gőzöm sincs, hogy mit
 csináljak". Most mi legyen?
 
-Tegyük fel, hogy Joe és Lisa akik nem tudják, min dolgozzanak ma.
+Tegyük fel, hogy Joe és Lisa azok, akik nem tudják, min dolgozzanak ma.
 
 Ha én vagyok a Scrum Master, gondolatban megjegyzem ezt, de továbblépek a következő emberre. Miután
 mindenki végzett, végigmegyek a feladatlistán az egész csapattal és leellenőrzöm, hogy minden
@@ -1656,7 +1656,7 @@ megpróbálkozhat ezzel. Ha Joe tényleg fontos tagja a csapatnak, megéri a fá
 ilyen szituációban részem és többé-kevésbé mindig működött.
 
 9 Hogyan demonstrálunk
-========================
+======================
 A sprint demó (vagy "sprint áttekintés" ahogy mások hívják) a Scrum egy jelentős része, amit gyakran
 alulbecsülnek.
 
@@ -1666,18 +1666,18 @@ alulbecsülnek.
 
 Miért ragaszkodunk, hogy minden sprint után legyen demó
 -------------------------------------------------------
-A jól kivitelezett sprint demó még ha nem is tűnik annak, drámai jelentősége van.
+A jól kivitelezett sprint demó, még ha nem is tűnik annak, drámai jelentőséggel bír.
 * A csapat elismerésben részesül a munkájáért. Jól fogják érezni maguk.
 * Más csapatok tudni fogják, hogy min dolgoznak.
-* A demó után fontos visszajelzéseket kaphat
+* A demó után fontos visszajelzéseket kaphat.
 * A demók közösségi események, ahol a csapatok érintkezhetnek egymással és beszélhetnek a
   munkájukról, ami értékes dolog.
-* A demó arra kényszeríti a csapatot, hogy tényleg befejezze a feladatokat és még ha csak a teszt
-  környezetbe is, de telepítse azt. Demók nélkül csak egy csomó 90%-ban befejezett dolgot kapnánk. A
+* A demó arra kényszeríti a csapatot, hogy tényleg befejezze a feladatokat és, még ha csak a teszt
+  környezetbe is, de telepítse azokat. Demók nélkül csak egy csomó 90%-ban befejezett dolgot kapnánk. A
   demó hatására lehet, hogy kevesebb feladatot fejeznek be, de azok tényleg készen is lesznek, ami
-  jobb, mint rengeteg a következő sprintre is átnyúló félkész dolog.
+  jobb, mint rengeteg, a következő sprintre is átnyúló, félkész dolog.
 
-Amikor a csapatra rákényszerítik a demókat, akkor is ha nincs túl sok bemutatni valójuk, a demó
+Amikor a csapatra rákényszerítik a demókat, akkor is ha nincs túl sok bemutatnivalójuk, a demó
 persze elég rosszul fog elsülni. A demó során rengeteg baki fog előfordulni és a végén kapott taps
 sem szívből szól. A kívülállók egy része sajnálni fogja a csapatot, míg egy másik része dühös lesz,
 hogy az idejét rabolják ilyen béna demókkal.
@@ -1686,10 +1686,10 @@ Ez elég fájdalmas tud lenni, de a hatása olyan, mint a keserű pirulának. A 
 tényleg a legjobbat próbálják majd kihozni magukból, arra gondolva, hogy "lehet, hogy csak 2 dolgot
 tudunk majd bemutatni 5 helyett, de ezúttal tényleg MŰKÖDNI fog". A csapat tudni fogja, hogy nincs
 más választásuk, demózni kell, ami erősen növeli majd annak esélyét, hogy valami használható dolgot
-fognak bemutatni. Ezt magam is többször tapasztaltam.
+mutassanak be. Ezt magam is többször tapasztaltam.
 
 Sprint demó jó tanácsok
-----------------------
+-----------------------
 * Világosan ismertesse a sprint célját, illetve ha a jelenlevők között vannak olyanok, akik nem
   ismerik a terméket, pár percet szánjon annak bemutatására is.
 * Ne töltsön túl sok időt a felkészüléssel, főképp ne előadás-fóliákra. Összpontosítson a működő kód
@@ -1737,7 +1737,7 @@ Valamilyen megmagyarázhatatlan okból a csapatok nem mindig érzik fontosnak a 
 Laza felügyelet nélkül a legtöbben inkább kihagynák ezt és kezdenék már a következő sprintet.
 Persze elképzelhető, hogy ez csak a svéd kultúrára jellemző.
 
-Abban azonban mindenki egyetérteni látszik, hogy a visszatekintők rendkívül hasznosan. Én
+Abban azonban mindenki egyetérteni látszik, hogy a visszatekintők rendkívül hasznosak. Én
 továbbmennék és azt állítom, hogy a visszatekintő a Scrum második legfontosabb eleme (a sprint
 planning meeting után), mivel ez a legjobb lehetőség a dolgok javítására.
 
@@ -1746,13 +1746,13 @@ utolérhet minket az ihlet, de vajon ezeket az ötleteket a csapat is elfogadja 
 annak a valószínűsége, hogy tényleg egyetértenek majd sokkal nagyobb, ha az ötlet "magától a
 csapattól származik", azaz a visszatekintő során vetődik fel, amikor bárki beleszólhat a vitákba.
 
-A visszatekintők nélkül ráadásul a csapat nagy valószínűséggel fogja ismételten elkövetni
+A visszatekintők nélkül ráadásul a csapat nagy valószínűséggel ismételten el fogja követni
 ugyanazokat a hibákat.
 
 Hogyan szervezzük a visszatekintőket
 ------------------------------------
 Az formátum gyakran változik, de nagyjából az alábbiakhoz hasonló:
-* 1 - 3 órát különítünk el attól függően, hogy mennyi vitára számítunk.
+* 1 - 3 órát különítünk el, attól függően, hogy mennyi vitára számítunk.
 * Jelenlevők: Product Owner, az egész csapat és jómagam.
 * Elvonulunk egy külön helyiségbe, egy kényelmes kanapéhoz, a tetőkertbe, vagy valami hasonló
   helyre, ahol zavartalanul beszélgethetünk.
@@ -1786,7 +1786,7 @@ szerintük legfontosabb javaslatokra oszthattak el tetszésük szerint. Ha akart
 szavazatukat ugyanarra a javaslatra is leadhatták.
 
 Ezek alapján öt javaslatot választottak ki a következő sprintre, aminek eredményét aztán a következő
-visszatekintőben meg fogunk vizsgálni.
+visszatekintőben meg fogjuk vizsgálni.
 
 Fontos, hogy ne akarjunk mindent egyszerre csinálni, hanem sprintenként csak néhány javaslatra
 összpontosítsunk.
@@ -1803,23 +1803,23 @@ A sprint visszatekintő valójában nem csak arról szól, hogy ez a konkrét cs
 hatékonyabban a munkáját a következő sprint során, hanem sokkal mélyebb jelentőséggel is bír.
 
 Mi ezt a következőképp kezeljük. Egy kijelölt személy (esetünkben ez én vagyok) minden
-visszatekintőre beül és információs hídként viselkedik. Nagy vonalakban így lehet összefoglalni.
+visszatekintőre beül és információs hídként viselkedik.
 
-Egy másik megoldás az lehet, hogy minden csapat készít egy beszámolót a visszatekintőről. Ezt mi is
+Egy másik megoldás az lehet, hogy minden csapat beszámolót készít a visszatekintőről. Ezt mi is
 kipróbáltuk, de az a tapasztalat, hogy nem sokan olvassák ezeket a beszámolókat és még kevesebben
 váltják ezt tényleges tevékenységekre, szóval inkább az egyszerűbb megoldást választottuk.
 
 Fontos szabályok az "Információs Híd" számára:
 * Meg kell hallgatnia az embereket
 * Ha a visszatekintő túl csendes, jól irányzott kérdésekkel kell tudnia felélénkíteni a
-* beszélgetést. Például: "Ha visszamehetnél az időben és az elejéről kezdhetnéd a sprintet, mit
+  beszélgetést. Például: "Ha visszamehetnél az időben és az elejéről kezdhetnéd a sprintet, mit
   csinálnál másképp?"
 * Hajlandónak kell lennie beülni az összes visszatekintőre
 * Elég tekintéllyel kell rendelkeznie, hogy a csapat hatáskörén kívül eső javaslatokra ténylegesen
   és tevőlegesen reagálhasson.
 
-Ez nálunk jól működik, de ha olyan stratégiát talál, ami ennél sokkal jobban működik, lépjen
-kapcsolatba velem.
+Ez nálunk jól működik, de ha olyan stratégiát talál, ami ennél sokkal jobban működik, nyugodtan
+ossza meg velem.
 
 Változtatni vagy nem változtatni
 --------------------------------
@@ -1827,13 +1827,13 @@ Tegyük fel, hogy a csapat egyetért abban, hogy "nem egyeztettünk eleget a csa
 folyton zavartuk egymás kódját."
 
 Mit tegyünk ez ellen? Vezessünk be napi megbeszéléseket, esetleg telepítsünk új eszközöket a
-kommunikáció hatékonyságának javítására? Talán írjunk több wiki cikket? Elképzelhető. És az is, hogy
+kommunikáció hatékonyságának javítására? Talán írjunk több wiki cikket? Esetleg. De lehet az is, hogy
 ezek nem segítenek.
 
 Az a tapasztalatunk, hogy gyakran elég ha felismerjük a problémát és az a következő sprintre
 önmagától megoldódik. Kiváltképp, ha a sprint visszatekintőt kitűzi a csapatszoba falára (amit mi
 szégyenletes módon mindig elfelejtünk). Minden apró változtatás ugyanakkor valamilyen költséggel
-jár, ezért első közelítésben érdemes nem tenni semmit annak reményében, hogy a probléma magától
+jár, ezért első közelítésben érdemes nem tenni semmit, annak reményében, hogy a probléma magától
 eltűnik (vagy legalábbis kisebbé válik).
 
 A fenti "nem egyeztettünk eleget..." tipikus példa arra az esetre, amikor a probléma legjobb esetben
@@ -1863,7 +1863,7 @@ Tipikus válaszok:
   vette igénybe? Ez a későbbiekben segíthet a probléma megoldásában.
 * kérje meg a csapattagokat, hogy minden zavaró tényezőt irányítsanak a Scrum Master vagy a Product
   Owner felé.
-* kérje meg a csapatot, hogy jelöljön ki egy "kapust", aki egy személyben foglalkozik az összes
+* kérje meg a csapatot, hogy jelöljön ki egy "védőt", aki egy személyben foglalkozik az összes
   zavaró tényezővel, hogy a csapat többi tagja a saját feladataira koncentrálhasson. Ez lehet a
   Scrum Master, vagy egy állandóan változó személy.
 
@@ -1892,7 +1892,7 @@ A való életben nem lehet folyamatosan sprintelni, szükség van néha pihenni 
 Ugyanez igaz a Scrum-ra és nagy általánosságban a szoftverfejlesztésre is. A sprintek elég
 kimerítőek tudnak lenni. A fejlesztők nem igazán kapnak pihenőt, mert minden áldott nap ott kell
 állniuk azon a nyavalyás napi scrumon és elmondani, hogy mit csináltak az előző nap. Elég kevesen
-fogják azt mondani, hogy "tegnap a nap nagy részét a lábamat lógattam és cappuccinózás közben
+fogják azt mondani, hogy "tegnap a nap nagy részében a lábamat lógattam és cappuccinózás közben
 blogokat olvasgattam".
 
 A pihenésen túl van még egy jó ok arra, hogy szüneteket iktasson a sprintek közé: a sprint demó és
@@ -1926,7 +1926,7 @@ Például utánaolvashatnak a legújabb eszközöknek és API-knak, felkészülh
 dolgokról beszélhetnek a kollégákkal vagy esetleg egy hobbi projekten dolgozhatnak.
 
 A célunk az, hogy mindig legyen egy "20%" nap két sprint között, ami biztosítja az megfelelő
-kipihentséget ráadásul olyan csapatot eredményez, amely naprakész tudással rendelkezik. Ráadásul
+kipihentséget ráadásul olyan csapatot eredményez, amely naprakész tudással rendelkezik. Továbbá
 vonzó "kiegészítő juttatás" tud lenni.
 
 A legjobb?
@@ -1979,7 +1979,7 @@ Zöld = későbbre lehet halasztani (grapefruit - barack)
 
 Tehát ha a banántól a hagymáig mindent sikerül befejezni a határidőre, minden rendben. Ha kifutni
 látszunk az időből, kihagyhatjuk a mazsolát, mogyorót, fánkot vagy hagymát. A hagyma utáni feladatok
-pedig bónusz.
+pedig opcionálisak.
 
 A legfontosabb feladatok becslése
 ---------------------------------
